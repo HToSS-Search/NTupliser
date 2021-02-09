@@ -4,6 +4,9 @@ process = cms.Process("customPAT")
 
 from PhysicsTools.PatAlgos.tools.coreTools import *
 
+##The line below always has to be included to make VarParsing work
+import FWCore.ParameterSet.VarParsing as VarParsing
+
 #Setting up various environmental stuff that makes all of this jazz actually work.
 
 ###############################
@@ -27,6 +30,9 @@ process.load("FWCore.Framework.test.cmsExceptionsFatal_cff")
 process.load("SimGeneral.HepPDTESSource.pythiapdt_cfi")
 process.load("PhysicsTools.HepMCCandAlgos.genParticles_cfi")
 process.load('Configuration.StandardSequences.Services_cff')
+
+options = VarParsing.VarParsing ('analysis')
+options.parseArguments()
 
 process.load("FWCore.MessageLogger.MessageLogger_cfi")
 process.MessageLogger.destinations = ['cerr']
