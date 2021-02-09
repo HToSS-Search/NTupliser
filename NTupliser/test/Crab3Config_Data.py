@@ -7,7 +7,7 @@ from CRABClient.UserUtilities import config
 Dataset = namedtuple("Dataset", "process dataset")
 
 ## 2017 Datasets
-dataset = Dataset("SingleMuon_Run2017B", "/SingleMuon/Run2017B-31Mar2018-v1/MINIAOD")
+#dataset = Dataset("SingleMuon_Run2017B", "/SingleMuon/Run2017B-31Mar2018-v1/MINIAOD")
 #dataset = Dataset("SingleMuon_Run2017C", "/SingleMuon/Run2017C-31Mar2018-v1/MINIAOD")
 #dataset = Dataset("SingleMuon_Run2017D", "/SingleMuon/Run2017D-31Mar2018-v1/MINIAOD")
 #dataset = Dataset("SingleMuon_Run2017E", "/SingleMuon/Run2017E-31Mar2018-v1/MINIAOD")
@@ -20,6 +20,7 @@ config.General.workArea = 'crab_projects'
 
 config.JobType.pluginName = 'Analysis'
 config.JobType.psetName = 'nTupliserData_miniAOD_cfg.py'
+config.JobType.allowUndistributedCMSSW = True
 
 config.Data.inputDataset = dataset.dataset
 config.Data.inputDBS = 'global'
