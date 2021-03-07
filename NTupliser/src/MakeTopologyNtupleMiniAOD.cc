@@ -2617,8 +2617,8 @@ void MakeTopologyNtupleMiniAOD::fillPackedCands(const edm::Event& iEvent, const 
         packedCandsPdgId[numPackedCands] = packedCand.pdgId();
         packedCandsTime[numPackedCands] = packedCand.time();
 
-//        packedCandsFromPV[numPackedCands] = packedCand.fromPV();
-//        packedCandsPVquality[numPackedCands] = packedCand.pvAssociationQuality();
+        packedCandsFromPV[numPackedCands] = packedCand.fromPV();
+        packedCandsPVquality[numPackedCands] = packedCand.pvAssociationQuality();
         packedCandsVx[numPackedCands] = packedCand.vx();
         packedCandsVy[numPackedCands] = packedCand.vy();
         packedCandsVz[numPackedCands] = packedCand.vz();
@@ -3660,8 +3660,8 @@ void MakeTopologyNtupleMiniAOD::clearPackedCandsArrays() {
         packedCandsCharge[i] = 0;
         packedCandsPdgId[i] = 0;
         packedCandsTime[i] = 0.;
-//        packedCandsFromPV[i] = -1.;
-//        packedCandsPVquality[i] = -1.;
+        packedCandsFromPV[i] = -1.;
+        packedCandsPVquality[i] = -1.;
         packedCandsVx[i] = 0.;
         packedCandsVy[i] = 0.;
         packedCandsVz[i] = 0.;
@@ -5805,8 +5805,8 @@ void MakeTopologyNtupleMiniAOD::bookPackedCandsBranches() {
     mytree_->Branch("packedCandsCharge", &packedCandsCharge, "packedCandsCharge[numPackedCands]/I");
     mytree_->Branch("packedCandsPdgId", &packedCandsPdgId, "packedCandsPdgId[numPackedCands]/I");
     mytree_->Branch("packedCandsTime", &packedCandsTime, "packedCandsTime[numPackedCands]/F");
-//    mytree_->Branch("packedCandsFromPV", &packedCandsFromPV, "packedCandsFromPV[numPackedCands]/I");
-//    mytree_->Branch("packedCandsPVquality", &packedCandsPVquality, "packedCandsPVquality[numPackedCands]/I");
+    mytree_->Branch("packedCandsFromPV", &packedCandsFromPV, "packedCandsFromPV[numPackedCands]/I");
+    mytree_->Branch("packedCandsPVquality", &packedCandsPVquality, "packedCandsPVquality[numPackedCands]/I");
     mytree_->Branch("packedCandsVx", &packedCandsVx, "packedCandsVx[numPackedCands]/F");
     mytree_->Branch("packedCandsVy", &packedCandsVy, "packedCandsVy[numPackedCands]/F");
     mytree_->Branch("packedCandsVz", &packedCandsVz, "packedCandsVz[numPackedCands]/F");
