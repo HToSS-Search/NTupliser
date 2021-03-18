@@ -45,7 +45,7 @@ process.MessageLogger.categories=cms.untracked.vstring('FwkJob'
                                                        )
 
 process.MessageLogger.cerr.INFO = cms.untracked.PSet(limit = cms.untracked.int32(0))
-process.MessageLogger.cerr.FwkReport.reportEvery = cms.untracked.int32(1000)
+process.MessageLogger.cerr.FwkReport.reportEvery = cms.untracked.int32(1)
 process.options = cms.untracked.PSet(
                      wantSummary = cms.untracked.bool(True)
                      )
@@ -164,7 +164,7 @@ process.makeTopologyNtupleMiniAOD.minElePt=cms.double(9.0)
 process.makeTopologyNtupleMiniAOD.maxEleEta=cms.double(2.7)
 process.makeTopologyNtupleMiniAOD.eleRelIso=cms.double(0.50)
 process.makeTopologyNtupleMiniAOD.maxMuonEta=cms.double(2.8)
-process.makeTopologyNtupleMiniAOD.maxInvMuMuMass=cms.double(10.0)
+process.makeTopologyNtupleMiniAOD.maxInvMuMuMass=cms.double(5.0)
 process.makeTopologyNtupleMiniAOD.maxMuonEta=cms.double(2.8)
 process.makeTopologyNtupleMiniAOD.minMuonPt1=cms.double(15.0)
 process.makeTopologyNtupleMiniAOD.minMuonPt2=cms.double(6.0)
@@ -175,7 +175,7 @@ process.makeTopologyNtupleMiniAOD.fillAll=cms.bool(True)
 #process.makeTopologyNtupleMiniAOD.btagParameterizationList = cms.vstring()
 #process.makeTopologyNtupleMiniAOD.btagParameterizationMode = cms.vstring()
 #Don't actually do cuts
-process.makeTopologyNtupleMiniAOD.doCuts=cms.bool(False) # if set to false will skip ALL cuts. Z veto still applies electron cuts.
+process.makeTopologyNtupleMiniAOD.doCuts=cms.bool(True) # if set to false will skip ALL cuts. Z veto still applies electron cuts.
 
 #Make the inputs for the n-tupliser right.
 process.makeTopologyNtupleMiniAOD.electronPFToken = cms.InputTag("slimmedElectrons")
