@@ -124,6 +124,7 @@ makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
 	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v14', ## Runs A-B
 	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v1', ## Runs C onwards
 	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v2', ## Runs C onwards
+
 	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v3', ## Runs C onwards
 	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v4', ## Runs C onwards
 	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v7', ## Runs C onwards
@@ -182,11 +183,29 @@ makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
 #        'HLT_DoubleMu48NoFiltersNoVtx_v4', #2018 only
 
         ## DatasetScouting Triggers with prescale = 1
-        'DST_HT250_CaloScouting_v8',
-        'DST_HT250_CaloBTagScouting_v7',
-        'DST_HT410_PFScouting_v12',
-        'DST_HT410_BTagScouting_v12',
-        'DST_DoubleMu3_noVtx_CaloScouting_v4',
+        'DST_HT250_CaloScouting_v6',
+        'DST_HT250_CaloScouting_v7',
+        'DST_HT250_CaloScouting_v8', ## MC
+        'DST_HT250_CaloScouting_v9',
+        'DST_HT250_CaloBTagScouting_v5',
+        'DST_HT250_CaloBTagScouting_v6',
+        'DST_HT250_CaloBTagScouting_v7', ## MC
+        'DST_HT250_CaloBTagScouting_v8',
+        'DST_HT410_PFScouting_v9',
+        'DST_HT410_PFScouting_v10',
+        'DST_HT410_PFScouting_v11',
+        'DST_HT410_PFScouting_v12', ## MC
+        'DST_HT410_PFScouting_v13',
+        'DST_HT410_PFScouting_v14',
+        'DST_HT410_BTagScouting_v10',
+        'DST_HT410_BTagScouting_v11',
+        'DST_HT410_BTagScouting_v12', ## MC
+        'DST_HT410_BTagScouting_v13',
+        'DST_HT410_BTagScouting_v14',
+        'DST_DoubleMu3_noVtx_CaloScouting_v2',
+        'DST_DoubleMu3_noVtx_CaloScouting_v3',
+        'DST_DoubleMu3_noVtx_CaloScouting_v4', ## MC
+        'DST_DoubleMu3_noVtx_CaloScouting_v5',
 
 ### photon and displaced jet triggers
 
