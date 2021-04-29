@@ -140,7 +140,7 @@ MakeTopologyNtupleMiniAOD::MakeTopologyNtupleMiniAOD(
     , packedCandToken_{consumes<std::vector<pat::PackedCandidate>>(iConfig.getParameter<edm::InputTag>("packedCandToken"))}
     , packedGenParticleToken_{consumes<std::vector<pat::PackedGenParticle>>(iConfig.getParameter<edm::InputTag>("packedGenParticleToken"))}
     , isolatedTrackToken_{consumes<std::vector<pat::IsolatedTrack>>(iConfig.getParameter<edm::InputTag>("isolatedTrackToken"))}
-    , conversionsToken_{consumes<std::vector<reco::Conversion>>(iConfig.getParameter<edm::InputTag>("conversionsToken"))}
+    , conversionsToken_{consumes<reco::ConversionCollection>(iConfig.getParameter<edm::InputTag>("conversionsToken"))}
     , eleLabel_{consumes<pat::ElectronCollection>(iConfig.getParameter<edm::InputTag>("electronTag"))}
     , phoLabel_{consumes<pat::PhotonCollection>(iConfig.getParameter<edm::InputTag>("photonTag"))}
     , ootPhoLabel_{consumes<pat::PhotonCollection>(iConfig.getParameter<edm::InputTag>("ootPhotonTag"))}
@@ -543,8 +543,8 @@ void MakeTopologyNtupleMiniAOD::fillPhotons( const edm::Event& iEvent, const edm
   const pat::PackedCandidateCollection& packedCands{*packedCandHandle};
 
   // Electron conversions
-  edm::Handle<reco::ConversionCollection> Conversions;
-  iEvent.getByToken(conversionsToken_, Conversions);
+  edm::Handle<reco::ConversionCollection> conversions_;
+  iEvent.getByToken(conversionsToken_, conversions_);
   
   // Get the rho isolation co-efficient here
   edm::Handle<double> rhoHand_;
@@ -730,8 +730,8 @@ void MakeTopologyNtupleMiniAOD::fillElectrons(const edm::Event& iEvent, const ed
     // const pat::ElectronCollection& electronsOrg = *electronOrgHandle;
 
     // Electron conversions
-    edm::Handle<reco::ConversionCollection> Conversions;
-    iEvent.getByToken(conversionsToken_, Conversions);
+    edm::Handle<reco::ConversionCollection> conversions_;
+    iEvent.getByToken(conversionsToken_, conversions_);
 
     // Get the rho isolation co-efficient here
     edm::Handle<double> rhoHand_;
@@ -952,8 +952,7 @@ void MakeTopologyNtupleMiniAOD::fillElectrons(const edm::Event& iEvent, const ed
 
         // ELECTRON CONVERSIONS
 
-//        electronSortedPhotonConversionTag[ID][numEle[ID] - 1] = ConversionTools::hasMatchedConversion(ele, Conversions, beamSpotPoint_);
-        electronSortedPhotonConversionTag[ID][numEle[ID] - 1] = -1;
+        electronSortedPhotonConversionTag[ID][numEle[ID] - 1]  = ConversionTools::hasMatchedConversion(ele, *conversions_, beamSpotPoint_);
         electronSortedPhotonConversionDist[ID][numEle[ID] - 1] = ele.convDist();
         electronSortedPhotonConversionDcot[ID][numEle[ID] - 1] = ele.convDcot();
         electronSortedPhotonConversionVeto[ID][numEle[ID] - 1] = ele.passConversionVeto();
