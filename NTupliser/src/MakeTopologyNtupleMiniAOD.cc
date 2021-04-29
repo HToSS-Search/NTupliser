@@ -937,17 +937,12 @@ void MakeTopologyNtupleMiniAOD::fillElectrons(const edm::Event& iEvent, const ed
         // pass electron to photonConversionVeto and see if it comes from photon
         // conversion
 
-        electronSortedMissingInnerLayers[ID][numEle[ID] - 1] =
-            ele.gsfTrack()->hitPattern().numberOfLostTrackerHits(
-                reco::HitPattern::MISSING_INNER_HITS);
+        electronSortedMissingInnerLayers[ID][numEle[ID] - 1] = ele.gsfTrack()->hitPattern().numberOfLostTrackerHits(reco::HitPattern::MISSING_INNER_HITS);
 
         electronSortedHoverE[ID][numEle[ID] - 1] = ele.hadronicOverEm();
-        electronSortedDeltaPhiSC[ID][numEle[ID] - 1] =
-            ele.deltaPhiSuperClusterTrackAtVtx();
-        electronSortedDeltaEtaSC[ID][numEle[ID] - 1] =
-            ele.deltaEtaSuperClusterTrackAtVtx();
-        electronSortedDeltaEtaSeedSC[ID][numEle[ID] - 1] =
-            (ele.superCluster().isNonnull() && ele.superCluster()->seed().isNonnull()
+        electronSortedDeltaPhiSC[ID][numEle[ID] - 1] = ele.deltaPhiSuperClusterTrackAtVtx();
+        electronSortedDeltaEtaSC[ID][numEle[ID] - 1] = ele.deltaEtaSuperClusterTrackAtVtx();
+        electronSortedDeltaEtaSeedSC[ID][numEle[ID] - 1] = (ele.superCluster().isNonnull() && ele.superCluster()->seed().isNonnull()
                  ? ele.deltaEtaSuperClusterTrackAtVtx() - ele.superCluster()->eta()  + ele.superCluster()->seed()->eta()
                  : std::numeric_limits<float>::max());
         electronSortedIsBarrel[ID][numEle[ID] - 1] = ele.isEB();
@@ -957,9 +952,8 @@ void MakeTopologyNtupleMiniAOD::fillElectrons(const edm::Event& iEvent, const ed
 
         // ELECTRON CONVERSIONS
 
-        electronSortedPhotonConversionTag[ID][numEle[ID] - 1] =
-            ConversionTools::hasMatchedConversion(
-                ele, Conversions, beamSpotPoint_);
+//        electronSortedPhotonConversionTag[ID][numEle[ID] - 1] = ConversionTools::hasMatchedConversion(ele, Conversions, beamSpotPoint_);
+        electronSortedPhotonConversionTag[ID][numEle[ID] - 1] = -1;
         electronSortedPhotonConversionDist[ID][numEle[ID] - 1] = ele.convDist();
         electronSortedPhotonConversionDcot[ID][numEle[ID] - 1] = ele.convDcot();
         electronSortedPhotonConversionVeto[ID][numEle[ID] - 1] = ele.passConversionVeto();
