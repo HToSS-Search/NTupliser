@@ -90,8 +90,9 @@ class MakeTopologyNtupleMiniAOD : public edm::EDAnalyzer
     // Debug flag
     const bool debugMode_{};
 
-    // Sets stuff for 2016 rereco, namely ele IDs
-    const bool is2016rereco_{};
+    // Sets stuff for different eras
+    const bool is2016_{};
+    const bool is2018_{};
 
     // Sets whether the sample is ttbar or not. Default is false. This affects
     // top pt reweighting of the sample.

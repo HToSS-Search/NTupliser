@@ -2,7 +2,8 @@ import FWCore.ParameterSet.Config as cms
 
 makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
                                            debugMode              = cms.bool(False),
-					   is2016rereco = cms.bool(False),
+					   is2016 = cms.bool(False),
+					   is2018 = cms.bool(False),
                                            # "Calo"
                                            packedCandToken        = cms.InputTag("packedPFCandidates"),
                                            packedGenParticleToken = cms.InputTag("packedGenParticles"),

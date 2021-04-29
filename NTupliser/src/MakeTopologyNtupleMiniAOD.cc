@@ -178,7 +178,8 @@ MakeTopologyNtupleMiniAOD::MakeTopologyNtupleMiniAOD(
     , hasGeneralTracks_{iConfig.getParameter<bool>("hasGeneralTracks")}
     , generalTracksToken_{mayConsume<reco::TrackCollection>(iConfig.getParameter<edm::InputTag>("generalTracksToken"))}
     , debugMode_{iConfig.getParameter<bool>("debugMode")}
-    , is2016rereco_{iConfig.getParameter<bool>("is2016rereco")}
+    , is2016_{iConfig.getParameter<bool>("is2016")}
+    , is2018_{iConfig.getParameter<bool>("is2018")}
     , isttbar_{iConfig.getParameter<bool>("isttBar")}
     , ttGenEvent_{iConfig.getParameter<edm::InputTag>("ttGenEvent")}
     , scalarPid_{iConfig.getParameter<int>("scalarPid")}
@@ -619,7 +620,7 @@ void MakeTopologyNtupleMiniAOD::fillPhotons( const edm::Event& iEvent, const edm
     photonSortedPFNeuIso[ID][numPho[ID] - 1] = pho.userFloat("phoNeutralHadronIsolation");
     photonSortedPFChWorstIso[ID][numPho[ID] - 1] = pho.userFloat("phoWorstChargedIsolation");
     photonSortedMIPTotEnergy[ID][numPho[ID] - 1] = pho.mipTotEnergy();
-    if (is2016rereco_) {
+    if (is2016_) {
       photonSortedCutIdLoose[ID][numPho[ID] - 1] =
 	pho.photonID("cutBasedPhotonID-Spring16-V2p2-loose");
       photonSortedCutIdMedium[ID][numPho[ID] - 1] =
@@ -815,7 +816,7 @@ void MakeTopologyNtupleMiniAOD::fillElectrons(const edm::Event& iEvent, const ed
         electronSortedPz[ID][numEle[ID] - 1] = eleCorr.Pz();
         electronSortedCharge[ID][numEle[ID] - 1] = ele.charge();
 
-        if (is2016rereco_) {
+        if (is2016_) {
             electronSortedCutIdVeto[ID][numEle[ID] - 1] =
                 ele.electronID("cutBasedElectronID-Summer16-80X-V1-veto");
             electronSortedCutIdLoose[ID][numEle[ID] - 1] =
@@ -1900,7 +1901,7 @@ void MakeTopologyNtupleMiniAOD::fillMCInfo(const edm::Event& iEvent, const edm::
         weight_alphaMin_ = 1.0;
     }
 
-    if (!is2016rereco_)
+    if (!is2016_)
     {
         // Perform the recommended rescaling
         // The TWiki says:
