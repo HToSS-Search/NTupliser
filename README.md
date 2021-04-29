@@ -2,34 +2,12 @@ VUB-EOS-Searches-nTuples
 ==============
 ***
 
-The CMSSW_9_4_10 branch contains code from CMSSW_9_4_8 branch which is modified
-to work for Run 2 miniAODv2 94X data and MC. 
-
-This is currently a work in progress left to be completed by the next generation.
+The CMSSW_10_6_20 branch contains code from CMSSW_9_4_10 branch which is modified to work for Run 2 UL data and MC. 
 
 
 To be fixed:
 
 - Check DeepCSV and DeepCMVA b-taggers actually work and include them in the skimmer's AnalysisEvent.h
-
-## Additional setup info:
-
-Updated ecalBadCalibReducedMINIAODFilter that needs to be rereun on miniAOD (done by nTupliser before making nTuples)
-```bash
-git cms-addpkg RecoMET/METFilters
-```
-
-NOTE!!!! YOU DO NOT HAVE TO DO THIS!!!
-Only if you want to recreate the EGM regression/smearing corrections that are already in the re-miniAODv2
-```bash
-git cms-merge-topic cms-egamma:EgammaPostRecoTools_940 #just adds in an extra file to have a setup function to make things easier
-git cms-merge-topic cms-egamma:Egamma80XMiniAODV2_946 #adds the c++ changes necessary to enable 2016 scale & smearing corrections
-```
-DeepJet DeepFlavour setup - NOT USED CURRENTLY!
-```bash
-git cms-addpkg RecoBTag/TensorFlow
-git cherry-pick 94ceae257f846998c357fcad408986cc8a039152
-```bash
 
 ***
 
