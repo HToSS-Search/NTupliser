@@ -615,34 +615,23 @@ void MakeTopologyNtupleMiniAOD::fillPhotons( const edm::Event& iEvent, const edm
     photonSortedE2x2Full5x5[ID][numPho[ID] - 1] = 0;
     photonSortedE5x5Full5x5[ID][numPho[ID] - 1] = pho.full5x5_e5x5();
     photonSortedR9Full5x5[ID][numPho[ID] - 1] = pho.full5x5_r9();
-    photonSortedPFChIso[ID][numPho[ID] - 1] = pho.userFloat("phoChargedIsolation"); 
-    photonSortedPFPhoIso[ID][numPho[ID] - 1] = pho.userFloat("phoPhotonIsolation");
-    photonSortedPFNeuIso[ID][numPho[ID] - 1] = pho.userFloat("phoNeutralHadronIsolation");
-    photonSortedPFChWorstIso[ID][numPho[ID] - 1] = pho.userFloat("phoWorstChargedIsolation");
+    photonSortedPFChIso[ID][numPho[ID] - 1] = pho.chargedHadronIso();
+    photonSortedPFPhoIso[ID][numPho[ID] - 1] = pho.photonIso();
+    photonSortedPFNeuIso[ID][numPho[ID] - 1] = pho.neutralHadronIso();
     photonSortedMIPTotEnergy[ID][numPho[ID] - 1] = pho.mipTotEnergy();
     if (is2016_) {
-      photonSortedCutIdLoose[ID][numPho[ID] - 1] =
-	pho.photonID("cutBasedPhotonID-Spring16-V2p2-loose");
-      photonSortedCutIdMedium[ID][numPho[ID] - 1] =
-	pho.photonID("cutBasedPhotonID-Spring16-V2p2-medium");
-      photonSortedCutIdTight[ID][numPho[ID] - 1] =
-	pho.photonID("cutBasedPhotonID-Spring16-V2p2-tight");
-      photonSortedMvaIdWp80[ID][numPho[ID] - 1] =
-	pho.photonID("mvaPhoID-Spring16-nonTrig-V1-wp80");
-      photonSortedMvaIdWp90[ID][numPho[ID] - 1] =
-	pho.photonID("mvaPhoID-Spring16-nonTrig-V1-wp90");
+      photonSortedCutIdLoose[ID][numPho[ID] - 1]  = pho.photonID("cutBasedPhotonID-Spring16-V2p2-loose");
+      photonSortedCutIdMedium[ID][numPho[ID] - 1] = pho.photonID("cutBasedPhotonID-Spring16-V2p2-medium");
+      photonSortedCutIdTight[ID][numPho[ID] - 1]  = pho.photonID("cutBasedPhotonID-Spring16-V2p2-tight");
+      photonSortedMvaIdWp80[ID][numPho[ID] - 1]   = pho.photonID("mvaPhoID-Spring16-nonTrig-V1-wp80");
+      photonSortedMvaIdWp90[ID][numPho[ID] - 1]   = pho.photonID("mvaPhoID-Spring16-nonTrig-V1-wp90");
     }
     else {
-      photonSortedCutIdLoose[ID][numPho[ID] - 1] =
-	pho.photonID("cutBasedPhotonID-Fall17-94X-V1-loose");
-      photonSortedCutIdMedium[ID][numPho[ID] - 1] =
-	pho.photonID("cutBasedPhotonID-Fall17-94X-V1-medium");
-      photonSortedCutIdTight[ID][numPho[ID] - 1] =
-	pho.photonID("cutBasedPhotonID-Fall17-94X-V1-tight");
-      photonSortedMvaIdWp80[ID][numPho[ID] - 1] =
-	pho.photonID("mvaPhoID-RunIIFall17-v1-wp80");
-      photonSortedMvaIdWp90[ID][numPho[ID] - 1] =
-	pho.photonID("mvaPhoID-RunIIFall17-v1-wp90");
+      photonSortedCutIdLoose[ID][numPho[ID] - 1]  = pho.photonID("cutBasedPhotonID-Fall17-94X-V1-loose");
+      photonSortedCutIdMedium[ID][numPho[ID] - 1] = pho.photonID("cutBasedPhotonID-Fall17-94X-V1-medium");
+      photonSortedCutIdTight[ID][numPho[ID] - 1]  = pho.photonID("cutBasedPhotonID-Fall17-94X-V1-tight");
+      photonSortedMvaIdWp80[ID][numPho[ID] - 1]   = pho.photonID("mvaPhoID-RunIIFall17-v1-wp80");
+      photonSortedMvaIdWp90[ID][numPho[ID] - 1]   = pho.photonID("mvaPhoID-RunIIFall17-v1-wp90");
     }
 
     // Get index ref to packed cand collection
@@ -849,10 +838,8 @@ void MakeTopologyNtupleMiniAOD::fillElectrons(const edm::Event& iEvent, const ed
             electronSortedMvaIdWpLoose[ID][numEle[ID] - 1] =
                 ele.electronID("mvaEleID-Fall17-iso-V1-wpLoose");
         }
-        electronSortedChargedHadronIso[ID][numEle[ID] - 1] =
-            ele.chargedHadronIso();
-        electronSortedNeutralHadronIso[ID][numEle[ID] - 1] =
-            ele.neutralHadronIso();
+        electronSortedChargedHadronIso[ID][numEle[ID] - 1] = ele.chargedHadronIso();
+        electronSortedNeutralHadronIso[ID][numEle[ID] - 1] = ele.neutralHadronIso();
         electronSortedPhotonIso[ID][numEle[ID] - 1] = ele.photonIso();
 
         electronSortedTrackPt[ID][numEle[ID] - 1] = ele.gsfTrack()->pt();
@@ -2977,7 +2964,6 @@ void MakeTopologyNtupleMiniAOD::clearPhotonArrays(const std::string& ID){
     photonSortedPFChIso[ID].clear();
     photonSortedPFPhoIso[ID].clear();
     photonSortedPFNeuIso[ID].clear();
-    photonSortedPFChWorstIso[ID].clear();
     photonSortedMIPTotEnergy[ID].clear();    
     photonSortedCutIdLoose[ID].clear();
     photonSortedCutIdMedium[ID].clear();
@@ -4181,7 +4167,6 @@ void MakeTopologyNtupleMiniAOD::bookPhotonBranches(const std::string& ID, const 
     photonSortedPFChIso[ID] = tempVecF;
     photonSortedPFPhoIso[ID] = tempVecF;
     photonSortedPFNeuIso[ID] = tempVecF;
-    photonSortedPFChWorstIso[ID] = tempVecF;
     photonSortedMIPTotEnergy[ID] = tempVecF;    
     photonSortedCutIdLoose[ID] = tempVecI;
     photonSortedCutIdMedium[ID] = tempVecI;
@@ -4324,9 +4309,6 @@ void MakeTopologyNtupleMiniAOD::bookPhotonBranches(const std::string& ID, const 
     mytree_->Branch((prefix + "PFNeuIso").c_str(),
                     &photonSortedPFNeuIso[ID][0],
                     (prefix + "PFNeuIso[numPho" + name + "]/F").c_str());
-    mytree_->Branch((prefix + "PFChWorstIso").c_str(),
-                    &photonSortedPFChWorstIso[ID][0],
-                    (prefix + "PFChWorstIso[numPho" + name + "]/F").c_str());
     mytree_->Branch((prefix + "MIPTotEnergy").c_str(),
                     &photonSortedMIPTotEnergy[ID][0],
                     (prefix + "MIPTotEnergy[numPho" + name + "]/F").c_str());
@@ -6030,9 +6012,7 @@ void MakeTopologyNtupleMiniAOD::fillTriggerData(const edm::Event& iEvent)
             const bool accept{hltResults->accept(itrig)};
             // if (histocontainer1D_["eventcount"]->GetBinContent(0.0) < 2)
             // {
-            //     std::cout << "TRIGGER BIT:" << itrig
-            //               << ", NAME:" << hltnames_[itrig]
-            //               << " FIRED:" << accept << std::endl;
+            //     std::cout << "TRIGGER BIT:" << itrig << ", NAME:" << hltnames_[itrig] << " FIRED:" << accept << std::endl;
             // }
             int trigbit{0};
             if (accept)
