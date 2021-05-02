@@ -627,11 +627,11 @@ void MakeTopologyNtupleMiniAOD::fillPhotons( const edm::Event& iEvent, const edm
       photonSortedMvaIdWp90[ID][numPho[ID] - 1]   = pho.photonID("mvaPhoID-Spring16-nonTrig-V1-wp90");
     }
     else {
-      photonSortedCutIdLoose[ID][numPho[ID] - 1]  = pho.photonID("cutBasedPhotonID-Fall17-94X-V1-loose");
-      photonSortedCutIdMedium[ID][numPho[ID] - 1] = pho.photonID("cutBasedPhotonID-Fall17-94X-V1-medium");
-      photonSortedCutIdTight[ID][numPho[ID] - 1]  = pho.photonID("cutBasedPhotonID-Fall17-94X-V1-tight");
-      photonSortedMvaIdWp80[ID][numPho[ID] - 1]   = pho.photonID("mvaPhoID-RunIIFall17-v1-wp80");
-      photonSortedMvaIdWp90[ID][numPho[ID] - 1]   = pho.photonID("mvaPhoID-RunIIFall17-v1-wp90");
+      photonSortedCutIdLoose[ID][numPho[ID] - 1]  = pho.photonID("cutBasedPhotonID-Fall17-94X-V2-loose");
+      photonSortedCutIdMedium[ID][numPho[ID] - 1] = pho.photonID("cutBasedPhotonID-Fall17-94X-V2-medium");
+      photonSortedCutIdTight[ID][numPho[ID] - 1]  = pho.photonID("cutBasedPhotonID-Fall17-94X-V2-tight");
+      photonSortedMvaIdWp80[ID][numPho[ID] - 1]   = pho.photonID("mvaPhoID-RunIIFall17-v2-wp80");
+      photonSortedMvaIdWp90[ID][numPho[ID] - 1]   = pho.photonID("mvaPhoID-RunIIFall17-v2-wp90");
     }
 
     // Get index ref to packed cand collection
@@ -6007,16 +6007,14 @@ void MakeTopologyNtupleMiniAOD::fillTriggerData(const edm::Event& iEvent)
 
         hltnames_ = triggerNames.triggerNames();
 
-        for (int itrig{0}; itrig < (int)hltnames_.size(); ++itrig)
-        {
+        for (int itrig{0}; itrig < (int)hltnames_.size(); ++itrig)  {
             const bool accept{hltResults->accept(itrig)};
             // if (histocontainer1D_["eventcount"]->GetBinContent(0.0) < 2)
             // {
             //     std::cout << "TRIGGER BIT:" << itrig << ", NAME:" << hltnames_[itrig] << " FIRED:" << accept << std::endl;
             // }
             int trigbit{0};
-            if (accept)
-            {
+            if (accept) {
                 trigbit = 1;
             }
             if (!hltResults->wasrun(itrig))
@@ -6024,11 +6022,8 @@ void MakeTopologyNtupleMiniAOD::fillTriggerData(const edm::Event& iEvent)
             if (hltResults->error(itrig))
                 trigbit = -2;
 
-            for (size_t iTrigList{0}; iTrigList < triggerList_.size();
-                 iTrigList++)
-            {
-                if (triggerList_[iTrigList] == hltnames_[itrig])
-                {
+            for (size_t iTrigList{0}; iTrigList < triggerList_.size(); iTrigList++) {
+                if (triggerList_[iTrigList] == hltnames_[itrig]) {
                     // if (mytree_->GetEntries() < 1)
                     // {
                     //     std::cout << "found 'standard' trigger bit "
@@ -6043,28 +6038,22 @@ void MakeTopologyNtupleMiniAOD::fillTriggerData(const edm::Event& iEvent)
     edm::Handle<edm::TriggerResults> metFilterResults;
     iEvent.getByToken(metFilterToken_, metFilterResults);
 
-    if (metFilterResults.product()->wasrun())
-    {
-        const edm::TriggerNames& metFilterNames{
-            iEvent.triggerNames(*metFilterResults)};
+    if (metFilterResults.product()->wasrun()) {
+        const edm::TriggerNames& metFilterNames{iEvent.triggerNames(*metFilterResults)};
         // HLTBits_Size = metFilterResults.product()->size();
 
         metFilterNames_ = metFilterNames.triggerNames();
-        for (int iFilter{0}; iFilter < (int)metFilterNames_.size(); ++iFilter)
-        {
+        for (int iFilter{0}; iFilter < (int)metFilterNames_.size(); ++iFilter) {
             const bool accept(metFilterResults->accept(iFilter));
             // if (histocontainer1D_["eventcount"]->GetBinContent(0.0) < 2)
             // {
             //     if (metFilterNames_[iFilter] == "Flag_noBadMuons")
             //     {
-            //         std::cout << "TRIGGER BIT:" << iFilter
-            //                   << ", NAME:" << metFilterNames_[iFilter]
-            //                   << " FIRED:" << accept << std::endl;
+            //         std::cout << "FILTER BIT:" << iFilter << ", NAME:" << metFilterNames_[iFilter] << " FIRED:" << accept << std::endl;
             //     }
             // }
             int filterbit{0};
-            if (accept)
-            {
+            if (accept) {
                 filterbit = 1;
             }
             if (!metFilterResults->wasrun(iFilter))
