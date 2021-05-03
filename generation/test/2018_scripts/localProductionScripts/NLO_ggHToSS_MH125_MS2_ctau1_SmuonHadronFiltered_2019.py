@@ -2,15 +2,16 @@
 # using: 
 # Revision: 1.19 
 # Source: /local/reps/CMSSW/CMSSW/Configuration/Applications/python/ConfigBuilder.py,v 
-# with command line options: Configuration/GenProduction/python/NLO_HToSSTobbbb_MH125_MS55_ctauS10_13TeV.py --fileout file:Higgs_GEN_SIM.root -s LHE,GEN,SIM --mc --eventcontent RAWSIM --geometry DB:Extended --era Run2_2017 --conditions 93X_mc2017_realistic_v3 --datatier GEN-SIM --no_exec -n 10 --python_filename NLO_ggHToSSTobbbb_MH125_MS55_ctauS10_TuneCP2_13TeV_pythia8_GENSIM.py --beamspot Realistic25ns13TeVEarly2017Collision
+# with command line options: Configuration/GenProduction/python/NLO_HToSS_MH125_MS2_ctauS0_SmuonHadronFiltered_2017_13TeV.py --fileout file:Higgs_GEN_SIM.root -s LHE,GEN,SIM --mc --eventcontent RAWSIM --geometry DB:Extended --era Run2_2018 --conditions 106X_upgrade2018_realistic_v4 --beamspot Realistic25ns13TeVEarly2018Collision --datatier GEN-SIM --no_exec -n 10 --python_filename NLO_ggHToSSTobbbb_MH125_MS55_ctauS10_TuneCP2_13TeV_pythia8_GENSIM.py
+
 import FWCore.ParameterSet.Config as cms
 
 ##The line below always has to be included to make VarParsing work
 import FWCore.ParameterSet.VarParsing as VarParsing
 
-from Configuration.StandardSequences.Eras import eras
+from Configuration.Eras.Era_Run2_2018_cff import Run2_2018
 
-process = cms.Process('SIM',eras.Run2_2017)
+process = cms.Process('SIM',Run2_2018)
 
 # import of standard configurations
 process.load('Configuration.StandardSequences.Services_cff')
@@ -22,7 +23,7 @@ process.load('Configuration.StandardSequences.GeometryRecoDB_cff')
 process.load('Configuration.StandardSequences.GeometrySimDB_cff')
 process.load('Configuration.StandardSequences.MagneticField_cff')
 process.load('Configuration.StandardSequences.Generator_cff')
-process.load('IOMC.EventVertexGenerators.VtxSmearedRealistic25ns13TeVEarly2017Collision_cfi')
+process.load('IOMC.EventVertexGenerators.VtxSmearedRealistic25ns13TeVEarly2018Collision_cfi')
 process.load('GeneratorInterface.Core.genFilterSummary_cff')
 process.load('Configuration.StandardSequences.SimIdeal_cff')
 process.load('Configuration.StandardSequences.EndOfProcess_cff')
@@ -31,11 +32,8 @@ process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
 options = VarParsing.VarParsing ('analysis')
 options.parseArguments()
 
-intEvts  =  cms.untracked.int32(5000)
-uintEvts = cms.untracked.uint32(5000)
-
 process.maxEvents = cms.untracked.PSet(
-    input = intEvts
+    input = cms.untracked.int32(100)
 )
 
 # Input source
@@ -47,7 +45,7 @@ process.options = cms.untracked.PSet(
 
 # Production Info
 process.configurationMetadata = cms.untracked.PSet(
-    annotation = cms.untracked.string('Configuration/GenProduction/python/NLO_HToSSTodddd_MH125_MS40_ctauS10_13TeV.py nevts:1000'),
+    annotation = cms.untracked.string('Configuration/GenProduction/python/NLO_HToSS_MH125_MS2_ctauS0_SmuonHadronFiltered_2017_13TeV.py nevts:100'),
     name = cms.untracked.string('Applications'),
     version = cms.untracked.string('$Revision: 1.19 $')
 )
@@ -55,18 +53,17 @@ process.configurationMetadata = cms.untracked.PSet(
 # Output definition
 
 process.RAWSIMoutput = cms.OutputModule("PoolOutputModule",
-SelectEvents = cms.untracked.PSet(
+    SelectEvents = cms.untracked.PSet(
         SelectEvents = cms.vstring('generation_step')
     ),
     compressionAlgorithm = cms.untracked.string('LZMA'),
-    compressionLevel = cms.untracked.int32(9),
+    compressionLevel = cms.untracked.int32(1),
     dataset = cms.untracked.PSet(
         dataTier = cms.untracked.string('GEN-SIM'),
         filterName = cms.untracked.string('')
     ),
     eventAutoFlushCompressedSize = cms.untracked.int32(20971520),
     fileName = cms.untracked.string(options.outputFile),
-#    fileName = cms.untracked.string('file:/vols/cms/adm10/MC/NLO_HToSSTodddd_MH125_MS1_ctauS10_13TeV/GEN-SIM/Higgs_GEN_SIM_2017_10K.root'),
     outputCommands = process.RAWSIMEventContent.outputCommands,
     splitLevel = cms.untracked.int32(0)
 )
@@ -77,11 +74,7 @@ SelectEvents = cms.untracked.PSet(
 process.XMLFromDBSource.label = cms.string("Extended")
 process.genstepfilter.triggerConditions=cms.vstring("generation_step")
 from Configuration.AlCa.GlobalTag import GlobalTag
-process.GlobalTag = GlobalTag(process.GlobalTag, '93X_mc2017_realistic_v3', '')
-
-#mass = cms.vstring('100')
-#decayWidth = cms.vstring('0.0197327e-11/tau0')
-#lifetime = cms.vstring('tau0')
+process.GlobalTag = GlobalTag(process.GlobalTag, '106X_upgrade2018_realistic_v4', '')
 
 process.generator = cms.EDFilter("Pythia8HadronizerFilter",
     PythiaParameters = cms.PSet(
@@ -91,9 +84,8 @@ process.generator = cms.EDFilter("Pythia8HadronizerFilter",
             'processParameters'),
         processParameters = cms.vstring('POWHEG:nFinal = 1', 
 #            <particle id="..." name, antiName, spinType=, chargeType, colType, m0, mWidth, mMin, mMax, tau0> ##tau0 = nominal proper lifetime (mm/c) 
-#            '9000006:all = sk   skbar    0        0          0       2.0  0.0197327e-11/tau0  1.0  75.0 tau0', 
-            '9000006:all = sk   skbar    0        0          0       2.0  1.9732e-14  1.0  75.0 10',
-            '9000006:oneChannel = 1  1.0 101  13 -13',
+            '9000006:all = sk   skbar    0        0          0       2.0  1.9732e-13  1.0  75.0 1',
+            '9000006:oneChannel = 2  1.0 101  13 -13',
             '9000006:addChannel = 3  1.0 101  1 -1',
             '9000006:addChannel = 3  1.0 101  2 -2',
             '9000006:addChannel = 3  1.0 101  3 -3',
@@ -111,7 +103,7 @@ process.generator = cms.EDFilter("Pythia8HadronizerFilter",
             '9000006:onNegIfAny = 3',
             '9000006:onNegIfAny = 4',
             '9000006:onNegIfAny = 5',
-            '9000006:onIfAny = 13'),
+            '9000006:onPosIfAny = 13'),
         pythia8CP2Settings = cms.vstring('Tune:pp 14', 
             'Tune:ee 7', 
             'MultipartonInteractions:ecmPow=0.1391', 
@@ -150,7 +142,6 @@ process.generator = cms.EDFilter("Pythia8HadronizerFilter",
     pythiaPylistVerbosity = cms.untracked.int32(1)
 )
 
-
 process.genParticlesForFilter = cms.EDProducer("GenParticleProducer",
                                        saveBarCodes = cms.untracked.bool(True),
                                        src = cms.InputTag("generator", "unsmeared"),
@@ -162,8 +153,10 @@ process.scalarDecayFilter = cms.EDFilter("MCScalarDecayFilter",
                            )
 
 process.externalLHEProducer = cms.EDProducer("ExternalLHEProducer",
-    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/2017/13TeV/powheg/V2/gg_H_quark-mass-effects_NNPDF31_13TeV_M125/v1/gg_H_quark-mass-effects_NNPDF31_13TeV_M125_slc6_amd64_gcc630_CMSSW_9_3_0.tgz'),
-    nEvents = uintEvts,
+#    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/powheg/V2/gg_H_quark-mass-effects_NNPDF31_13TeV_M125/v1/gg_H_quark-mass-effects_NNPDF31_13TeV_M125.tgz'), ## DESPITE LABEL THIS IS H->Z0 Z0
+#    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/2017/13TeV/powheg/V2/gg_H_quark-mass-effects_NNPDF31_13TeV_M125/v1/gg_H_quark-mass-effects_NNPDF31_13TeV_M125_slc6_amd64_gcc630_CMSSW_9_3_0.tgz'), ## 2017
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/powheg/V2/gg_H_quark-mass-effects_slc7_amd64_gcc820_CMSSW_10_6_20_ggH_M125/v1/gg_H_quark-mass-effects_slc7_amd64_gcc820_CMSSW_10_6_20_ggH_M125.tgz'), ## Correct UL version
+    nEvents = cms.untracked.uint32(100),
     numberOfParameters = cms.uint32(1),
     outputFile = cms.string('cmsgrid_final.lhe'),
     scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
@@ -171,7 +164,7 @@ process.externalLHEProducer = cms.EDProducer("ExternalLHEProducer",
 
 
 process.ProductionFilterSequence = cms.Sequence(process.generator * (process.genParticlesForFilter + process.scalarDecayFilter))
-#process.ProductionFilterSequence = cms.Sequence(process.generator)
+#process.ProductionFilterSequence = cms.Sequence(process.generator) 
 
 # Path and EndPath definitions
 process.lhe_step = cms.Path(process.externalLHEProducer)
@@ -194,11 +187,9 @@ for path in process.paths:
         if path in ['lhe_step']: continue
         getattr(process,path)._seq = process.ProductionFilterSequence * getattr(process,path)._seq 
 
-
 # Customisation from command line
 
 # Add early deletion of temporary data products to reduce peak memory need
 from Configuration.StandardSequences.earlyDeleteSettings_cff import customiseEarlyDelete
 process = customiseEarlyDelete(process)
 # End adding early deletion
-
