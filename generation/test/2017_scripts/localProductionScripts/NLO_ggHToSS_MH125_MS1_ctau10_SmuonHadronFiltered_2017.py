@@ -47,7 +47,7 @@ process.options = cms.untracked.PSet(
 
 # Production Info
 process.configurationMetadata = cms.untracked.PSet(
-    annotation = cms.untracked.string('Configuration/GenProduction/python/NLO_HToSSTodddd_MH125_MS2_ctauS1_13TeV.py nevts:1000'),
+    annotation = cms.untracked.string('Configuration/GenProduction/python/NLO_HToSSTodddd_MH125_MS1_ctauS10_13TeV.py nevts:1000'),
     name = cms.untracked.string('Applications'),
     version = cms.untracked.string('$Revision: 1.19 $')
 )
@@ -92,7 +92,7 @@ process.generator = cms.EDFilter("Pythia8HadronizerFilter",
         processParameters = cms.vstring('POWHEG:nFinal = 1', 
 #            <particle id="..." name, antiName, spinType=, chargeType, colType, m0, mWidth, mMin, mMax, tau0> ##tau0 = nominal proper lifetime (mm/c) 
 #            '9000006:all = sk   skbar    0        0          0       2.0  0.0197327e-11/tau0  1.0  75.0 tau0', 
-            '9000006:all = sk   skbar    0        0          0       2.0  1.9732e-13  1.0  75.0 1',
+            '9000006:all = sk   skbar    0        0          0       1.0  1.9732e-14  1.0  75.0 10',
             '9000006:oneChannel = 2  1.0 101  13 -13',
             '9000006:addChannel = 3  1.0 101  1 -1',
             '9000006:addChannel = 3  1.0 101  2 -2',
