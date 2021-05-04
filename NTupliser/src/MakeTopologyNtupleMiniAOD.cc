@@ -796,26 +796,17 @@ void MakeTopologyNtupleMiniAOD::fillElectrons(const edm::Event& iEvent, const ed
         electronSortedPy[ID][numEle[ID] - 1] = eleCorr.Py();
         electronSortedPz[ID][numEle[ID] - 1] = eleCorr.Pz();
         electronSortedCharge[ID][numEle[ID] - 1] = ele.charge();
-
-        if (is2016_) {
-            electronSortedCutIdVeto[ID][numEle[ID] - 1]    = ele.electronID("cutBasedElectronID-Summer16-80X-V1-veto");
-            electronSortedCutIdLoose[ID][numEle[ID] - 1]   = ele.electronID("cutBasedElectronID-Summer16-80X-V1-loose");
-            electronSortedCutIdMedium[ID][numEle[ID] - 1]  = ele.electronID("cutBasedElectronID-Summer16-80X-V1-medium");
-            electronSortedCutIdTight[ID][numEle[ID] - 1]   = ele.electronID("cutBasedElectronID-Summer16-80X-V1-tight");
-            electronSortedMvaIdWp80[ID][numEle[ID] - 1]    = ele.electronID("mvaEleID-Spring16-GeneralPurpose-V1-wp80");
-            electronSortedMvaIdWp90[ID][numEle[ID] - 1]    = ele.electronID("mvaEleID-Spring16-GeneralPurpose-V1-wp90");
-            electronSortedMvaIdWpLoose[ID][numEle[ID] - 1] = ele.electronID("mvaEleID-Spring16-GeneralPurpose-V1-wp90");
-        }
-        else
-        {
-            electronSortedCutIdVeto[ID][numEle[ID] - 1]    = ele.electronID("cutBasedElectronID-Fall17-94X-V2-veto");
-            electronSortedCutIdLoose[ID][numEle[ID] - 1]   = ele.electronID("cutBasedElectronID-Fall17-94X-V2-loose");
-            electronSortedCutIdMedium[ID][numEle[ID] - 1]  = ele.electronID("cutBasedElectronID-Fall17-94X-V2-medium");
-            electronSortedCutIdTight[ID][numEle[ID] - 1]   = ele.electronID("cutBasedElectronID-Fall17-94X-V2-tight");
-            electronSortedMvaIdWp80[ID][numEle[ID] - 1]    = ele.electronID("mvaEleID-Fall17-iso-V1-wp80");
-            electronSortedMvaIdWp90[ID][numEle[ID] - 1]    = ele.electronID("mvaEleID-Fall17-iso-V1-wp90");
-            electronSortedMvaIdWpLoose[ID][numEle[ID] - 1] = ele.electronID("mvaEleID-Fall17-iso-V1-wpLoose");
-        }
+        electronSortedCutIdVeto[ID][numEle[ID] - 1]    = ele.electronID("cutBasedElectronID-Fall17-94X-V2-veto");
+        electronSortedCutIdLoose[ID][numEle[ID] - 1]   = ele.electronID("cutBasedElectronID-Fall17-94X-V2-loose");
+        electronSortedCutIdMedium[ID][numEle[ID] - 1]  = ele.electronID("cutBasedElectronID-Fall17-94X-V2-medium");
+        electronSortedCutIdTight[ID][numEle[ID] - 1]   = ele.electronID("cutBasedElectronID-Fall17-94X-V2-tight");
+        electronSortedMvaIdWp80[ID][numEle[ID] - 1]    = ele.electronID("mvaEleID-Fall17-iso-V2-wp80");
+        electronSortedMvaIdWp90[ID][numEle[ID] - 1]    = ele.electronID("mvaEleID-Fall17-iso-V2-wp90");
+        electronSortedMvaIdWpLoose[ID][numEle[ID] - 1] = ele.electronID("mvaEleID-Fall17-iso-V2-wpLoose");
+        electronSortedMvaIdWpHzz[ID][numEle[ID] - 1]   = ele.electronID("mvaEleID-Fall17-iso-V2-wpHZZ");
+        electronSortedMvaIdNoIsoWp80[ID][numEle[ID] - 1]    = ele.electronID("mvaEleID-Fall17-noIso-V2-wp80");
+        electronSortedMvaIdNoIsoWp90[ID][numEle[ID] - 1]    = ele.electronID("mvaEleID-Fall17-noIso-V2-wp90");
+        electronSortedMvaIdWpNoIsoLoose[ID][numEle[ID] - 1] = ele.electronID("mvaEleID-Fall17-noIso-V2-wpLoose");
         electronSortedChargedHadronIso[ID][numEle[ID] - 1] = ele.chargedHadronIso();
         electronSortedNeutralHadronIso[ID][numEle[ID] - 1] = ele.neutralHadronIso();
         electronSortedPhotonIso[ID][numEle[ID] - 1] = ele.photonIso();
@@ -3000,6 +2991,10 @@ void MakeTopologyNtupleMiniAOD::clearelectronarrays(const std::string& ID){
     electronSortedMvaIdWp80[ID].clear();
     electronSortedMvaIdWp90[ID].clear();
     electronSortedMvaIdWpLoose[ID].clear();
+    electronSortedMvaIdWpHzz[ID].clear();
+    electronSortedMvaIdNoIsoWp80[ID].clear();
+    electronSortedMvaIdNoIsoWp90[ID].clear();
+    electronSortedMvaIdWpNoIsoLoose[ID].clear();
 
     electronSortedChargedHadronIso[ID].clear();
     electronSortedNeutralHadronIso[ID].clear();
@@ -4409,6 +4404,10 @@ void MakeTopologyNtupleMiniAOD::bookElectronBranches(const std::string& ID, cons
     electronSortedMvaIdWp80[ID] = tempVecI;
     electronSortedMvaIdWp90[ID] = tempVecI;
     electronSortedMvaIdWpLoose[ID] = tempVecI;
+    electronSortedMvaIdWpHzz[ID] = tempVecI;
+    electronSortedMvaIdNoIsoWp80[ID] = tempVecI;
+    electronSortedMvaIdNoIsoWp90[ID] = tempVecI;
+    electronSortedMvaIdWpNoIsoLoose[ID] = tempVecI;
 
     electronSortedChargedHadronIso[ID] = tempVecF;
     electronSortedNeutralHadronIso[ID] = tempVecF;
@@ -4543,27 +4542,17 @@ void MakeTopologyNtupleMiniAOD::bookElectronBranches(const std::string& ID, cons
                     &electronSortedCharge[ID][0],
                     (prefix + "Charge[numEle" + name + "]/I").c_str());
 
-    mytree_->Branch((prefix + "CutIdVeto").c_str(),
-                    &electronSortedCutIdVeto[ID][0],
-                    (prefix + "CutIdVeto[numEle" + name + "]/I").c_str());
-    mytree_->Branch((prefix + "CutIdLoose").c_str(),
-                    &electronSortedCutIdLoose[ID][0],
-                    (prefix + "CutIdLoose[numEle" + name + "]/I").c_str());
-    mytree_->Branch((prefix + "CutIdMedium").c_str(),
-                    &electronSortedCutIdMedium[ID][0],
-                    (prefix + "CutIdMedium[numEle" + name + "]/I").c_str());
-    mytree_->Branch((prefix + "CutIdTight").c_str(),
-                    &electronSortedCutIdTight[ID][0],
-                    (prefix + "CutIdTight[numEle" + name + "]/I").c_str());
-    mytree_->Branch((prefix + "MvaIdWp80").c_str(),
-                    &electronSortedMvaIdWp80[ID][0],
-                    (prefix + "MvaIdWp80[numEle" + name + "]/I").c_str());
-    mytree_->Branch((prefix + "MvaIdWp90").c_str(),
-       	       	    &electronSortedMvaIdWp90[ID][0],
-                    (prefix + "MvaIdWp90[numEle" + name + "]/I").c_str());
-    mytree_->Branch((prefix + "MvaIdWpLoose").c_str(),
-                    &electronSortedMvaIdWpLoose[ID][0],
-                    (prefix + "MvaIdWpLoose[numEle" + name + "]/I").c_str());
+    mytree_->Branch((prefix + "CutIdVeto").c_str(), &electronSortedCutIdVeto[ID][0], (prefix + "CutIdVeto[numEle" + name + "]/I").c_str());
+    mytree_->Branch((prefix + "CutIdLoose").c_str(), &electronSortedCutIdLoose[ID][0], (prefix + "CutIdLoose[numEle" + name + "]/I").c_str());
+    mytree_->Branch((prefix + "CutIdMedium").c_str(), &electronSortedCutIdMedium[ID][0], (prefix + "CutIdMedium[numEle" + name + "]/I").c_str());
+    mytree_->Branch((prefix + "CutIdTight").c_str(), &electronSortedCutIdTight[ID][0], (prefix + "CutIdTight[numEle" + name + "]/I").c_str());
+    mytree_->Branch((prefix + "MvaIdWp80").c_str(), &electronSortedMvaIdWp80[ID][0], (prefix + "MvaIdWp80[numEle" + name + "]/I").c_str());
+    mytree_->Branch((prefix + "MvaIdWp90").c_str(), &electronSortedMvaIdWp90[ID][0], (prefix + "MvaIdWp90[numEle" + name + "]/I").c_str());
+    mytree_->Branch((prefix + "MvaIdWpLoose").c_str(), &electronSortedMvaIdWpLoose[ID][0], (prefix + "MvaIdWpLoose[numEle" + name + "]/I").c_str());
+    mytree_->Branch((prefix + "MvaIdWpHzz").c_str(), &electronSortedMvaIdWpHzz[ID][0], (prefix + "MvaIdWpHzz[numEle" + name + "]/I").c_str());
+    mytree_->Branch((prefix + "MvaIdNoIsoWp80").c_str(), &electronSortedMvaIdNoIsoWp80[ID][0], (prefix + "MvaIdNoIsoWp80[numEle" + name + "]/I").c_str());
+    mytree_->Branch((prefix + "MvaIdNoIsoWp90").c_str(), &electronSortedMvaIdNoIsoWp90[ID][0], (prefix + "MvaIdNoIsoWp90[numEle" + name + "]/I").c_str());
+    mytree_->Branch((prefix + "MvaIdNoIsoWpLoose").c_str(), &electronSortedMvaIdWpNoIsoLoose[ID][0], (prefix + "MvaIdNoIsoWpLoose[numEle" + name + "]/I").c_str());
 
     mytree_->Branch((prefix + "ImpactTransDist").c_str(),
                     &electronSortedImpactTransDist[ID][0],

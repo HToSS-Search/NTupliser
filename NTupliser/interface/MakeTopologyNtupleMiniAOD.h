@@ -450,6 +450,7 @@ class MakeTopologyNtupleMiniAOD : public edm::EDAnalyzer
     std::map<std::string, std::vector<int>> electronSortedMvaIdWp80;
     std::map<std::string, std::vector<int>> electronSortedMvaIdWp90;
     std::map<std::string, std::vector<int>> electronSortedMvaIdWpLoose;
+    std::map<std::string, std::vector<int>> electronSortedMvaIdWpHzz;
     std::map<std::string, std::vector<int>> electronSortedMvaIdNoIsoWp80;
     std::map<std::string, std::vector<int>> electronSortedMvaIdNoIsoWp90;
     std::map<std::string, std::vector<int>> electronSortedMvaIdWpNoIsoLoose;
