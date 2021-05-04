@@ -75,114 +75,88 @@ makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
         'pfCombinedCvsLJetTags',                               #Charm vs Light jets
         'pfCombinedCvsBJetTags',                               #Charm vs B jets
         ),
-                                           triggerList = cms.vstring(*[
-	#Updated Triggers for 2017
-#	'HLT_Ele32_WPTight_Gsf_L1DoubleEG_v1',
-#	'HLT_Ele32_WPTight_Gsf_L1DoubleEG_v2',
-#	'HLT_Ele32_WPTight_Gsf_L1DoubleEG_v3',
-#	'HLT_Ele32_WPTight_Gsf_L1DoubleEG_v4',
-#	'HLT_Ele32_WPTight_Gsf_L1DoubleEG_v5',
-#	'HLT_Ele32_WPTight_Gsf_L1DoubleEG_v6',
-#	'HLT_Ele32_WPTight_Gsf_L1DoubleEG_v7',
-#	'HLT_Ele35_WPTight_Gsf_v1',
-#	'HLT_Ele35_WPTight_Gsf_v2',
-#	'HLT_Ele35_WPTight_Gsf_v3',
-#	'HLT_Ele35_WPTight_Gsf_v4',
-#	'HLT_Ele35_WPTight_Gsf_v5',
-#	'HLT_Ele35_WPTight_Gsf_v6',
-#	'HLT_Ele35_WPTight_Gsf_v7',
+                                          triggerList = cms.vstring(*[
+        #Updated Muon Triggers for 2016
+        'HLT_IsoMu24_v1',
+        'HLT_IsoMu24_v2',
+        'HLT_IsoMu24_v4',
+        'HLT_IsoTkMu24_v1',
+        'HLT_IsoTkMu24_v2',
+        'HLT_IsoTkMu24_v3',
+        'HLT_IsoTkMu24_v4',
 
-	'HLT_IsoMu27_v8', ## All Runs
-	'HLT_IsoMu27_v9', ## All Runs
-	'HLT_IsoMu27_v10', ## All Runs
-	'HLT_IsoMu27_v11', ## All Runs
-	'HLT_IsoMu27_v12', ## All Runs
-	'HLT_IsoMu27_v13', ## All Runs
-	'HLT_IsoMu27_v14', ## All Runs
+        'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v2',
+        'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v3',
+        'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v4',
+        'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v7',
+       	'HLT_Mu17_TrkIsoVVL_TkMu8_TrkIsoVVL_DZ_v2',
+       	'HLT_Mu17_TrkIsoVVL_TkMu8_TrkIsoVVL_DZ_v3',
+       	'HLT_Mu17_TrkIsoVVL_TkMu8_TrkIsoVVL_DZ_v6',
 
-#	'HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL_v10', ## All Runs
-#	'HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL_v11', ## All Runs
-#	'HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL_v12', ## All Runs
-#	'HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL_v13', ## All Runs
-#	'HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL_v14', ## All Runs
-#	'HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL_v15', ## All Runs
-#	'HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL_v16', ## All Runs
-#	'HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL_v17', ## All Runs
-#	'HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL_DZ_v10', ## All Runs
-#	'HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL_DZ_v11', ## All Runs
-#	'HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL_DZ_v12', ## All Runs
-#	'HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL_DZ_v13', ## All Runs
-#	'HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL_DZ_v14', ## All Runs
-#	'HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL_DZ_v15', ## All Runs
-#	'HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL_DZ_v16', ## All Runs
-#	'HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL_DZ_v17', ## All Runs
+	#Updated Muon Triggers for 2017
+	'HLT_IsoMu27_v8',
+	'HLT_IsoMu27_v9',
+	'HLT_IsoMu27_v10',
+	'HLT_IsoMu27_v11',
+	'HLT_IsoMu27_v12',
+	'HLT_IsoMu27_v13',
+	'HLT_IsoMu27_v14',
 
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v8', ## Runs A-B
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v9', ## Runs A-B
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v10', ## Runs A-B
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v11', ## Runs A-B
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v12', ## Runs A-B
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v13', ## Runs A-B
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v14', ## Runs A-B
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v1', ## Runs C onwards
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v2', ## Runs C onwards
+	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v8',
+	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v9',
+	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v10',
+	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v11',
+	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v12',
+	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v13',
+	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v14',
+	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v1',
+	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v2',
 
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v3', ## Runs C onwards
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v4', ## Runs C onwards
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v7', ## Runs C onwards
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v8', ## Runs C onwards
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8_v1', ## Runs C onwards
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8_v2', ## Runs C onwards
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8_v3', ## Runs C onwards
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8_v4', ## Runs C onwards
+	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v3',
+	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v4',
+	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v7',
+	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v8',
+	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8_v1',
+	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8_v2',
+	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8_v3',
+	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8_v4',
 
-	## All DZ and Mu23Ele12 non-DZ are unprescaled for All Runs
-#	'HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL_v1',
-#	'HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL_v2',
-#	'HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL_v3',
-#	'HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL_v4',
-#	'HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL_v5',
-#	'HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL_DZ_v5',
-#	'HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL_DZ_v6',
-#	'HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL_DZ_v8',
-#	'HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL_DZ_v9',
-#	'HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL_DZ_v10',
-#	'HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL_DZ_v11',
-#	'HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL_DZ_v12',
-#	'HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL_DZ_v13',
-#	'HLT_Mu12_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ_v5',
-#	'HLT_Mu12_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ_v6',
-#	'HLT_Mu12_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ_v8',
-#	'HLT_Mu12_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ_v9',
-#	'HLT_Mu12_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ_v10',
-#	'HLT_Mu12_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ_v11',
-#	'HLT_Mu12_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ_v12',
-#	'HLT_Mu12_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ_v13',
-#	'HLT_Mu8_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ_v4',
-#	'HLT_Mu8_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ_v6',
-#	'HLT_Mu8_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ_v7',
-#	'HLT_Mu8_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ_v8',
-#	'HLT_Mu8_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ_v9',
-#	'HLT_Mu8_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ_v10',
-#	'HLT_Mu8_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ_v11',
+        #Updated Muon Triggers for 2018
 
-        ## Potential H->SS triggers
+        ## Displace Muon triggers
 
 ### displaced muons andLevel-2/muon chambers only triggers
-#        'HLT DoubleMu33NoFiltersNoVtx_v*', #2016 only
-#        'HLT DoubleMu23NoFiltersNoVtxDisplaced_v*', #2016 only
-        'HLT_DoubleL2Mu50_v2',#2017+2018
-        'HLT_DoubleMu43NoFiltersNoVtx_v3', #2017
-        'HLT_DoubleMu48NoFiltersNoVtx_v3', #2017
+        'HLT DoubleMu33NoFiltersNoVtx_v2', #2016 only
+        'HLT DoubleMu33NoFiltersNoVtx_v3', #2016 only
+        'HLT DoubleMu33NoFiltersNoVtx_v5', #2016 only
+        'HLT DoubleMu23NoFiltersNoVtxDisplaced_v2', #2016 only
+        'HLT DoubleMu23NoFiltersNoVtxDisplaced_v3', #2016 only
+        'HLT DoubleMu23NoFiltersNoVtxDisplaced_v5', #2016 only
+        'HLT_L2DoubleMu23_NoVertex_v2', #2016 only
+        'HLT_L2DoubleMu23_NoVertex_v3', #2016 only
+        'HLT_L2DoubleMu23_NoVertex_v4', #2016 only
+        'HLT_L2DoubleMu23_NoVertex_v6', #2016 only
 
-#        'HLT_DoubleL2Mu23NoVtx_2Cha_v2', #2018 only
-#        'HLT_DoubleL2Mu25NoVtx_2Cha_Eta2p4_v2', #2018 only
-#        'HLT_DoubleL2Mu25NoVtx_2Cha_v2', #2018 only
-#        'HLT_DoubleL2Mu30NoVtx_2Cha_Eta2p4_v2', #2018 only
-#        'HLT_DoubleMu33NoFiltersNoVtxDisplaced_v1', #2018 only
-#        'HLT_DoubleMu40NoFiltersNoVtxDisplaced_v1', #2018 only
-#        'HLT_DoubleMu43NoFiltersNoVtx_v4', #2018 only
-#        'HLT_DoubleMu48NoFiltersNoVtx_v4', #2018 only
+        'HLT_DoubleMu43NoFiltersNoVtx_v2', #2017
+        'HLT_DoubleMu43NoFiltersNoVtx_v3', #2017
+
+        'HLT_DoubleL2Mu50_v1',#2017
+        'HLT_DoubleL2Mu50_v2',#2017+2018
+
+        'HLT_DoubleL2Mu23NoVtx_2Cha_v1', #2018 only
+        'HLT_DoubleL2Mu23NoVtx_2Cha_v2', #2018 only
+        'HLT_DoubleL2Mu25NoVtx_2Cha_Eta2p4_v1', #2018 only
+        'HLT_DoubleL2Mu25NoVtx_2Cha_Eta2p4_v2', #2018 only
+        'HLT_DoubleL2Mu25NoVtx_2Cha_v1', #2018 only
+        'HLT_DoubleL2Mu25NoVtx_2Cha_v2', #2018 only
+        'HLT_DoubleL2Mu30NoVtx_2Cha_Eta2p4_v1', #2018 only
+        'HLT_DoubleL2Mu30NoVtx_2Cha_Eta2p4_v2', #2018 only
+        'HLT_DoubleMu33NoFiltersNoVtxDisplaced_v1', #2018 only
+        'HLT_DoubleMu40NoFiltersNoVtxDisplaced_v1', #2018 only
+        'HLT_DoubleMu43NoFiltersNoVtx_v3', #2018 only 
+        'HLT_DoubleMu43NoFiltersNoVtx_v4', #2018 only 
+        'HLT_DoubleMu48NoFiltersNoVtx_v3', #2018 only
+        'HLT_DoubleMu48NoFiltersNoVtx_v4', #2018 only
 
         ## BPH muon triggers - 2018 only
         'HLT_Mu12_IP6_part0_v2', #MC
@@ -226,268 +200,31 @@ makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
         'HLT_Mu8_IP3_part3_v3', #MC
         'HLT_Mu8_IP3_part4_v3', #MC
 
-        ## DatasetScouting Triggers with prescale = 1
-        'DST_HT250_CaloScouting_v6',
-        'DST_HT250_CaloScouting_v7',
-        'DST_HT250_CaloScouting_v8', ## MC
-        'DST_HT250_CaloScouting_v9',
-        'DST_HT250_CaloBTagScouting_v5',
-        'DST_HT250_CaloBTagScouting_v6',
-        'DST_HT250_CaloBTagScouting_v7', ## MC
-        'DST_HT250_CaloBTagScouting_v8',
-        'DST_HT410_PFScouting_v9',
-        'DST_HT410_PFScouting_v10',
-        'DST_HT410_PFScouting_v11',
-        'DST_HT410_PFScouting_v12', ## MC
-        'DST_HT410_PFScouting_v13',
-        'DST_HT410_PFScouting_v14',
-        'DST_HT410_BTagScouting_v10',
-        'DST_HT410_BTagScouting_v11',
-        'DST_HT410_BTagScouting_v12', ## MC
-        'DST_HT410_BTagScouting_v13',
-        'DST_HT410_BTagScouting_v14',
-        'DST_DoubleMu3_noVtx_CaloScouting_v2',
-        'DST_DoubleMu3_noVtx_CaloScouting_v3',
-        'DST_DoubleMu3_noVtx_CaloScouting_v4', ## MC
-        'DST_DoubleMu3_noVtx_CaloScouting_v5',
+        ## 2017 DatasetScouting Triggers with prescale = 1
+#        'DST_HT250_CaloScouting_v6',
+#        'DST_HT250_CaloScouting_v7',
+#        'DST_HT250_CaloScouting_v8', ## MC
+#        'DST_HT250_CaloScouting_v9',
+#        'DST_HT250_CaloBTagScouting_v5',
+#        'DST_HT250_CaloBTagScouting_v6',
+#        'DST_HT250_CaloBTagScouting_v7', ## MC
+#        'DST_HT250_CaloBTagScouting_v8',
+#        'DST_HT410_PFScouting_v9',
+#        'DST_HT410_PFScouting_v10',
+#        'DST_HT410_PFScouting_v11',
+#        'DST_HT410_PFScouting_v12', ## MC
+#        'DST_HT410_PFScouting_v13',
+#        'DST_HT410_PFScouting_v14',
+#        'DST_HT410_BTagScouting_v10',
+#        'DST_HT410_BTagScouting_v11',
+#        'DST_HT410_BTagScouting_v12', ## MC
+#        'DST_HT410_BTagScouting_v13',
+#        'DST_HT410_BTagScouting_v14',
+#        'DST_DoubleMu3_noVtx_CaloScouting_v2',
+#        'DST_DoubleMu3_noVtx_CaloScouting_v3',
+#        'DST_DoubleMu3_noVtx_CaloScouting_v4', ## MC
+#        'DST_DoubleMu3_noVtx_CaloScouting_v5',
 
-### photon and displaced jet triggers
-
-#        'HLT_DoublePhoton33_CaloIdL_v5',
-#        'HLT_DoublePhoton70_v5',
-#        'HLT_DoublePhoton85_v13',
-#        'HLT_TriplePhoton_20_20_20_CaloIdLV2_v2',
-#        'HLT_TriplePhoton_20_20_20_CaloIdLV2_R9IdVL_v2',
-#        'HLT_TriplePhoton_30_30_10_CaloIdLV2_v3',
-#        'HLT_TriplePhoton_30_30_10_CaloIdLV2_R9IdVL_v3',
-#        'HLT_TriplePhoton_35_35_5_CaloIdLV2_R9IdVL_v3',
-#        'HLT_Photon25_v2',
-#        'HLT_Photon33_v4',
-#        'HLT_Photon50_v12',
-#        'HLT_Photon75_v12',
-#        'HLT_Photon90_v12',
-#        'HLT_Photon120_v12',
-#        'HLT_Photon150_v5',
-#        'HLT_Photon175_v13',
-#        'HLT_Photon200_v12',
-#        'HLT_Photon50_R9Id90_HE10_IsoM_v13',
-#        'HLT_Photon75_R9Id90_HE10_IsoM_v13',
-#        'HLT_Photon90_R9Id90_HE10_IsoM_v13',
-#        'HLT_Photon120_R9Id90_HE10_IsoM_v13',
-#        'HLT_Photon165_R9Id90_HE10_IsoM_v14',
-#        'HLT_Photon90_CaloIdL_PFHT700_v12',
-#        'HLT_Diphoton30_22_R9Id_OR_IsoCaloId_AND_HE_R9Id_Mass90_v12',
-#        'HLT_Diphoton30_22_R9Id_OR_IsoCaloId_AND_HE_R9Id_Mass95_v12',
-#        'HLT_Diphoton30PV_18PV_R9Id_AND_IsoCaloId_AND_HE_R9Id_PixelVeto_Mass55_v13',
-#        'HLT_Diphoton30PV_18PV_R9Id_AND_IsoCaloId_AND_HE_R9Id_NoPixelVeto_Mass55_v12',
-#        'HLT_Diphoton30EB_18EB_R9Id_OR_IsoCaloId_AND_HE_R9Id_NoPixelVeto_Mass55_v12',
-#        'HLT_Diphoton30EB_18EB_R9Id_OR_IsoCaloId_AND_HE_R9Id_PixelVeto_Mass55_v13',
-
-        'HLT_HT430_DisplacedDijet40_DisplacedTrack_v10',
-        'HLT_HT430_DisplacedDijet60_DisplacedTrack_v10',
-        'HLT_HT430_DisplacedDijet80_DisplacedTrack_v10',
-        'HLT_HT400_DisplacedDijet40_DisplacedTrack_v10',
-        'HLT_HT650_DisplacedDijet60_Inclusive_v10',
-        'HLT_HT550_DisplacedDijet80_Inclusive_v8',
-        'HLT_HT550_DisplacedDijet60_Inclusive_v10',
-        'HLT_HT650_DisplacedDijet80_Inclusive_v11',
-        'HLT_HT750_DisplacedDijet80_Inclusive_v11',
-#        'HLT_Photon60_R9Id90_CaloIdL_IsoL_DisplacedIdL_v4',
-#        'HLT_Photon60_R9Id90_CaloIdL_IsoL_DisplacedIdL_PFHT350MinPFJet15_v7',
-#        'HLT_Photon20_HoverELoose_v9',
-#        'HLT_Photon30_HoverELoose_v9',
-#        'HLT_Photon40_HoverELoose_v9',
-#        'HLT_Photon50_HoverELoose_v9',
-#        'HLT_Photon60_HoverELoose_v9',
-
-	#Updated MET Triggers for 2017
-	# Needs doing ...
-        # 3.0
-#        "HLT_MET105_IsoTrk50_v1",
-#        "HLT_MET105_IsoTrk50_v3",
-#        "HLT_MET105_IsoTrk50_v4",
-#        "HLT_MET105_IsoTrk50_v5",
-#        "HLT_MET105_IsoTrk50_v6",
-#        "HLT_MET105_IsoTrk50_v7",
-#        "HLT_MET105_IsoTrk50_v8",
-#        "HLT_MET120_IsoTrk50_v1",
-#        "HLT_MET120_IsoTrk50_v3",
-#        "HLT_MET120_IsoTrk50_v4",
-#        "HLT_MET120_IsoTrk50_v5",
-#        "HLT_MET120_IsoTrk50_v6",
-#        "HLT_MET120_IsoTrk50_v7",
-#        "HLT_MET120_IsoTrk50_v8",
-
-##        "HLT_HT430_DisplacedDijet40_DisplacedTrack_v10", ## in above list
-        "HLT_HT430_DisplacedDijet40_DisplacedTrack_v11",
-        "HLT_HT430_DisplacedDijet40_DisplacedTrack_v5",
-        "HLT_HT430_DisplacedDijet40_DisplacedTrack_v6",
-        "HLT_HT430_DisplacedDijet40_DisplacedTrack_v8",
-        "HLT_HT430_DisplacedDijet40_DisplacedTrack_v9",
-##        "HLT_HT430_DisplacedDijet60_DisplacedTrack_v10", ## in above list
-        "HLT_HT430_DisplacedDijet60_DisplacedTrack_v11",
-        "HLT_HT430_DisplacedDijet60_DisplacedTrack_v5",
-        "HLT_HT430_DisplacedDijet60_DisplacedTrack_v6",
-        "HLT_HT430_DisplacedDijet60_DisplacedTrack_v8",
-        "HLT_HT430_DisplacedDijet60_DisplacedTrack_v9",
-##        "HLT_HT430_DisplacedDijet80_DisplacedTrack_v10", ## in above list
-        "HLT_HT430_DisplacedDijet80_DisplacedTrack_v11",
-        "HLT_HT430_DisplacedDijet80_DisplacedTrack_v5",
-        "HLT_HT430_DisplacedDijet80_DisplacedTrack_v6",
-        "HLT_HT430_DisplacedDijet80_DisplacedTrack_v8",
-        "HLT_HT430_DisplacedDijet80_DisplacedTrack_v9",
-##        "HLT_HT650_DisplacedDijet60_Inclusive_v10", ## in above list
-        "HLT_HT650_DisplacedDijet60_Inclusive_v11",
-        "HLT_HT650_DisplacedDijet60_Inclusive_v5",
-        "HLT_HT650_DisplacedDijet60_Inclusive_v6",
-        "HLT_HT650_DisplacedDijet60_Inclusive_v8",
-        "HLT_HT650_DisplacedDijet60_Inclusive_v9",
-        "HLT_HT650_DisplacedDijet80_Inclusive_v10",
-##        "HLT_HT650_DisplacedDijet80_Inclusive_v11", ## in above list
-        "HLT_HT650_DisplacedDijet80_Inclusive_v12",
-        "HLT_HT650_DisplacedDijet80_Inclusive_v6",
-        "HLT_HT650_DisplacedDijet80_Inclusive_v7",
-        "HLT_HT650_DisplacedDijet80_Inclusive_v9",
-        "HLT_HT750_DisplacedDijet80_Inclusive_v10",
-##        "HLT_HT750_DisplacedDijet80_Inclusive_v11", ## in above list
-        "HLT_HT750_DisplacedDijet80_Inclusive_v12",
-        "HLT_HT750_DisplacedDijet80_Inclusive_v6",
-        "HLT_HT750_DisplacedDijet80_Inclusive_v7",
-        "HLT_HT750_DisplacedDijet80_Inclusive_v9",
-
-#        "HLT_PFMET120_PFMHT120_IDTight_HFCleaned_v1",
-#        "HLT_PFMET120_PFMHT120_IDTight_HFCleaned_v2",
-#        "HLT_PFMET120_PFMHT120_IDTight_L1ETMnoHF_v10",
-#        "HLT_PFMET120_PFMHT120_IDTight_PFHT60_HFCleaned_v1",
-#        "HLT_PFMET120_PFMHT120_IDTight_PFHT60_HFCleaned_v2",
-#        "HLT_PFMET120_PFMHT120_IDTight_PFHT60_v2",
-#        "HLT_PFMET120_PFMHT120_IDTight_PFHT60_v3",
-#        "HLT_PFMET120_PFMHT120_IDTight_PFHT60_v4",
-#        "HLT_PFMET120_PFMHT120_IDTight_PFHT60_v5",
-#        "HLT_PFMET120_PFMHT120_IDTight_PFHT60_v6",
-#        "HLT_PFMET120_PFMHT120_IDTight_PFHT60_v7",
-#        "HLT_PFMET120_PFMHT120_IDTight_v11",
-#        "HLT_PFMET120_PFMHT120_IDTight_v13",
-#        "HLT_PFMET120_PFMHT120_IDTight_v14",
-#        "HLT_PFMET120_PFMHT120_IDTight_v15",
-#        "HLT_PFMET120_PFMHT120_IDTight_v16",
-#        "HLT_PFMET120_PFMHT120_IDTight_v9",
-#        "HLT_PFMET130_PFMHT130_IDTight_v11",
-#        "HLT_PFMET130_PFMHT130_IDTight_v13",
-#        "HLT_PFMET130_PFMHT130_IDTight_v14",
-#        "HLT_PFMET130_PFMHT130_IDTight_v15",
-#        "HLT_PFMET130_PFMHT130_IDTight_v16",
-#        "HLT_PFMET130_PFMHT130_IDTight_v9",
-#        "HLT_PFMET140_PFMHT140_IDTight_v11",
-#        "HLT_PFMET140_PFMHT140_IDTight_v13",
-#        "HLT_PFMET140_PFMHT140_IDTight_v14",
-#        "HLT_PFMET140_PFMHT140_IDTight_v15",
-#        "HLT_PFMET140_PFMHT140_IDTight_v16",
-#        "HLT_PFMET140_PFMHT140_IDTight_v17",
-#        "HLT_PFMET140_PFMHT140_IDTight_v18",
-#        "HLT_PFMET140_PFMHT140_IDTight_v9",
-#        "HLT_PFMET200_HBHE_BeamHaloCleaned_v5",
-#        "HLT_PFMET200_HBHE_BeamHaloCleaned_v6",
-#        "HLT_PFMET200_HBHE_BeamHaloCleaned_v7",
-#        "HLT_PFMET250_HBHECleaned_v2",
-#        "HLT_PFMET250_HBHECleaned_v3",
-#        "HLT_PFMET250_HBHECleaned_v4",
-#        "HLT_PFMET250_HBHECleaned_v5",
-#        "HLT_PFMET250_HBHECleaned_v6",
-#        "HLT_PFMET250_HBHECleaned_v7",
-#        "HLT_PFMET300_HBHECleaned_v2",
-#        "HLT_PFMET300_HBHECleaned_v3",
-#        "HLT_PFMET300_HBHECleaned_v4",
-#        "HLT_PFMET300_HBHECleaned_v5",
-#        "HLT_PFMET300_HBHECleaned_v6",
-#        "HLT_PFMET300_HBHECleaned_v7",
-#        "HLT_PFMETNoMu120_PFMHTNoMu120_IDTight_HFCleaned_v1",
-#        "HLT_PFMETNoMu120_PFMHTNoMu120_IDTight_HFCleaned_v2",
-#        "HLT_PFMETNoMu120_PFMHTNoMu120_IDTight_L1ETMnoHF_v10",
-#        "HLT_PFMETNoMu120_PFMHTNoMu120_IDTight_PFHT60_v2",
-#        "HLT_PFMETNoMu120_PFMHTNoMu120_IDTight_PFHT60_v3",
-#        "HLT_PFMETNoMu120_PFMHTNoMu120_IDTight_PFHT60_v4",
-#        "HLT_PFMETNoMu120_PFMHTNoMu120_IDTight_PFHT60_v5",
-#        "HLT_PFMETNoMu120_PFMHTNoMu120_IDTight_PFHT60_v6",
-#        "HLT_PFMETNoMu120_PFMHTNoMu120_IDTight_PFHT60_v7",
-#        "HLT_PFMETNoMu120_PFMHTNoMu120_IDTight_v11",
-#        "HLT_PFMETNoMu120_PFMHTNoMu120_IDTight_v13",
-#        "HLT_PFMETNoMu120_PFMHTNoMu120_IDTight_v14",
-#        "HLT_PFMETNoMu120_PFMHTNoMu120_IDTight_v15",
-#        "HLT_PFMETNoMu120_PFMHTNoMu120_IDTight_v16",
-#        "HLT_PFMETNoMu120_PFMHTNoMu120_IDTight_v9",
-#        "HLT_PFMETNoMu130_PFMHTNoMu130_IDTight_v10",
-#        "HLT_PFMETNoMu130_PFMHTNoMu130_IDTight_v12",
-#        "HLT_PFMETNoMu130_PFMHTNoMu130_IDTight_v13",
-#        "HLT_PFMETNoMu130_PFMHTNoMu130_IDTight_v14",
-#        "HLT_PFMETNoMu130_PFMHTNoMu130_IDTight_v15",
-#        "HLT_PFMETNoMu130_PFMHTNoMu130_IDTight_v9",
-#        "HLT_PFMETNoMu140_PFMHTNoMu140_IDTight_v10",
-#        "HLT_PFMETNoMu140_PFMHTNoMu140_IDTight_v12",
-#        "HLT_PFMETNoMu140_PFMHTNoMu140_IDTight_v13",
-#        "HLT_PFMETNoMu140_PFMHTNoMu140_IDTight_v14",
-#        "HLT_PFMETNoMu140_PFMHTNoMu140_IDTight_v15",
-#        "HLT_PFMETNoMu140_PFMHTNoMu140_IDTight_v16",
-#        "HLT_PFMETNoMu140_PFMHTNoMu140_IDTight_v17",
-#        "HLT_PFMETNoMu140_PFMHTNoMu140_IDTight_v9",
-
-#        "HLT_PFHT1050_v11",
-#        "HLT_PFHT1050_v12",
-#        "HLT_PFHT1050_v13",
-#        "HLT_PFHT1050_v14",
-#        "HLT_PFHT1050_v15",
-#        "HLT_PFHT1050_v16",
-#        "HLT_PFHT1050_v7",
-#        "HLT_PFHT1050_v9",
-#        "HLT_PFHT180_v7",
-#        "HLT_PFHT500_PFMET100_PFMHT100_IDTight_v1",
-#        "HLT_PFHT500_PFMET100_PFMHT100_IDTight_v10",
-#        "HLT_PFHT500_PFMET100_PFMHT100_IDTight_v3",
-#        "HLT_PFHT500_PFMET100_PFMHT100_IDTight_v5",
-#        "HLT_PFHT500_PFMET100_PFMHT100_IDTight_v6",
-#        "HLT_PFHT500_PFMET100_PFMHT100_IDTight_v7",
-#        "HLT_PFHT500_PFMET100_PFMHT100_IDTight_v8",
-#        "HLT_PFHT500_PFMET100_PFMHT100_IDTight_v9",
-#        "HLT_PFHT500_PFMET110_PFMHT110_IDTight_v1",
-#        "HLT_PFHT500_PFMET110_PFMHT110_IDTight_v10",
-#        "HLT_PFHT500_PFMET110_PFMHT110_IDTight_v3",
-#        "HLT_PFHT500_PFMET110_PFMHT110_IDTight_v5",
-#        "HLT_PFHT500_PFMET110_PFMHT110_IDTight_v6",
-#        "HLT_PFHT500_PFMET110_PFMHT110_IDTight_v7",
-#        "HLT_PFHT500_PFMET110_PFMHT110_IDTight_v8",
-#        "HLT_PFHT500_PFMET110_PFMHT110_IDTight_v9",
-#        "HLT_PFHT700_PFMET85_PFMHT85_IDTight_v1",
-#        "HLT_PFHT700_PFMET85_PFMHT85_IDTight_v10",
-#        "HLT_PFHT700_PFMET85_PFMHT85_IDTight_v3",
-#        "HLT_PFHT700_PFMET85_PFMHT85_IDTight_v5",
-#        "HLT_PFHT700_PFMET85_PFMHT85_IDTight_v6",
-#        "HLT_PFHT700_PFMET85_PFMHT85_IDTight_v7",
-#        "HLT_PFHT700_PFMET85_PFMHT85_IDTight_v8",
-#        "HLT_PFHT700_PFMET85_PFMHT85_IDTight_v9",
-#        "HLT_PFHT700_PFMET95_PFMHT95_IDTight_v1",
-#        "HLT_PFHT700_PFMET95_PFMHT95_IDTight_v10",
-#        "HLT_PFHT700_PFMET95_PFMHT95_IDTight_v3",
-#        "HLT_PFHT700_PFMET95_PFMHT95_IDTight_v5",
-#        "HLT_PFHT700_PFMET95_PFMHT95_IDTight_v6",
-#        "HLT_PFHT700_PFMET95_PFMHT95_IDTight_v7",
-#        "HLT_PFHT700_PFMET95_PFMHT95_IDTight_v8",
-#        "HLT_PFHT700_PFMET95_PFMHT95_IDTight_v9",
-#        "HLT_PFHT800_PFMET75_PFMHT75_IDTight_v1",
-#        "HLT_PFHT800_PFMET75_PFMHT75_IDTight_v10",
-#        "HLT_PFHT800_PFMET75_PFMHT75_IDTight_v3",
-#        "HLT_PFHT800_PFMET75_PFMHT75_IDTight_v5",
-#        "HLT_PFHT800_PFMET75_PFMHT75_IDTight_v6",
-#        "HLT_PFHT800_PFMET75_PFMHT75_IDTight_v7",
-#        "HLT_PFHT800_PFMET75_PFMHT75_IDTight_v8",
-#        "HLT_PFHT800_PFMET75_PFMHT75_IDTight_v9",
-#        "HLT_PFHT800_PFMET85_PFMHT85_IDTight_v1",
-#        "HLT_PFHT800_PFMET85_PFMHT85_IDTight_v10",
-#        "HLT_PFHT800_PFMET85_PFMHT85_IDTight_v3",
-#        "HLT_PFHT800_PFMET85_PFMHT85_IDTight_v5",
-#        "HLT_PFHT800_PFMET85_PFMHT85_IDTight_v6",
-#        "HLT_PFHT800_PFMET85_PFMHT85_IDTight_v7",
-#        "HLT_PFHT800_PFMET85_PFMHT85_IDTight_v8",
-#        "HLT_PFHT800_PFMET85_PFMHT85_IDTight_v9",
         ]),
                                            metFilterList = cms.vstring(		
 	#MET Filters		
