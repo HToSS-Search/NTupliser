@@ -45,12 +45,10 @@ process.MessageLogger.categories=cms.untracked.vstring('FwkJob'
 
 process.MessageLogger.cerr.INFO = cms.untracked.PSet(limit = cms.untracked.int32(0))
 process.MessageLogger.cerr.FwkReport.reportEvery = cms.untracked.int32(10000)
-process.options = cms.untracked.PSet(
-                     wantSummary = cms.untracked.bool(True)
-                     )
+process.options = cms.untracked.PSet( wantSummary = cms.untracked.bool(True) )
 
 from Configuration.AlCa.GlobalTag import GlobalTag
-process.GlobalTag.globaltag = cms.string('94X_dataRun2_ReReco_EOY17_v6')
+process.GlobalTag.globaltag = cms.string('106X_dataRun2_v32')
 
 #There's a bit in here about some btau tags that the code looks for. I don't know if this is significant, however. I'm going to ignore it for now.
 
