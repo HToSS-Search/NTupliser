@@ -41,6 +41,7 @@ makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
 					   pileupToken	          = cms.InputTag("slimmedAddPileupInfo"),
                                            triggerToken           = cms.InputTag("TriggerResults","","HLT"),
                                            metFilterToken         = cms.InputTag("TriggerResults", "", "PAT"),
+                                           ecalBadCalibReducedMINIAODFilter = cms.InputTag("EcalBadCalibFilter"),
                                            fakeTriggerList        = cms.vstring(), # empty. You can add fake triggers that are run on the fly to this list. No check on the process name is made so when duplicates are available only the latest one is added.
 					   isLHEflag              = cms.bool(True),
 					   externalLHEToken       = cms.InputTag("externalLHEProducer"), # "externalLHEProducer", "source" for THQ 
@@ -182,6 +183,48 @@ makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
 #        'HLT_DoubleMu40NoFiltersNoVtxDisplaced_v1', #2018 only
 #        'HLT_DoubleMu43NoFiltersNoVtx_v4', #2018 only
 #        'HLT_DoubleMu48NoFiltersNoVtx_v4', #2018 only
+
+        ## BPH muon triggers - 2018 only
+        'HLT_Mu12_IP6_part0_v2', #MC
+        'HLT_Mu12_IP6_part1_v2', #MC 
+        'HLT_Mu12_IP6_part2_v2', #MC
+        'HLT_Mu12_IP6_part3_v2', #MC
+        'HLT_Mu12_IP6_part4_v2', #MC
+        'HLT_Mu9_IP5_part0_v2', #MC
+        'HLT_Mu9_IP5_part1_v2', #MC
+        'HLT_Mu9_IP5_part2_v2', #MC
+        'HLT_Mu9_IP5_part3_v2', #MC
+        'HLT_Mu9_IP5_part4_v2', #MC
+        'HLT_Mu7_IP4_part0_v2', #MC
+        'HLT_Mu7_IP4_part1_v2', #MC
+        'HLT_Mu7_IP4_part2_v2', #MC
+        'HLT_Mu7_IP4_part3_v2', #MC
+        'HLT_Mu7_IP4_part4_v2', #MC
+        'HLT_Mu9_IP4_part0_v2', #MC
+        'HLT_Mu9_IP4_part1_v2', #MC
+        'HLT_Mu9_IP4_part2_v2', #MC
+        'HLT_Mu9_IP4_part3_v2', #MC
+        'HLT_Mu9_IP4_part4_v2', #MC
+        'HLT_Mu8_IP5_part0_v2', #MC
+        'HLT_Mu8_IP5_part1_v2', #MC
+        'HLT_Mu8_IP5_part2_v2', #MC
+        'HLT_Mu8_IP5_part3_v2', #MC
+        'HLT_Mu8_IP5_part4_v2', #MC
+        'HLT_Mu8_IP6_part0_v2', #MC
+        'HLT_Mu8_IP6_part1_v2', #MC
+        'HLT_Mu8_IP6_part2_v2', #MC
+        'HLT_Mu8_IP6_part3_v2', #MC
+        'HLT_Mu8_IP6_part4_v2', #MC
+        'HLT_Mu9_IP6_part0_v3', #MC
+        'HLT_Mu9_IP6_part1_v3', #MC
+        'HLT_Mu9_IP6_part2_v3', #MC
+        'HLT_Mu9_IP6_part3_v3', #MC
+        'HLT_Mu9_IP6_part4_v3', #MC
+        'HLT_Mu8_IP3_part0_v3', #MC
+        'HLT_Mu8_IP3_part1_v3', #MC
+        'HLT_Mu8_IP3_part2_v3', #MC
+        'HLT_Mu8_IP3_part3_v3', #MC
+        'HLT_Mu8_IP3_part4_v3', #MC
 
         ## DatasetScouting Triggers with prescale = 1
         'DST_HT250_CaloScouting_v6',
@@ -448,15 +491,15 @@ makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
         ]),
                                            metFilterList = cms.vstring(		
 	#MET Filters		
-	'Flag_goodVertices',
+	'Flag_goodVertices'
 	'Flag_globalTightHalo2016Filter',
 	'Flag_HBHENoiseFilter',
 	'Flag_HBHENoiseIsoFilter',
 	'Flag_EcalDeadCellTriggerPrimitiveFilter',
-	'Flag_BadPFMuonFilter',
+        'Flag_BadPFMuonFilter',
 	'Flag_BadChargedCandidateFilter',
-	'Flag_eeBadScFilter',
-	'Flag_ecalBadCalibFilter',
+	'Flag_eeBadScFilter'
+        'Flag_ecalBadCalibFilter',
 	),	
                                            l1TriggerTag = cms.InputTag("gtDigis"),                                    
                                            checkTriggers = cms.bool(True),

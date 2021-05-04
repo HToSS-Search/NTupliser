@@ -69,6 +69,7 @@ class MakeTopologyNtupleMiniAOD : public edm::EDAnalyzer
 
     edm::EDGetTokenT<edm::TriggerResults> trigToken_;
     edm::EDGetTokenT<edm::TriggerResults> metFilterToken_;
+//    edm::EDGetTokenT<bool> ecalBadCalibFilterUpdate_token_;
     std::vector<std::string> fakeTrigLabelList_;
     std::vector<std::string> bTagList_;
     std::vector<std::string> triggerList_;
@@ -1182,6 +1183,7 @@ class MakeTopologyNtupleMiniAOD : public edm::EDAnalyzer
     std::map<std::string, std::map<std::string, std::vector<float>>> bTagRes;
     std::vector<int> triggerRes;
     std::vector<int> metFilterRes;
+//    int Flag_ecalBadCalibReducedMINIAODFilter;
     std::vector<int> HLT_fakeTriggerValues;
 
     static constexpr size_t NTRIGGERBITSMAX{700};

@@ -161,6 +161,7 @@ MakeTopologyNtupleMiniAOD::MakeTopologyNtupleMiniAOD(
     // , metJPTTag_(iConfig.getParameter<edm::InputTag>("metJPTTag"))
     , trigToken_{consumes<edm::TriggerResults>(iConfig.getParameter<edm::InputTag>("triggerToken"))}
     , metFilterToken_{consumes<edm::TriggerResults>(iConfig.getParameter<edm::InputTag>("metFilterToken"))}
+//    , ecalBadCalibFilterUpdate_token_{mayConsume<bool>(iConfig.getParameter<edm::InputTag>("ecalBadCalibReducedMINIAODFilter"))}
     , fakeTrigLabelList_{iConfig.getParameter<std::vector<std::string>>("fakeTriggerList")}
     , bTagList_{iConfig.getParameter<std::vector<std::string>>("bTagList")}
     , triggerList_{iConfig.getParameter<std::vector<std::string>>("triggerList")}
@@ -3753,6 +3754,7 @@ void MakeTopologyNtupleMiniAOD::cleararrays() {
     for (size_t iMetFilter{0}; iMetFilter < metFilterList_.size(); iMetFilter++) {
         metFilterRes[iMetFilter] = -99;
     }
+//    Flag_ecalBadCalibReducedMINIAODFilter = -99; // Manually set rerun filter that's in its own object
 
     for (int& HLT_fakeTriggerValue : HLT_fakeTriggerValues) {
         HLT_fakeTriggerValue = -99;
@@ -4064,7 +4066,7 @@ void MakeTopologyNtupleMiniAOD::bookBranches() {
     while (triggerRes.size() < triggerList_.size()) {
         triggerRes.emplace_back(-99);
     }
-    while (metFilterRes.size() < metFilterList_.size()) {
+    while (metFilterRes.size() < metFilterList_.size()) { 
         metFilterRes.emplace_back(-99);
     }
     for (size_t iTrig{0}; iTrig < triggerList_.size(); iTrig++) {
@@ -4075,6 +4077,7 @@ void MakeTopologyNtupleMiniAOD::bookBranches() {
 //        std::cout << "Booking MET filter branch: " << metFilterList_[iMetFilter] << std::endl;
         mytree_->Branch(metFilterList_[iMetFilter].c_str(), &metFilterRes[iMetFilter], (metFilterList_[iMetFilter] + "/I").c_str());
     }
+//    mytree_->Branch("Flag_ecalBadCalibReducedMINIAODFilter", &Flag_ecalBadCalibReducedMINIAODFilter, "Flag_ecalBadCalibReducedMINIAODFilter/I");
 
     // generator level information
     //  mytree_->Branch("myProcess", &genMyProcId, "myProcess/I");
@@ -6038,6 +6041,14 @@ void MakeTopologyNtupleMiniAOD::fillTriggerData(const edm::Event& iEvent)
     edm::Handle<edm::TriggerResults> metFilterResults;
     iEvent.getByToken(metFilterToken_, metFilterResults);
 
+    // ecalBadCalibReducedMINIAODFilter
+/*    if (!is2016_) {
+        edm::Handle< bool > passecalBadCalibFilterUpdate;
+        iEvent.getByToken(ecalBadCalibFilterUpdate_token_, passecalBadCalibFilterUpdate);
+        bool _passecalBadCalibFilterUpdate = (*passecalBadCalibFilterUpdate);
+        Flag_ecalBadCalibReducedMINIAODFilter = _passecalBadCalibFilterUpdate;
+    }
+*/
     if (metFilterResults.product()->wasrun()) {
         const edm::TriggerNames& metFilterNames{iEvent.triggerNames(*metFilterResults)};
         // HLTBits_Size = metFilterResults.product()->size();
@@ -6060,12 +6071,8 @@ void MakeTopologyNtupleMiniAOD::fillTriggerData(const edm::Event& iEvent)
                 filterbit = -1;
             if (metFilterResults->error(iFilter))
                 filterbit = -2;
-            for (size_t iMetFilterList{0};
-                 iMetFilterList < metFilterList_.size();
-                 iMetFilterList++)
-            {
-                if (metFilterList_[iMetFilterList] == metFilterNames_[iFilter])
-                {
+            for (size_t iMetFilterList{0}; iMetFilterList < metFilterList_.size(); iMetFilterList++) {
+                if (metFilterList_[iMetFilterList] == metFilterNames_[iFilter]) {
                     metFilterRes[iMetFilterList] = filterbit;
                 }
             }
