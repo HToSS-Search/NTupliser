@@ -9,7 +9,7 @@ config.General.transferLogs = False
 
 config.JobType.allowUndistributedCMSSW = True
 config.JobType.pluginName = 'PrivateMC'
-config.JobType.psetName = '2017_scripts/localProductionScripts/NLO_ggHToSS_MH125_MS1_ctau1000_SmuonHadronFiltered_2018.py'
+config.JobType.psetName = '2018_scripts/localProductionScripts/NLO_ggHToSS_MH125_MS1_ctau1000_SmuonHadronFiltered_2018.py'
 config.JobType.maxMemoryMB = 9500
 config.JobType.numCores = 8
 config.JobType.maxJobRuntimeMin = 1500

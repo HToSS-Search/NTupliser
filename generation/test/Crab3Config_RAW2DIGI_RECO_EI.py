@@ -9,7 +9,7 @@ config.General.transferLogs = False
 
 config.JobType.allowUndistributedCMSSW = True
 config.JobType.pluginName = 'Analysis'
-config.JobType.psetName = 'step2_RAW2DIGI_RECO_EI_2017.py'
+config.JobType.psetName = '2018_scripts/step3_RAW2DIGI_L1Reco_RECO_RECOSIM_EI.py'
 config.JobType.maxMemoryMB = 9500
 config.JobType.numCores = 8
 config.JobType.maxJobRuntimeMin = 1500
