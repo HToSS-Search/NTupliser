@@ -4,7 +4,7 @@ from Configuration.Generator.Pythia8CUEP8M1Settings_cfi import *
 from Configuration.Generator.Pythia8PowhegEmissionVetoSettings_cfi import *
 
 externalLHEProducer = cms.EDProducer("ExternalLHEProducer",
-    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/2017/13TeV/powheg/V2/gg_H_quark-mass-effects_NNPDF31_13TeV_M125/v1/gg_H_quark-mass-effects_NNPDF31_13TeV_M125_slc6_amd64_gcc630_CMSSW_9_3_0.tgz'),
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/powheg/V2/gg_H_quark-mass-effects_slc7_amd64_gcc820_CMSSW_10_6_20_ggH_M125/v1/gg_H_quark-mass-effects_slc7_amd64_gcc820_CMSSW_10_6_20_ggH_M125.tgz'), ## Correct UL version
     nEvents = cms.untracked.uint32(1000000),
     numberOfParameters = cms.uint32(1),
     outputFile = cms.string('cmsgrid_final.lhe'),
@@ -34,7 +34,7 @@ generator = cms.EDFilter("Pythia8HadronizerFilter",
             'pythia8PowhegEmissionVetoSettings', 
             'processParameters'),
         processParameters = cms.vstring('POWHEG:nFinal = 1', 
-            '9000006:all = sk   skbar    0        0          0       1.2  1.9732e-13  1.0  75.0 0',
+            '9000006:all = sk   skbar    0        0          0       1.2  1.9732e-12  1.0  75.0 0',
             '9000006:oneChannel = 2  1.0 101  13 -13',
             '9000006:addChannel = 3  1.0 101  1 -1',
             '9000006:addChannel = 3  1.0 101  2 -2',

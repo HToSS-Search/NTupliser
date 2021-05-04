@@ -4,11 +4,21 @@ from Configuration.Generator.Pythia8CUEP8M1Settings_cfi import *
 from Configuration.Generator.Pythia8PowhegEmissionVetoSettings_cfi import *
 
 externalLHEProducer = cms.EDProducer("ExternalLHEProducer",
-    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/2017/13TeV/powheg/V2/gg_H_quark-mass-effects_NNPDF31_13TeV_M125/v1/gg_H_quark-mass-effects_NNPDF31_13TeV_M125_slc6_amd64_gcc630_CMSSW_9_3_0.tgz'),
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/powheg/V2/gg_H_quark-mass-effects_slc7_amd64_gcc820_CMSSW_10_6_20_ggH_M125/v1/gg_H_quark-mass-effects_slc7_amd64_gcc820_CMSSW_10_6_20_ggH_M125.tgz'), ## Correct UL version
     nEvents = cms.untracked.uint32(1000000),
     numberOfParameters = cms.uint32(1),
     outputFile = cms.string('cmsgrid_final.lhe'),
     scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+genParticlesForFilter = cms.EDProducer("GenParticleProducer",
+                                       saveBarCodes = cms.untracked.bool(True),
+                                       src = cms.InputTag("generator", "unsmeared"),
+                                       abortOnUnknownPDGCode = cms.untracked.bool(False)
+)
+
+scalarDecayFilter = cms.EDFilter("MCScalarDecayFilter",
+                           filterAlgoPSet = cms.PSet(genParticles = cms.InputTag("genParticlesForFilter"))
 )
 
 
@@ -24,11 +34,13 @@ generator = cms.EDFilter("Pythia8HadronizerFilter",
             'pythia8PowhegEmissionVetoSettings', 
             'processParameters'),
         processParameters = cms.vstring('POWHEG:nFinal = 1', 
-            '9000006:all = sk   skbar    0        0          0       2.0  1.9732e-13  1.0  75.0 0',
+            '9000006:all = sk   skbar    0        0          0       2.0  1.9732e-12  1.0  75.0 0',
             '9000006:oneChannel = 2  1.0 101  13 -13',
             '9000006:addChannel = 3  1.0 101  1 -1',
             '9000006:addChannel = 3  1.0 101  2 -2',
             '9000006:addChannel = 3  1.0 101  3 -3',
+            '9000006:addChannel = 3  1.0 101  4 -4',
+            '9000006:addChannel = 3  1.0 101  5 -5',
             '9000006:mayDecay = on',
             '9000006:isResonance = on',
             '25:m0 = 125.0',
@@ -38,7 +50,8 @@ generator = cms.EDFilter("Pythia8HadronizerFilter",
             '9000006:onMode = off',
             '9000006:onNegIfAny = 1',
             '9000006:onNegIfAny = 2',
-            '9000006:onNegIfAny = 3',
+            '9000006:onNegIfAny = 4',
+            '9000006:onNegIfAny = 5',
             '9000006:onPosIfAny = 13'),
         pythia8CP2Settings = cms.vstring('Tune:pp 14', 
             'Tune:ee 7', 
@@ -73,222 +86,4 @@ generator = cms.EDFilter("Pythia8HadronizerFilter",
     ),
 )
 
-motherFilter = cms.EDFilter("PythiaFilter",
-    MaxEta = cms.untracked.double(9999.0),
-    MinEta = cms.untracked.double(-9999.0),
-    ParticleID = cms.untracked.int32(9000006) # event must contain scalar, parameter is sign blind
-)
-
-muonDecayFilter= cms.EDFilter("PythiaDauVFilter",
-    ParticleID = cms.untracked.int32(9000006), #sign dependent
-    NumberDaughters = cms.untracked.int32(2), 
-    DaughterIDs = cms.untracked.vint32(13, -13), #sign dependent
-    MaxEta = cms.untracked.vdouble(9999.0, 9999.0), 
-    MinEta = cms.untracked.vdouble(-9999.0, -9999.0),
-    MinPt = cms.untracked.vdouble(-1.0, -1.0),
-    verbose = cms.untracked.int32(0)
-)
-
-pionUpFilter = cms.EDFilter("PythiaDauVFilter",
-    MotherID = cms.untracked.int32(9000006),
-    ParticleID = cms.untracked.int32(1), #sign dependent
-    NumberDaughters = cms.untracked.int32(2),
-    DaughterIDs = cms.untracked.vint32(211, -211), #sign dependent
-    MinPt           = cms.untracked.vdouble(0.5, 0.5),
-    MinEta          = cms.untracked.vdouble(-2.5, 2.5),
-    MaxEta          = cms.untracked.vdouble( 2.5, 2.5),
-    verbose = cms.untracked.int32(0)
-)
-
-pionUpbarFilter = cms.EDFilter("PythiaDauVFilter",
-    MotherID = cms.untracked.int32(9000006),
-    ParticleID = cms.untracked.int32(-1), #sign dependent
-    NumberDaughters = cms.untracked.int32(2),
-    DaughterIDs = cms.untracked.vint32(211, -211), #sign dependent
-    MinPt           = cms.untracked.vdouble(0.5, 0.5),
-    MinEta          = cms.untracked.vdouble(-2.5, 2.5),
-    MaxEta          = cms.untracked.vdouble( 2.5, 2.5),
-    verbose = cms.untracked.int32(0)
-)
-
-pionDownFilter = cms.EDFilter("PythiaDauVFilter",
-    MotherID = cms.untracked.int32(9000006),
-    ParticleID = cms.untracked.int32(2), #sign dependent
-    NumberDaughters = cms.untracked.int32(2),
-    DaughterIDs = cms.untracked.vint32(211, -211), #sign dependent
-    MinPt           = cms.untracked.vdouble(0.5, 0.5),
-    MinEta          = cms.untracked.vdouble(-2.5, 2.5),
-    MaxEta          = cms.untracked.vdouble( 2.5, 2.5),
-    verbose = cms.untracked.int32(0)
-)
-
-pionDownbarFilter = cms.EDFilter("PythiaDauVFilter",
-    MotherID = cms.untracked.int32(9000006),
-    ParticleID = cms.untracked.int32(-2), #sign dependent
-    NumberDaughters = cms.untracked.int32(2),
-    DaughterIDs = cms.untracked.vint32(211, -211), #sign dependent
-    MinPt           = cms.untracked.vdouble(0.5, 0.5),
-    MinEta          = cms.untracked.vdouble(-2.5, 2.5),
-    MaxEta          = cms.untracked.vdouble( 2.5, 2.5),
-    verbose = cms.untracked.int32(0)
-)
-
-pionStrangeFilter = cms.EDFilter("PythiaDauVFilter",
-    MotherID = cms.untracked.int32(9000006),
-    ParticleID = cms.untracked.int32(3), #sign dependent
-    NumberDaughters = cms.untracked.int32(2),
-    DaughterIDs = cms.untracked.vint32(211, -211), #sign dependent
-    MinPt           = cms.untracked.vdouble(0.5, 0.5),
-    MinEta          = cms.untracked.vdouble(-2.5, 2.5),
-    MaxEta          = cms.untracked.vdouble( 2.5, 2.5),
-    verbose = cms.untracked.int32(0)
-)
-
-pionStrangebarFilter = cms.EDFilter("PythiaDauVFilter",
-    MotherID = cms.untracked.int32(9000006),
-    ParticleID = cms.untracked.int32(-3), #sign dependent
-    NumberDaughters = cms.untracked.int32(2),
-    DaughterIDs = cms.untracked.vint32(211, -211), #sign dependent
-    MinPt           = cms.untracked.vdouble(0.5, 0.5),
-    MinEta          = cms.untracked.vdouble(-2.5, 2.5),
-    MaxEta          = cms.untracked.vdouble( 2.5, 2.5),
-    verbose = cms.untracked.int32(0)
-)
-
-chargedKaonUpFilter = cms.EDFilter("PythiaDauVFilter",
-    MotherID = cms.untracked.int32(9000006),
-    ParticleID = cms.untracked.int32(1), #sign dependent
-    NumberDaughters = cms.untracked.int32(2),
-    DaughterIDs = cms.untracked.vint32(321, -321), #sign dependent
-    MinPt           = cms.untracked.vdouble(0.5, 0.5),
-    MinEta          = cms.untracked.vdouble(-2.5, 2.5),
-    MaxEta          = cms.untracked.vdouble( 2.5, 2.5),
-    verbose = cms.untracked.int32(0)
-)
-
-chargedKaonUpbarFilter = cms.EDFilter("PythiaDauVFilter",
-    MotherID = cms.untracked.int32(9000006),
-    ParticleID = cms.untracked.int32(-1), #sign dependent
-    NumberDaughters = cms.untracked.int32(2),
-    DaughterIDs = cms.untracked.vint32(321, -321), #sign dependent
-    MinPt           = cms.untracked.vdouble(0.5, 0.5),
-    MinEta          = cms.untracked.vdouble(-2.5, 2.5),
-    MaxEta          = cms.untracked.vdouble( 2.5, 2.5),
-    verbose = cms.untracked.int32(0)
-)
-
-chargedKaonDownFilter = cms.EDFilter("PythiaDauVFilter",
-    MotherID = cms.untracked.int32(9000006),
-    ParticleID = cms.untracked.int32(2), #sign dependent
-    NumberDaughters = cms.untracked.int32(2),
-    DaughterIDs = cms.untracked.vint32(321, -321), #sign dependent
-    MinPt           = cms.untracked.vdouble(0.5, 0.5),
-    MinEta          = cms.untracked.vdouble(-2.5, 2.5),
-    MaxEta          = cms.untracked.vdouble( 2.5, 2.5),
-    verbose = cms.untracked.int32(0)
-)
-
-chargedKaonDownbarFilter = cms.EDFilter("PythiaDauVFilter",
-    MotherID = cms.untracked.int32(9000006),
-    ParticleID = cms.untracked.int32(-2), #sign dependent
-    NumberDaughters = cms.untracked.int32(2),
-    DaughterIDs = cms.untracked.vint32(321, -321), #sign dependent
-    MinPt           = cms.untracked.vdouble(0.5, 0.5),
-    MinEta          = cms.untracked.vdouble(-2.5, 2.5),
-    MaxEta          = cms.untracked.vdouble( 2.5, 2.5),
-    verbose = cms.untracked.int32(0)
-)
-
-chargedKaonStrangeFilter = cms.EDFilter("PythiaDauVFilter",
-    MotherID = cms.untracked.int32(9000006),
-    ParticleID = cms.untracked.int32(3), #sign dependent
-    NumberDaughters = cms.untracked.int32(2),
-    DaughterIDs = cms.untracked.vint32(321, -321), #sign dependent
-    MinPt           = cms.untracked.vdouble(0.5, 0.5),
-    MinEta          = cms.untracked.vdouble(-2.5, 2.5),
-    MaxEta          = cms.untracked.vdouble( 2.5, 2.5),
-    verbose = cms.untracked.int32(0)
-)
-
-chargedKaonStrangebarFilter = cms.EDFilter("PythiaDauVFilter",
-    MotherID = cms.untracked.int32(9000006),
-    ParticleID = cms.untracked.int32(-3), #sign dependent
-    NumberDaughters = cms.untracked.int32(2),
-    DaughterIDs = cms.untracked.vint32(321, -321), #sign dependent
-    MinPt           = cms.untracked.vdouble(0.5, 0.5),
-    MinEta          = cms.untracked.vdouble(-2.5, 2.5),
-    MaxEta          = cms.untracked.vdouble( 2.5, 2.5),
-    verbose = cms.untracked.int32(0)
-)
-
-kshortUpFilter = cms.EDFilter("PythiaDauVFilter",
-    MotherID = cms.untracked.int32(9000006),
-    ParticleID = cms.untracked.int32(1), #sign dependent
-    NumberDaughters = cms.untracked.int32(2),
-    DaughterIDs = cms.untracked.vint32(310, -310), #sign dependent
-    MinPt           = cms.untracked.vdouble(0.5, 0.5),
-    MinEta          = cms.untracked.vdouble(-2.5, 2.5),
-    MaxEta          = cms.untracked.vdouble( 2.5, 2.5),
-    verbose = cms.untracked.int32(0)
-)
-
-kshortUpbarFilter = cms.EDFilter("PythiaDauVFilter",
-    MotherID = cms.untracked.int32(9000006),
-    ParticleID = cms.untracked.int32(-1), #sign dependent
-    NumberDaughters = cms.untracked.int32(2),
-    DaughterIDs = cms.untracked.vint32(310, -310), #sign dependent
-    MinPt           = cms.untracked.vdouble(0.5, 0.5),
-    MinEta          = cms.untracked.vdouble(-2.5, 2.5),
-    MaxEta          = cms.untracked.vdouble( 2.5, 2.5),
-    verbose = cms.untracked.int32(0)
-)
-
-kshortDownFilter = cms.EDFilter("PythiaDauVFilter",
-    MotherID = cms.untracked.int32(9000006),
-    ParticleID = cms.untracked.int32(2), #sign dependent
-    NumberDaughters = cms.untracked.int32(2),
-    DaughterIDs = cms.untracked.vint32(310, -310), #sign dependent
-    MinPt           = cms.untracked.vdouble(0.5, 0.5),
-    MinEta          = cms.untracked.vdouble(-2.5, 2.5),
-    MaxEta          = cms.untracked.vdouble( 2.5, 2.5),
-    verbose = cms.untracked.int32(0)
-)
-
-kshortDownbarFilter = cms.EDFilter("PythiaDauVFilter",
-    MotherID = cms.untracked.int32(9000006),
-    ParticleID = cms.untracked.int32(-2), #sign dependent
-    NumberDaughters = cms.untracked.int32(2),
-    DaughterIDs = cms.untracked.vint32(310, -310), #sign dependent
-    MinPt           = cms.untracked.vdouble(0.5, 0.5),
-    MinEta          = cms.untracked.vdouble(-2.5, 2.5),
-    MaxEta          = cms.untracked.vdouble( 2.5, 2.5),
-    verbose = cms.untracked.int32(0)
-)
-
-kshortStrangeFilter = cms.EDFilter("PythiaDauVFilter",
-    MotherID = cms.untracked.int32(9000006),
-    ParticleID = cms.untracked.int32(3), #sign dependent
-    NumberDaughters = cms.untracked.int32(2),
-    DaughterIDs = cms.untracked.vint32(310, -310), #sign dependent
-    MinPt           = cms.untracked.vdouble(0.5, 0.5),
-    MinEta          = cms.untracked.vdouble(-2.5, 2.5),
-    MaxEta          = cms.untracked.vdouble( 2.5, 2.5),
-    verbose = cms.untracked.int32(0)
-)
-
-kshortStrangebarFilter = cms.EDFilter("PythiaDauVFilter",
-    MotherID = cms.untracked.int32(9000006),
-    ParticleID = cms.untracked.int32(-3), #sign dependent
-    NumberDaughters = cms.untracked.int32(2),
-    DaughterIDs = cms.untracked.vint32(310, -310), #sign dependent
-    MinPt           = cms.untracked.vdouble(0.5, 0.5),
-    MinEta          = cms.untracked.vdouble(-2.5, 2.5),
-    MaxEta          = cms.untracked.vdouble( 2.5, 2.5),
-    verbose = cms.untracked.int32(0)
-)
-
-ProductionFilterSequence = cms.Sequence(generator * motherFilter * 
-                                        pionUpFilter * pionUpbarFilter * pionDownFilter * pionDownbarFilter * pionStrangeFilter * pionStrangebarFilter * 
-                                        chargedKaonUpFilter * chargedKaonUpbarFilter * chargedKaonDownFilter * chargedKaonDownbarFilter * chargedKaonStrangeFilter * chargedKaonStrangebarFilter * 
-                                        kshortUpFilter * kshortUpbarFilter * kshortDownFilter * kshortDownbarFilter * kshortStrangeFilter * kshortStrangebarFilter)
-
+ProductionFilterSequence = cms.Sequence(generator * (genParticlesForFilter + scalarDecayFilter))
