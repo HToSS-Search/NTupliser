@@ -176,7 +176,7 @@ process.source = cms.Source("PoolSource",
 )
 
 ## Maximal Number of Events
-process.maxEvents = cms.untracked.PSet( input = cms.untracked.int32(-1) )
+process.maxEvents = cms.untracked.PSet( input = cms.untracked.int32(options.maxEvents) )
 
 process.source.fileNames = [
 	'file:/scratch/eepgadm/data/DoubleEG/Run2017B/000A6D14-8037-E811-A09B-0CC47A5FBDC1.root',
