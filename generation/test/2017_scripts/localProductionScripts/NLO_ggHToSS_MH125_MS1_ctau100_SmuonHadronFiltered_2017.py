@@ -2,15 +2,16 @@
 # using: 
 # Revision: 1.19 
 # Source: /local/reps/CMSSW/CMSSW/Configuration/Applications/python/ConfigBuilder.py,v 
-# with command line options: Configuration/GenProduction/python/NLO_HToSSTobbbb_MH125_MS55_ctauS10_13TeV.py --fileout file:Higgs_GEN_SIM.root -s LHE,GEN,SIM --mc --eventcontent RAWSIM --geometry DB:Extended --era Run2_2017 --conditions 93X_mc2017_realistic_v3 --datatier GEN-SIM --no_exec -n 10 --python_filename NLO_ggHToSSTobbbb_MH125_MS55_ctauS10_TuneCP2_13TeV_pythia8_GENSIM.py --beamspot Realistic25ns13TeVEarly2017Collision
+# with command line options: Configuration/GenProduction/python/NLO_HToSS_MH125_MS1_ctauS100_SmuonHadronFiltered_2017_13TeV.py --fileout file:step0.root -s LHE,GEN,SIM --mc --eventcontent RAWSIM --datatier GEN-SIM --no_exec -n 10 --conditions 106X_mc2017_realistic_v6 --beamspot Realistic25ns13TeVEarly2017Collision --geometry DB:Extended --era Run2_2017
+
 import FWCore.ParameterSet.Config as cms
 
 ##The line below always has to be included to make VarParsing work
 import FWCore.ParameterSet.VarParsing as VarParsing
 
-from Configuration.StandardSequences.Eras import eras
+from Configuration.Eras.Era_Run2_2017_cff import Run2_2017
 
-process = cms.Process('SIM',eras.Run2_2017)
+process = cms.Process('SIM',Run2_2017)
 
 # import of standard configurations
 process.load('Configuration.StandardSequences.Services_cff')
@@ -28,14 +29,8 @@ process.load('Configuration.StandardSequences.SimIdeal_cff')
 process.load('Configuration.StandardSequences.EndOfProcess_cff')
 process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
 
-options = VarParsing.VarParsing ('analysis')
-options.parseArguments()
-
-intEvts  =  cms.untracked.int32(1000)
-uintEvts = cms.untracked.uint32(1000)
-
 process.maxEvents = cms.untracked.PSet(
-    input = intEvts
+    input = cms.untracked.int32(100)
 )
 
 # Input source
@@ -47,7 +42,7 @@ process.options = cms.untracked.PSet(
 
 # Production Info
 process.configurationMetadata = cms.untracked.PSet(
-    annotation = cms.untracked.string('Configuration/GenProduction/python/NLO_HToSSTodddd_MH125_MS1_ctauS100_13TeV.py nevts:1000'),
+    annotation = cms.untracked.string('Configuration/GenProduction/python/NLO_HToSS_MH125_MS1_ctauS100_SmuonHadronFiltered_2017_13TeV.py nevts:100'),
     name = cms.untracked.string('Applications'),
     version = cms.untracked.string('$Revision: 1.19 $')
 )
@@ -55,7 +50,7 @@ process.configurationMetadata = cms.untracked.PSet(
 # Output definition
 
 process.RAWSIMoutput = cms.OutputModule("PoolOutputModule",
-SelectEvents = cms.untracked.PSet(
+    SelectEvents = cms.untracked.PSet(
         SelectEvents = cms.vstring('generation_step')
     ),
     compressionAlgorithm = cms.untracked.string('LZMA'),
@@ -66,7 +61,6 @@ SelectEvents = cms.untracked.PSet(
     ),
     eventAutoFlushCompressedSize = cms.untracked.int32(20971520),
     fileName = cms.untracked.string(options.outputFile),
-#    fileName = cms.untracked.string('file:/vols/cms/adm10/MC/NLO_HToSSTodddd_MH125_MS1_ctauS10_13TeV/GEN-SIM/Higgs_GEN_SIM_2017_10K.root'),
     outputCommands = process.RAWSIMEventContent.outputCommands,
     splitLevel = cms.untracked.int32(0)
 )
@@ -77,42 +71,41 @@ SelectEvents = cms.untracked.PSet(
 process.XMLFromDBSource.label = cms.string("Extended")
 process.genstepfilter.triggerConditions=cms.vstring("generation_step")
 from Configuration.AlCa.GlobalTag import GlobalTag
-process.GlobalTag = GlobalTag(process.GlobalTag, '93X_mc2017_realistic_v3', '')
-
-#mass = cms.vstring('100')
-#decayWidth = cms.vstring('0.0197327e-11/tau0')
-#lifetime = cms.vstring('tau0')
+process.GlobalTag = GlobalTag(process.GlobalTag, '106X_mc2017_realistic_v6', '')
 
 process.generator = cms.EDFilter("Pythia8HadronizerFilter",
     PythiaParameters = cms.PSet(
-        parameterSets = cms.vstring('pythia8CommonSettings', 
+        parameterSets = cms.vstring(
+            'pythia8CommonSettings', 
             'pythia8CP2Settings', 
             'pythia8PowhegEmissionVetoSettings', 
-            'processParameters'),
-        processParameters = cms.vstring('POWHEG:nFinal = 1', 
-#            <particle id="..." name, antiName, spinType=, chargeType, colType, m0, mWidth, mMin, mMax, tau0> ##tau0 = nominal proper lifetime (mm/c) 
-#            '9000006:all = sk   skbar    0        0          0       2.0  0.0197327e-11/tau0  1.0  75.0 tau0', 
-            '9000006:all = sk   skbar    0        0          0       1.0  1.9732e-15  1.0  75.0 100',
-            '9000006:oneChannel = 2  1.0 101  13 -13',
-            '9000006:addChannel = 3  1.0 101  1 -1',
-            '9000006:addChannel = 3  1.0 101  2 -2',
-            '9000006:addChannel = 3  1.0 101  3 -3',
+            'processParameters'
+        ),
+        processParameters = cms.vstring(
+            'POWHEG:nFinal = 1', 
+            '9000006:all = sk   skbar    0        0          0       1.0  1.9732e-15  1.0  75.0 100', 
+            '9000006:oneChannel = 2  1.0 101  13 -13', 
+            '9000006:addChannel = 3  1.0 101  1 -1', 
+            '9000006:addChannel = 3  1.0 101  2 -2', 
+            '9000006:addChannel = 3  1.0 101  3 -3', 
             '9000006:addChannel = 3  1.0 101  4 -4',
             '9000006:addChannel = 3  1.0 101  5 -5',
-            '9000006:mayDecay = on',
-            '9000006:isResonance = on',
-            '25:m0 = 125.0',
-            '25:onMode = off',
-            '25:addChannel = 1 0.000000001 101 9000006 -9000006',
-            '25:onIfMatch = 9000006 -9000006',
-            '9000006:onMode = off',
-            '9000006:onNegIfAny = 1',
-            '9000006:onNegIfAny = 2',
-            '9000006:onNegIfAny = 3',
+            '9000006:mayDecay = on', 
+            '9000006:isResonance = on', 
+            '25:m0 = 125.0', 
+            '25:onMode = off', 
+            '25:addChannel = 1 0.000000001 101 9000006 -9000006', 
+            '25:onIfMatch = 9000006 -9000006', 
+            '9000006:onMode = off', 
+            '9000006:onNegIfAny = 1', 
+            '9000006:onNegIfAny = 2', 
+            '9000006:onNegIfAny = 3', 
             '9000006:onNegIfAny = 4',
             '9000006:onNegIfAny = 5',
-            '9000006:onPosIfAny = 13'),
-        pythia8CP2Settings = cms.vstring('Tune:pp 14', 
+            '9000006:onPosIfAny = 13'
+        ),
+        pythia8CP2Settings = cms.vstring(
+            'Tune:pp 14', 
             'Tune:ee 7', 
             'MultipartonInteractions:ecmPow=0.1391', 
             'PDF:pSet=17', 
@@ -124,8 +117,10 @@ process.generator = cms.EDFilter("Pythia8HadronizerFilter",
             'SigmaTotal:zeroAXB=off', 
             'SpaceShower:rapidityOrder=off', 
             'SpaceShower:alphaSvalue=0.13', 
-            'TimeShower:alphaSvalue=0.13'),
-        pythia8CommonSettings = cms.vstring('Tune:preferLHAPDF = 2', 
+            'TimeShower:alphaSvalue=0.13'
+        ),
+        pythia8CommonSettings = cms.vstring(
+            'Tune:preferLHAPDF = 2', 
             'Main:timesAllowErrors = 10000', 
             'Check:epTolErr = 0.01', 
             'Beams:setProductionScalesFromLHEF = off', 
@@ -133,15 +128,18 @@ process.generator = cms.EDFilter("Pythia8HadronizerFilter",
             'SLHA:minMassSM = 1000.', 
             'ParticleDecays:limitTau0 = on', 
             'ParticleDecays:tau0Max = 10', 
-            'ParticleDecays:allowPhotonRadiation = on'),
-        pythia8PowhegEmissionVetoSettings = cms.vstring('POWHEG:veto = 1', 
+            'ParticleDecays:allowPhotonRadiation = on'
+        ),
+        pythia8PowhegEmissionVetoSettings = cms.vstring(
+            'POWHEG:veto = 1', 
             'POWHEG:pTdef = 1', 
             'POWHEG:emitted = 0', 
             'POWHEG:pTemt = 0', 
             'POWHEG:pThard = 0', 
             'POWHEG:vetoCount = 100', 
             'SpaceShower:pTmaxMatch = 2', 
-            'TimeShower:pTmaxMatch = 2')
+            'TimeShower:pTmaxMatch = 2'
+        )
     ),
     comEnergy = cms.double(13000.0),
     filterEfficiency = cms.untracked.double(1.0),
@@ -163,12 +161,11 @@ process.scalarDecayFilter = cms.EDFilter("MCScalarDecayFilter",
 
 process.externalLHEProducer = cms.EDProducer("ExternalLHEProducer",
     args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/2017/13TeV/powheg/V2/gg_H_quark-mass-effects_NNPDF31_13TeV_M125/v1/gg_H_quark-mass-effects_NNPDF31_13TeV_M125_slc6_amd64_gcc630_CMSSW_9_3_0.tgz'),
-    nEvents = uintEvts,
+    nEvents = cms.untracked.uint32(100),
     numberOfParameters = cms.uint32(1),
     outputFile = cms.string('cmsgrid_final.lhe'),
     scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
 )
-
 
 process.ProductionFilterSequence = cms.Sequence(process.generator * (process.genParticlesForFilter + process.scalarDecayFilter))
 
@@ -190,8 +187,8 @@ from PhysicsTools.PatAlgos.tools.helpers import associatePatAlgosToolsTask
 associatePatAlgosToolsTask(process)
 # filter all path with the production filter sequence
 for path in process.paths:
-        if path in ['lhe_step']: continue
-        getattr(process,path)._seq = process.ProductionFilterSequence * getattr(process,path)._seq 
+	if path in ['lhe_step']: continue
+	getattr(process,path).insert(0, process.ProductionFilterSequence)
 
 
 # Customisation from command line
@@ -200,4 +197,3 @@ for path in process.paths:
 from Configuration.StandardSequences.earlyDeleteSettings_cff import customiseEarlyDelete
 process = customiseEarlyDelete(process)
 # End adding early deletion
-
