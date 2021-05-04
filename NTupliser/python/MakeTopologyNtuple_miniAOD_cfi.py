@@ -37,7 +37,7 @@ makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
                                            lambdaToken            = cms.InputTag("slimmedLambdaVertices"),
 
                                            rhoToken               = cms.InputTag("fixedGridRhoFastjetAll"),
-					   effAreasConfigFile     = cms.FileInPath("RecoEgamma/ElectronIdentification/data/Fall17/effAreaElectrons_cone03_pfNeuHadronsAndPhotons_92X.txt"),
+					   effAreasConfigFile     = cms.FileInPath("RecoEgamma/ElectronIdentification/data/Fall17/effAreaElectrons_cone03_pfNeuHadronsAndPhotons_94X.txt"),
 					   pileupToken	          = cms.InputTag("slimmedAddPileupInfo"),
                                            triggerToken           = cms.InputTag("TriggerResults","","HLT"),
                                            metFilterToken         = cms.InputTag("TriggerResults", "", "PAT"),
