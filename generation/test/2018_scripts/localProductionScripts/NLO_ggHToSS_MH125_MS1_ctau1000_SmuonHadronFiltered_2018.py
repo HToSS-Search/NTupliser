@@ -2,7 +2,7 @@
 # using: 
 # Revision: 1.19 
 # Source: /local/reps/CMSSW/CMSSW/Configuration/Applications/python/ConfigBuilder.py,v 
-# with command line options: Configuration/GenProduction/python/NLO_HToSS_MH125_MS2_ctauS0_SmuonHadronFiltered_2018_13TeV.py --fileout file:Higgs_GEN_SIM.root -s LHE,GEN,SIM --mc --eventcontent RAWSIM --geometry DB:Extended --era Run2_2018 --conditions 106X_upgrade2018_realistic_v4 --beamspot Realistic25ns13TeVEarly2018Collision --datatier GEN-SIM --no_exec -n 10 --python_filename NLO_ggHToSSTobbbb_MH125_MS55_ctauS10_TuneCP2_13TeV_pythia8_GENSIM.py
+# with command line options: Configuration/GenProduction/python/NLO_HToSS_MH125_MS1_ctauS1000_SmuonHadronFiltered_2018_13TeV.py --fileout file:Higgs_GEN_SIM.root -s LHE,GEN,SIM --mc --eventcontent RAWSIM --geometry DB:Extended --era Run2_2018 --conditions 106X_upgrade2018_realistic_v4 --beamspot Realistic25ns13TeVEarly2018Collision --datatier GEN-SIM --no_exec -n 10 --python_filename NLO_ggHToSSTobbbb_MH125_MS55_ctauS10_TuneCP2_13TeV_pythia8_GENSIM.py
 
 import FWCore.ParameterSet.Config as cms
 
