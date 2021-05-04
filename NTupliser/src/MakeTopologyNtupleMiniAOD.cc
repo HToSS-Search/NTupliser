@@ -180,7 +180,6 @@ MakeTopologyNtupleMiniAOD::MakeTopologyNtupleMiniAOD(
     , generalTracksToken_{mayConsume<reco::TrackCollection>(iConfig.getParameter<edm::InputTag>("generalTracksToken"))}
     , debugMode_{iConfig.getParameter<bool>("debugMode")}
     , is2016_{iConfig.getParameter<bool>("is2016")}
-    , is2018_{iConfig.getParameter<bool>("is2018")}
     , isttbar_{iConfig.getParameter<bool>("isttBar")}
     , ttGenEvent_{iConfig.getParameter<edm::InputTag>("ttGenEvent")}
     , scalarPid_{iConfig.getParameter<int>("scalarPid")}
