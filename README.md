@@ -4,6 +4,12 @@ VUB-EOS-Searches-nTuples
 
 The CMSSW_10_6_20 branch contains code from CMSSW_9_4_10 branch which is modified to work for Run 2 UL data and MC. 
 
+***
+To run ecalBadCalibReducedMINIAODFilter for 2017-2018 miniAOD (STILL WIP FOR UL - DO NOT USE)
+```bash
+git cms-addpkg RecoMET/METFilters
+```
+***
 
 To be fixed:
 

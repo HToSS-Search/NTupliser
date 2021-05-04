@@ -620,20 +620,11 @@ void MakeTopologyNtupleMiniAOD::fillPhotons( const edm::Event& iEvent, const edm
     photonSortedPFPhoIso[ID][numPho[ID] - 1] = pho.photonIso();
     photonSortedPFNeuIso[ID][numPho[ID] - 1] = pho.neutralHadronIso();
     photonSortedMIPTotEnergy[ID][numPho[ID] - 1] = pho.mipTotEnergy();
-    if (is2016_) {
-      photonSortedCutIdLoose[ID][numPho[ID] - 1]  = pho.photonID("cutBasedPhotonID-Spring16-V2p2-loose");
-      photonSortedCutIdMedium[ID][numPho[ID] - 1] = pho.photonID("cutBasedPhotonID-Spring16-V2p2-medium");
-      photonSortedCutIdTight[ID][numPho[ID] - 1]  = pho.photonID("cutBasedPhotonID-Spring16-V2p2-tight");
-      photonSortedMvaIdWp80[ID][numPho[ID] - 1]   = pho.photonID("mvaPhoID-Spring16-nonTrig-V1-wp80");
-      photonSortedMvaIdWp90[ID][numPho[ID] - 1]   = pho.photonID("mvaPhoID-Spring16-nonTrig-V1-wp90");
-    }
-    else {
-      photonSortedCutIdLoose[ID][numPho[ID] - 1]  = pho.photonID("cutBasedPhotonID-Fall17-94X-V2-loose");
-      photonSortedCutIdMedium[ID][numPho[ID] - 1] = pho.photonID("cutBasedPhotonID-Fall17-94X-V2-medium");
-      photonSortedCutIdTight[ID][numPho[ID] - 1]  = pho.photonID("cutBasedPhotonID-Fall17-94X-V2-tight");
-      photonSortedMvaIdWp80[ID][numPho[ID] - 1]   = pho.photonID("mvaPhoID-RunIIFall17-v2-wp80");
-      photonSortedMvaIdWp90[ID][numPho[ID] - 1]   = pho.photonID("mvaPhoID-RunIIFall17-v2-wp90");
-    }
+    photonSortedCutIdLoose[ID][numPho[ID] - 1]  = pho.photonID("cutBasedPhotonID-Fall17-94X-V2-loose");
+    photonSortedCutIdMedium[ID][numPho[ID] - 1] = pho.photonID("cutBasedPhotonID-Fall17-94X-V2-medium");
+    photonSortedCutIdTight[ID][numPho[ID] - 1]  = pho.photonID("cutBasedPhotonID-Fall17-94X-V2-tight");
+    photonSortedMvaIdWp80[ID][numPho[ID] - 1]   = pho.photonID("mvaPhoID-RunIIFall17-v2-wp80");
+    photonSortedMvaIdWp90[ID][numPho[ID] - 1]   = pho.photonID("mvaPhoID-RunIIFall17-v2-wp90");
 
     // Get index ref to packed cand collection
     unsigned int nSourcePackedCands = pho.numberOfSourceCandidatePtrs();
@@ -807,37 +798,23 @@ void MakeTopologyNtupleMiniAOD::fillElectrons(const edm::Event& iEvent, const ed
         electronSortedCharge[ID][numEle[ID] - 1] = ele.charge();
 
         if (is2016_) {
-            electronSortedCutIdVeto[ID][numEle[ID] - 1] =
-                ele.electronID("cutBasedElectronID-Summer16-80X-V1-veto");
-            electronSortedCutIdLoose[ID][numEle[ID] - 1] =
-                ele.electronID("cutBasedElectronID-Summer16-80X-V1-loose");
-            electronSortedCutIdMedium[ID][numEle[ID] - 1] =
-                ele.electronID("cutBasedElectronID-Summer16-80X-V1-medium");
-            electronSortedCutIdTight[ID][numEle[ID] - 1] =
-                ele.electronID("cutBasedElectronID-Summer16-80X-V1-tight");
-            electronSortedMvaIdWp80[ID][numEle[ID] - 1] =
-                ele.electronID("mvaEleID-Spring16-GeneralPurpose-V1-wp80");
-            electronSortedMvaIdWp90[ID][numEle[ID] - 1] =
-                ele.electronID("mvaEleID-Spring16-GeneralPurpose-V1-wp90");
-            electronSortedMvaIdWpLoose[ID][numEle[ID] - 1] =
-                ele.electronID("mvaEleID-Spring16-GeneralPurpose-V1-wp90");
+            electronSortedCutIdVeto[ID][numEle[ID] - 1]    = ele.electronID("cutBasedElectronID-Summer16-80X-V1-veto");
+            electronSortedCutIdLoose[ID][numEle[ID] - 1]   = ele.electronID("cutBasedElectronID-Summer16-80X-V1-loose");
+            electronSortedCutIdMedium[ID][numEle[ID] - 1]  = ele.electronID("cutBasedElectronID-Summer16-80X-V1-medium");
+            electronSortedCutIdTight[ID][numEle[ID] - 1]   = ele.electronID("cutBasedElectronID-Summer16-80X-V1-tight");
+            electronSortedMvaIdWp80[ID][numEle[ID] - 1]    = ele.electronID("mvaEleID-Spring16-GeneralPurpose-V1-wp80");
+            electronSortedMvaIdWp90[ID][numEle[ID] - 1]    = ele.electronID("mvaEleID-Spring16-GeneralPurpose-V1-wp90");
+            electronSortedMvaIdWpLoose[ID][numEle[ID] - 1] = ele.electronID("mvaEleID-Spring16-GeneralPurpose-V1-wp90");
         }
         else
         {
-            electronSortedCutIdVeto[ID][numEle[ID] - 1] =
-                ele.electronID("cutBasedElectronID-Fall17-94X-V1-veto");
-            electronSortedCutIdLoose[ID][numEle[ID] - 1] =
-                ele.electronID("cutBasedElectronID-Fall17-94X-V1-loose");
-            electronSortedCutIdMedium[ID][numEle[ID] - 1] =
-                ele.electronID("cutBasedElectronID-Fall17-94X-V1-medium");
-            electronSortedCutIdTight[ID][numEle[ID] - 1] =
-                ele.electronID("cutBasedElectronID-Fall17-94X-V1-tight");
-            electronSortedMvaIdWp80[ID][numEle[ID] - 1] =
-                ele.electronID("mvaEleID-Fall17-iso-V1-wp80");
-            electronSortedMvaIdWp90[ID][numEle[ID] - 1] =
-                ele.electronID("mvaEleID-Fall17-iso-V1-wp90");
-            electronSortedMvaIdWpLoose[ID][numEle[ID] - 1] =
-                ele.electronID("mvaEleID-Fall17-iso-V1-wpLoose");
+            electronSortedCutIdVeto[ID][numEle[ID] - 1]    = ele.electronID("cutBasedElectronID-Fall17-94X-V2-veto");
+            electronSortedCutIdLoose[ID][numEle[ID] - 1]   = ele.electronID("cutBasedElectronID-Fall17-94X-V2-loose");
+            electronSortedCutIdMedium[ID][numEle[ID] - 1]  = ele.electronID("cutBasedElectronID-Fall17-94X-V2-medium");
+            electronSortedCutIdTight[ID][numEle[ID] - 1]   = ele.electronID("cutBasedElectronID-Fall17-94X-V2-tight");
+            electronSortedMvaIdWp80[ID][numEle[ID] - 1]    = ele.electronID("mvaEleID-Fall17-iso-V1-wp80");
+            electronSortedMvaIdWp90[ID][numEle[ID] - 1]    = ele.electronID("mvaEleID-Fall17-iso-V1-wp90");
+            electronSortedMvaIdWpLoose[ID][numEle[ID] - 1] = ele.electronID("mvaEleID-Fall17-iso-V1-wpLoose");
         }
         electronSortedChargedHadronIso[ID][numEle[ID] - 1] = ele.chargedHadronIso();
         electronSortedNeutralHadronIso[ID][numEle[ID] - 1] = ele.neutralHadronIso();
