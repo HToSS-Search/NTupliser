@@ -83,6 +83,15 @@ makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
         'HLT_IsoTkMu24_v2',
         'HLT_IsoTkMu24_v3',
         'HLT_IsoTkMu24_v4',
+        'HLT_IsoMu27_v3',
+        'HLT_IsoMu27_v4',
+        'HLT_IsoMu27_v5',
+        'HLT_IsoMu27_v7',
+        'HLT_IsoTkMu27_v3',
+        'HLT_IsoTkMu27_v4',
+        'HLT_IsoTkMu27_v5',
+        'HLT_IsoTkMu27_v6',
+        'HLT_IsoTkMu27_v7',
 
         'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v2',
         'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v3',
@@ -99,7 +108,7 @@ makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
 	'HLT_IsoMu27_v11',
 	'HLT_IsoMu27_v12',
 	'HLT_IsoMu27_v13',
-	'HLT_IsoMu27_v14',
+	'HLT_IsoMu27_v14', ## also 2018
 
 	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v8',
 	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v9',
@@ -121,8 +130,18 @@ makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
 	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8_v4',
 
         #Updated Muon Triggers for 2018
+        'HLT_IsoMu24_v11',
+        'HLT_IsoMu24_v12',
+        'HLT_IsoMu24_v13',
+        'HLT_IsoMu27_v15',
+        'HLT_IsoMu27_v16',
 
-        ## Displace Muon triggers
+        'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8_v4'
+        'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8_v5'
+        'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v4',
+        'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v5',
+
+        ## Displaced Muon triggers
 
 ### displaced muons andLevel-2/muon chambers only triggers
         'HLT DoubleMu33NoFiltersNoVtx_v2', #2016 only
