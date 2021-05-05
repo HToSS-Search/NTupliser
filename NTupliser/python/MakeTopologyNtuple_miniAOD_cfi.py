@@ -157,6 +157,8 @@ makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
 
         'HLT_DoubleMu43NoFiltersNoVtx_v2', #2017
         'HLT_DoubleMu43NoFiltersNoVtx_v3', #2017
+        'HLT_DoubleMu48NoFiltersNoVtx_v2', #2017
+        'HLT_DoubleMu48NoFiltersNoVtx_v3', #2017
 
         'HLT_DoubleL2Mu50_v1',#2017
         'HLT_DoubleL2Mu50_v2',#2017+2018
