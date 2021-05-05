@@ -144,12 +144,12 @@ makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
         ## Displaced Muon triggers
 
 ### displaced muons andLevel-2/muon chambers only triggers
-        'HLT DoubleMu33NoFiltersNoVtx_v2', #2016 only
-        'HLT DoubleMu33NoFiltersNoVtx_v3', #2016 only
-        'HLT DoubleMu33NoFiltersNoVtx_v5', #2016 only
-        'HLT DoubleMu23NoFiltersNoVtxDisplaced_v2', #2016 only
-        'HLT DoubleMu23NoFiltersNoVtxDisplaced_v3', #2016 only
-        'HLT DoubleMu23NoFiltersNoVtxDisplaced_v5', #2016 only
+        'HLT_DoubleMu33NoFiltersNoVtx_v2', #2016 only
+        'HLT_DoubleMu33NoFiltersNoVtx_v3', #2016 only
+        'HLT_DoubleMu33NoFiltersNoVtx_v5', #2016 only
+        'HLT_DoubleMu23NoFiltersNoVtxDisplaced_v2', #2016 only
+        'HLT_DoubleMu23NoFiltersNoVtxDisplaced_v3', #2016 only
+        'HLT_DoubleMu23NoFiltersNoVtxDisplaced_v5', #2016 only
         'HLT_L2DoubleMu23_NoVertex_v2', #2016 only
         'HLT_L2DoubleMu23_NoVertex_v3', #2016 only
         'HLT_L2DoubleMu23_NoVertex_v4', #2016 only
