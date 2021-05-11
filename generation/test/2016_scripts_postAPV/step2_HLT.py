@@ -1,3 +1,4 @@
+### N.B. Run using CMSSW_8_0_33_UL NOT CMSSW_10_6_20!!!
 # Auto generated configuration file
 # using: 
 # Revision: 1.19 
