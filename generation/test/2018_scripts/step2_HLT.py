@@ -1,4 +1,4 @@
-### N.B. Run using CMSSW_10_2_6_UL_patch1 NOT CMSSW_10_6_20!!!
+### N.B. Run using CMSSW_10_2_20_UL NOT CMSSW_10_6_20!!!
 # Auto generated configuration file
 # using: 
 # Revision: 1.19 
