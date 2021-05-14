@@ -47,7 +47,7 @@ makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
 
 					   pdfIdStart             = cms.int32(2001),
 					   pdfIdEnd               = cms.int32(2100),
-					   hasAlphaWeightFlag     = cms.bool(False),
+					   hasAlphaWeightFlag     = cms.bool(True),
 					   alphaIdStart           = cms.int32(2101),
 					   alphaIdEnd             = cms.int32(2102),
 
