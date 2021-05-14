@@ -47,7 +47,7 @@ makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
 
 					   pdfIdStart             = cms.int32(2001),
 					   pdfIdEnd               = cms.int32(2100),
-					   hasAlphaWeightFlag     = cms.bool(False),
+					   hasAlphaWeightFlag     = cms.bool(True),
 					   alphaIdStart           = cms.int32(2101),
 					   alphaIdEnd             = cms.int32(2102),
 
@@ -136,7 +136,7 @@ makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
         'HLT_IsoMu27_v15',
         'HLT_IsoMu27_v16',
 
-        'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8_v5'
+        'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8_v5',
         'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v5',
 
         ## Displaced Muon triggers
@@ -246,14 +246,14 @@ makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
         ]),
                                            metFilterList = cms.vstring(		
 	#MET Filters		
-	'Flag_goodVertices'
+	'Flag_goodVertices',
 	'Flag_globalTightHalo2016Filter',
 	'Flag_HBHENoiseFilter',
 	'Flag_HBHENoiseIsoFilter',
 	'Flag_EcalDeadCellTriggerPrimitiveFilter',
         'Flag_BadPFMuonFilter',
 	'Flag_BadChargedCandidateFilter',
-	'Flag_eeBadScFilter'
+	'Flag_eeBadScFilter',
         'Flag_ecalBadCalibFilter',
 	),	
                                            l1TriggerTag = cms.InputTag("gtDigis"),                                    
