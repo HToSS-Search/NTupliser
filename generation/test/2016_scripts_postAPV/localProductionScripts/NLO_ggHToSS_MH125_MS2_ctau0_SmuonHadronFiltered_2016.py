@@ -69,13 +69,6 @@ process.genstepfilter.triggerConditions=cms.vstring("generation_step")
 from Configuration.AlCa.GlobalTag import GlobalTag
 process.GlobalTag = GlobalTag(process.GlobalTag, '106X_mcRun2_asymptotic_v13', '')
 
-process.scalarDecayFilter = cms.EDFilter("MCScalarDecayFilter",
-    filterAlgoPSet = cms.PSet(
-        genParticles = cms.InputTag("genParticlesForFilter")
-    )
-)
-
-
 process.generator = cms.EDFilter("Pythia8HadronizerFilter",
     PythiaParameters = cms.PSet(
         parameterSets = cms.vstring(
@@ -88,11 +81,9 @@ process.generator = cms.EDFilter("Pythia8HadronizerFilter",
             'POWHEG:nFinal = 1', 
             '9000006:all = sk   skbar    0        0          0       2.0  1.9732e-12  1.0  75.0 0', 
             '9000006:oneChannel = 2  1.0 101  13 -13', 
-            '9000006:addChannel = 3  1.0 101  1 -1', 
-            '9000006:addChannel = 3  1.0 101  2 -2', 
-            '9000006:addChannel = 3  1.0 101  3 -3', 
-            '9000006:addChannel = 3  1.0 101  4 -4', 
-            '9000006:addChannel = 3  1.0 101  5 -5', 
+            '9000006:addChannel = 3  1.0 101  211 -211', 
+            '9000006:addChannel = 3  1.0 101  321 -321', 
+            '9000006:addChannel = 3  1.0 101  310 -310', 
             '9000006:mayDecay = on', 
             '9000006:isResonance = on', 
             '25:m0 = 125.0', 
@@ -100,10 +91,9 @@ process.generator = cms.EDFilter("Pythia8HadronizerFilter",
             '25:addChannel = 1 0.000000001 101 9000006 -9000006', 
             '25:onIfMatch = 9000006 -9000006', 
             '9000006:onMode = off', 
-            '9000006:onNegIfAny = 1', 
-            '9000006:onNegIfAny = 2', 
-            '9000006:onNegIfAny = 4', 
-            '9000006:onNegIfAny = 5', 
+            '9000006:onNegIfAny = 211', 
+            '9000006:onNegIfAny = 321', 
+            '9000006:onNegIfAny = 310', 
             '9000006:onPosIfAny = 13'
         ),
         pythia8CP2Settings = cms.vstring(
@@ -151,13 +141,6 @@ process.generator = cms.EDFilter("Pythia8HadronizerFilter",
 )
 
 
-process.genParticlesForFilter = cms.EDProducer("GenParticleProducer",
-    abortOnUnknownPDGCode = cms.untracked.bool(False),
-    saveBarCodes = cms.untracked.bool(True),
-    src = cms.InputTag("generator","unsmeared")
-)
-
-
 process.externalLHEProducer = cms.EDProducer("ExternalLHEProducer",
     args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/powheg/V2/gg_H_quark-mass-effects_slc7_amd64_gcc820_CMSSW_10_6_20_ggH_M125/v1/gg_H_quark-mass-effects_slc7_amd64_gcc820_CMSSW_10_6_20_ggH_M125.tgz'),
     nEvents = cms.untracked.uint32(100),
@@ -166,8 +149,7 @@ process.externalLHEProducer = cms.EDProducer("ExternalLHEProducer",
     scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
 )
 
-
-process.ProductionFilterSequence = cms.Sequence(process.generator+process.genParticlesForFilter+process.scalarDecayFilter)
+process.ProductionFilterSequence = cms.Sequence(process.generator)
 
 # Path and EndPath definitions
 process.lhe_step = cms.Path(process.externalLHEProducer)
