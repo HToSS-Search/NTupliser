@@ -11,17 +11,6 @@ externalLHEProducer = cms.EDProducer("ExternalLHEProducer",
     scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
 )
 
-genParticlesForFilter = cms.EDProducer("GenParticleProducer",
-                                       saveBarCodes = cms.untracked.bool(True),
-                                       src = cms.InputTag("generator", "unsmeared"),
-                                       abortOnUnknownPDGCode = cms.untracked.bool(False)
-)
-
-scalarDecayFilter = cms.EDFilter("MCScalarDecayFilter",
-                           filterAlgoPSet = cms.PSet(genParticles = cms.InputTag("genParticlesForFilter"))
-)
-
-
 generator = cms.EDFilter("Pythia8HadronizerFilter",
     maxEventsToPrint = cms.untracked.int32(1),
     pythiaPylistVerbosity = cms.untracked.int32(1),
@@ -83,5 +72,4 @@ generator = cms.EDFilter("Pythia8HadronizerFilter",
     ),
 )
 
-ProductionFilterSequence = cms.Sequence(generator * (genParticlesForFilter + scalarDecayFilter))
-
+ProductionFilterSequence = cms.Sequence(generator)
