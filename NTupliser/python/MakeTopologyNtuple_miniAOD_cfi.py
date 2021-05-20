@@ -192,11 +192,6 @@ makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
         'HLT_Mu7_IP4_part2_v2', #MC
         'HLT_Mu7_IP4_part3_v2', #MC
         'HLT_Mu7_IP4_part4_v2', #MC
-        'HLT_Mu9_IP4_part0_v2', #MC
-        'HLT_Mu9_IP4_part1_v2', #MC
-        'HLT_Mu9_IP4_part2_v2', #MC
-        'HLT_Mu9_IP4_part3_v2', #MC
-        'HLT_Mu9_IP4_part4_v2', #MC
         'HLT_Mu8_IP5_part0_v2', #MC
         'HLT_Mu8_IP5_part1_v2', #MC
         'HLT_Mu8_IP5_part2_v2', #MC
@@ -207,16 +202,21 @@ makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
         'HLT_Mu8_IP6_part2_v2', #MC
         'HLT_Mu8_IP6_part3_v2', #MC
         'HLT_Mu8_IP6_part4_v2', #MC
+        'HLT_Mu9_IP6_part0_v1', #MC
+        'HLT_Mu9_IP6_part1_v1', #MC
+        'HLT_Mu9_IP6_part2_v1', #MC
+        'HLT_Mu9_IP6_part3_v1', #MC
+        'HLT_Mu9_IP6_part4_v1', #MC
+        'HLT_Mu9_IP6_part0_v2', #MC
+        'HLT_Mu9_IP6_part1_v2', #MC
+        'HLT_Mu9_IP6_part2_v2', #MC
+        'HLT_Mu9_IP6_part3_v2', #MC
+        'HLT_Mu9_IP6_part4_v2', #MC
         'HLT_Mu9_IP6_part0_v3', #MC
         'HLT_Mu9_IP6_part1_v3', #MC
         'HLT_Mu9_IP6_part2_v3', #MC
         'HLT_Mu9_IP6_part3_v3', #MC
         'HLT_Mu9_IP6_part4_v3', #MC
-        'HLT_Mu8_IP3_part0_v3', #MC
-        'HLT_Mu8_IP3_part1_v3', #MC
-        'HLT_Mu8_IP3_part2_v3', #MC
-        'HLT_Mu8_IP3_part3_v3', #MC
-        'HLT_Mu8_IP3_part4_v3', #MC
 
         ## 2017 DatasetScouting Triggers with prescale = 1
 #        'DST_HT250_CaloScouting_v6',
