@@ -51,7 +51,12 @@ process.options = cms.untracked.PSet(
                      )
 
 from Configuration.AlCa.GlobalTag import GlobalTag
-process.GlobalTag.globaltag = cms.string('106X_upgrade2018_realistic_v16_L1v1')
+
+## 2016 - 106X_mcRun2_asymptotic_preVFP_v11 OR 106X_mcRun2_asymptotic_v17
+## 2017 - 106X_mc2017_realistic_v9
+## 2018 - 106X_upgrade2018_realistic_v16_L1v1
+
+process.GlobalTag.globaltag = cms.string('106X_upgrade2018_realistic_v16_L1v1') 
 
 #There's a bit in here about some btau tags that the code looks for. I don't know if this is significant, however. I'm going to ignore it for now.
 

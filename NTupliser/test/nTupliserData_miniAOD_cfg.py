@@ -48,7 +48,8 @@ process.MessageLogger.cerr.FwkReport.reportEvery = cms.untracked.int32(10000)
 process.options = cms.untracked.PSet( wantSummary = cms.untracked.bool(True) )
 
 from Configuration.AlCa.GlobalTag import GlobalTag
-process.GlobalTag.globaltag = cms.string('106X_dataRun2_v33')
+
+process.GlobalTag.globaltag = cms.string('106X_dataRun2_v33') #Good for all UL data
 
 #There's a bit in here about some btau tags that the code looks for. I don't know if this is significant, however. I'm going to ignore it for now.
 
