@@ -6,189 +6,347 @@ from CRABClient.UserUtilities import config
 
 Dataset = namedtuple("Dataset", "process dataset")
 
+## UL Datasets
+
+## 2016 APV Datasets
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS0_2016_APV",     "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS0_2016_APV_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS0_2016_APV_210519-33e4c8a3b4f5317ecda8cb830deafda2/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1_2016_APV",     "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS10_2016_APV_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS10_2016_APV_210519-33e4c8a3b4f5317ecda8cb830deafda2/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2016_APV",    "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1_2016_APV_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1_2016_APV_210519-33e4c8a3b4f5317ecda8cb830deafda2/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS100_2016_APV",   "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS100_2016_APV_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS100_2016_APV_210519-33e4c8a3b4f5317ecda8cb830deafda2/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1000_2016_APV",  "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1000_2016_APV_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1000_2016_APV_210519-33e4c8a3b4f5317ecda8cb830deafda2/USER")
+
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0_2016_APV",     "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0_2016_APV_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0_2016_APV_210519-33e4c8a3b4f5317ecda8cb830deafda2/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2016_APV",     "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2016_APV_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2016_APV_210519-33e4c8a3b4f5317ecda8cb830deafda2/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2016_APV",    "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2016_APV_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2016_APV_210519-33e4c8a3b4f5317ecda8cb830deafda2/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2016_APV",   "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2016_APV_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2016_APV_210519-33e4c8a3b4f5317ecda8cb830deafda2/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1000_2016_APV",  "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1000_2016_APV_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1000_2016_APV_210519-33e4c8a3b4f5317ecda8cb830deafda2/USER")
+
+## 2016 Datasets
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS0_2016",         "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS0_2016_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS0_2016_210519-1da7033ad45096c8e0d0c59d4e469959/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1_2016",         "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1_2016_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1_2016_210519-1da7033ad45096c8e0d0c59d4e469959/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS10_2016",        "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS10_2016_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS10_2016_210519-1da7033ad45096c8e0d0c59d4e469959/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS100_2016",       "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS100_2016_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS100_2016_210519-1da7033ad45096c8e0d0c59d4e469959/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1000_2016",      "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1000_2016_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1000_2016_210519-1da7033ad45096c8e0d0c59d4e469959/USER")
+
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0_2016",         "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0_2016_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0_2016_210519-1da7033ad45096c8e0d0c59d4e469959/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2016",         "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2016_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2016_210519-1da7033ad45096c8e0d0c59d4e469959/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2016",        "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2016_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2016_210519-1da7033ad45096c8e0d0c59d4e469959/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2016"        "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2016_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2016_210519-1da7033ad45096c8e0d0c59d4e469959/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1000_2016",      "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1000_2016_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1000_2016_210519-1da7033ad45096c8e0d0c59d4e469959/USER")
+
 ## 2017 Datasets
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS0_2017",         "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS0_2017_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS0_2017_210519-882d39ca920c8d24d19c6799ea93610c/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1_2017",         "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1_2017_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1_2017_210519-882d39ca920c8d24d19c6799ea93610c/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS10_2017",        "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS10_2017_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS10_2017_210519-882d39ca920c8d24d19c6799ea93610c/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS100_2017",       "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS100_2017_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS100_2017_210519-882d39ca920c8d24d19c6799ea93610c/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1000_2017",      "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1000_2017_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1000_2017_210519-882d39ca920c8d24d19c6799ea93610c/USER")
 
-# HToSS
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS0",       "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS0_2017_210118/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS0_2017_210117-ced4163d91151f0189837681d2149b3e/USER")
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS1",       "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS1_2017_210118/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS1_2017_210117-ced4163d91151f0189837681d2149b3e/USER")
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS10",      "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS10_2017_210116/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS10_2017_210117-ced4163d91151f0189837681d2149b3e/USER")
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS100",     "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS100_2017_210116/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS100_2017_210117-ced4163d91151f0189837681d2149b3e/USER")
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS1000",    "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS1000_2017_210118/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS1000_2017_210117-ced4163d91151f0189837681d2149b3e/USER")
-
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS0",         "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS0_2017_210201/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS0_2017_210201-ced4163d91151f0189837681d2149b3e/USER")
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1",         "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1_2017_210201/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1_2017_210201-ced4163d91151f0189837681d2149b3e/USER")
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS10",        "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS10_2017_210201/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS10_2017_210201-ced4163d91151f0189837681d2149b3e/USER")
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS100",       "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS100_2017_210201/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS100_2017_210201-ced4163d91151f0189837681d2149b3e/USER")
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1000",      "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1000_2017_210201/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1000_2017_210201-ced4163d91151f0189837681d2149b3e/USER")
-
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0",         "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0_2017_210201/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0_2017_210201-ced4163d91151f0189837681d2149b3e/USER")
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1",         "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2017_210201/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2017_210201-ced4163d91151f0189837681d2149b3e/USER")
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10",        "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2017_210201/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2017_210201-ced4163d91151f0189837681d2149b3e/USER")
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100",       "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2017_210201/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2017_210201-ced4163d91151f0189837681d2149b3e/USER")
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1000",      "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1000_2017_210201/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1000_2017_210201-ced4163d91151f0189837681d2149b3e/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0_2017",         "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0_2017_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0_2017_210519-882d39ca920c8d24d19c6799ea93610c/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2017",         "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2017_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2017_210519-882d39ca920c8d24d19c6799ea93610c/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2017",        "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2017_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2017_210519-882d39ca920c8d24d19c6799ea93610c/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2017",       "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2017_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2017_210519-882d39ca920c8d24d19c6799ea93610c/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1000_2017",      "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1000_2017_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1000_2017_210519-882d39ca920c8d24d19c6799ea93610c/USER")
 
 ## 2018 Datasets
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0",         "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0_2018_210503/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0_2018_210513-f8b54bf4852b24a748864c9e764faf97/USER")
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1",         "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2018_210503/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2018_210513-f8b54bf4852b24a748864c9e764faf97/USER")
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10",        "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2018_210503/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2018_210513-f8b54bf4852b24a748864c9e764faf97/USER")
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100",	 "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2018_210503/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2018_210513-f8b54bf4852b24a748864c9e764faf97/USER")
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1000",	 "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1000_2018_210503/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1000_2018_210513-f8b54bf4852b24a748864c9e764faf97/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS0_2018",         "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS0_2018_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS0_2018_210519-1fc3ecee7c51c31cd349cc9364673796/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1_2018",         "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1_2018_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1_2018_210519-1fc3ecee7c51c31cd349cc9364673796/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS10_2018",        "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS10_2018_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS10_2018_210519-1fc3ecee7c51c31cd349cc9364673796/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS100_2018",       "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS100_2018_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS100_2018_210519-1fc3ecee7c51c31cd349cc9364673796/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1000_2018",      "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1000_2018_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1000_2018_210519-1fc3ecee7c51c31cd349cc9364673796/USER")
+
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0_2018",         "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0_2018_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0_2018_210519-1fc3ecee7c51c31cd349cc9364673796/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2018",         "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2018_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2018_210519-1fc3ecee7c51c31cd349cc9364673796/USER
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2018",        "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2018_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2018_210519-1fc3ecee7c51c31cd349cc9364673796/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2018",       "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2018_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2018_210519-1fc3ecee7c51c31cd349cc9364673796/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1000_2018",      "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1000_2018_210519/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1000_2018_210519-1fc3ecee7c51c31cd349cc9364673796/USER")
 
 ###############
 
 ## tZq
-#dataset = Dataset("tZq", "/tZq_ll_4f_ckm_NLO_TuneCP5_PSweights_13TeV-amcatnlo-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_new_pmx_94X_mc2017_realistic_v14-v2/MINIAODSIM")
-## tZq single lepton
-#dataset = Dataset("tZq_Zhad_Wlept", "/tZq_Zhad_Wlept_4f_ckm_NLO_TuneCP5_PSweights_13TeV-amcatnlo-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
+#dataset = Dataset("tZq_2016_APV", "")
+#dataset = Dataset("tZq_2016",     "")
+#dataset = Dataset("tZq_2017",     "/tZq_ll_4f_ckm_NLO_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
+#dataset = Dataset("tZq_2018",     "/tZq_ll_4f_ckm_NLO_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
+
 ## tHq
-#dataset = Dataset("tHq", "/THQ_4f_Hincl_13TeV_madgraph_pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
+#dataset = Dataset("tHq_2016_APV", "")
+#dataset = Dataset("tHq_2016", "")
+#dataset = Dataset("tHq_2017", "")
+#dataset = Dataset("tHq_2018", "")
+
 ## tWZ/tWll
-#dataset = Dataset("tWz_tWll", "/ST_tWll_5f_LO_TuneCP5_PSweights_13TeV-madgraph-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14_ext1-v1/MINIAODSIM")
+#dataset = Dataset("tWz_tWll_2016_APV", "")
+#dataset = Dataset("tWz_tWll_2016", "")
+#dataset = Dataset("tWz_tWll_2017", "")
+#dataset = Dataset("tWz_tWll_2018", "")
+
 ## ttZ
-#dataset = Dataset("ttZ_ll", "/TTZToLLNuNu_M-10_TuneCP5_PSweights_13TeV-amcatnlo-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("ttZ_ll_correctPartonsInBorn", "/TTZToLLNuNu_M-10_TuneCP5_PSweights_correctnPartonsInBorn_13TeV-amcatnlo-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("ttZ_ll_TuneCP5down", "/TTZToLLNuNu_M-10_TuneCP5down_PSweights_13TeV-amcatnlo-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("ttZ_ll_TuneCP5ip", "/TTZToLLNuNu_M-10_TuneCP5up_PSweights_13TeV-amcatnlo-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("ttZ_qq", "/TTZToQQ_TuneCP5_13TeV-amcatnlo-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v2/MINIAODSIM")
-#dataset = Dataset("ttZ_qq_ext", "/TTZToQQ_TuneCP5_13TeV-amcatnlo-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14_ext1-v1/MINIAODSIM")
+#dataset = Dataset("ttZ_ll_2016_APV", "")
+#dataset = Dataset("ttZ_ll_2016", "")
+#dataset = Dataset("ttZ_ll_2017", "/TTZToLLNuNu_M-10_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM")
+#dataset = Dataset("ttZ_ll_2018", "/TTZToLLNuNu_M-10_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
+#dataset = Dataset("ttZ_qq_2016_APV", "")
+#dataset = Dataset("ttZ_qq_2016", "")
+#dataset = Dataset("ttZ_qq_2017", "/TTZToQQ_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM")
+#dataset = Dataset("ttZ_qq_2018", "/TTZToQQ_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM")
+
 ## ttW
-#dataset = Dataset("ttW_lnu", "/TTWJetsToLNu_TuneCP5_PSweights_13TeV-amcatnloFXFX-madspin-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_new_pmx_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("ttW_qq", "/TTWJetsToQQ_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v2/MINIAODSIM")
+#dataset = Dataset("ttW_lnu_2016_APV", "")
+#dataset = Dataset("ttW_lnu_2016", "")
+#dataset = Dataset("ttW_lnu_2017", "/TTWJetsToLNu_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM")
+#dataset = Dataset("ttW_lnu_2018", "/TTWJetsToLNu_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM")
+
+#dataset = Dataset("ttW_qq_2016_APV", "
+#dataset = Dataset("ttW_qq_2016", "
+#dataset = Dataset("ttW_qq_2017", "
+#dataset = Dataset("ttW_qq_2018", "/TTWJetsToQQ_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM")
+
 ## ttH (bb)
-#dataset = Dataset("ttH_bb", "/ttHTobb_M125_TuneCP5_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_new_pmx_94X_mc2017_realistic_v14-v1/MINIAODSIM")
+#dataset = Dataset("ttH_bb_2016_APV", "")
+#dataset = Dataset("ttH_bb_2016", "")
+#dataset = Dataset("ttH_bb_2017", "")
+#dataset = Dataset("ttH_bb_2018", "")
+
 ## ttH (non bb)
-#dataset = Dataset("ttH_nonbb", "/ttHToNonbb_M125_TuneCP5_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_new_pmx_94X_mc2017_realistic_v14-v1/MINIAODSIM")
+#dataset = Dataset("ttH_nonbb_2016_APV", "")
+#dataset = Dataset("ttH_nonbb_2016", "")
+#dataset = Dataset("ttH_nonbb_2017", "")
+#dataset = Dataset("ttH_nonbb_2018", "")
+
 # ttγ
-#dataset = Dataset("ttgamma", "/TTGamma_Dilept_TuneCP5_PSweights_13TeV-madgraph-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
+#dataset = Dataset("ttgamma_2016_APV", "")
+#dataset = Dataset("ttgamma_2016", "")
+#dataset = Dataset("ttgamma_2017", "")
+#dataset = Dataset("ttgamma_2018", "")
+
 # W+jets
-#dataset = Dataset("Wjets_HT_70To100", "/WJetsToLNu_HT-70To100_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("Wjets_HT_100_to_200", "/WJetsToLNu_HT-100To200_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v2/MINIAODSIM")
-#dataset = Dataset("Wjets_HT_200_to_400", "/WJetsToLNu_HT-200To400_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("Wjets_HT_400_to_600", "/WJetsToLNu_HT-400To600_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("Wjets_HT_600_to_800", "/WJetsToLNu_HT-600To800_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("Wjets_HT_800_to_1200", "/WJetsToLNu_HT-800To1200_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("Wjets_HT_1200_to_2500", "/WJetsToLNu_HT-1200To2500_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("Wjets_HT_2500_to_inf", "/WJetsToLNu_HT-2500ToInf_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v3/MINIAODSIM")
-## W+jets alt.
-#dataset = Dataset("Wjets_v3", "/WJetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v3/MINIAODSIM")
-#dataset = Dataset("Wjets_v2", "/WJetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v2/MINIAODSIM")
-#dataset = Dataset("Wjets_v2_ext1", "/WJetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14_ext1-v2/MINIAODSIM")
+#dataset = Dataset("Wjets_2016_APV", "")
+#dataset = Dataset("Wjets_2016", "")
+#dataset = Dataset("Wjets_2017", "/WJetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM")
+#dataset = Dataset("Wjets_2018", "/WJetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM")
+
 ## WW (2l2nu)
-#dataset = Dataset("WW_2l2nu",             "/WWTo2L2Nu_NNPDF31_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14_ext1-v1/MINIAODSIM")
-#dataset = Dataset("WW_2l2nu_TuneCP5Down", "/WWTo2L2Nu_NNPDF31_TuneCP5Down_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14_ext1-v2/MINIAODSIM")
-#dataset = Dataset("WW_2l2nu_TuneCP5Up",   "/WWTo2L2Nu_NNPDF31_TuneCP5Up_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14_ext1-v2/MINIAODSIM")
+#dataset = Dataset("WW_2l2nu_2016_APV", "")
+#dataset = Dataset("WW_2l2nu_2016", "")
+#dataset = Dataset("WW_2l2nu_2017", "")
+#dataset = Dataset("WW_2l2nu_2018", "")
+
 ## WW (lnu2q)
-#dataset = Dataset("WW_lnu2q", "/WWToLNuQQ_NNPDF31_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14_ext1-v1/MINIAODSIM")
+#dataset = Dataset("WW_lnu2q_2016_APV", "")
+#dataset = Dataset("WW_lnu2q_2016", "")
+#dataset = Dataset("WW_lnu2q_2017", "")
+#dataset = Dataset("WW_lnu2q_2018", "")
+
 ## WZ (3lnu + up to 1 jet)
-#dataset = Dataset("WZ_3lnu", "/WZTo3LNu_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_new_pmx_94X_mc2017_realistic_v14-v1/MINIAODSIM")
+#dataset = Dataset("WZ_3lnu_2016_APV", "")
+#dataset = Dataset("WZ_3lnu_2016", "")
+#dataset = Dataset("WZ_3lnu_2017", "")
+#dataset = Dataset("WZ_3lnu_2018", "")
+
 ## WZ (2l2q)
-#dataset = Dataset("WZ_2l2q", "/WZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
+#dataset = Dataset("WZ_2l2q_2016_APV", "")
+#dataset = Dataset("WZ_2l2q_2016", "")
+#dataset = Dataset("WZ_2l2q_2017", "")
+#dataset = Dataset("WZ_2l2q_2018", "")
+
 ## WZ (lnu2q)
-#dataset = Dataset("WZ_lnu2q", "/WZTo1L1Nu2Q_13TeV_amcatnloFXFX_madspin_pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v2/MINIAODSIM")
-#dataset = Dataset("WZ_l3nu",  "/WZTo1L3Nu_13TeV_amcatnloFXFX_madspin_pythia8_v2/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
+#dataset = Dataset("WZ_lnu2q_2016_APV", "")
+#dataset = Dataset("WZ_lnu2q_2016", "")
+#dataset = Dataset("WZ_lnu2q_2017", "")
+#dataset = Dataset("WZ_lnu2q_2018", "")
+
+#dataset = Dataset("WZ_l3nu_2016_APV",  "")
+#dataset = Dataset("WZ_l3nu_2016",  "")
+#dataset = Dataset("WZ_l3nu_2017",  "")
+#dataset = Dataset("WZ_l3nu_2018",  "")
+
 ## ZZ (4l)
-#dataset = Dataset("ZZ_4l", "/ZZTo4L_13TeV_powheg_pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_new_pmx_94X_mc2017_realistic_v14-v1/MINIAODSIM")
+#dataset = Dataset("ZZ_4l_2016_APV", "")
+#dataset = Dataset("ZZ_4l_2016", "")
+#dataset = Dataset("ZZ_4l_2017", "")
+#dataset = Dataset("ZZ_4l_2018", "")
+
 ## ZZ (2l2nu)
-#dataset = Dataset("ZZ_2l2nu", "/ZZTo2L2Nu_13TeV_powheg_pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
+#dataset = Dataset("ZZ_2l2nu_2016_APV", "")
+#dataset = Dataset("ZZ_2l2nu_2016", "")
+#dataset = Dataset("ZZ_2l2nu_2017", "/ZZTo2L2Nu_TuneCP5_13TeV_powheg_pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM")
+#dataset = Dataset("ZZ_2l2nu_2018", "/ZZTo2L2Nu_TuneCP5_13TeV_powheg_pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM")
+
 ## ZZ (2l2q)
-#dataset = Dataset("ZZ_2l2q", "/ZZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
+#dataset = Dataset("ZZ_2l2q_2016_APV", "")
+#dataset = Dataset("ZZ_2l2q_2016", "")
+#dataset = Dataset("ZZ_2l2q_2017", "")
+#dataset = Dataset("ZZ_2l2q_2018", "")
+
 ### WWW
-#dataset = Dataset("WWW", "/WWW_4F_TuneCP5_13TeV-amcatnlo-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v2/MINIAODSIM")
+#dataset = Dataset("WWW_2016_APV", "")
+#dataset = Dataset("WWW_2016", "")
+#dataset = Dataset("WWW_2017", "/WWW_4F_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM")
+#dataset = Dataset("WWW_2018", "/WWW_4F_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM")
+
 ## WWZ
-#dataset = Dataset("WWZ", "/WWZ_4F_TuneCP5_13TeV-amcatnlo-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v2/MINIAODSIM")
+#dataset = Dataset("WWZ_2016_APV", "")
+#dataset = Dataset("WWZ_2016", "")
+#dataset = Dataset("WWZ_2017", "/WWZ_4F_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM")
+#dataset = Dataset("WWZ_2018", "/WWZ_4F_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM")
+
 ## WZZ
-#dataset = Dataset("WZZ", "/WZZ_TuneCP5_13TeV-amcatnlo-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
+#dataset = Dataset("WZZ_2016_APV", "")
+#dataset = Dataset("WZZ_2016", "")
+#dataset = Dataset("WZZ_2017", "")
+#dataset = Dataset("WZZ_2018", "")
+
 ## ZZZ
-#dataset = Dataset("ZZZ", "/ZZZ_TuneCP5_13TeV-amcatnlo-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v2/MINIAODSIM")
-## ttjets  (2l2v) (aMC@NLO)
-# dataset = Dataset("ttjets_2l2nu", "/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_new_pmx_94X_mc2017_realistic_v14-v1/MINIAODSIM")
+#dataset = Dataset("ZZZ_2016_APV", "")
+#dataset = Dataset("ZZZ_2016", "")
+#dataset = Dataset("ZZZ_2017", "/ZZZ_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM")
+#dataset = Dataset("ZZZ_2018", "/ZZZ_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM")
+
 ## ttbar
-#dataset = Dataset("ttbar_hadronic", "/TTToHadronic_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_new_pmx_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("ttbar_hadronic_TuneCP5down", "/TTToHadronic_TuneCP5down_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_new_pmx_94X_mc2017_realistic_v14-v2/MINIAODSIM")
-#dataset = Dataset("ttbar_hadronic_TuneCP5up", "/TTToHadronic_TuneCP5up_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_new_pmx_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("ttbar_hadronic_hdampDOWN, "/TTToHadronic_hdampDOWN_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_new_pmx_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("ttbar_hadronic_hdampUP", "/TTToHadronic_hdampUP_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v2/MINIAODSIM")
-#dataset = Dataset("ttbar_semileptonic", "/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v2/MINIAODSIM")
-#dataset = Dataset("ttbar_semileptonic_TuneCP5down", "/TTToSemiLeptonic_TuneCP5down_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_new_pmx_94X_mc2017_realistic_v14-v2/MINIAODSIM")
-#dataset = Dataset("ttbar_semileptonic_TuneCP5up", "/TTToSemiLeptonic_TuneCP5up_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_new_pmx_94X_mc2017_realistic_v14-v2/MINIAODSIM")
-#dataset = Dataset("ttbar_semileptonic_hdampDOWN", "/TTToSemiLeptonic_hdampDOWN_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v2/MINIAODSIM")
-#dataset = Dataset("ttbar_semileptonic_hdampUP", "/TTToSemiLeptonic_hdampUP_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_new_pmx_94X_mc2017_realistic_v14-v2/MINIAODSIM")
-#dataset = Dataset("ttbar_2l2v", "/TTTo2L2Nu_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_new_pmx_94X_mc2017_realistic_v14-v2/MINIAODSIM")
-#dataset = Dataset("ttbar_2l2v_TuneCP5down", "/TTTo2L2Nu_TuneCP5down_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_new_pmx_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("ttbar_2l2v_TuneCP5up", "/TTTo2L2Nu_TuneCP5up_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_new_pmx_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("ttbar_2l2v_hdampDOWN", "/TTTo2L2Nu_hdampDOWN_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_new_pmx_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("ttbar_2l2v_hdampUP", "/TTTo2L2Nu_hdampUP_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_new_pmx_94X_mc2017_realistic_v14-v1/MINIAODSIM")
+#dataset = Dataset("ttbar_hadronic_2016_APV", "" )
+#dataset = Dataset("ttbar_hadronic_2016", "")
+#dataset = Dataset("ttbar_hadronic_2017", "/TTToHadronic_TuneCP5_13TeV-powheg-pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
+#dataset = Dataset("ttbar_hadronic_2018", "/TTToHadronic_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM")
+
+#dataset = Dataset("ttbar_semileptonic_2016_APV", "")
+#dataset = Dataset("ttbar_semileptonic_2016", "")
+#dataset = Dataset("ttbar_semileptonic_2017", "/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
+#dataset = Dataset("ttbar_semileptonic_2018", "/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM")
+
+#dataset = Dataset("ttbar_2l2v_2016_APV", "")
+#dataset = Dataset("ttbar_2l2v_2016", "")
+#dataset = Dataset("ttbar_2l2v_2017", "/TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM")
+#dataset = Dataset("ttbar_2l2v_2018", "/TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM")
+
 ## tW
-#dataset = Dataset("tW", "/ST_tW_top_5f_inclusiveDecays_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_new_pmx_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("tW_TuneCP5down", "/ST_tW_top_5f_inclusiveDecays_TuneCP5down_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("tW_TuneCP5up", "/ST_tW_top_5f_inclusiveDecays_TuneCP5up_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
+#dataset = Dataset("tW_2016_APV", "")
+#dataset = Dataset("tW_2016", "")
+#dataset = Dataset("tW_2017", "")
+#dataset = Dataset("tW_2018", "")
+
 ## tbarW
-#dataset = Dataset("tbarW", "/ST_tW_antitop_5f_inclusiveDecays_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v2/MINIAODSIM")
-#dataset = Dataset("tbarW_scale_up", "/ST_tW_antitop_5f_inclusiveDecays_TuneCP5down_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("tbarW_scale_down", "/ST_tW_antitop_5f_inclusiveDecays_TuneCP5up_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
+#dataset = Dataset("tbarW_2016_APV", "")
+#dataset = Dataset("tbarW_2016", "")
+#dataset = Dataset("tbarW_2017", "")
+#dataset = Dataset("tbarW_2018", "")
+
 ## t s-channel
-#dataset = Dataset("t_s_channel", "/ST_s-channel_4f_leptonDecays_TuneCP5_PSweights_13TeV-amcatnlo-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_new_pmx_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("t_s_channel_correctnPartonsInBorn", "/ST_s-channel_4f_leptonDecays_TuneCP5_PSweights_13TeV-amcatnlo-pythia8_correctnPartonsInBorn/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("t_s_channel_TuneCP5down", "/ST_s-channel_4f_leptonDecays_TuneCP5down_PSweights_13TeV-amcatnlo-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("t_s_channel_TuneCP5up", "/ST_s-channel_4f_leptonDecays_TuneCP5up_PSweights_13TeV-amcatnlo-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
+#dataset = Dataset("t_s_channel_2016_APV", "")
+#dataset = Dataset("t_s_channel_2016", "")
+#dataset = Dataset("t_s_channel_2017", "/ST_s-channel_4f_leptonDecays_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
+#dataset = Dataset("t_s_channel_2018", "/ST_s-channel_4f_leptonDecays_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
+
 # t t-channel
-#dataset = Dataset("t_t_channel", "/ST_t-channel_top_4f_InclusiveDecays_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("t_t_channel_TuneCP5down", "/ST_t-channel_top_4f_InclusiveDecays_TuneCP5down_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("t_t_channel_TuneCP5up", "/ST_t-channel_top_4f_InclusiveDecays_TuneCP5up_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("t_t_channel_hdampdown", "/ST_t-channel_top_4f_hdampdown_InclusiveDecays_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("t_t_channel_hdampup", "/ST_t-channel_top_4f_hdampup_InclusiveDecays_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
+#dataset = Dataset("t_t_channel_2016_APV", "")
+#dataset = Dataset("t_t_channel_2016", "")
+#dataset = Dataset("t_t_channel_2017", "/ST_t-channel_top_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
+#dataset = Dataset("t_t_channel_2018", "/ST_t-channel_top_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
+
 ## tbar t-channel
-#dataset = Dataset("tbar_t_channel", "/ST_t-channel_antitop_4f_InclusiveDecays_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("tbar_t_channel_TuneCP5down", "/ST_t-channel_antitop_4f_InclusiveDecays_TuneCP5down_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("tbar_t_channel_TuneCP5up", "/ST_t-channel_antitop_4f_InclusiveDecays_TuneCP5up_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("tbar_t_channel_hdampdown", "/ST_t-channel_antitop_4f_hdampdown_InclusiveDecays_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("tbar_t_channel_hdampup", "/ST_t-channel_antitop_4f_hdampup_InclusiveDecays_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-# Zjets
-#dataset = Dataset("DYJetsToLL_M-10to50", "/DYJetsToLL_M-10to50_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_new_pmx_94X_mc2017_realistic_v14-v2/MINIAODSIM")
-#dataset = Dataset("DYJetsToLL_M-50", "/DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_new_pmx_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("DYJetsToLL_M-50_ext1", "/DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_new_pmx_94X_mc2017_realistic_v14_ext1-v1/MINIAODSIM")
-# Zjets ht binned
-#dataset = Dataset("DYJetsToLL_M-50_HT-40to70", "/DYJetsToLL_M-50_HT-40to70_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("DYJetsToLL_M-50_HT-70to100", "/DYJetsToLL_M-50_HT-70to100_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("DYJetsToLL_M-50_HT-100to200", "/DYJetsToLL_M-50_HT-100to200_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_new_pmx_94X_mc2017_realistic_v14-v2/MINIAODSIM")
-#dataset = Dataset("DYJetsToLL_M-50_HT-100to200_ext1", "/DYJetsToLL_M-50_HT-100to200_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14_ext1-v1/MINIAODSIM")
-#dataset = Dataset("DYJetsToLL_M-50_HT-200to400", "/DYJetsToLL_M-50_HT-200to400_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v2/MINIAODSIM")
-#dataset = Dataset("DYJetsToLL_M-50_HT-200to400_ext1", "/DYJetsToLL_M-50_HT-200to400_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14_ext1-v1/MINIAODSIM")
-#dataset = Dataset("DYJetsToLL_M-50_HT-400to600", "/DYJetsToLL_M-50_HT-400to600_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_new_pmx_94X_mc2017_realistic_v14-v2/MINIAODSIM")
-#dataset = Dataset("DYJetsToLL_M-50_HT-400to600_ext1", "/DYJetsToLL_M-50_HT-400to600_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14_ext1-v1/MINIAODSIM")
-#dataset = Dataset("DYJetsToLL_M-50_HT-600to800", "/DYJetsToLL_M-50_HT-600to800_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_new_pmx_94X_mc2017_realistic_v14-v2/MINIAODSIM")
-#dataset = Dataset("DYJetsToLL_M-50_HT-800to1200", "/DYJetsToLL_M-50_HT-800to1200_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_new_pmx_94X_mc2017_realistic_v14-v2/MINIAODSIM")
-#dataset = Dataset("DYJetsToLL_M-50_HT-1200to2500", "/DYJetsToLL_M-50_HT-1200to2500_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("DYJetsToLL_M-50_HT-2500toInf", "/DYJetsToLL_M-50_HT-2500toInf_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_new_pmx_94X_mc2017_realistic_v14-v2/MINIAODSIM")
+#dataset = Dataset("tbar_t_channel_2016_APV", "")
+#dataset = Dataset("tbar_t_channel_2016", "")
+#dataset = Dataset("tbar_t_channel_2017", "/ST_t-channel_antitop_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
+#dataset = Dataset("tbar_t_channel_2018", "/ST_t-channel_antitop_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
+
 # Zjets pt binned
-#dataset = Dataset("DYJetsToLL_Pt-0To50",    "/DYJetsToLL_Pt-0To50_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")### CURRENTLY NOT VALID BUT PRODUCTION
-#dataset = Dataset("DYJetsToLL_Pt-50To100",  "/DYJetsToLL_Pt-50To100_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("DYJetsToLL_Pt-100To250", "/DYJetsToLL_Pt-100To250_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("DYJetsToLL_Pt-250To400", "/DYJetsToLL_Pt-250To400_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("DYJetsToLL_Pt-400To650", "/DYJetsToLL_Pt-400To650_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("DYJetsToLL_Pt-650ToInf", "/DYJetsToLL_Pt-650ToInf_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
+#dataset = Dataset("DYJetsToLL_Pt-0To50",    "")
+#dataset = Dataset("DYJetsToLL_Pt-50To100",  "")
+#dataset = Dataset("DYJetsToLL_Pt-100To250", "")
+#dataset = Dataset("DYJetsToLL_Pt-250To400", "")
+#dataset = Dataset("DYJetsToLL_Pt-400To650", "")
+#dataset = Dataset("DYJetsToLL_Pt-650ToInf", "")
+
+#dataset = Dataset("DYJetsToLL_Pt-0To50_2016",    "")
+#dataset = Dataset("DYJetsToLL_Pt-50To100_2016",  "")
+#dataset = Dataset("DYJetsToLL_Pt-100To250_2016", "")
+#dataset = Dataset("DYJetsToLL_Pt-250To400_2016", "")
+#dataset = Dataset("DYJetsToLL_Pt-400To650_2016", "")
+#dataset = Dataset("DYJetsToLL_Pt-650ToInf_2016", "")
+
+#dataset = Dataset("DYJetsToLL_Pt-0To50_2017",    "")
+#dataset = Dataset("DYJetsToLL_Pt-50To100_2017",  "")
+#dataset = Dataset("DYJetsToLL_Pt-100To250_2017", "")
+#dataset = Dataset("DYJetsToLL_Pt-250To400_2017", "")
+#dataset = Dataset("DYJetsToLL_Pt-400To650_2017", "")
+#dataset = Dataset("DYJetsToLL_Pt-650ToInf_2017", "")
+
+#dataset = Dataset("DYJetsToLL_Pt-0To50_2018",    "")
+#dataset = Dataset("DYJetsToLL_Pt-50To100_2018",  "")
+#dataset = Dataset("DYJetsToLL_Pt-100To250_2018", "")
+#dataset = Dataset("DYJetsToLL_Pt-250To400_2018", "")
+#dataset = Dataset("DYJetsToLL_Pt-400To650_2018", "")
+#dataset = Dataset("DYJetsToLL_Pt-650ToInf_2018", "")
 
 # WG?
-#dataset = Dataset("WG_lnug", "/WGToLNuG_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
+#dataset = Dataset("WG_lnug_2016_APV", "")
+#dataset = Dataset("WG_lnug_2016", "")
+#dataset = Dataset("WG_lnug_2017", "/WGToLNuG_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM")
+#dataset = Dataset("WG_lnug_2018", "/WGToLNuG_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM")
+
 # ZG?
-#dataset = Dataset("ZG_llg","/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v3/MINIAODSIM")
+#dataset = Dataset("ZG_llg_2016_APV", "")
+#dataset = Dataset("ZG_llg_2016", "")
+#dataset = Dataset("ZG_llg_2017", "/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM")
+#dataset = Dataset("ZG_llg_2018", "/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM")
 
 # QCD MuEnrichedPt15
-#dataset = Dataset("QCD_Pt-20toInf_MuEnrichedPt15", "/QCD_Pt-20toInf_MuEnrichedPt15_TuneCP5_13TeV_pythia8/RunIIFall17MiniAODv2-PU2017RECOSIMstep_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-20toInf_MuEnrichedPt15_2016_APV", "")
+#dataset = Dataset("QCD_Pt-20toInf_MuEnrichedPt15_2016", "")
+#dataset = Dataset("QCD_Pt-20toInf_MuEnrichedPt15_2017", "")
+#dataset = Dataset("QCD_Pt-20toInf_MuEnrichedPt15_2018", "")
 
 # QCD MuEnrichedPt5
-#dataset = Dataset("QCD_Pt-15to20_MuEnrichedPt5", "/QCD_Pt-15to20_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("QCD_Pt-20to30_MuEnrichedPt5", "/QCD_Pt-20to30_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("QCD_Pt-30to50_MuEnrichedPt5", "/QCD_Pt-30to50_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("QCD_Pt-50to80_MuEnrichedPt5", "/QCD_Pt-50to80_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("QCD_Pt-80to120_MuEnrichedPt5", "/QCD_Pt-80to120_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("QCD_Pt-120to170_MuEnrichedPt5", "/QCD_Pt-120to170_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("QCD_Pt-170to300_MuEnrichedPt5", "/QCD_Pt-170to300_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("QCD_Pt-300to470_MuEnrichedPt5", "/QCD_Pt-300to470_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("QCD_Pt-470to600_MuEnrichedPt5", "/QCD_Pt-470to600_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("QCD_Pt-600to800_MuEnrichedPt5", "/QCD_Pt-600to800_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("QCD_Pt-800to1000_MuEnrichedPt5", "/QCD_Pt-800to1000_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
-#dataset = Dataset("QCD_Pt-1000toInf_MuEnrichedPt5", "/QCD_Pt-1000toInf_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-15to20_MuEnrichedPt5_2016_APV", "")
+#dataset = Dataset("QCD_Pt-20to30_MuEnrichedPt5_2016_APV", "")
+#dataset = Dataset("QCD_Pt-30to50_MuEnrichedPt5_2016_APV", "")
+#dataset = Dataset("QCD_Pt-50to80_MuEnrichedPt5_2016_APV", "")
+#dataset = Dataset("QCD_Pt-80to120_MuEnrichedPt5_2016_APV", "")
+#dataset = Dataset("QCD_Pt-120to170_MuEnrichedPt5_2016_APV", "")
+#dataset = Dataset("QCD_Pt-170to300_MuEnrichedPt5_2016_APV", "")
+#dataset = Dataset("QCD_Pt-300to470_MuEnrichedPt5_2016_APV", "")
+#dataset = Dataset("QCD_Pt-470to600_MuEnrichedPt5_2016_APV", "")
+#dataset = Dataset("QCD_Pt-600to800_MuEnrichedPt5_2016_APV", "")
+#dataset = Dataset("QCD_Pt-800to1000_MuEnrichedPt5_2016_APV", "")
+#dataset = Dataset("QCD_Pt-1000toInf_MuEnrichedPt5_2016_APV", "")
+
+#dataset = Dataset("QCD_Pt-15to20_MuEnrichedPt5_2016", "")
+#dataset = Dataset("QCD_Pt-20to30_MuEnrichedPt5_2016", "")
+#dataset = Dataset("QCD_Pt-30to50_MuEnrichedPt5_2016", "")
+#dataset = Dataset("QCD_Pt-50to80_MuEnrichedPt5_2016", "")
+#dataset = Dataset("QCD_Pt-80to120_MuEnrichedPt5_2016", "")
+#dataset = Dataset("QCD_Pt-120to170_MuEnrichedPt5_2016", "")
+#dataset = Dataset("QCD_Pt-170to300_MuEnrichedPt5_2016" "")
+#dataset = Dataset("QCD_Pt-300to470_MuEnrichedPt5_2016", "")
+#dataset = Dataset("QCD_Pt-470to600_MuEnrichedPt5_2016", "")
+#dataset = Dataset("QCD_Pt-600to800_MuEnrichedPt5_2016", "")
+#dataset = Dataset("QCD_Pt-800to1000_MuEnrichedPt5_2016", "")
+#dataset = Dataset("QCD_Pt-1000toInf_MuEnrichedPt5_2016", "")
+
+#dataset = Dataset("QCD_Pt-15to20_MuEnrichedPt5_2017", "/QCD_Pt-15to20_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
+#dataset = Dataset("QCD_Pt-20to30_MuEnrichedPt5_2017", "/QCD_Pt-20to30_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
+#dataset = Dataset("QCD_Pt-30to50_MuEnrichedPt5_2017", "/QCD_Pt-30to50_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
+#dataset = Dataset("QCD_Pt-50to80_MuEnrichedPt5_2017", "/QCD_Pt-50to80_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
+#dataset = Dataset("QCD_Pt-80to120_MuEnrichedPt5_2017", "/QCD_Pt-80to120_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
+#dataset = Dataset("QCD_Pt-120to170_MuEnrichedPt5_2017", "/QCD_Pt-120to170_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
+#dataset = Dataset("QCD_Pt-170to300_MuEnrichedPt5_2017", "/QCD_Pt-170to300_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
+#dataset = Dataset("QCD_Pt-300to470_MuEnrichedPt5_2017", "/QCD_Pt-300to470_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
+#dataset = Dataset("QCD_Pt-470to600_MuEnrichedPt5_2017", "/QCD_Pt-470to600_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
+#dataset = Dataset("QCD_Pt-600to800_MuEnrichedPt5_2017", "/QCD_Pt-600to800_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
+#dataset = Dataset("QCD_Pt-800to1000_MuEnrichedPt5_2017", "/QCD_Pt-800to1000_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
+#dataset = Dataset("QCD_Pt-1000toInf_MuEnrichedPt5_2017", "/QCD_Pt-1000toInf_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
+
+#dataset = Dataset("QCD_Pt-15to20_MuEnrichedPt5_2018", "/QCD_Pt-15to20_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
+#dataset = Dataset("QCD_Pt-20to30_MuEnrichedPt5_2018", "/QCD_Pt-20to30_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
+#dataset = Dataset("QCD_Pt-30to50_MuEnrichedPt5_2018", "/QCD_Pt-30to50_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
+#dataset = Dataset("QCD_Pt-50to80_MuEnrichedPt5_2018", "/QCD_Pt-50to80_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
+#dataset = Dataset("QCD_Pt-80to120_MuEnrichedPt5_2018", "/QCD_Pt-80to120_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
+#dataset = Dataset("QCD_Pt-120to170_MuEnrichedPt5_2018", "/QCD_Pt-120to170_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
+#dataset = Dataset("QCD_Pt-170to300_MuEnrichedPt5_2018", "/QCD_Pt-170to300_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
+#dataset = Dataset("QCD_Pt-300to470_MuEnrichedPt5_2018", "/QCD_Pt-300to470_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
+#dataset = Dataset("QCD_Pt-470to600_MuEnrichedPt5_2018", "/QCD_Pt-470to600_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
+#dataset = Dataset("QCD_Pt-600to800_MuEnrichedPt5_2018", "/QCD_Pt-600to800_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
+#dataset = Dataset("QCD_Pt-800to1000_MuEnrichedPt5_2018", "/QCD_Pt-800to1000_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
+#dataset = Dataset("QCD_Pt-1000toInf_MuEnrichedPt5_2018", "/QCD_Pt-1000toInf_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
 
 print dataset.process
 
