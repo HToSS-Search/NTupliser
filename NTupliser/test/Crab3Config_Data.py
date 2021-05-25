@@ -18,10 +18,10 @@ Dataset = namedtuple("Dataset", "process dataset")
 
 ## UL 2018 Datasets
 
-#dataset = Dataset("SingleMuon_Run2018A", /SingleMuon/Run2018A-UL2018_MiniAODv2-v1/MINIAOD")
-#dataset = Dataset("SingleMuon_Run2018B", /SingleMuon/Run2018B-UL2018_MiniAODv2-v1/MINIAOD")
-#dataset = Dataset("SingleMuon_Run2018C", /SingleMuon/Run2018C-UL2018_MiniAODv2-v1/MINIAOD")
-#dataset = Dataset("SingleMuon_Run2018D", /SingleMuon/Run2018D-UL2018_MiniAODv2-v1/MINIAOD")
+#dataset = Dataset("SingleMuon_Run2018A", "/SingleMuon/Run2018A-UL2018_MiniAODv2-v1/MINIAOD")
+#dataset = Dataset("SingleMuon_Run2018B", "/SingleMuon/Run2018B-UL2018_MiniAODv2-v1/MINIAOD")
+#dataset = Dataset("SingleMuon_Run2018C", "/SingleMuon/Run2018C-UL2018_MiniAODv2-v1/MINIAOD")
+#dataset = Dataset("SingleMuon_Run2018D", "/SingleMuon/Run2018D-UL2018_MiniAODv2-v1/MINIAOD")
 
 config = config()
 
@@ -39,9 +39,12 @@ config.Data.unitsPerJob = 100
 
 #config.Data.lumiMask = '/afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions16/13TeV/Legacy_2016/Cert_271036-284044_13TeV_Legacy2016_Collisions16_JSON.txt'
 #config.Data.lumiMask = '/afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions17/13TeV/Legacy_2017/Cert_294927-306462_13TeV_UL2017_Collisions17_GoldenJSON.txt'
-#config.Data.lumiMask = '/afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions18/13TeV/Legacy_2018/Cert_314472-325175_13TeV_Legacy2018_Collisions18_JSON.txt
+#config.Data.lumiMask = '/afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions18/13TeV/Legacy_2018/Cert_314472-325175_13TeV_Legacy2018_Collisions18_JSON.txt'
 
-config.Data.runRange = "294927-306462"
+#config.Data.runRange = "271036-284044" ### 2016
+#config.Data.runRange = "294927-306462" ### 2017
+config.Data.runRange = "314472-325175" ###  2018
+
 config.Data.outLFNDirBase = '/store/user/almorton/MC/nTuples/'
 config.Data.publication = False
 config.Data.outputDatasetTag = "CRAB3_Data_nTuplisation_{}".format(dataset.process)
