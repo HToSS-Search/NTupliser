@@ -787,6 +787,13 @@ class MakeTopologyNtupleMiniAOD : public edm::EDAnalyzer
     std::map<std::string, std::vector<float>> muonSortedInnerTkEta;
     std::map<std::string, std::vector<float>> muonSortedInnerTkPhi;
 
+    std::map<std::string, std::vector<float>> muonSortedImpactTransDist;
+    std::map<std::string, std::vector<float>> muonSortedImpactTransError;
+    std::map<std::string, std::vector<float>> muonSortedImpactTransSignificance;
+    std::map<std::string, std::vector<float>> muonSortedImpact3DDist;
+    std::map<std::string, std::vector<float>> muonSortedImpact3DError;
+    std::map<std::string, std::vector<float>> muonSortedImpact3DSignificance;
+
     std::map<std::string, std::vector<float>> muonSortedChargedHadronIso;
     std::map<std::string, std::vector<float>> muonSortedNeutralHadronIso;
     std::map<std::string, std::vector<float>> muonSortedPhotonIso;
@@ -1088,6 +1095,12 @@ class MakeTopologyNtupleMiniAOD : public edm::EDAnalyzer
     int packedCandsPseudoTrkStripLayersWithMeasurement[NPACKEDCANDSMAX]{};
     int packedCandsPseudoTrkTrackerLayersWithMeasurement[NPACKEDCANDSMAX]{};
     int packedCandsHighPurityTrack[NPACKEDCANDSMAX]{};
+    float packedCandsTrkImpactTransDist[NPACKEDCANDSMAX]{};
+    float packedCandsTrkImpactTransError[NPACKEDCANDSMAX]{};
+    float packedCandsTrkImpactTransSignificance[NPACKEDCANDSMAX]{};
+    float packedCandsTrk3DDist[NPACKEDCANDSMAX]{};
+    float packedCandsTrk3DError[NPACKEDCANDSMAX]{};
+    float packedCandsTrk3DSignificance[NPACKEDCANDSMAX]{};
 
     static constexpr size_t NCHSTKPAIRMAX{350};
     int    chsTkPairIndex1[NCHSTKPAIRMAX]{};
