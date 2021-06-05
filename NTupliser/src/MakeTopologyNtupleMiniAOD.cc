@@ -997,6 +997,10 @@ void MakeTopologyNtupleMiniAOD::fillMuons(const edm::Event& iEvent, const edm::E
     iSetup.get<IdealMagneticFieldRecord>().get(magneticFieldHandle);
     const MagneticField* theMagneticField = magneticFieldHandle.product();
 
+    // Primary vertex
+    edm::Handle<reco::VertexCollection> pvHandle;
+    iEvent.getByToken(pvLabel_, pvHandle);
+
     //fillBeamSpot(iEvent, iSetup);
     //fillIsolatedTracks(iEvent, iSetup);
     //fillLostTracksCands(iEvent, iSetup);
@@ -1122,6 +1126,30 @@ void MakeTopologyNtupleMiniAOD::fillMuons(const edm::Event& iEvent, const edm::E
             // Just some extra stuff.
             muonSortedGlbTkNormChi2[ID][numMuo[ID] - 1] = muo.globalTrack()->normalizedChi2();
         }
+
+        // Impact param significance
+        if ( pvHandle.isValid() && (muo.isTrackerMuon() || muo.isGlobalMuon()) ) {
+            std::vector<reco::Vertex> pv{*pvHandle};
+
+            edm::ESHandle<TransientTrackBuilder> trackBuilder;
+            iSetup.get<TransientTrackRecord>().get("TransientTrackBuilder", trackBuilder);
+            reco::TransientTrack muTransient{trackBuilder->build( muo.bestTrack() )};
+
+            std::pair<bool, Measurement1D> muImpactTrans{IPTools::absoluteTransverseImpactParameter(muTransient, pv[0])};
+            std::pair<bool, Measurement1D> muImpact3D{IPTools::absoluteImpactParameter3D(muTransient, pv[0])};
+
+            if (muImpactTrans.first) {
+                muonSortedImpactTransDist[ID][numMuo[ID] - 1] = muImpactTrans.second.value();
+                muonSortedImpactTransError[ID][numMuo[ID] - 1] = muImpactTrans.second.error();
+                muonSortedImpactTransSignificance[ID][numMuo[ID] - 1] = muImpactTrans.second.significance();
+            }
+            if (muImpact3D.first) {
+                muonSortedImpact3DDist[ID][numMuo[ID] - 1] = muImpact3D.second.value();
+                muonSortedImpact3DError[ID][numMuo[ID] - 1] = muImpact3D.second.error();
+                muonSortedImpact3DSignificance[ID][numMuo[ID] - 1] = muImpact3D.second.significance();
+            }
+        }
+
         //----------------------------------------------------------------------------
         // std::cout << "Gets to the filling bit which says track in it";
         // muonSortedTrackNHits[ID][numMuo[ID] - 1] =
@@ -1135,28 +1163,15 @@ void MakeTopologyNtupleMiniAOD::fillMuons(const edm::Event& iEvent, const edm::E
         muonSortedNeutralHadronIso[ID][numMuo[ID] - 1] = muo.neutralHadronIso();
         muonSortedPhotonIso[ID][numMuo[ID] - 1] = muo.photonIso();
 
-        muonSortedTrackIso[ID][numMuo[ID] - 1] =
-            muo.isolationR03().sumPt; // muo.trackIso();
-        muonSortedECalIso[ID][numMuo[ID] - 1] =
-            muo.isolationR03().emEt; // muo.ecalIso();
-        muonSortedHCalIso[ID][numMuo[ID] - 1] =
-            muo.isolationR03().hadEt; // muo.hcalIso();
+        muonSortedTrackIso[ID][numMuo[ID] - 1] = muo.isolationR03().sumPt; // muo.trackIso();
+        muonSortedECalIso[ID][numMuo[ID] - 1] = muo.isolationR03().emEt; // muo.ecalIso();
+        muonSortedHCalIso[ID][numMuo[ID] - 1] = muo.isolationR03().hadEt; // muo.hcalIso();
 
-        // manually calculating comreliso - ie. muonSortedComRelIsodBeta is with
-        // DeltaBeta correction:
-        muonSortedComRelIso[ID][numMuo[ID] - 1] =
-            muonSortedTrackIso[ID][numMuo[ID] - 1];
-        muonSortedComRelIso[ID][numMuo[ID] - 1] +=
-            muonSortedECalIso[ID][numMuo[ID] - 1];
-        muonSortedComRelIso[ID][numMuo[ID] - 1] +=
-            muonSortedHCalIso[ID][numMuo[ID] - 1];
+        muonSortedComRelIso[ID][numMuo[ID] - 1] =  muonSortedTrackIso[ID][numMuo[ID] - 1];
+        muonSortedComRelIso[ID][numMuo[ID] - 1] += muonSortedECalIso[ID][numMuo[ID] - 1];
+        muonSortedComRelIso[ID][numMuo[ID] - 1] += muonSortedHCalIso[ID][numMuo[ID] - 1];
         // Old method of rel iso with beta correction
-        // muonSortedComRelIsodBeta[ID][numMuo[ID] - 1] =
-        //     (muo.chargedHadronIso()
-        //      + std::max(0.0,
-        //                 muo.neutralHadronIso() + muo.photonIso()
-        //                     - 0.5 * muo.puChargedHadronIso()))
-        //     / muo.pt();
+        // muonSortedComRelIsodBeta[ID][numMuo[ID] - 1] = (muo.chargedHadronIso() + std::max(0.0, muo.neutralHadronIso() + muo.photonIso() - 0.5 * muo.puChargedHadronIso())) / muo.pt();
         // New Method
         muonSortedComRelIsodBeta[ID][numMuo[ID] - 1] = (muo.pfIsolationR04().sumChargedHadronPt + std::max(0.0, muo.pfIsolationR04().sumNeutralHadronEt + muo.pfIsolationR04().sumPhotonEt - 0.5 * muo.pfIsolationR04().sumPUPt)) / muo.pt();
         muonSortedComRelIso[ID][numMuo[ID] - 1] /= muonSortedPt[ID][numMuo[ID] - 1];
@@ -2460,6 +2475,10 @@ void MakeTopologyNtupleMiniAOD::fillPackedCands(const edm::Event& iEvent, const 
     iEvent.getByToken(packedCandToken_, packedCandHandle);
     const pat::PackedCandidateCollection& packedCands{*packedCandHandle};
 
+    // Primary vertex
+    edm::Handle<reco::VertexCollection> pvHandle;
+    iEvent.getByToken(pvLabel_, pvHandle);
+
     // Sort packed cands by eT
     packedCandEts.clear();
     for ( const auto& cand : packedCands ) {
@@ -2685,6 +2704,29 @@ void MakeTopologyNtupleMiniAOD::fillPackedCands(const edm::Event& iEvent, const 
 //            packedCandsPseudoTrkStripLayersWithMeasurement[numPackedCands] = packedCand.pseudoTrack().hitPattern().stripLayersWithMeasurement();
 //            packedCandsPseudoTrkTrackerLayersWithMeasurement[numPackedCands] = packedCand.pseudoTrack().hitPattern().trackerLayersWithMeasurement();
             packedCandsHighPurityTrack[numPackedCands] = packedCand.trackHighPurity();
+
+            // Store impact parameter info
+            if ( pvHandle.isValid() ) {
+                std::vector<reco::Vertex> pv{*pvHandle};
+
+                edm::ESHandle<TransientTrackBuilder> trackBuilder;
+                iSetup.get<TransientTrackRecord>().get("TransientTrackBuilder", trackBuilder);
+                reco::TransientTrack trackTransient{trackBuilder->build( packedCand.pseudoTrack() )};
+
+                std::pair<bool, Measurement1D> trackImpactTrans{IPTools::absoluteTransverseImpactParameter(trackTransient, pv[0])};
+                std::pair<bool, Measurement1D> trackImpact3D{IPTools::absoluteImpactParameter3D(trackTransient, pv[0])};
+
+                if (trackImpactTrans.first) {
+                    packedCandsTrkImpactTransDist[numPackedCands] = trackImpactTrans.second.value();
+                    packedCandsTrkImpactTransError[numPackedCands] = trackImpactTrans.second.error();
+                    packedCandsTrkImpactTransSignificance[numPackedCands] = trackImpactTrans.second.significance();
+                }
+                if (trackImpact3D.first) {
+                    packedCandsTrk3DDist[numPackedCands] = trackImpact3D.second.value();
+                    packedCandsTrk3DError[numPackedCands] = trackImpact3D.second.error();
+                    packedCandsTrk3DSignificance[numPackedCands] = trackImpact3D.second.significance();
+                }
+            }
 
             // Store packed cands track refs for post muon loop tracking analysis
             if ( std::abs(packedCand.pdgId()) == 211 && packedCand.charge() != 0 && packedCand.pseudoTrack().pt() > 2.9 ) { // only store charged hadrons
@@ -3170,6 +3212,13 @@ void MakeTopologyNtupleMiniAOD::clearmuonarrays(const std::string& ID){
     muonSortedVldPixHits[ID].clear();
     muonSortedMatchedStations[ID].clear();
 
+    muonSortedImpactTransDist[ID].clear();
+    muonSortedImpactTransError[ID].clear();
+    muonSortedImpactTransSignificance[ID].clear();
+    muonSortedImpact3DDist[ID].clear();
+    muonSortedImpact3DError[ID].clear();
+    muonSortedImpact3DSignificance[ID].clear();
+
     muonSortedChargedHadronIso[ID].clear();
     muonSortedNeutralHadronIso[ID].clear();
     muonSortedPhotonIso[ID].clear();
@@ -3652,6 +3701,13 @@ void MakeTopologyNtupleMiniAOD::clearPackedCandsArrays() {
 //        packedCandsPseudoTrkStripLayersWithMeasurement[i] = -1;
 //        packedCandsPseudoTrkTrackerLayersWithMeasurement[i] = -1;
         packedCandsHighPurityTrack[i] = -1;
+        packedCandsTrkImpactTransDist[numPackedCands] = -9999;
+        packedCandsTrkImpactTransError[numPackedCands] = -9999;
+        packedCandsTrkImpactTransSignificance[numPackedCands] = -9999;
+        packedCandsTrk3DDist[numPackedCands] = -9999;
+        packedCandsTrk3DError[numPackedCands] = -9999;
+        packedCandsTrk3DSignificance[numPackedCands] = -9999;
+
     }
 
     numChsTrackPairs = 0;
@@ -4933,6 +4989,13 @@ void MakeTopologyNtupleMiniAOD::bookMuonBranches(const std::string& ID, const st
     muonSortedVldPixHits[ID] = tempVecI;
     muonSortedMatchedStations[ID] = tempVecI;
 
+    muonSortedImpactTransDist[ID] = tempVecF;
+    muonSortedImpactTransError[ID] = tempVecF;
+    muonSortedImpactTransSignificance[ID] = tempVecF;
+    muonSortedImpact3DDist[ID] = tempVecF;
+    muonSortedImpact3DError[ID] = tempVecF;
+    muonSortedImpact3DSignificance[ID] = tempVecF;
+
     muonSortedChargedHadronIso[ID] = tempVecF;
     muonSortedNeutralHadronIso[ID] = tempVecF;
     muonSortedPhotonIso[ID] = tempVecF;
@@ -5084,6 +5147,13 @@ void MakeTopologyNtupleMiniAOD::bookMuonBranches(const std::string& ID, const st
     mytree_->Branch((prefix + "DZPVError").c_str(), &muonSortedDZPVError[ID][0], (prefix + "DZPVError[numMuon" + name + "]/F").c_str());
     mytree_->Branch((prefix + "VldPixHits").c_str(), &muonSortedVldPixHits[ID][0], (prefix + "VldPixHits[numMuon" + name + "]/F").c_str());
     mytree_->Branch((prefix + "MatchedStations").c_str(), &muonSortedMatchedStations[ID][0], (prefix + "MatchedStations[numMuon" + name + "]/F").c_str());
+
+    mytree_->Branch((prefix + "ImpactTransDist").c_str(), &muonSortedImpactTransDist[ID][0], (prefix + "ImpactTransDist[numMuon" + name + "]/F").c_str());
+    mytree_->Branch((prefix + "ImpactTransError").c_str(), &muonSortedImpactTransError[ID][0], (prefix + "ImpactTransError[numMuon" + name + "]/F").c_str());
+    mytree_->Branch((prefix + "ImpactTransSignificance").c_str(), &muonSortedImpactTransSignificance[ID][0], (prefix + "ImpactTransSignificance[numMuon" + name + "]/F").c_str());
+    mytree_->Branch((prefix + "Impact3DDist").c_str(), &muonSortedImpact3DDist[ID][0], (prefix + "Impact3DDist[numMuon" + name + "]/F").c_str());
+    mytree_->Branch((prefix + "Impact3DError").c_str(), &muonSortedImpact3DError[ID][0], (prefix + "Impact3DError[numMuon" + name + "]/F").c_str());
+    mytree_->Branch((prefix + "Impact3DSignificance").c_str(), &muonSortedImpact3DSignificance[ID][0], (prefix + "Impact3DSignificance[numMuon" + name + "]/F").c_str());
 
     mytree_->Branch((prefix + "ChargedHadronIso").c_str(), &muonSortedChargedHadronIso[ID][0], (prefix + "ChargedHadronIso[numMuon" + name + "]/F").c_str());
     mytree_->Branch( (prefix + "NeutralHadronIso").c_str(), &muonSortedNeutralHadronIso[ID][0], (prefix + "NeutralHadronIso[numMuon" + name + "]/F").c_str());
@@ -5789,6 +5859,12 @@ void MakeTopologyNtupleMiniAOD::bookPackedCandsBranches() {
 //    mytree_->Branch("packedCandsPseudoTrkStripLayersWithMeasurement", &packedCandsPseudoTrkStripLayersWithMeasurement, "packedCandsPseudoTrkStripLayersWithMeasurement[numPackedCands]/I");
 //    mytree_->Branch("packedCandsPseudoTrkTrackerLayersWithMeasurement", &packedCandsPseudoTrkTrackerLayersWithMeasurement, "packedCandsPseudoTrkTrackerLayersWithMeasurement[numPackedCands]/I");
     mytree_->Branch("packedCandsHighPurityTrack", &packedCandsHighPurityTrack, "packedCandsHighPurityTrack[numPackedCands]/I");
+    mytree_->Branch("packedCandsTrkImpactTransDist", &packedCandsTrkImpactTransDist, "packedCandsTrkImpactTransDist[numPackedCands]/F");
+    mytree_->Branch("packedCandsTrkImpactTransError", &packedCandsTrkImpactTransError, "packedCandsTrkImpactTransError[numPackedCands]/F");
+    mytree_->Branch("packedCandsTrkImpactTransSignificance", &packedCandsTrkImpactTransSignificance, "packedCandsTrkImpactTransSignificance[numPackedCands]/F");
+    mytree_->Branch("packedCandsTrk3DDist", &packedCandsTrk3DDist, "packedCandsTrk3DDist[numPackedCands]/F");
+    mytree_->Branch("packedCandsTrk3DError", &packedCandsTrk3DError, "packedCandsTrk3DError[numPackedCands]/F");
+    mytree_->Branch("packedCandsTrk3DSignificance", &packedCandsTrk3DSignificance, "packedCandsTrk3DSignificance[numPackedCands]/F");
 
 
     mytree_->Branch("numChsTrackPairs", &numChsTrackPairs, "numChsTrackPairs/I");
