@@ -3913,7 +3913,7 @@ void MakeTopologyNtupleMiniAOD::analyze(const edm::Event& iEvent, const edm::Eve
     fillMuons           (iEvent, iSetup, patMuonsToken_, "PF");
 
     fillElectrons(iEvent, iSetup, patElectronsToken_, "PF", eleLabel_);
-    fillPhotons(iEvent, iSetup, patPhotonsToken_, "PF", phoLabel_);
+//    fillPhotons(iEvent, iSetup, patPhotonsToken_, "PF", phoLabel_);
 //    fillPhotons(iEvent, iSetup, patOOTphotonsToken_, "OOT", ootPhoLabel_);
 
     // fillJets(iEvent, iSetup, jetLabel_, "Calo");
