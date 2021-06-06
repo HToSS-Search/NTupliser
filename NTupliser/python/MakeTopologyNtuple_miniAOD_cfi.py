@@ -36,7 +36,8 @@ makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
                                            lambdaToken            = cms.InputTag("slimmedLambdaVertices"),
 
                                            rhoToken               = cms.InputTag("fixedGridRhoFastjetAll"),
-					   effAreasConfigFile     = cms.FileInPath("RecoEgamma/ElectronIdentification/data/Fall17/effAreaElectrons_cone03_pfNeuHadronsAndPhotons_94X.txt"),
+					   #effAreasConfigFile     = cms.FileInPath("RecoEgamma/ElectronIdentification/data/RecoEgamma/ElectronIdentification/data/Summer16/effAreaElectrons_cone03_pfNeuHadronsAndPhotons_80X.txt"), #2016
+					   effAreasConfigFile     = cms.FileInPath("RecoEgamma/ElectronIdentification/data/Fall17/effAreaElectrons_cone03_pfNeuHadronsAndPhotons_94X.txt"), #2017+2018
 					   pileupToken	          = cms.InputTag("slimmedAddPileupInfo"),
                                            triggerToken           = cms.InputTag("TriggerResults","","HLT"),
                                            metFilterToken         = cms.InputTag("TriggerResults", "", "PAT"),
@@ -46,7 +47,7 @@ makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
 					   externalLHEToken       = cms.InputTag("externalLHEProducer"), # "externalLHEProducer", "source" for THQ 
 
 					   pdfIdStart             = cms.int32(2001),
-					   pdfIdEnd               = cms.int32(2100),
+					   pdfIdEnd               = cms.int32(2102),
 					   hasAlphaWeightFlag     = cms.bool(True),
 					   alphaIdStart           = cms.int32(2101),
 					   alphaIdEnd             = cms.int32(2102),
