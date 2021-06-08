@@ -51,6 +51,7 @@ makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
 					   hasAlphaWeightFlag     = cms.bool(True),
 					   alphaIdStart           = cms.int32(2101),
 					   alphaIdEnd             = cms.int32(2102),
+                                           skipIsrFsrWeights      = cms.bool(False),
 
                                            scalarPid              = cms.int32(9000006),
 					   pdfInfoFixingToken     = cms.InputTag("pdfInfoFixing"),

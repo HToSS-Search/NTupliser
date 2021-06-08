@@ -162,6 +162,7 @@ class MakeTopologyNtupleMiniAOD : public edm::EDAnalyzer
     const bool isMCatNLO_{};
     const bool isLHEflag_{};
     const bool hasAlphaWeightFlag_{};
+    const bool skipIsrFsrWeights_{};
 
     // and an ntuple (filling in the methods)
     void fillBeamSpot(const edm::Event&, const edm::EventSetup&);

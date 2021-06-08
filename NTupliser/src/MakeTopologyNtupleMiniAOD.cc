@@ -216,6 +216,7 @@ MakeTopologyNtupleMiniAOD::MakeTopologyNtupleMiniAOD(
     , isMCatNLO_{iConfig.getParameter<bool>("isMCatNLO")}
     , isLHEflag_{iConfig.getParameter<bool>("isLHEflag")}
     , hasAlphaWeightFlag_{iConfig.getParameter<bool>("hasAlphaWeightFlag")}
+    , skipIsrFsrWeights_{iConfig.getParameter<bool>("skipIsrFsrWeights")}
     , isrRedHi{1.0}
     , fsrRedHi{1.0}
     , isrRedLo{1.0}
@@ -1860,8 +1861,7 @@ void MakeTopologyNtupleMiniAOD::fillMCInfo(const edm::Event& iEvent, const edm::
         }
     }
 
-    else
-    {
+    else {
         weight_muF0p5_ = -999.0;
         weight_muF2_ = -999.0;
         weight_muR0p5_ = -999.0;
@@ -1875,8 +1875,7 @@ void MakeTopologyNtupleMiniAOD::fillMCInfo(const edm::Event& iEvent, const edm::
         weight_alphaMin_ = 1.0;
     }
 
-    if (!is2016_)
-    {
+    if (!is2016_)  {
         // Perform the recommended rescaling
         // The TWiki says:
         // https://twiki.cern.ch/twiki/bin/viewauth/CMS/LHEReaderCMSSW#Retrieving_the_weights
@@ -1884,52 +1883,51 @@ void MakeTopologyNtupleMiniAOD::fillMCInfo(const edm::Event& iEvent, const edm::
         // but we want to turn these into an easy to use SF
         // sf = final_weight / original_weight
         //    = nominal_weight * systematic_weight / (original_weight ^ 2)
-        auto weight_sf = [&](const double w) {
-            return w * genEventInfo->weight()
-                   / std::pow(EventHandle->originalXWGTUP(), 2);
+        auto weight_sf = [&](const double w) { 
+            return w * genEventInfo->weight() / std::pow(EventHandle->originalXWGTUP(), 2);
         };
 
-        for (size_t i{2}; i < genEventInfo->weights().size(); ++i)
-        {
-            switch (i)
-            {
-                case 2:
-                    isrRedHi = weight_sf(genEventInfo->weights()[i]);
-                    break;
-                case 3:
-                    fsrRedHi = weight_sf(genEventInfo->weights()[i]);
-                    break;
-                case 4:
-                    isrRedLo = weight_sf(genEventInfo->weights()[i]);
-                    break;
-                case 5:
-                    fsrRedLo = weight_sf(genEventInfo->weights()[i]);
-                    break;
-                case 6:
-                    isrDefHi = weight_sf(genEventInfo->weights()[i]);
-                    break;
-                case 7:
-                    fsrDefHi = weight_sf(genEventInfo->weights()[i]);
-                    break;
-                case 8:
-                    isrDefLo = weight_sf(genEventInfo->weights()[i]);
-                    break;
-                case 9:
-                    fsrDefLo = weight_sf(genEventInfo->weights()[i]);
-                    break;
-                case 10:
-                    isrConHi = weight_sf(genEventInfo->weights()[i]);
-                    break;
-                case 11:
-                    fsrConHi = weight_sf(genEventInfo->weights()[i]);
-                    break;
-                case 12:
-                    isrConLo = weight_sf(genEventInfo->weights()[i]);
-                    break;
-                case 13:
-                    fsrConLo = weight_sf(genEventInfo->weights()[i]);
-                    break;
-                default: break;
+        if ( !skipIsrFsrWeights_ ) {
+            for (size_t i{2}; i < genEventInfo->weights().size(); ++i) {
+                switch (i) {
+                    case 2:
+                        isrRedHi = weight_sf(genEventInfo->weights()[i]);
+                        break;
+                    case 3:
+                        fsrRedHi = weight_sf(genEventInfo->weights()[i]);
+                        break;
+                    case 4:
+                        isrRedLo = weight_sf(genEventInfo->weights()[i]);
+                        break;
+                    case 5:
+                        fsrRedLo = weight_sf(genEventInfo->weights()[i]);
+                        break;
+                    case 6:
+                        isrDefHi = weight_sf(genEventInfo->weights()[i]);
+                        break;
+                    case 7:
+                        fsrDefHi = weight_sf(genEventInfo->weights()[i]);
+                        break;
+                    case 8:
+                        isrDefLo = weight_sf(genEventInfo->weights()[i]);
+                        break;
+                    case 9:
+                        fsrDefLo = weight_sf(genEventInfo->weights()[i]);
+                        break;
+                    case 10:
+                        isrConHi = weight_sf(genEventInfo->weights()[i]);
+                        break;
+                    case 11:
+                        fsrConHi = weight_sf(genEventInfo->weights()[i]);
+                        break;
+                    case 12:
+                        isrConLo = weight_sf(genEventInfo->weights()[i]);
+                        break;
+                    case 13:
+                        fsrConLo = weight_sf(genEventInfo->weights()[i]);
+                        break;
+                    default: break;
+                }
             }
         }
     }
