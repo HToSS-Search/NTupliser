@@ -45,8 +45,8 @@ makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
 					   externalLHEToken       = cms.InputTag("externalLHEProducer"), # "externalLHEProducer", "source" for THQ 
 
 					   pdfIdStart             = cms.int32(2001),
-					   pdfIdEnd               = cms.int32(2100),
-					   hasAlphaWeightFlag     = cms.bool(False),
+					   pdfIdEnd               = cms.int32(2102),
+					   hasAlphaWeightFlag     = cms.bool(True),
 					   alphaIdStart           = cms.int32(2101),
 					   alphaIdEnd             = cms.int32(2102),
 
@@ -169,8 +169,12 @@ makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
 ### displaced muons andLevel-2/muon chambers only triggers
 #        'HLT DoubleMu33NoFiltersNoVtx_v*', #2016 only
 #        'HLT DoubleMu23NoFiltersNoVtxDisplaced_v*', #2016 only
+        'HLT_DoubleL2Mu50_v1',#2017
         'HLT_DoubleL2Mu50_v2',#2017+2018
+
+        'HLT_DoubleMu43NoFiltersNoVtx_v2', #2017
         'HLT_DoubleMu43NoFiltersNoVtx_v3', #2017
+        'HLT_DoubleMu48NoFiltersNoVtx_v2', #2017
         'HLT_DoubleMu48NoFiltersNoVtx_v3', #2017
 
 #        'HLT_DoubleL2Mu23NoVtx_2Cha_v2', #2018 only
