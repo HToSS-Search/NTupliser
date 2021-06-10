@@ -1097,9 +1097,9 @@ class MakeTopologyNtupleMiniAOD : public edm::EDAnalyzer
     float packedCandsTrkImpactTransDist[NPACKEDCANDSMAX]{};
     float packedCandsTrkImpactTransError[NPACKEDCANDSMAX]{};
     float packedCandsTrkImpactTransSignificance[NPACKEDCANDSMAX]{};
-    float packedCandsTrk3DDist[NPACKEDCANDSMAX]{};
-    float packedCandsTrk3DError[NPACKEDCANDSMAX]{};
-    float packedCandsTrk3DSignificance[NPACKEDCANDSMAX]{};
+    float packedCandsTrkImpact3DDist[NPACKEDCANDSMAX]{};
+    float packedCandsTrkImpact3DError[NPACKEDCANDSMAX]{};
+    float packedCandsTrkImpact3DSignificance[NPACKEDCANDSMAX]{};
 
     static constexpr size_t NCHSTKPAIRMAX{350};
     int    chsTkPairIndex1[NCHSTKPAIRMAX]{};
