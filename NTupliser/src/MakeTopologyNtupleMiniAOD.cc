@@ -2722,9 +2722,9 @@ void MakeTopologyNtupleMiniAOD::fillPackedCands(const edm::Event& iEvent, const 
                     packedCandsTrkImpactTransSignificance[numPackedCands] = trackImpactTrans.second.significance();
                 }
                 if (trackImpact3D.first) {
-                    packedCandsTrk3DDist[numPackedCands] = trackImpact3D.second.value();
-                    packedCandsTrk3DError[numPackedCands] = trackImpact3D.second.error();
-                    packedCandsTrk3DSignificance[numPackedCands] = trackImpact3D.second.significance();
+                    packedCandsTrkImpact3DDist[numPackedCands] = trackImpact3D.second.value();
+                    packedCandsTrkImpact3DError[numPackedCands] = trackImpact3D.second.error();
+                    packedCandsTrkImpact3DSignificance[numPackedCands] = trackImpact3D.second.significance();
                 }
             }
 
@@ -3704,9 +3704,9 @@ void MakeTopologyNtupleMiniAOD::clearPackedCandsArrays() {
         packedCandsTrkImpactTransDist[numPackedCands] = -9999;
         packedCandsTrkImpactTransError[numPackedCands] = -9999;
         packedCandsTrkImpactTransSignificance[numPackedCands] = -9999;
-        packedCandsTrk3DDist[numPackedCands] = -9999;
-        packedCandsTrk3DError[numPackedCands] = -9999;
-        packedCandsTrk3DSignificance[numPackedCands] = -9999;
+        packedCandsTrkImpact3DDist[numPackedCands] = -9999;
+        packedCandsTrkImpact3DError[numPackedCands] = -9999;
+        packedCandsTrkImpact3DSignificance[numPackedCands] = -9999;
 
     }
 
@@ -3802,7 +3802,7 @@ void MakeTopologyNtupleMiniAOD::cleararrays() {
     clearmuonarrays("PF");
     clearMetArrays("PF");
     clearTauArrays("PF");
-    clearPhotonArrays("PF");
+//    clearPhotonArrays("PF");
 
     clearjetarrays("AK5PF");
 
@@ -4010,7 +4010,7 @@ void MakeTopologyNtupleMiniAOD::bookBranches() {
     bookPFJetBranches("PF", "PF2PAT");
     bookMETBranches("PF", "PF2PAT");
 //    bookTauBranches("PF", "PF2PAT");
-    bookPhotonBranches("PF", "PF2PAT");
+//    bookPhotonBranches("PF", "PF2PAT");
 //    bookPhotonBranches("OOT", "OOT_PF2PAT");
 
     // bookJetBranches("AK5PF", "AK5PF");
@@ -5862,9 +5862,9 @@ void MakeTopologyNtupleMiniAOD::bookPackedCandsBranches() {
     mytree_->Branch("packedCandsTrkImpactTransDist", &packedCandsTrkImpactTransDist, "packedCandsTrkImpactTransDist[numPackedCands]/F");
     mytree_->Branch("packedCandsTrkImpactTransError", &packedCandsTrkImpactTransError, "packedCandsTrkImpactTransError[numPackedCands]/F");
     mytree_->Branch("packedCandsTrkImpactTransSignificance", &packedCandsTrkImpactTransSignificance, "packedCandsTrkImpactTransSignificance[numPackedCands]/F");
-    mytree_->Branch("packedCandsTrk3DDist", &packedCandsTrk3DDist, "packedCandsTrk3DDist[numPackedCands]/F");
-    mytree_->Branch("packedCandsTrk3DError", &packedCandsTrk3DError, "packedCandsTrk3DError[numPackedCands]/F");
-    mytree_->Branch("packedCandsTrk3DSignificance", &packedCandsTrk3DSignificance, "packedCandsTrk3DSignificance[numPackedCands]/F");
+    mytree_->Branch("packedCandsTrkImpact3DDist", &packedCandsTrkImpact3DDist, "packedCandsTrkImpact3DDist[numPackedCands]/F");
+    mytree_->Branch("packedCandsTrkImpact3DError", &packedCandsTrkImpact3DError, "packedCandsTrkImpact3DError[numPackedCands]/F");
+    mytree_->Branch("packedCandsTrkImpact3DSignificance", &packedCandsTrkImpact3DSignificance, "packedCandsTrkImpact3DSignificance[numPackedCands]/F");
 
 
     mytree_->Branch("numChsTrackPairs", &numChsTrackPairs, "numChsTrackPairs/I");
