@@ -38,7 +38,12 @@ generator = cms.EDFilter("Pythia8HadronizerFilter",
             '9000006:onNegIfAny = 211',
             '9000006:onNegIfAny = 321',
             '9000006:onNegIfAny = 310',
-            '9000006:onPosIfAny = 13'),
+            '9000006:onPosIfAny = 13',
+            '9000006:0:bRatio = 1.',    ### channel 0 = 13
+            '9000006:1:bRatio = 0.67',  ### channel 1 = 211
+            '9000006:2:bRatio = 0.165', ### channel 2 = 321
+            '9000006:3:bRatio = 0.165'  ### channel 3 = 310
+        ),
         pythia8CP2Settings = cms.vstring('Tune:pp 14', 
             'Tune:ee 7', 
             'MultipartonInteractions:ecmPow=0.1391', 
