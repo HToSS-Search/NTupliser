@@ -33,7 +33,7 @@ options = VarParsing.VarParsing ('analysis')
 options.parseArguments()
 
 process.maxEvents = cms.untracked.PSet(
-    input = cms.untracked.int32(100)
+    input = cms.untracked.int32(10)
 )
 
 # Input source
@@ -100,8 +100,12 @@ process.generator = cms.EDFilter("Pythia8HadronizerFilter",
             '9000006:onMode = off', 
             '9000006:onNegIfAny = 211', 
             '9000006:onNegIfAny = 321', 
-            '9000006:onNegIfAny = 310', 
-            '9000006:onPosIfAny = 13'
+            '9000006:onNegIfAny = 310',
+            '9000006:onPosIfAny = 13',
+            '9000006:0:bRatio = 1.',    ### channel 0 = 13
+            '9000006:1:bRatio = 0.67',  ### channel 1 = 211
+            '9000006:2:bRatio = 0.165', ### channel 2 = 321
+            '9000006:3:bRatio = 0.165'  ### channel 3 = 310
         ),
         pythia8CP2Settings = cms.vstring(
             'Tune:pp 14', 
@@ -142,14 +146,14 @@ process.generator = cms.EDFilter("Pythia8HadronizerFilter",
     ),
     comEnergy = cms.double(13000.0),
     filterEfficiency = cms.untracked.double(1.0),
-    maxEventsToPrint = cms.untracked.int32(1),
+    maxEventsToPrint = cms.untracked.int32(10),
     pythiaHepMCVerbosity = cms.untracked.bool(False),
     pythiaPylistVerbosity = cms.untracked.int32(1)
 )
 
 process.externalLHEProducer = cms.EDProducer("ExternalLHEProducer",
     args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/powheg/V2/gg_H_quark-mass-effects_slc7_amd64_gcc820_CMSSW_10_6_20_ggH_M125/v1/gg_H_quark-mass-effects_slc7_amd64_gcc820_CMSSW_10_6_20_ggH_M125.tgz'), ## Correct UL version
-    nEvents = cms.untracked.uint32(100),
+    nEvents = cms.untracked.uint32(10),
     numberOfParameters = cms.uint32(1),
     outputFile = cms.string('cmsgrid_final.lhe'),
     scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
