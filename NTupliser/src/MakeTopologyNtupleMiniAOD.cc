@@ -3923,8 +3923,6 @@ void MakeTopologyNtupleMiniAOD::cleararrays() {
 
 // ------------ method called to for each event  ------------
 void MakeTopologyNtupleMiniAOD::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
-    if (iEvent.id().run() < 306459) return;
-    if (iEvent.id().event() < 40548004) return;
     using namespace edm;
     // std::cout << iEvent.id().run() << " " << iEvent.luminosityBlock() << " "
     //           << iEvent.id().event()
