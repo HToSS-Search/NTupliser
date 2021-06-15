@@ -2794,7 +2794,6 @@ void MakeTopologyNtupleMiniAOD::fillPackedCands(const edm::Event& iEvent, const 
     } // end packed cands loop
 
     numChsTrackPairs = 0;
-
     // loop over chs tracks
     for (unsigned int trdx1 = 0; trdx1 < chsTrackRefs.size() && numChsTrackPairs< numeric_cast<int>(NCHSTKPAIRMAX); ++trdx1) {
         for (unsigned int trdx2 = trdx1 + 1; trdx2 < chsTrackRefs.size() && numChsTrackPairs < numeric_cast<int>(NCHSTKPAIRMAX); ++trdx2) {
@@ -2855,13 +2854,32 @@ void MakeTopologyNtupleMiniAOD::fillPackedCands(const edm::Event& iEvent, const 
             GlobalPoint vtxPos(theVtx.x(), theVtx.y(), theVtx.z());
 
             // 2D decay significance
-            ROOT::Math::SMatrix<double, 3, 3, ROOT::Math::MatRepSym<double, 3>> totalCov = vertexPrimary_->covariance() + theVtx.covariance();
-            ROOT::Math::SVector<double, 3>  distVecXY(vtxPos.x() - vertexPrimary_->position().x(), vtxPos.y() - vertexPrimary_->position().y(), 0.);
+            ROOT::Math::SMatrix<double, 3, 3, ROOT::Math::MatRepSym<double, 3>> totalCov;
+            ROOT::Math::SVector<double, 3>  distVecXY;
+
+            // 3D decay significance
+            ROOT::Math::SVector<double, 3>  distVecXYZ;
+            
+            if (vertexPrimary_ == nullptr) { // If vertex is fake, no chi2
+                totalCov = theVtx.covariance();
+                ROOT::Math::SVector<double, 3> distVecXYtemp(vtxPos.x(), vtxPos.y() , 0.);
+                distVecXY = distVecXYtemp;
+                ROOT::Math::SVector<double, 3> distVecXYZtemp(vtxPos.x(), vtxPos.y(), vtxPos.z());
+                distVecXYZ = distVecXYZtemp;
+            }
+            else {
+                totalCov = vertexPrimary_->covariance() + theVtx.covariance();
+      	       	ROOT::Math::SVector<double, 3> distVecXYtemp (vtxPos.x() - vertexPrimary_->position().x(), vtxPos.y() - vertexPrimary_->position().y(), 0.);
+                distVecXY = distVecXYtemp;
+                ROOT::Math::SVector<double, 3> distVecXYZtemp(vtxPos.x() - vertexPrimary_->position().x(), vtxPos.y() - vertexPrimary_->position().y(), vtxPos.z() - vertexPrimary_->position().z());
+                distVecXYZ = distVecXYZtemp;
+            }
+
+            // 2D decay significance
             double distMagXY = ROOT::Math::Mag(distVecXY);
             double sigmaDistMagXY = sqrt(ROOT::Math::Similarity(totalCov, distVecXY)) / distMagXY;
 
             // 3D decay significance
-            ROOT::Math::SVector<double, 3>  distVecXYZ(vtxPos.x() - vertexPrimary_->position().x(), vtxPos.y() - vertexPrimary_->position().y(), vtxPos.z() - vertexPrimary_->position().z());
             double distMagXYZ = ROOT::Math::Mag(distVecXYZ);
             double sigmaDistMagXYZ = sqrt(ROOT::Math::Similarity(totalCov, distVecXYZ)) / distMagXYZ;
 
@@ -2896,14 +2914,19 @@ void MakeTopologyNtupleMiniAOD::fillPackedCands(const edm::Event& iEvent, const 
             if ( reco::deltaR(P1.eta(), P1.phi(), P2.eta(), P2.phi())> 0.5 ) continue;
 
             // 2D pointing angle
-            double dx = theVtx.x() - vertexPrimary_->position().x();
-            double dy = theVtx.y() - vertexPrimary_->position().y();
+            double dx = theVtx.x();
+            double dy = theVtx.y();
+            if ( vertexPrimary_ != nullptr ){ // if not a fake track ...
+                dx -= vertexPrimary_->position().x();
+                dy -= vertexPrimary_->position().y();
+            }
             double px = totalP.x();
             double py = totalP.y();
             double angleXY = (dx * px + dy * py) / (sqrt(dx * dx + dy * dy) * sqrt(px * px + py * py));
 
             // 3D pointing angle
-            double dz = theVtx.z() - vertexPrimary_->position().z();
+            double dz = theVtx.z();
+            if ( vertexPrimary_ != nullptr ) dz -= vertexPrimary_->position().z();
             double pz = totalP.z();
             double angleXYZ = (dx * px + dy * py + dz * pz) / (sqrt(dx * dx + dy * dy + dz * dz) * sqrt(px * px + py * py + pz * pz));
 
@@ -3900,6 +3923,8 @@ void MakeTopologyNtupleMiniAOD::cleararrays() {
 
 // ------------ method called to for each event  ------------
 void MakeTopologyNtupleMiniAOD::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
+    if (iEvent.id().run() < 306459) return;
+    if (iEvent.id().event() < 40548004) return;
     using namespace edm;
     // std::cout << iEvent.id().run() << " " << iEvent.luminosityBlock() << " "
     //           << iEvent.id().event()
