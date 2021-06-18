@@ -87,10 +87,10 @@ process.generator = cms.EDFilter("Pythia8HadronizerFilter",
         processParameters = cms.vstring(
             'POWHEG:nFinal = 1', 
             '9000006:all = sk   skbar    0        0          0       2.0  1.9732e-13  1.0  75.0 1', 
-            '9000006:oneChannel = 2  1.0 101  13 -13', 
-            '9000006:addChannel = 3  1.0 101  211 -211', 
-            '9000006:addChannel = 3  1.0 101  321 -321', 
-            '9000006:addChannel = 3  1.0 101  310 -310', 
+            '9000006:oneChannel = 2  1.0   101  13 -13', 
+            '9000006:addChannel = 3  0.67  101  211 -211', 
+            '9000006:addChannel = 3  0.165 101  321 -321', 
+            '9000006:addChannel = 3  0.165 101  310 -310', 
             '9000006:mayDecay = on', 
             '9000006:isResonance = on', 
             '25:m0 = 125.0', 
@@ -101,11 +101,7 @@ process.generator = cms.EDFilter("Pythia8HadronizerFilter",
             '9000006:onNegIfAny = 211', 
             '9000006:onNegIfAny = 321', 
             '9000006:onNegIfAny = 310', 
-            '9000006:onPosIfAny = 13',
-            '9000006:0:bRatio = 1.',    ### channel 0 = 13
-            '9000006:1:bRatio = 0.67',  ### channel 1 = 211
-            '9000006:2:bRatio = 0.165', ### channel 2 = 321
-            '9000006:3:bRatio = 0.165'  ### channel 3 = 310
+            '9000006:onPosIfAny = 13'
         ),
         pythia8CP2Settings = cms.vstring(
             'Tune:pp 14', 
