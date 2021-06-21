@@ -9,23 +9,23 @@ Dataset = namedtuple("Dataset", "process dataset")
 ## 2017 Datasets
 
 # HToSS
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS0",       "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS0_2017_210118/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS0_2017_210117-ced4163d91151f0189837681d2149b3e/USER")
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS1",       "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS1_2017_210118/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS1_2017_210117-ced4163d91151f0189837681d2149b3e/USER")
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS10",      "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS10_2017_210116/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS10_2017_210117-ced4163d91151f0189837681d2149b3e/USER")
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS100",     "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS100_2017_210116/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS100_2017_210117-ced4163d91151f0189837681d2149b3e/USER")
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS1000",    "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS1000_2017_210118/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS1000_2017_210117-ced4163d91151f0189837681d2149b3e/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS0",       "")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS1",       "")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS10",      "")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS100",     "")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS1000",    "")
 
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS0",         "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS0_2017_210201/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS0_2017_210201-ced4163d91151f0189837681d2149b3e/USER")
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1",         "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1_2017_210201/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1_2017_210201-ced4163d91151f0189837681d2149b3e/USER")
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS10",        "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS10_2017_210201/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS10_2017_210201-ced4163d91151f0189837681d2149b3e/USER")
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS100",       "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS100_2017_210201/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS100_2017_210201-ced4163d91151f0189837681d2149b3e/USER")
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1000",      "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1000_2017_210201/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1000_2017_210201-ced4163d91151f0189837681d2149b3e/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS0",         "")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1",         "")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS10",        "")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS100",       "")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1000",      "")
 
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0",         "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0_2017_210201/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0_2017_210201-ced4163d91151f0189837681d2149b3e/USER")
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1",         "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2017_210201/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2017_210201-ced4163d91151f0189837681d2149b3e/USER")
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10",        "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2017_210201/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2017_210201-ced4163d91151f0189837681d2149b3e/USER")
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100",       "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2017_210201/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2017_210201-ced4163d91151f0189837681d2149b3e/USER")
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1000",      "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1000_2017_210201/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1000_2017_210201-ced4163d91151f0189837681d2149b3e/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0",         "")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1",         "")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10",        "")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100",       "")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1000",      "")
 
 ###############
 
