@@ -56,7 +56,7 @@ from Configuration.AlCa.GlobalTag import GlobalTag
 ## 2017 - 106X_mc2017_realistic_v9
 ## 2018 - 106X_upgrade2018_realistic_v16_L1v1
 
-process.GlobalTag.globaltag = cms.string('106X_upgrade2018_realistic_v16_L1v1') 
+process.GlobalTag.globaltag = cms.string('106X_mc2017_realistic_v9')
 
 #There's a bit in here about some btau tags that the code looks for. I don't know if this is significant, however. I'm going to ignore it for now.
 
@@ -168,10 +168,9 @@ process.makeTopologyNtupleMiniAOD.bDiscCut=cms.double(-1.0)
 process.makeTopologyNtupleMiniAOD.minElePt=cms.double(9.0)
 process.makeTopologyNtupleMiniAOD.maxEleEta=cms.double(2.7)
 process.makeTopologyNtupleMiniAOD.eleRelIso=cms.double(0.50)
-process.makeTopologyNtupleMiniAOD.maxMuonEta=cms.double(2.8)
 process.makeTopologyNtupleMiniAOD.maxInvMuMuMass=cms.double(5.0)
 process.makeTopologyNtupleMiniAOD.maxMuonEta=cms.double(2.8)
-process.makeTopologyNtupleMiniAOD.minMuonPt1=cms.double(15.0)
+process.makeTopologyNtupleMiniAOD.minMuonPt1=cms.double(8.0) #2018 - 8, 2016/2017 - 15
 process.makeTopologyNtupleMiniAOD.minMuonPt2=cms.double(6.0)
 process.makeTopologyNtupleMiniAOD.muonRelIso=cms.double(0.50)
 process.makeTopologyNtupleMiniAOD.maxDistForPhotonRej=cms.double(0.04)
