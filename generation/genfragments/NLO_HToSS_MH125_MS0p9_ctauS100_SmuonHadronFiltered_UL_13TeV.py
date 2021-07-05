@@ -69,4 +69,17 @@ generator = cms.EDFilter("Pythia8HadronizerFilter",
     ),
 )
 
-ProductionFilterSequence = cms.Sequence(generator)
+MuMuFilter = cms.EDFilter("PythiaFilterMotherSister",
+    MaxEta = cms.untracked.double(10.),
+    MinEta = cms.untracked.double(-10.),
+    MinPt = cms.untracked.double(0.0),
+    ParticleID = cms.untracked.int32(9000006),
+    MotherIDs = cms.untracked.vint32(25),
+    SisterID = cms.untracked.int32(9000006),
+    MaxSisterDisplacement = cms.untracked.double(2700.), # max Lxy displacement to generate in mm, -1 for no max
+    NephewIDs = cms.untracked.vint32(13), # ids of the nephews you want to check the pt of
+    MinNephewPts = cms.untracked.vdouble(0.0),
+)
+
+ProductionFilterSequence = cms.Sequence(generator+MuMuFilter)
+
