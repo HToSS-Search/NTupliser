@@ -85,5 +85,5 @@ MuMuFilter = cms.EDFilter("PythiaFilterMotherSister",
     MinNephewPts = cms.untracked.vdouble(0.0),
 )
 
-ProductionFilterSequence = cms.Sequence(agenerator+MuMuFilter)
+ProductionFilterSequence = cms.Sequence(generator+MuMuFilter)
 
