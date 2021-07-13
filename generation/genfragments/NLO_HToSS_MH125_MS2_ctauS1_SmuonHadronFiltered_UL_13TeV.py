@@ -73,7 +73,7 @@ generator = cms.EDFilter("Pythia8HadronizerFilter",
     ),
 )
 
-aMuMuFilter = cms.EDFilter("PythiaFilterMotherSister",
+MuMuFilter = cms.EDFilter("PythiaFilterMotherSister",
     MaxEta = cms.untracked.double(10.),
     MinEta = cms.untracked.double(-10.),
     MinPt = cms.untracked.double(0.0),
@@ -85,5 +85,5 @@ aMuMuFilter = cms.EDFilter("PythiaFilterMotherSister",
     MinNephewPts = cms.untracked.vdouble(0.0),
 )
 
-aProductionFilterSequence = cms.Sequence(agenerator+aMuMuFilter)
+ProductionFilterSequence = cms.Sequence(agenerator+MuMuFilter)
 
