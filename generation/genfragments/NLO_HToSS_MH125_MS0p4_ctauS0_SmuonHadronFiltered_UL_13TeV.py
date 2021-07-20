@@ -76,9 +76,9 @@ MuMuFilter = cms.EDFilter("PythiaFilterMotherSister",
     ParticleID = cms.untracked.int32(9000006),
     MotherIDs = cms.untracked.vint32(25),
     SisterID = cms.untracked.int32(9000006),
-    MaxSisterDisplacement = cms.untracked.double(2700.), # max Lxy displacement to generate in mm, -1 for no max
+    MaxSisterDisplacement = cms.untracked.double(600.0), # max Lxy displacement to generate in mm, -1 for no max
     NephewIDs = cms.untracked.vint32(13), # ids of the nephews you want to check the pt of
-    MinNephewPts = cms.untracked.vdouble(0.0),
+    MinNephewPts = cms.untracked.vdouble(5.0),
 )
 
 ProductionFilterSequence = cms.Sequence(generator+MuMuFilter)
