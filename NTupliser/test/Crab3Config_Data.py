@@ -7,21 +7,29 @@ from CRABClient.UserUtilities import config
 Dataset = namedtuple("Dataset", "process dataset")
 
 ## UL 2016 APV Datasets
+#dataset = Dataset("SingleMuon_Run2016B", "/SingleMuon/Run2016B-21Feb2020_ver2_UL2016_HIPM-v1/MINIAOD")
+#dataset = Dataset("SingleMuon_Run2016C", "/SingleMuon/Run2016C-21Feb2020_UL2016_HIPM-v1/MINIAOD")
+#dataset = Dataset("SingleMuon_Run2016D", "/SingleMuon/Run2016D-21Feb2020_UL2016_HIPM-v1/MINIAOD")
+#dataset = Dataset("SingleMuon_Run2016E", "/SingleMuon/Run2016E-21Feb2020_UL2016_HIPM-v1/MINIAOD")
+#dataset = Dataset("SingleMuon_Run2016F", "/SingleMuon/Run2016F-21Feb2020_UL2016_HIPM-v1/MINIAOD")
 ## UL 2016 Datasets
+#dataset = Dataset("SingleMuon_Run2016F", "/SingleMuon/Run2016F-21Feb2020_UL2016-v1/MINIAOD")
+#dataset = Dataset("SingleMuon_Run2016G", "/SingleMuon/Run2016G-21Feb2020_UL2016-v1/MINIAOD")
+#dataset = Dataset("SingleMuon_Run2016H", "/SingleMuon/Run2016H-21Feb2020_UL2016-v1/MINIAOD")
 
 ## UL 2017 Datasets
-#dataset = Dataset("SingleMuon_Run2017B", "/SingleMuon/Run2017B-UL2017_MiniAODv2-v1/MINIAOD")
-#dataset = Dataset("SingleMuon_Run2017C", "/SingleMuon/Run2017C-UL2017_MiniAODv2-v1/MINIAOD")
-#dataset = Dataset("SingleMuon_Run2017D", "/SingleMuon/Run2017D-UL2017_MiniAODv2-v1/MINIAOD")
-#dataset = Dataset("SingleMuon_Run2017E", "/SingleMuon/Run2017E-UL2017_MiniAODv2-v1/MINIAOD")
-#dataset = Dataset("SingleMuon_Run2017F", "/SingleMuon/Run2017F-UL2017_MiniAODv2-v1/MINIAOD")
+#dataset = Dataset("SingleMuon_Run2017B", "/SingleMuon/Run2017B-09Aug2019_UL2017-v1/MINIAOD")
+#dataset = Dataset("SingleMuon_Run2017C", "/SingleMuon/Run2017C-09Aug2019_UL2017-v1/MINIAOD")
+#dataset = Dataset("SingleMuon_Run2017D", "/SingleMuon/Run2017D-09Aug2019_UL2017-v1/MINIAOD")
+#dataset = Dataset("SingleMuon_Run2017E", "/SingleMuon/Run2017E-09Aug2019_UL2017-v1/MINIAOD")
+#dataset = Dataset("SingleMuon_Run2017F", "/SingleMuon/Run2017F-09Aug2019_UL2017-v1/MINIAOD")
 
 ## UL 2018 Datasets
 
-#dataset = Dataset("SingleMuon_Run2018A", "/SingleMuon/Run2018A-UL2018_MiniAODv2-v1/MINIAOD")
-#dataset = Dataset("SingleMuon_Run2018B", "/SingleMuon/Run2018B-UL2018_MiniAODv2-v1/MINIAOD")
-#dataset = Dataset("SingleMuon_Run2018C", "/SingleMuon/Run2018C-UL2018_MiniAODv2-v1/MINIAOD")
-#dataset = Dataset("SingleMuon_Run2018D", "/SingleMuon/Run2018D-UL2018_MiniAODv2-v1/MINIAOD")
+#dataset = Dataset("SingleMuon_Run2018A", "/SingleMuon/Run2018A-12Nov2019_UL2018-v3/MINIAOD")
+#dataset = Dataset("SingleMuon_Run2018B", "/SingleMuon/Run2018B-12Nov2019_UL2018-v3/MINIAOD")
+#dataset = Dataset("SingleMuon_Run2018C", "/SingleMuon/Run2018C-12Nov2019_UL2018-v3/MINIAOD")
+#dataset = Dataset("SingleMuon_Run2018D", "/SingleMuon/Run2018D-12Nov2019_UL2018-v8/MINIAOD")
 
 config = config()
 
