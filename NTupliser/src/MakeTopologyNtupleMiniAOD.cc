@@ -881,6 +881,7 @@ void MakeTopologyNtupleMiniAOD::fillElectrons(const edm::Event& iEvent, const ed
         electronSortedChHadIso[ID][numEle[ID] - 1] = pfIso.sumChargedHadronPt;
         electronSortedNtHadIso[ID][numEle[ID] - 1] = pfIso.sumNeutralHadronEt;
         electronSortedGammaIso[ID][numEle[ID] - 1] = pfIso.sumPhotonEt;
+        electronSortedPuIso[ID][numEle[ID] - 1]    = pfIso.sumPUPt;
         electronSortedComRelIsodBeta[ID][numEle[ID] - 1] = (pfIso.sumChargedHadronPt + std::max(0.0, pfIso.sumPhotonEt - 0.5 * pfIso.sumPUPt)) / ele.pt();
 
         const float AEff03{effectiveAreaInfo_.getEffectiveArea(std::abs(ele.superCluster()->eta()))};
@@ -1179,6 +1180,22 @@ void MakeTopologyNtupleMiniAOD::fillMuons(const edm::Event& iEvent, const edm::E
         // muonSortedComRelIsodBeta[ID][numMuo[ID] - 1] = (muo.chargedHadronIso() + std::max(0.0, muo.neutralHadronIso() + muo.photonIso() - 0.5 * muo.puChargedHadronIso())) / muo.pt();
         // New Method
         muonSortedComRelIsodBeta[ID][numMuo[ID] - 1] = (muo.pfIsolationR04().sumChargedHadronPt + std::max(0.0, muo.pfIsolationR04().sumNeutralHadronEt + muo.pfIsolationR04().sumPhotonEt - 0.5 * muo.pfIsolationR04().sumPUPt)) / muo.pt();
+        muonSortedChHadIso[ID][numMuo[ID] - 1] = muo.pfIsolationR04().sumChargedHadronPt;
+        muonSortedNtHadIso[ID][numMuo[ID] - 1] = muo.pfIsolationR04().sumNeutralHadronEt;
+        muonSortedGammaIso[ID][numMuo[ID] - 1] = muo.pfIsolationR04().sumPhotonEt;
+        muonSortedPuIso[ID][numMuo[ID] - 1] = muo.pfIsolationR04().sumPUPt;
+
+// Debug
+/*        if ( ( (muo.pfIsolationR04().sumChargedHadronPt + std::max(0.0, muo.pfIsolationR04().sumNeutralHadronEt + muo.pfIsolationR04().sumPhotonEt - 0.5 * muo.pfIsolationR04().sumPUPt)) / muo.pt() ) == 0.0 ) {
+            std::cout << "muo.chargedHadronIso() = " << muo.chargedHadronIso() << std::endl;
+            std::cout << "muo.pfIsolationR03().sumChargedHadronPt = " << muo.pfIsolationR03().sumChargedHadronPt << std::endl;
+            std::cout << "muo.pfIsolationR04().sumChargedHadronPt = " << muo.pfIsolationR04().sumChargedHadronPt << std::endl;
+            std::cout << "muo.pfIsolationR04().sumNeutralHadronEt = " << muo.pfIsolationR04().sumNeutralHadronEt << std::endl;
+            std::cout << "muo.pfIsolationR04().sumPhotonEt = " << muo.pfIsolationR04().sumPhotonEt << std::endl;
+            std::cout << "muo.pfIsolationR04().sumPUPt = " << muo.pfIsolationR04().sumPUPt << std::endl;
+            std::cout << "muo.pt() = " << muo.pt() << std::endl;
+        }
+*/
         muonSortedComRelIso[ID][numMuo[ID] - 1] /= muonSortedPt[ID][numMuo[ID] - 1];
         muonSortedNumChambers[ID][numMuo[ID] - 1] = muo.numberOfChambers();
         muonSortedNumMatches[ID][numMuo[ID] - 1] = muo.numberOfMatches();
@@ -3142,6 +3159,7 @@ void MakeTopologyNtupleMiniAOD::clearelectronarrays(const std::string& ID){
     electronSortedChHadIso[ID].clear();
     electronSortedNtHadIso[ID].clear();
     electronSortedGammaIso[ID].clear();
+    electronSortedPuIso[ID].clear();
     electronSortedRhoIso[ID].clear();
     electronSortedAEff03[ID].clear();
     electronSortedMissingInnerLayers[ID].clear();
@@ -3278,6 +3296,10 @@ void MakeTopologyNtupleMiniAOD::clearmuonarrays(const std::string& ID){
     muonSortedHCalIso[ID].clear();
     muonSortedComRelIso[ID].clear();
     muonSortedComRelIsodBeta[ID].clear();
+    muonSortedChHadIso[ID].clear();
+    muonSortedNtHadIso[ID].clear();
+    muonSortedGammaIso[ID].clear();
+    muonSortedPuIso[ID].clear();
     muonSortedIsPFMuon[ID].clear();
 
     muonSortedNumChambers[ID].clear();
@@ -4570,6 +4592,7 @@ void MakeTopologyNtupleMiniAOD::bookElectronBranches(const std::string& ID, cons
     electronSortedChHadIso[ID] = tempVecF;
     electronSortedNtHadIso[ID] = tempVecF;
     electronSortedGammaIso[ID] = tempVecF;
+    electronSortedPuIso[ID] = tempVecF;
     electronSortedRhoIso[ID] = tempVecF;
     electronSortedAEff03[ID] = tempVecF;
     electronSortedHoverE[ID] = tempVecF;
@@ -4814,38 +4837,17 @@ void MakeTopologyNtupleMiniAOD::bookElectronBranches(const std::string& ID, cons
         (prefix + "dr03EcalRecHitSumEt").c_str(),
         &electronSorteddr03EcalRecHitSumEt[ID][0],
         (prefix + "dr03EcalRecHitSumEt[numEle" + name + "]/F").c_str());
-    mytree_->Branch((prefix + "EcalIsoDeposit").c_str(),
-                    &electronSortedECalIsoDeposit[ID][0],
-                    (prefix + "EcalIsoDeposit[numEle" + name + "]/F").c_str());
-    mytree_->Branch((prefix + "HcalIsoDeposit").c_str(),
-                    &electronSortedHCalIsoDeposit[ID][0],
-                    (prefix + "HcalIsoDeposit[numEle" + name + "]/F").c_str());
-    mytree_->Branch((prefix + "ComRelIso").c_str(),
-                    &electronSortedComRelIso[ID][0],
-                    (prefix + "ctronComRelIso[numEle" + name + "]/F").c_str());
-    mytree_->Branch(
-        (prefix + "ComRelIsodBeta").c_str(),
-        &electronSortedComRelIsodBeta[ID][0],
-        (prefix + "ctronComRelIsodBeta[numEle" + name + "]/F").c_str());
-    mytree_->Branch(
-        (prefix + "ComRelIsoRho").c_str(),
-        &electronSortedComRelIsoRho[ID][0],
-        (prefix + "ctronComRelIsoRho[numEle" + name + "]/F").c_str());
-    mytree_->Branch((prefix + "ChHadIso").c_str(),
-                    &electronSortedChHadIso[ID][0],
-                    (prefix + "ChHadIso[numEle" + name + "]/F").c_str());
-    mytree_->Branch((prefix + "NtHadIso").c_str(),
-                    &electronSortedNtHadIso[ID][0],
-                    (prefix + "NtHadIso[numEle" + name + "]/F").c_str());
-    mytree_->Branch((prefix + "GammaIso").c_str(),
-                    &electronSortedGammaIso[ID][0],
-                    (prefix + "GammaIso[numEle" + name + "]/F").c_str());
-    mytree_->Branch((prefix + "RhoIso").c_str(),
-                    &electronSortedRhoIso[ID][0],
-                    (prefix + "RhoIso[numEle" + name + "]/F").c_str());
-    mytree_->Branch((prefix + "AEff03").c_str(),
-                    &electronSortedAEff03[ID][0],
-                    (prefix + "AEff03[numEle" + name + "]/F").c_str());
+    mytree_->Branch((prefix + "EcalIsoDeposit").c_str(), &electronSortedECalIsoDeposit[ID][0], (prefix + "EcalIsoDeposit[numEle" + name + "]/F").c_str());
+    mytree_->Branch((prefix + "HcalIsoDeposit").c_str(), &electronSortedHCalIsoDeposit[ID][0], (prefix + "HcalIsoDeposit[numEle" + name + "]/F").c_str());
+    mytree_->Branch((prefix + "ComRelIso").c_str(), &electronSortedComRelIso[ID][0], (prefix + "ctronComRelIso[numEle" + name + "]/F").c_str());
+    mytree_->Branch((prefix + "ComRelIsodBeta").c_str(), &electronSortedComRelIsodBeta[ID][0], (prefix + "ctronComRelIsodBeta[numEle" + name + "]/F").c_str());
+    mytree_->Branch((prefix + "ComRelIsoRho").c_str(), &electronSortedComRelIsoRho[ID][0], (prefix + "ctronComRelIsoRho[numEle" + name + "]/F").c_str());
+    mytree_->Branch((prefix + "ChHadIso").c_str(), &electronSortedChHadIso[ID][0], (prefix + "ChHadIso[numEle" + name + "]/F").c_str());
+    mytree_->Branch((prefix + "NtHadIso").c_str(), &electronSortedNtHadIso[ID][0], (prefix + "NtHadIso[numEle" + name + "]/F").c_str());
+    mytree_->Branch((prefix + "GammaIso").c_str(), &electronSortedGammaIso[ID][0], (prefix + "GammaIso[numEle" + name + "]/F").c_str());
+    mytree_->Branch((prefix + "PuIso").c_str(),  &electronSortedPuIso[ID][0], (prefix + "PuIso[numEle" + name + "]/F").c_str());
+    mytree_->Branch((prefix + "RhoIso").c_str(), &electronSortedRhoIso[ID][0], (prefix + "RhoIso[numEle" + name + "]/F").c_str());
+    mytree_->Branch((prefix + "AEff03").c_str(), &electronSortedAEff03[ID][0], (prefix + "AEff03[numEle" + name + "]/F").c_str());
     mytree_->Branch(
         (prefix + "MissingInnerLayers").c_str(),
         &electronSortedMissingInnerLayers[ID][0],
@@ -5055,6 +5057,10 @@ void MakeTopologyNtupleMiniAOD::bookMuonBranches(const std::string& ID, const st
     muonSortedHCalIso[ID] = tempVecF;
     muonSortedComRelIso[ID] = tempVecF;
     muonSortedComRelIsodBeta[ID] = tempVecF;
+    muonSortedChHadIso[ID] = tempVecF;
+    muonSortedNtHadIso[ID] = tempVecF;
+    muonSortedGammaIso[ID] = tempVecF;
+    muonSortedPuIso[ID] = tempVecF;
     muonSortedIsPFMuon[ID] = tempVecI;
 
     muonSortedNumChambers[ID] = tempVecI;
@@ -5214,6 +5220,10 @@ void MakeTopologyNtupleMiniAOD::bookMuonBranches(const std::string& ID, const st
     mytree_->Branch((prefix + "HcalIso").c_str(), &muonSortedHCalIso[ID][0], (prefix + "HcalIso[numMuon" + name + "]/F").c_str());
     mytree_->Branch((prefix + "ComRelIso").c_str(), &muonSortedComRelIso[ID][0], (prefix + "ComRelIso[numMuon" + name + "]/F").c_str());
     mytree_->Branch((prefix + "ComRelIsodBeta").c_str(), &muonSortedComRelIsodBeta[ID][0], (prefix + "ComRelIsodBeta[numMuon" + name + "]/F").c_str());
+    mytree_->Branch((prefix + "ChHadIso").c_str(), &muonSortedChHadIso[ID][0], (prefix + "ChHadIso[numMuon" + name + "]/F").c_str());;
+    mytree_->Branch((prefix + "NtHadIso").c_str(), &muonSortedNtHadIso[ID][0], (prefix + "NtHadIso[numMuon" + name + "]/F").c_str());;
+    mytree_->Branch((prefix + "GammaIso").c_str(), &muonSortedGammaIso[ID][0], (prefix + "GammaIso[numMuon" + name + "]/F").c_str());;
+    mytree_->Branch((prefix + "PuIso").c_str(), &muonSortedPuIso[ID][0], (prefix + "PuIso[numMuon" + name + "]/F").c_str());;
     mytree_->Branch((prefix + "IsPFMuon").c_str(), &muonSortedIsPFMuon[ID][0], (prefix + "IsPFMuon[numMuon" + name + "]/I").c_str());
 
     mytree_->Branch((prefix + "NChambers").c_str(), &muonSortedNumChambers[ID][0], (prefix + "NChambers[numMuon" + name + "]/I").c_str());

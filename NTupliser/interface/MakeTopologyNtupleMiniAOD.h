@@ -516,6 +516,7 @@ class MakeTopologyNtupleMiniAOD : public edm::EDAnalyzer
     std::map<std::string, std::vector<float>> electronSortedChHadIso;
     std::map<std::string, std::vector<float>> electronSortedNtHadIso;
     std::map<std::string, std::vector<float>> electronSortedGammaIso;
+    std::map<std::string, std::vector<float>> electronSortedPuIso;
     std::map<std::string, std::vector<float>> electronSortedRhoIso;
     std::map<std::string, std::vector<float>> electronSortedAEff03;
     std::map<std::string, std::vector<int>> electronSortedMissingInnerLayers;
@@ -804,6 +805,10 @@ class MakeTopologyNtupleMiniAOD : public edm::EDAnalyzer
     std::map<std::string, std::vector<float>> muonSortedHCalIso;
     std::map<std::string, std::vector<float>> muonSortedComRelIso;
     std::map<std::string, std::vector<float>> muonSortedComRelIsodBeta;
+    std::map<std::string, std::vector<float>> muonSortedChHadIso;
+    std::map<std::string, std::vector<float>> muonSortedNtHadIso;
+    std::map<std::string, std::vector<float>> muonSortedGammaIso;
+    std::map<std::string, std::vector<float>> muonSortedPuIso;
     std::map<std::string, std::vector<int>> muonSortedIsPFMuon;
 
     std::map<std::string, std::vector<int>> muonSortedNumChambers;
