@@ -882,7 +882,7 @@ void MakeTopologyNtupleMiniAOD::fillElectrons(const edm::Event& iEvent, const ed
         electronSortedNtHadIso[ID][numEle[ID] - 1] = pfIso.sumNeutralHadronEt;
         electronSortedGammaIso[ID][numEle[ID] - 1] = pfIso.sumPhotonEt;
         electronSortedPuIso[ID][numEle[ID] - 1]    = pfIso.sumPUPt;
-        electronSortedComRelIsodBeta[ID][numEle[ID] - 1] = (pfIso.sumChargedHadronPt + std::max(0.0, pfIso.sumPhotonEt - 0.5 * pfIso.sumPUPt)) / ele.pt();
+        electronSortedComRelIsodBeta[ID][numEle[ID] - 1] = (pfIso.sumChargedHadronPt + std::max(0.0, pfIso.sumNeutralHadronEt + pfIso.sumPhotonEt - 0.5 * pfIso.sumPUPt)) / ele.pt();
 
         const float AEff03{effectiveAreaInfo_.getEffectiveArea(std::abs(ele.superCluster()->eta()))};
         electronSortedAEff03[ID][numEle[ID] - 1] = AEff03;
