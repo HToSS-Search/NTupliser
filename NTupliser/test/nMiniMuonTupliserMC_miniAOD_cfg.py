@@ -83,7 +83,7 @@ process.ecalBadCalibReducedMINIAODFilter = cms.EDFilter(
 # The N-tupliser/cutFlow
 ####
 
-process.load("NTupliser.NTupliser.MakeTopologyNtuple_miniAOD_cfi")
+process.load("NTupliser.NTupliser.MakeMiniMuonNtuple_miniAOD_cfi")
 process.makeMiniMuonNtupleMiniAOD.flavorHistoryTag=cms.bool(False) # change to false at your convenience
 process.makeMiniMuonNtupleMiniAOD.runMCInfo=cms.bool(True) # prevent checking gen info
 process.makeMiniMuonNtupleMiniAOD.runPUReWeight=cms.bool(True) #Run the reweighting for MC. I think I'm doing this right, but I might check anyway.

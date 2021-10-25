@@ -342,6 +342,7 @@ void MakeMiniMuonNtupleMiniAOD::fillMuons(const edm::Event& iEvent, const edm::E
         muonSortedGlobalID[ID][numMuo[ID] - 1] = muo.isGlobalMuon();
         muonSortedTrackID[ID][numMuo[ID] - 1] = muo.isTrackerMuon();
 
+/*
         if (muo.isTrackerMuon() || muo.isGlobalMuon()) { // required to be a global or tracker muon - i.e. has inner tracker info
             muonValidFraction[ID][numMuo[ID] - 1] = muo.innerTrack()->validFraction();
             muonChi2LocalPosition[ID][numMuo[ID] - 1] = muo.combinedQuality().chi2LocalPosition;
@@ -387,31 +388,7 @@ void MakeMiniMuonNtupleMiniAOD::fillMuons(const edm::Event& iEvent, const edm::E
             // Just some extra stuff.
             muonSortedGlbTkNormChi2[ID][numMuo[ID] - 1] = muo.globalTrack()->normalizedChi2();
         }
-
-        // Impact param significance
-        if ( pvHandle.isValid() && (muo.isTrackerMuon() || muo.isGlobalMuon()) ) {
-            std::vector<reco::Vertex> pv{*pvHandle};
-
-            edm::ESHandle<TransientTrackBuilder> trackBuilder;
-            iSetup.get<TransientTrackRecord>().get("TransientTrackBuilder", trackBuilder);
-            reco::TransientTrack muTransient{trackBuilder->build( muo.bestTrack() )};
-
-            std::pair<bool, Measurement1D> muImpactTrans{IPTools::absoluteTransverseImpactParameter(muTransient, pv[0])};
-            std::pair<bool, Measurement1D> muImpact3D{IPTools::absoluteImpactParameter3D(muTransient, pv[0])};
-
-            if (muImpactTrans.first) {
-                muonSortedImpactTransDist[ID][numMuo[ID] - 1] = muImpactTrans.second.value();
-                muonSortedImpactTransError[ID][numMuo[ID] - 1] = muImpactTrans.second.error();
-                muonSortedImpactTransSignificance[ID][numMuo[ID] - 1] = muImpactTrans.second.significance();
-            }
-            if (muImpact3D.first) {
-                muonSortedImpact3DDist[ID][numMuo[ID] - 1] = muImpact3D.second.value();
-                muonSortedImpact3DError[ID][numMuo[ID] - 1] = muImpact3D.second.error();
-                muonSortedImpact3DSignificance[ID][numMuo[ID] - 1] = muImpact3D.second.significance();
-            }
-        }
-
-
+*/
         //----------------------------------------------------------------------------
         // std::cout << "Gets to the filling bit which says track in it";
         // muonSortedTrackNHits[ID][numMuo[ID] - 1] =
@@ -1012,13 +989,6 @@ void MakeMiniMuonNtupleMiniAOD::clearmuonarrays(const std::string& ID){
     muonSortedVldPixHits[ID].clear();
     muonSortedMatchedStations[ID].clear();
 
-    muonSortedImpactTransDist[ID].clear();
-    muonSortedImpactTransError[ID].clear();
-    muonSortedImpactTransSignificance[ID].clear();
-    muonSortedImpact3DDist[ID].clear();
-    muonSortedImpact3DError[ID].clear();
-    muonSortedImpact3DSignificance[ID].clear();
-
     muonSortedChargedHadronIso[ID].clear();
     muonSortedNeutralHadronIso[ID].clear();
     muonSortedPhotonIso[ID].clear();
@@ -1438,13 +1408,6 @@ void MakeMiniMuonNtupleMiniAOD::bookMuonBranches(const std::string& ID, const st
     muonSortedVldPixHits[ID] = tempVecI;
     muonSortedMatchedStations[ID] = tempVecI;
 
-    muonSortedImpactTransDist[ID] = tempVecF;
-    muonSortedImpactTransError[ID] = tempVecF;
-    muonSortedImpactTransSignificance[ID] = tempVecF;
-    muonSortedImpact3DDist[ID] = tempVecF;
-    muonSortedImpact3DError[ID] = tempVecF;
-    muonSortedImpact3DSignificance[ID] = tempVecF;
-
     muonSortedChargedHadronIso[ID] = tempVecF;
     muonSortedNeutralHadronIso[ID] = tempVecF;
     muonSortedPhotonIso[ID] = tempVecF;
@@ -1541,13 +1504,6 @@ void MakeMiniMuonNtupleMiniAOD::bookMuonBranches(const std::string& ID, const st
     mytree_->Branch((prefix + "DZPVError").c_str(), &muonSortedDZPVError[ID][0], (prefix + "DZPVError[numMuon" + name + "]/F").c_str());
     mytree_->Branch((prefix + "VldPixHits").c_str(), &muonSortedVldPixHits[ID][0], (prefix + "VldPixHits[numMuon" + name + "]/F").c_str());
     mytree_->Branch((prefix + "MatchedStations").c_str(), &muonSortedMatchedStations[ID][0], (prefix + "MatchedStations[numMuon" + name + "]/F").c_str());
-
-    mytree_->Branch((prefix + "ImpactTransDist").c_str(), &muonSortedImpactTransDist[ID][0], (prefix + "ImpactTransDist[numMuon" + name + "]/F").c_str());
-    mytree_->Branch((prefix + "ImpactTransError").c_str(), &muonSortedImpactTransError[ID][0], (prefix + "ImpactTransError[numMuon" + name + "]/F").c_str());
-    mytree_->Branch((prefix + "ImpactTransSignificance").c_str(), &muonSortedImpactTransSignificance[ID][0], (prefix + "ImpactTransSignificance[numMuon" + name + "]/F").c_str());
-    mytree_->Branch((prefix + "Impact3DDist").c_str(), &muonSortedImpact3DDist[ID][0], (prefix + "Impact3DDist[numMuon" + name + "]/F").c_str());
-    mytree_->Branch((prefix + "Impact3DError").c_str(), &muonSortedImpact3DError[ID][0], (prefix + "Impact3DError[numMuon" + name + "]/F").c_str());
-    mytree_->Branch((prefix + "Impact3DSignificance").c_str(), &muonSortedImpact3DSignificance[ID][0], (prefix + "Impact3DSignificance[numMuon" + name + "]/F").c_str());
 
     mytree_->Branch((prefix + "ChargedHadronIso").c_str(), &muonSortedChargedHadronIso[ID][0], (prefix + "ChargedHadronIso[numMuon" + name + "]/F").c_str());
     mytree_->Branch( (prefix + "NeutralHadronIso").c_str(), &muonSortedNeutralHadronIso[ID][0], (prefix + "NeutralHadronIso[numMuon" + name + "]/F").c_str());

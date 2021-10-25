@@ -1,6 +1,6 @@
 import FWCore.ParameterSet.Config as cms
 
-makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
+makeMiniMuonNtupleMiniAOD = cms.EDAnalyzer('makeMiniMuonNtupleMiniAOD',
                                            debugMode              = cms.bool(False),
 					   is2016 = cms.bool(False),
                                            # "Calo"
@@ -127,4 +127,4 @@ makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
                                            isMCatNLO=cms.bool(False),
                                            isttBar = cms.bool(True),# This affects reweighting things. If set to false, then has a weight of 1.
                                            ttGenEvent = cms.InputTag("null")
-                                           )# end of MakeTopologyNtupleMiniAOD
+                                           )# end of makeMiniMuonNtupleMiniAOD

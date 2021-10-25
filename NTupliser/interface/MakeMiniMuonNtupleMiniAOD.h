@@ -358,13 +358,6 @@ class MakeMiniMuonNtupleMiniAOD : public edm::EDAnalyzer
     std::map<std::string, std::vector<float>> muonSortedInnerTkEta;
     std::map<std::string, std::vector<float>> muonSortedInnerTkPhi;
 
-    std::map<std::string, std::vector<float>> muonSortedImpactTransDist;
-    std::map<std::string, std::vector<float>> muonSortedImpactTransError;
-    std::map<std::string, std::vector<float>> muonSortedImpactTransSignificance;
-    std::map<std::string, std::vector<float>> muonSortedImpact3DDist;
-    std::map<std::string, std::vector<float>> muonSortedImpact3DError;
-    std::map<std::string, std::vector<float>> muonSortedImpact3DSignificance;
-
     std::map<std::string, std::vector<float>> muonSortedChargedHadronIso;
     std::map<std::string, std::vector<float>> muonSortedNeutralHadronIso;
     std::map<std::string, std::vector<float>> muonSortedPhotonIso;
