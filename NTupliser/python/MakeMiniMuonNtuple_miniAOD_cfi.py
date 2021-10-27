@@ -1,6 +1,6 @@
 import FWCore.ParameterSet.Config as cms
 
-makeMiniMuonNtupleMiniAOD = cms.EDAnalyzer('makeMiniMuonNtupleMiniAOD',
+makeMiniMuonNtupleMiniAOD = cms.EDAnalyzer('MakeMiniMuonNtupleMiniAOD',
                                            debugMode              = cms.bool(False),
 					   is2016 = cms.bool(False),
                                            # "Calo"
