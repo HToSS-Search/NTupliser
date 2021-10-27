@@ -146,6 +146,7 @@ MakeMiniMuonNtupleMiniAOD::MakeMiniMuonNtupleMiniAOD(
     , l1TrigLabel_{iConfig.getParameter<edm::InputTag>("l1TriggerTag")}
     , genParticlesToken_{consumes<reco::GenParticleCollection>(iConfig.getParameter<edm::InputTag>("genParticles"))}
     , genSimParticlesToken_{consumes<reco::GenParticleCollection>(iConfig.getParameter<edm::InputTag>("genSimParticles"))}
+    , pvLabel_{consumes<reco::VertexCollection>(iConfig.getParameter<edm::InputTag>("primaryVertexToken"))}
     , pileupToken_{consumes<std::vector<PileupSummaryInfo>>(iConfig.getParameter<edm::InputTag>("pileupToken"))}
     , debugMode_{iConfig.getParameter<bool>("debugMode")}
     , is2016_{iConfig.getParameter<bool>("is2016")}
