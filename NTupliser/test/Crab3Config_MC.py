@@ -54,7 +54,7 @@ Dataset = namedtuple("Dataset", "process dataset")
 #dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS100_2017",      "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS100_2017_210620/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS100_2017_210620-b37fc5ba2cc952d2522846eae35aac1f/USER")
 #dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1000_2017",     "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1000_2017_210620/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1000_2017_210620-b37fc5ba2cc952d2522846eae35aac1f/USER")
 
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0_2017",        "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0_2017_210620/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0_2017_210620-b37fc5ba2cc952d2522846eae35aac1f/USER")
+dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0_2017",        "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0_2017_210620/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0_2017_210620-b37fc5ba2cc952d2522846eae35aac1f/USER")
 #dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2017",        "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2017_210620/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2017_210620-b37fc5ba2cc952d2522846eae35aac1f/USER")
 #dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2017",       "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2017_210620/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2017_210620-b37fc5ba2cc952d2522846eae35aac1f/USER")
 #dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2017",      "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2017_210620/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2017_210620-b37fc5ba2cc952d2522846eae35aac1f/USER")
@@ -174,7 +174,7 @@ Dataset = namedtuple("Dataset", "process dataset")
 #dataset = Dataset("WZ_2l2q_2016_APV", "")
 #dataset = Dataset("WZ_2l2q_2016", "")
 #dataset = Dataset("WZ_2l2q_2017", "")
-#dataset = Dataset("WZ_2l2q_2018", "")
+#dataset = Dataset("WZ_2l2q_2018", "/WZTo2Q2Nu_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM")
 
 ## WZ (lnu2q)
 #dataset = Dataset("WZ_lnu2q_2016_APV", "")
@@ -264,7 +264,7 @@ Dataset = namedtuple("Dataset", "process dataset")
 ## tbarW
 #dataset = Dataset("tbarW_2016_APV", "/ST_tW_antitop_5f_inclusiveDecays_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v1/MINIAODSIM")
 #dataset = Dataset("tbarW_2016", "/ST_tW_antitop_5f_inclusiveDecays_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v2/MINIAODSIM")
-#dataset = Dataset("tbarW_2017", "")
+#dataset = Dataset("tbarW_2017", "/ST_tW_antitop_5f_inclusiveDecays_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM")
 #dataset = Dataset("tbarW_2018", "/ST_tW_antitop_5f_inclusiveDecays_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM")
 
 ## t s-channel
@@ -294,24 +294,24 @@ Dataset = namedtuple("Dataset", "process dataset")
 #dataset = Dataset("DYJetsToLL_Pt-650ToInf", "")
 
 #dataset = Dataset("DYJetsToLL_Pt-0To50_2016",    "")
-#dataset = Dataset("DYJetsToLL_Pt-50To100_2016",  "")
-#dataset = Dataset("DYJetsToLL_Pt-100To250_2016", "")
-#dataset = Dataset("DYJetsToLL_Pt-250To400_2016", "")
-#dataset = Dataset("DYJetsToLL_Pt-400To650_2016", "")
-#dataset = Dataset("DYJetsToLL_Pt-650ToInf_2016", "")
+#dataset = Dataset("DYJetsToLL_Pt-50To100_2016",  "/DYJetsToLL_Pt-50To100_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM")
+#dataset = Dataset("DYJetsToLL_Pt-100To250_2016", "/DYJetsToLL_Pt-100To250_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM")
+#dataset = Dataset("DYJetsToLL_Pt-250To400_2016", "/DYJetsToLL_Pt-250To400_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM")
+#dataset = Dataset("DYJetsToLL_Pt-400To650_2016", "/DYJetsToLL_Pt-400To650_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM")
+#dataset = Dataset("DYJetsToLL_Pt-650ToInf_2016", "/DYJetsToLL_Pt-650ToInf_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM")
 
 #dataset = Dataset("DYJetsToLL_Pt-0To50_2017",    "")
-#dataset = Dataset("DYJetsToLL_Pt-50To100_2017",  "")
+#dataset = Dataset("DYJetsToLL_Pt-50To100_2017",  "/DYJetsToLL_Pt-50To100_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM")
 #dataset = Dataset("DYJetsToLL_Pt-100To250_2017", "")
-#dataset = Dataset("DYJetsToLL_Pt-250To400_2017", "")
-#dataset = Dataset("DYJetsToLL_Pt-400To650_2017", "")
-#dataset = Dataset("DYJetsToLL_Pt-650ToInf_2017", "")
+#dataset = Dataset("DYJetsToLL_Pt-250To400_2017", "/DYJetsToLL_Pt-250To400_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM")
+#dataset = Dataset("DYJetsToLL_Pt-400To650_2017", "/DYJetsToLL_Pt-400To650_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM")
+#dataset = Dataset("DYJetsToLL_Pt-650ToInf_2017", "/DYJetsToLL_Pt-650ToInf_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM")
 
 #dataset = Dataset("DYJetsToLL_Pt-0To50_2018",    "")
-#dataset = Dataset("DYJetsToLL_Pt-50To100_2018",  "")
-#dataset = Dataset("DYJetsToLL_Pt-100To250_2018", "")
-#dataset = Dataset("DYJetsToLL_Pt-250To400_2018", "")
-#dataset = Dataset("DYJetsToLL_Pt-400To650_2018", "")
+#dataset = Dataset("DYJetsToLL_Pt-50To100_2018",  "/DYJetsToLL_Pt-50To100_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM")
+#dataset = Dataset("DYJetsToLL_Pt-100To250_2018", "/DYJetsToLL_Pt-100To250_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM")
+#dataset = Dataset("DYJetsToLL_Pt-250To400_2018", "/DYJetsToLL_Pt-250To400_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM")
+#dataset = Dataset("DYJetsToLL_Pt-400To650_2018", "DYJetsToLL_Pt-400To650_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1")
 #dataset = Dataset("DYJetsToLL_Pt-650ToInf_2018", "")
 
 # WG?
@@ -395,20 +395,23 @@ config.General.requestName = '{}_{}'.format(dataset.process, time)
 config.General.workArea = 'crab_projects'
 
 config.JobType.pluginName = 'Analysis'
-config.JobType.psetName = 'nTupliserMC_miniAOD_cfg.py'
+#config.JobType.psetName = 'nTupliserMC_miniAOD_cfg.py'
+config.JobType.psetName = 'nMiniMuonTupliserMC_miniAOD_cfg.py'
 config.JobType.allowUndistributedCMSSW = True
 
 config.Data.inputDataset = dataset.dataset
-#config.Data.inputDBS = 'phys03' ## private production MC
-config.Data.inputDBS = 'global' ## normal centrally generated MC
+config.Data.inputDBS = 'phys03' ## private production MC
+#config.Data.inputDBS = 'global' ## normal centrally generated MC
 
 config.Data.splitting = 'FileBased'
 config.Data.unitsPerJob = 1
 
-config.Data.outLFNDirBase = '/store/user/almorton/MC/nTuples/'
+#config.Data.outLFNDirBase = '/store/user/almorton/MC/nTuples/'
+config.Data.outLFNDirBase = '/store/user/almorton/MC/nTuplesMini/'
 
 config.Data.publication = False
-config.Data.outputDatasetTag = "CRAB3_MC_nTupilisation_{}_{}".format(dataset.process, time)
+#config.Data.outputDatasetTag = "CRAB3_MC_nTupilisation_{}_{}".format(dataset.process, time)
+config.Data.outputDatasetTag = "CRAB3_MC_miniNtupilisation_{}_{}".format(dataset.process, time)
 
 config.Data.allowNonValidInputDataset = True
 

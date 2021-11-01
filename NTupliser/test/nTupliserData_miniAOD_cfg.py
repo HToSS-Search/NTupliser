@@ -139,7 +139,7 @@ process.load("NTupliser.NTupliser.MakeTopologyNtuple_miniAOD_cfi")
 process.makeTopologyNtupleMiniAOD.flavorHistoryTag=cms.bool(False) # change to false at your convenience
 process.makeTopologyNtupleMiniAOD.runMCInfo=cms.bool(False) # prevent checking gen info
 process.makeTopologyNtupleMiniAOD.runPUReWeight=cms.bool(False) #Run the reweighting for MC. I think I'm doing this right, but I might check anyway.
-#process.makeTopologyNtupleMiniAOD.triggerToken = cms.InputTag("TriggerResults","","HLT") # or HLT, depends on file   
+#process.makeTopologyNtupleMiniAOD.triggerToken = cms.InputTag("TriggerResults","","RECO") # or HLT, depends on file   
 
 #settings to apply tight selection:
 process.makeTopologyNtupleMiniAOD.minJetPt=cms.double(0.0)
@@ -151,7 +151,7 @@ process.makeTopologyNtupleMiniAOD.eleRelIso=cms.double(0.50)
 process.makeTopologyNtupleMiniAOD.maxMuonEta=cms.double(2.8)
 process.makeTopologyNtupleMiniAOD.maxInvMuMuMass=cms.double(4.0)
 process.makeTopologyNtupleMiniAOD.maxMuonEta=cms.double(2.8)
-process.makeTopologyNtupleMiniAOD.minMuonPt1=cms.double(15.0)
+process.makeTopologyNtupleMiniAOD.minMuonPt1=cms.double(24.0)
 process.makeTopologyNtupleMiniAOD.minMuonPt2=cms.double(6.0)
 process.makeTopologyNtupleMiniAOD.muonRelIso=cms.double(0.50)
 process.makeTopologyNtupleMiniAOD.maxDistForPhotonRej=cms.double(0.04)
@@ -180,7 +180,7 @@ process.source = cms.Source("PoolSource",
 process.maxEvents = cms.untracked.PSet( input = cms.untracked.int32(options.maxEvents) )
 
 process.source.fileNames = [
-	'file:/scratch/eepgadm/data/DoubleEG/Run2017B/000A6D14-8037-E811-A09B-0CC47A5FBDC1.root',
+	'file:/user/almorton/CMSSW/CMSSW_10_6_27/src/NTupliser/NTupliser/test/13EBC187-0F39-1346-9BE9-A3E859975436.root',
 	]
 
 from PhysicsTools.PatAlgos.patEventContent_cff import *

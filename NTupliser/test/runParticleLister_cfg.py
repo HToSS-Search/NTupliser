@@ -3,7 +3,7 @@ import FWCore.ParameterSet.Config as cms
 from FWCore.ParameterSet.VarParsing import VarParsing
 
 options = VarParsing ('python')
-options.setDefault('maxEvents', 1)
+options.setDefault('maxEvents', 30)
 options.parseArguments()
 
 process = cms.Process("USER")
@@ -14,7 +14,7 @@ process.source = cms.Source("PoolSource",
     fileNames = cms.untracked.vstring(
 #	'file:/scratch/eepgadm/data/tZq/AOD.root',	
 #        'file:/vols/cms/adm10/MC/NLO_HToSSTodddd_MH125_MS1_ctauS10_13TeV/RAW2DIGI_RECO_EI/step2_2017_10K.root',
-	'file:/vols/cms/adm10/MC/ggHZ/NLO_ggHZ_HToSS_Vleptonic_M125_MS2_ctauS10_13TeV/RAW2DIGI_RECO_EI/step2_2017_1K.root',
+	'file:/pnfs/iihe/cms/store/user/almorton/MC/RAW2DIGI_RECO_EI/FFABD5DC-A496-FC49-AEEB-2EF98F940608.root',
         )
 )
 

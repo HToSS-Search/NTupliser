@@ -161,7 +161,6 @@ MakeMiniMuonNtupleMiniAOD::MakeMiniMuonNtupleMiniAOD(
     , generatorToken_{consumes<GenEventInfoProduct>(iConfig.getParameter<edm::InputTag>("generatorToken"))}
     , runMCInfo_{iConfig.getParameter<bool>("runMCInfo")}
     , runPUReWeight_{iConfig.getParameter<bool>("runPUReWeight")}
-    , doCuts_{iConfig.getParameter<bool>("doCuts")}
     , runPDFUncertainties_{iConfig.getParameter<bool>("runPDFUncertainties")}
     , useResidualJEC_{iConfig.getParameter<bool>("useResidualJEC")}
     , check_triggers_{iConfig.getParameter<bool>("checkTriggers")}

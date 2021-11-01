@@ -20,11 +20,11 @@ makeMiniMuonNtupleMiniAOD = cms.EDAnalyzer('MakeMiniMuonNtupleMiniAOD',
 					   isLHEflag              = cms.bool(True),
 					   externalLHEToken       = cms.InputTag("externalLHEProducer"), # "externalLHEProducer", "source" for THQ 
 
-					   pdfIdStart             = cms.int32(1011),
-					   pdfIdEnd               = cms.int32(1112),
+					   pdfIdStart             = cms.int32(2001),
+					   pdfIdEnd               = cms.int32(2102),
 					   hasAlphaWeightFlag     = cms.bool(True),
-					   alphaIdStart           = cms.int32(1111),
-					   alphaIdEnd             = cms.int32(1112),
+					   alphaIdStart           = cms.int32(2101),
+					   alphaIdEnd             = cms.int32(2102),
                                            skipIsrFsrWeights      = cms.bool(False),
 
 					   pdfInfoFixingToken     = cms.InputTag("pdfInfoFixing"),

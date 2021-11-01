@@ -46,11 +46,11 @@ makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
 					   isLHEflag              = cms.bool(True),
 					   externalLHEToken       = cms.InputTag("externalLHEProducer"), # "externalLHEProducer", "source" for THQ 
 
-					   pdfIdStart             = cms.int32(2001),
-					   pdfIdEnd               = cms.int32(2102),
+					   pdfIdStart             = cms.int32(1011),
+					   pdfIdEnd               = cms.int32(1112),
 					   hasAlphaWeightFlag     = cms.bool(True),
-					   alphaIdStart           = cms.int32(2101),
-					   alphaIdEnd             = cms.int32(2102),
+					   alphaIdStart           = cms.int32(1111),
+					   alphaIdEnd             = cms.int32(1112),
                                            skipIsrFsrWeights      = cms.bool(False),
 
                                            scalarPid              = cms.int32(9000006),
