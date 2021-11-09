@@ -110,7 +110,7 @@ Dataset = namedtuple("Dataset", "process dataset")
 
 ## tZq
 #dataset = Dataset("tZq_2016_APV", "/tZq_ll_4f_ckm_NLO_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v1/MINIAODSIM")
-dataset = Dataset("tZq_2016",     "/tZq_ll_4f_ckm_NLO_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM")
+#dataset = Dataset("tZq_2016",     "/tZq_ll_4f_ckm_NLO_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM")
 #dataset = Dataset("tZq_2017",     "/tZq_ll_4f_ckm_NLO_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM")
 #dataset = Dataset("tZq_2018",     "
 
@@ -149,14 +149,14 @@ dataset = Dataset("tZq_2016",     "/tZq_ll_4f_ckm_NLO_TuneCP5_13TeV-amcatnlo-pyt
 #dataset = Dataset("ttW_qq_2018", "/TTWJetsToQQ_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM")
 
 ## ttH (bb)
-#dataset = Dataset("ttH_bb_2016_APV", "")
-#dataset = Dataset("ttH_bb_2016", "")
+#dataset = Dataset("ttH_bb_2016_APV", "/ttHTobb_M125_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM")
+#dataset = Dataset("ttH_bb_2016", "/ttHTobb_M125_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v1/MINIAODSIM")
 #dataset = Dataset("ttH_bb_2017", "/ttHTobb_M125_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM")
 #dataset = Dataset("ttH_bb_2018", "/ttHTobb_M125_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM")
 
 ## ttH (non bb)
-#dataset = Dataset("ttH_nonbb_2016_APV", "")
-#dataset = Dataset("ttH_nonbb_2016", "")
+#dataset = Dataset("ttH_nonbb_2016_APV", "/ttHToNonbb_M125_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM")
+#dataset = Dataset("ttH_nonbb_2016", "/ttHToNonbb_M125_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v1/MINIAODSIM")
 #dataset = Dataset("ttH_nonbb_2017", "/ttHToNonbb_M125_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM")
 #dataset = Dataset("ttH_nonbb_2018", "/ttHToNonbb_M125_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM")
 
@@ -167,7 +167,7 @@ dataset = Dataset("tZq_2016",     "/tZq_ll_4f_ckm_NLO_TuneCP5_13TeV-amcatnlo-pyt
 #dataset = Dataset("ttgamma_2018", "/TTGamma_Dilept_TuneCP5_13TeV-madgraph-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM")
 
 # W+jets
-#dataset = Dataset("Wjets_2016_APV", "")
+#dataset = Dataset("Wjets_2016_APV", "/WJetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM")
 #dataset = Dataset("Wjets_2016", "/WJetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM")
 #dataset = Dataset("Wjets_2017", "/WJetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM")
 #dataset = Dataset("Wjets_2018", "/WJetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM")
@@ -182,7 +182,7 @@ dataset = Dataset("tZq_2016",     "/tZq_ll_4f_ckm_NLO_TuneCP5_13TeV-amcatnlo-pyt
 #dataset = Dataset("WW_lnu2q_2016_APV", "")
 #dataset = Dataset("WW_lnu2q_2016", "")
 #dataset = Dataset("WW_lnu2q_2017", "")
-#dataset = Dataset("WW_lnu2q_2018", "")
+#dataset = Dataset("WW_lnu2q_2018", "/WWTo1L1Nu2Q_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM")
 
 ## WZ (3lnu + up to 1 jet)
 #dataset = Dataset("WZ_3lnu_2016_APV", "")
@@ -202,16 +202,16 @@ dataset = Dataset("tZq_2016",     "/tZq_ll_4f_ckm_NLO_TuneCP5_13TeV-amcatnlo-pyt
 #dataset = Dataset("WZ_lnu2q_2017", "")
 #dataset = Dataset("WZ_lnu2q_2018", "/WZTo1L1Nu2Q_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM")
 	
-#dataset = Dataset("WZ_l3nu_2016_APV",  "")
-#dataset = Dataset("WZ_l3nu_2016",  "")
-#dataset = Dataset("WZ_l3nu_2017",  "")
-#dataset = Dataset("WZ_l3nu_2018",  "")
+#dataset = Dataset("WZ_l3nu_2016_APV",  "/WZTo3LNu_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v3/MINIAODSIM")
+#dataset = Dataset("WZ_l3nu_2016",  "/WZTo3LNu_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM")
+#dataset = Dataset("WZ_l3nu_2017",  "/WZTo3LNu_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM")
+#dataset = Dataset("WZ_l3nu_2018",  "/WZTo3LNu_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM")
 
 ## ZZ (4l)
 #dataset = Dataset("ZZ_4l_2016_APV", "")
 #dataset = Dataset("ZZ_4l_2016", "")
 #dataset = Dataset("ZZ_4l_2017", "/ZZTo4L_TuneCP5_13TeV_powheg_pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM")
-#dataset = Dataset("ZZ_4l_2018", "")
+#dataset = Dataset("ZZ_4l_2018", "/ZZTo4L_TuneCP5_13TeV_powheg_pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM")
 
 ## ZZ (2l2nu)
 #dataset = Dataset("ZZ_2l2nu_2016_APV", "/ZZTo2L2Nu_TuneCP5_13TeV_powheg_pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v1/MINIAODSIM")
@@ -288,30 +288,30 @@ dataset = Dataset("tZq_2016",     "/tZq_ll_4f_ckm_NLO_TuneCP5_13TeV-amcatnlo-pyt
 #dataset = Dataset("tbarW_2018", "/ST_tW_antitop_5f_inclusiveDecays_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM")
 
 ## t s-channel
-#dataset = Dataset("t_s_channel_2016_APV", "")
-#dataset = Dataset("t_s_channel_2016", "")
+#dataset = Dataset("t_s_channel_2016_APV", "/ST_s-channel_4f_leptonDecays_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v1/MINIAODSIM")
+#dataset = Dataset("t_s_channel_2016", "/ST_s-channel_4f_leptonDecays_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM")
 #dataset = Dataset("t_s_channel_2017", "/ST_s-channel_4f_leptonDecays_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
 #dataset = Dataset("t_s_channel_2018", "/ST_s-channel_4f_leptonDecays_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
 
 # t t-channel
-#dataset = Dataset("t_t_channel_2016_APV", "")
+#dataset = Dataset("t_t_channel_2016_APV", "/ST_t-channel_top_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v3/MINIAODSIM")
 #dataset = Dataset("t_t_channel_2016", "/ST_t-channel_top_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v3/MINIAODSIM")
 #dataset = Dataset("t_t_channel_2017", "/ST_t-channel_top_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
 #dataset = Dataset("t_t_channel_2018", "/ST_t-channel_top_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
 
 ## tbar t-channel
-#dataset = Dataset("tbar_t_channel_2016_APV", "")
+#dataset = Dataset("tbar_t_channel_2016_APV", "/ST_t-channel_antitop_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v3/MINIAODSIM")
 #dataset = Dataset("tbar_t_channel_2016", "/ST_t-channel_antitop_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v3/MINIAODSIM")
 #dataset = Dataset("tbar_t_channel_2017", "/ST_t-channel_antitop_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
 #dataset = Dataset("tbar_t_channel_2018", "/ST_t-channel_antitop_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
 
 # Zjets pt binned
-#dataset = Dataset("DYJetsToLL_Pt-0To50",    "")
-#dataset = Dataset("DYJetsToLL_Pt-50To100",  "")
-#dataset = Dataset("DYJetsToLL_Pt-100To250", "")
-#dataset = Dataset("DYJetsToLL_Pt-250To400", "")
-#dataset = Dataset("DYJetsToLL_Pt-400To650", "")
-#dataset = Dataset("DYJetsToLL_Pt-650ToInf", "")
+#dataset = Dataset("DYJetsToLL_Pt-0To50_2016_APV",    "")
+#dataset = Dataset("DYJetsToLL_Pt-50To100_2016_APV",  "/DYJetsToLL_Pt-50To100_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM")
+#dataset = Dataset("DYJetsToLL_Pt-100To250_2016_APV", "/DYJetsToLL_Pt-100To250_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v1/MINIAODSIM")
+#dataset = Dataset("DYJetsToLL_Pt-250To400_2016_APV", "/DYJetsToLL_Pt-250To400_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v1/MINIAODSIM")
+#dataset = Dataset("DYJetsToLL_Pt-400To650_2016_APV", "/DYJetsToLL_Pt-400To650_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v1/MINIAODSIM")
+#dataset = Dataset("DYJetsToLL_Pt-650ToInf_2016_APV", "/DYJetsToLL_Pt-650ToInf_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v1/MINIAODSIM")
 
 #dataset = Dataset("DYJetsToLL_Pt-0To50_2016",    "")
 #dataset = Dataset("DYJetsToLL_Pt-50To100_2016",  "/DYJetsToLL_Pt-50To100_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM")
@@ -322,7 +322,7 @@ dataset = Dataset("tZq_2016",     "/tZq_ll_4f_ckm_NLO_TuneCP5_13TeV-amcatnlo-pyt
 
 #dataset = Dataset("DYJetsToLL_Pt-0To50_2017",    "")
 #dataset = Dataset("DYJetsToLL_Pt-50To100_2017",  "/DYJetsToLL_Pt-50To100_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM")
-#dataset = Dataset("DYJetsToLL_Pt-100To250_2017", "")
+#dataset = Dataset("DYJetsToLL_Pt-100To250_2017", "/DYJetsToLL_Pt-100To250_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM")
 #dataset = Dataset("DYJetsToLL_Pt-250To400_2017", "/DYJetsToLL_Pt-250To400_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM")
 #dataset = Dataset("DYJetsToLL_Pt-400To650_2017", "/DYJetsToLL_Pt-400To650_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM")
 #dataset = Dataset("DYJetsToLL_Pt-650ToInf_2017", "/DYJetsToLL_Pt-650ToInf_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM")
@@ -331,17 +331,17 @@ dataset = Dataset("tZq_2016",     "/tZq_ll_4f_ckm_NLO_TuneCP5_13TeV-amcatnlo-pyt
 #dataset = Dataset("DYJetsToLL_Pt-50To100_2018",  "/DYJetsToLL_Pt-50To100_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM")
 #dataset = Dataset("DYJetsToLL_Pt-100To250_2018", "/DYJetsToLL_Pt-100To250_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM")
 #dataset = Dataset("DYJetsToLL_Pt-250To400_2018", "/DYJetsToLL_Pt-250To400_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM")
-#dataset = Dataset("DYJetsToLL_Pt-400To650_2018", "DYJetsToLL_Pt-400To650_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1")
-#dataset = Dataset("DYJetsToLL_Pt-650ToInf_2018", "")
+#dataset = Dataset("DYJetsToLL_Pt-400To650_2018", "DYJetsToLL_Pt-400To650_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM")
+#dataset = Dataset("DYJetsToLL_Pt-650ToInf_2018", "/DYJetsToLL_Pt-650ToInf_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18MiniAOD-106X_upgrade2018_realistic_v11_L1v1-v1/MINIAODSIM")
 
 # WG?
 #dataset = Dataset("WG_lnug_2016_APV", "/WGToLNuG_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v1/MINIAODSIM")
-#dataset = Dataset("WG_lnug_2016", "")
+#dataset = Dataset("WG_lnug_2016", "/WGToLNuG_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM")
 #dataset = Dataset("WG_lnug_2017", "/WGToLNuG_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM")
 #dataset = Dataset("WG_lnug_2018", "/WGToLNuG_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM")
 
 # ZG?
-#dataset = Dataset("ZG_llg_2016_APV", "")
+#dataset = Dataset("ZG_llg_2016_APV", "/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM")
 #dataset = Dataset("ZG_llg_2016", "/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM")
 #dataset = Dataset("ZG_llg_2017", "/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") #Skip ISR/FSR flag!
 #dataset = Dataset("ZG_llg_2018", "/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM")
