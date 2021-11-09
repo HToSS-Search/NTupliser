@@ -76,7 +76,7 @@ Dataset = namedtuple("Dataset", "process dataset")
 
 #dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0_2017",        "/HToSSTo2Mu2Hadrons_MH125_MS2_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM")
 ##dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2017",        "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2017_210620/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2017_210620-b37fc5ba2cc952d2522846eae35aac1f/USER")
-#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2017",       "/HToSSTo2Mu2Hadrons_MH125_MS2_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM")
+dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2017",       "/HToSSTo2Mu2Hadrons_MH125_MS2_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM")
 ##dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2017",      "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2017_210620/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2017_210620-b37fc5ba2cc952d2522846eae35aac1f/USER")
 ##dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1000_2017",     "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1000_2017_210620/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1000_2017_210620-b37fc5ba2cc952d2522846eae35aac1f/USER")
 
@@ -415,8 +415,7 @@ config.General.requestName = '{}_{}'.format(dataset.process, time)
 config.General.workArea = 'crab_projects'
 
 config.JobType.pluginName = 'Analysis'
-#config.JobType.psetName = 'nTupliserMC_miniAOD_cfg.py'
-config.JobType.psetName = 'nMiniMuonTupliserMC_miniAOD_cfg.py'
+config.JobType.psetName = 'nTupliserMC_miniAOD_cfg.py'
 config.JobType.allowUndistributedCMSSW = True
 
 config.Data.inputDataset = dataset.dataset
@@ -426,8 +425,7 @@ config.Data.inputDBS = 'global' ## normal centrally generated MC
 config.Data.splitting = 'FileBased'
 config.Data.unitsPerJob = 1
 
-#config.Data.outLFNDirBase = '/store/user/almorton/MC/nTuples/'
-config.Data.outLFNDirBase = '/store/user/almorton/MC/nTuplesMini/'
+config.Data.outLFNDirBase = '/store/user/almorton/MC/nTuples/'
 
 config.Data.publication = False
 #config.Data.outputDatasetTag = "CRAB3_MC_nTupilisation_{}_{}".format(dataset.process, time)
