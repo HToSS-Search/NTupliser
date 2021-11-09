@@ -2,7 +2,18 @@ VUB-EOS-Searches-nTuples
 ==============
 ***
 
-The CMSSW_10_6_20 branch contains code from CMSSW_9_4_10 branch which is modified to work for Run 2 UL data and MC. 
+The CMSSW_10_6_27 branch contains code from CMSSW_9_4_10 branch which is modified to work for Run 2 UL data and MC. 
+
+To get all egamma post-processing (i.e. to convert miniAODv1 to v2)
+```bash
+git cms-init
+git clone git@github.com:cms-egamma/EgammaPostRecoTools.git  EgammaUser/EgammaPostRecoTools
+cd  EgammaUser/EgammaPostRecoTools
+git checkout master
+cd -
+echo $CMSSW_BASE
+cd $CMSSW_BASE/src
+```
 
 ***
 To run ecalBadCalibReducedMINIAODFilter for 2017-2018 miniAOD (STILL WIP FOR UL - DO NOT USE)
