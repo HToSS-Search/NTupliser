@@ -90,10 +90,13 @@ process.jetCorrection = cms.Sequence( process.patJetCorrFactorsUpdatedJEC * proc
 ## All embedded in 2017 miniAODv2
 
 ###############################
-###### Electron ID ############
+######## Egamma ID ############
 ###############################
 
-## All embedded in 2017 miniAODv2
+## All embedded in 2017 miniAODv2, but to rerun on v1 ...
+from EgammaUser.EgammaPostRecoTools.EgammaPostRecoTools import setupEgammaPostRecoSeq
+setupEgammaPostRecoSeq(process,era='2017-UL')  ### 2016preVFP-UL OR 2016postVFP-UL OR 2017-UL OR 2018-UL
+#a sequence egammaPostRecoSeq has now been created and should be added to your path, eg process.p=cms.Path(process.egammaPostRecoSeq)
 
 ###############################
 ##### MET Uncertainities ######
@@ -163,7 +166,7 @@ process.makeTopologyNtupleMiniAOD.fillAll=cms.bool(True)
 process.makeTopologyNtupleMiniAOD.doCuts=cms.bool(True) # if set to false will skip ALL cuts. Z veto still applies electron cuts.
 
 #Make the inputs for the n-tupliser right.
-process.makeTopologyNtupleMiniAOD.electronPFToken = cms.InputTag("slimmedElectrons")
+process.makeTopologyNtupleMiniAOD.electronPFToken = cms.InputTag("slimmedElectrons", "", "customPAT")
 process.makeTopologyNtupleMiniAOD.tauPFTag = cms.InputTag("slimmedTaus")
 process.makeTopologyNtupleMiniAOD.muonPFToken = cms.InputTag("slimmedMuons")
 process.makeTopologyNtupleMiniAOD.jetPFToken = cms.InputTag("updatedPatJetsUpdatedJEC") # Originally slimmedJets, patJetsReapplyJEC is the jet collection with reapplied JECs
@@ -212,6 +215,7 @@ process.out.SelectEvents = cms.untracked.PSet(SelectEvents = cms.vstring('p'))
 #del process.out
 
 process.p = cms.Path(
+    process.egammaPostRecoSeq *
     process.jetCorrection *
     process.ecalBadCalibReducedMINIAODFilter *
     process.makeTopologyNtupleMiniAOD
