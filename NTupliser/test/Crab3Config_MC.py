@@ -76,7 +76,7 @@ Dataset = namedtuple("Dataset", "process dataset")
 
 #dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0_2017",        "/HToSSTo2Mu2Hadrons_MH125_MS2_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM")
 ##dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2017",        "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2017_210620/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2017_210620-b37fc5ba2cc952d2522846eae35aac1f/USER")
-dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2017",       "/HToSSTo2Mu2Hadrons_MH125_MS2_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2017",       "/HToSSTo2Mu2Hadrons_MH125_MS2_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM")
 ##dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2017",      "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2017_210620/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2017_210620-b37fc5ba2cc952d2522846eae35aac1f/USER")
 ##dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1000_2017",     "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1000_2017_210620/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1000_2017_210620-b37fc5ba2cc952d2522846eae35aac1f/USER")
 
@@ -202,10 +202,10 @@ dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2017",       "/HT
 #dataset = Dataset("WZ_lnu2q_2017", "")
 #dataset = Dataset("WZ_lnu2q_2018", "/WZTo1L1Nu2Q_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM")
 	
-#dataset = Dataset("WZ_l3nu_2016_APV",  "/WZTo3LNu_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v3/MINIAODSIM")
-#dataset = Dataset("WZ_l3nu_2016",  "/WZTo3LNu_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM")
-#dataset = Dataset("WZ_l3nu_2017",  "/WZTo3LNu_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM")
-#dataset = Dataset("WZ_l3nu_2018",  "/WZTo3LNu_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM")
+#dataset = Dataset("WZ_l3nu_2016_APV",  "")
+#dataset = Dataset("WZ_l3nu_2016",  "")
+#dataset = Dataset("WZ_l3nu_2017",  "")
+#dataset = Dataset("WZ_l3nu_2018",  "")
 
 ## ZZ (4l)
 #dataset = Dataset("ZZ_4l_2016_APV", "")
