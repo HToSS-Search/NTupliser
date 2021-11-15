@@ -56,6 +56,7 @@ Dataset = namedtuple("Dataset", "process dataset")
 ##dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS100_2017",      "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS100_2017_210620/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS100_2017_210620-b37fc5ba2cc952d2522846eae35aac1f/USER")
 ##dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1000_2017",     "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1000_2017_210620/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1000_2017_210620-b37fc5ba2cc952d2522846eae35aac1f/USER")
 
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1p1_ctauS0_2017",      "/HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM")
 #dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1p1_ctauS1_2017",      "/HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM")
 #dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1p1_ctauS100_2017",    "/HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM")
 
@@ -71,11 +72,12 @@ Dataset = namedtuple("Dataset", "process dataset")
 #dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1p6_ctauS10_2017",     "/HToSSTo2Mu2Hadrons_MH125_MS1p6_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM")
 
 #dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1p8_ctauS0_2017",      "/HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1p8_ctauS1_2017",      "/HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM")
 #dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1p8_ctauS10_2017",     "/HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM")
 #dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1p8_ctauS100_2017",    "/HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM")
 
 #dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0_2017",        "/HToSSTo2Mu2Hadrons_MH125_MS2_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM")
-##dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2017",        "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2017_210620/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2017_210620-b37fc5ba2cc952d2522846eae35aac1f/USER")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2017",        "/HToSSTo2Mu2Hadrons_MH125_MS2_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM")
 #dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2017",       "/HToSSTo2Mu2Hadrons_MH125_MS2_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM")
 ##dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2017",      "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2017_210620/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2017_210620-b37fc5ba2cc952d2522846eae35aac1f/USER")
 ##dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1000_2017",     "/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1000_2017_210620/almorton-CRAB3_PAT_miniAOD_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1000_2017_210620-b37fc5ba2cc952d2522846eae35aac1f/USER")
