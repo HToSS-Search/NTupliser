@@ -66,6 +66,7 @@ Dataset = namedtuple("Dataset", "process dataset")
 #dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1p2_ctauS100_2017",    "/HToSSTo2Mu2Hadrons_MH125_MS1p2_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM")
 
 #dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1p4_ctauS0_2017",      "/HToSSTo2Mu2Hadrons_MH125_MS1p4_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM")
+#dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1p4_ctauS1_2017",      "/HToSSTo2Mu2Hadrons_MH125_MS1p4_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM")
 #dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1p4_ctauS10_2017",     "/HToSSTo2Mu2Hadrons_MH125_MS1p4_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM")
 
 #dataset = Dataset("HToSS_SmuonHadronFiltered_MH125_MS1p6_ctauS0_2017",      "/HToSSTo2Mu2Hadrons_MH125_MS1p6_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM")
