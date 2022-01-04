@@ -259,7 +259,7 @@ Dataset = namedtuple("Dataset", "process dataset")
 ## ttbar
 #dataset = Dataset("ttbar_hadronic_2016_APV", "/TTToHadronic_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v1/MINIAODSIM")
 #dataset = Dataset("ttbar_hadronic_2016", "/TTToHadronic_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM")
-#dataset = Dataset("ttbar_hadronic_2017", "/TTToHadronic_TuneCP5_13TeV-powheg-pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
+#dataset = Dataset("ttbar_hadronic_2017", "/TTToHadronic_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM")
 #dataset = Dataset("ttbar_hadronic_2018", "/TTToHadronic_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM")
 
 #dataset = Dataset("ttbar_semileptonic_2016_APV", "/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v1/MINIAODSIM")
@@ -287,20 +287,20 @@ Dataset = namedtuple("Dataset", "process dataset")
 ## t s-channel
 #dataset = Dataset("t_s_channel_2016_APV", "/ST_s-channel_4f_leptonDecays_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v1/MINIAODSIM")
 #dataset = Dataset("t_s_channel_2016", "/ST_s-channel_4f_leptonDecays_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM")
-#dataset = Dataset("t_s_channel_2017", "/ST_s-channel_4f_leptonDecays_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
-#dataset = Dataset("t_s_channel_2018", "/ST_s-channel_4f_leptonDecays_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
+#dataset = Dataset("t_s_channel_2017", "/ST_s-channel_4f_leptonDecays_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM")
+#dataset = Dataset("t_s_channel_2018", "/ST_s-channel_4f_leptonDecays_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM")
 
 # t t-channel
 #dataset = Dataset("t_t_channel_2016_APV", "/ST_t-channel_top_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v3/MINIAODSIM")
 #dataset = Dataset("t_t_channel_2016", "/ST_t-channel_top_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v3/MINIAODSIM")
-#dataset = Dataset("t_t_channel_2017", "/ST_t-channel_top_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
-#dataset = Dataset("t_t_channel_2018", "/ST_t-channel_top_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
+#dataset = Dataset("t_t_channel_2017", "/ST_t-channel_top_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM")
+#dataset = Dataset("t_t_channel_2018", "/ST_t-channel_top_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM")
 
 ## tbar t-channel
 #dataset = Dataset("tbar_t_channel_2016_APV", "/ST_t-channel_antitop_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v3/MINIAODSIM")
 #dataset = Dataset("tbar_t_channel_2016", "/ST_t-channel_antitop_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v3/MINIAODSIM")
-#dataset = Dataset("tbar_t_channel_2017", "/ST_t-channel_antitop_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
-#dataset = Dataset("tbar_t_channel_2018", "/ST_t-channel_antitop_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
+#dataset = Dataset("tbar_t_channel_2017", "/ST_t-channel_antitop_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM")
+#dataset = Dataset("tbar_t_channel_2018", "/ST_t-channel_antitop_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM")
 
 # Zjets pt binned
 #dataset = Dataset("DYJetsToLL_Pt-0To50_2016_APV",    "")
@@ -344,24 +344,24 @@ Dataset = namedtuple("Dataset", "process dataset")
 #dataset = Dataset("ZG_llg_2018", "/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM")
 
 # QCD MuEnrichedPt15
-#dataset = Dataset("QCD_Pt-20toInf_MuEnrichedPt15_2016_APV", "")
-#dataset = Dataset("QCD_Pt-20toInf_MuEnrichedPt15_2016", "")
-#dataset = Dataset("QCD_Pt-20toInf_MuEnrichedPt15_2017", "")
-#dataset = Dataset("QCD_Pt-20toInf_MuEnrichedPt15_2018", "")
+#dataset = Dataset("QCD_Pt-20toInf_MuEnrichedPt15_2016_APV", "/QCD_Pt-20_MuEnrichedPt15_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-20toInf_MuEnrichedPt15_2016", "/QCD_Pt-20_MuEnrichedPt15_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v2/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-20toInf_MuEnrichedPt15_2017", "/QCD_Pt-20_MuEnrichedPt15_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-20toInf_MuEnrichedPt15_2018", "/QCD_Pt-20_MuEnrichedPt15_TuneCP5_13TeV-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM")
 
 # QCD MuEnrichedPt5
 #dataset = Dataset("QCD_Pt-15to20_MuEnrichedPt5_2016_APV", "")
-#dataset = Dataset("QCD_Pt-20to30_MuEnrichedPt5_2016_APV", "")
-#dataset = Dataset("QCD_Pt-30to50_MuEnrichedPt5_2016_APV", "")
-#dataset = Dataset("QCD_Pt-50to80_MuEnrichedPt5_2016_APV", "")
-#dataset = Dataset("QCD_Pt-80to120_MuEnrichedPt5_2016_APV", "")
-#dataset = Dataset("QCD_Pt-120to170_MuEnrichedPt5_2016_APV", "")
-#dataset = Dataset("QCD_Pt-170to300_MuEnrichedPt5_2016_APV", "")
-#dataset = Dataset("QCD_Pt-300to470_MuEnrichedPt5_2016_APV", "")
-#dataset = Dataset("QCD_Pt-470to600_MuEnrichedPt5_2016_APV", "")
-#dataset = Dataset("QCD_Pt-600to800_MuEnrichedPt5_2016_APV", "")
-#dataset = Dataset("QCD_Pt-800to1000_MuEnrichedPt5_2016_APV", "")
-#dataset = Dataset("QCD_Pt-1000toInf_MuEnrichedPt5_2016_APV", "")
+#dataset = Dataset("QCD_Pt-20to30_MuEnrichedPt5_2016_APV", "/QCD_Pt-20To30_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-30to50_MuEnrichedPt5_2016_APV", "/QCD_Pt-30To50_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-50to80_MuEnrichedPt5_2016_APV", "/QCD_Pt-50To80_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-80to120_MuEnrichedPt5_2016_APV", "/QCD_Pt-80To120_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-120to170_MuEnrichedPt5_2016_APV", "/QCD_Pt-120To170_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-170to300_MuEnrichedPt5_2016_APV", "/QCD_Pt-170To300_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-300to470_MuEnrichedPt5_2016_APV", "/QCD_Pt-300To470_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-470to600_MuEnrichedPt5_2016_APV", "/QCD_Pt-470To600_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-600to800_MuEnrichedPt5_2016_APV", "/QCD_Pt-600To800_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-800to1000_MuEnrichedPt5_2016_APV", "/QCD_Pt-800To1000_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-1000toInf_MuEnrichedPt5_2016_APV", "/QCD_Pt-1000_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM")
 
 #dataset = Dataset("QCD_Pt-15to20_MuEnrichedPt5_2016", "/QCD_Pt-15To20_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v2/MINIAODSIM")
 #dataset = Dataset("QCD_Pt-20to30_MuEnrichedPt5_2016", "/QCD_Pt-20To30_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM")
@@ -376,31 +376,31 @@ Dataset = namedtuple("Dataset", "process dataset")
 #dataset = Dataset("QCD_Pt-800to1000_MuEnrichedPt5_2016", "/QCD_Pt-800To1000_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM")
 #dataset = Dataset("QCD_Pt-1000toInf_MuEnrichedPt5_2016", "/QCD_Pt-1000_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM")
 
-#dataset = Dataset("QCD_Pt-15to20_MuEnrichedPt5_2017", "/QCD_Pt-15to20_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
-#dataset = Dataset("QCD_Pt-20to30_MuEnrichedPt5_2017", "/QCD_Pt-20to30_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
-#dataset = Dataset("QCD_Pt-30to50_MuEnrichedPt5_2017", "/QCD_Pt-30to50_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
-#dataset = Dataset("QCD_Pt-50to80_MuEnrichedPt5_2017", "/QCD_Pt-50to80_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
-#dataset = Dataset("QCD_Pt-80to120_MuEnrichedPt5_2017", "/QCD_Pt-80to120_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
-#dataset = Dataset("QCD_Pt-120to170_MuEnrichedPt5_2017", "/QCD_Pt-120to170_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
-#dataset = Dataset("QCD_Pt-170to300_MuEnrichedPt5_2017", "/QCD_Pt-170to300_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
-#dataset = Dataset("QCD_Pt-300to470_MuEnrichedPt5_2017", "/QCD_Pt-300to470_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
-#dataset = Dataset("QCD_Pt-470to600_MuEnrichedPt5_2017", "/QCD_Pt-470to600_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
-#dataset = Dataset("QCD_Pt-600to800_MuEnrichedPt5_2017", "/QCD_Pt-600to800_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
-#dataset = Dataset("QCD_Pt-800to1000_MuEnrichedPt5_2017", "/QCD_Pt-800to1000_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ### Skip ISR/FSR flag!
-#dataset = Dataset("QCD_Pt-1000toInf_MuEnrichedPt5_2017", "/QCD_Pt-1000toInf_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM") ###
+#dataset = Dataset("QCD_Pt-15to20_MuEnrichedPt5_2017", "/QCD_Pt-15To20_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-20to30_MuEnrichedPt5_2017", "/QCD_Pt-20To30_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-30to50_MuEnrichedPt5_2017", "/QCD_Pt-30To50_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-50to80_MuEnrichedPt5_2017", "/QCD_Pt-50To80_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-80to120_MuEnrichedPt5_2017", "/QCD_Pt-80To120_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-120to170_MuEnrichedPt5_2017", "/QCD_Pt-120To170_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-170to300_MuEnrichedPt5_2017", "/QCD_Pt-170To300_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-300to470_MuEnrichedPt5_2017", "/QCD_Pt-300To470_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-470to600_MuEnrichedPt5_2017", "/QCD_Pt-470To600_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-600to800_MuEnrichedPt5_2017", "/QCD_Pt-600To800_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-800to1000_MuEnrichedPt5_2017", "/QCD_Pt-800To1000_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v2/MINIAODSIM") ### Skip ISR/FSR flag!
+#dataset = Dataset("QCD_Pt-1000toInf_MuEnrichedPt5_2017", "/QCD_Pt-1000_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM")
 
-#dataset = Dataset("QCD_Pt-15to20_MuEnrichedPt5_2018", "/QCD_Pt-15to20_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
-#dataset = Dataset("QCD_Pt-20to30_MuEnrichedPt5_2018", "/QCD_Pt-20to30_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
-#dataset = Dataset("QCD_Pt-30to50_MuEnrichedPt5_2018", "/QCD_Pt-30to50_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
-#dataset = Dataset("QCD_Pt-50to80_MuEnrichedPt5_2018", "/QCD_Pt-50to80_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
-#dataset = Dataset("QCD_Pt-80to120_MuEnrichedPt5_2018", "/QCD_Pt-80to120_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
-#dataset = Dataset("QCD_Pt-120to170_MuEnrichedPt5_2018", "/QCD_Pt-120to170_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
-#dataset = Dataset("QCD_Pt-170to300_MuEnrichedPt5_2018", "/QCD_Pt-170to300_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
-#dataset = Dataset("QCD_Pt-300to470_MuEnrichedPt5_2018", "/QCD_Pt-300to470_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
-#dataset = Dataset("QCD_Pt-470to600_MuEnrichedPt5_2018", "/QCD_Pt-470to600_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
-#dataset = Dataset("QCD_Pt-600to800_MuEnrichedPt5_2018", "/QCD_Pt-600to800_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
-#dataset = Dataset("QCD_Pt-800to1000_MuEnrichedPt5_2018", "/QCD_Pt-800to1000_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
-#dataset = Dataset("QCD_Pt-1000toInf_MuEnrichedPt5_2018", "/QCD_Pt-1000toInf_MuEnrichedPt5_TuneCP5_13TeV_pythia8/RunIISummer19UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM") ###
+#dataset = Dataset("QCD_Pt-15to20_MuEnrichedPt5_2018", "/QCD_Pt-15To20_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-20to30_MuEnrichedPt5_2018", "/QCD_Pt-20To30_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-30to50_MuEnrichedPt5_2018", "/QCD_Pt-30To50_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-50to80_MuEnrichedPt5_2018", "/QCD_Pt-50To80_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-80to120_MuEnrichedPt5_2018", "/QCD_Pt-80To120_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-120to170_MuEnrichedPt5_2018", "/QCD_Pt-120To170_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-170to300_MuEnrichedPt5_2018", "/QCD_Pt-170To300_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-300to470_MuEnrichedPt5_2018", "/QCD_Pt-300To470_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-470to600_MuEnrichedPt5_2018", "/QCD_Pt-470To600_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-600to800_MuEnrichedPt5_2018", "/QCD_Pt-600To800_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-800to1000_MuEnrichedPt5_2018", "/QCD_Pt-800To1000_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM")
+#dataset = Dataset("QCD_Pt-1000toInf_MuEnrichedPt5_2018", "/QCD_Pt-1000_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM")
 
 print dataset.process
 
