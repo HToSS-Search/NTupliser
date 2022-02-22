@@ -2,40 +2,35 @@ VUB-EOS-Searches-nTuples
 ==============
 ***
 
-The CMSSW_10_6_27 branch contains code from CMSSW_9_4_10 branch which is modified to work for Run 2 UL data and MC. 
+The CMSSW_12_0_2_patch1 branch contains code from CMSSW_10_6_27 branch which is modified to work for Run-3 MC. 
 
-To get all egamma post-processing (i.e. to convert miniAODv1 to v2)
+Remember to add all prerequisite modules/packages from CMSSW and build before compiling this branch. 
+
+Prerequisites: 
+Get CMSSW_12_0_2_patch1 
+```bash
+cmsrel CMSSW_12_0_2_patch1
+cd CMSSW_12_0_2_patch1/src/
+cmsenv
+```
+Get the EGM scaling/smearing correction (enabled by default)
 ```bash
 git cms-init
-git clone git@github.com:cms-egamma/EgammaPostRecoTools.git  EgammaUser/EgammaPostRecoTools
-cd  EgammaUser/EgammaPostRecoTools
-git checkout master
-cd -
-echo $CMSSW_BASE
-cd $CMSSW_BASE/src
+git cms-addpkg RecoEgamma/EgammaTools  ### essentially just checkout the package from CMSSW
+scram b -j4
 ```
-
-***
-To run ecalBadCalibReducedMINIAODFilter for 2017-2018 miniAOD (STILL WIP FOR UL - DO NOT USE)
+Get all egamma post-processing (i.e. to convert miniAODv1 to v2) [Not required for generation yet and causes errors]
 ```bash
-git cms-addpkg RecoMET/METFilters
+git cms-init
+git clone https://github.com/cms-egamma/EgammaPostRecoTools.git
+mv EgammaPostRecoTools/python/EgammaPostRecoTools.py RecoEgamma/EgammaTools/python/.
+scram b -j4
 ```
-***
 
-To be fixed:
-
-- Check DeepCSV and DeepCMVA b-taggers actually work and include them in the skimmer's AnalysisEvent.h
-
-***
-
-#EXO - event generation
-To get the generation package (including generation of cards):
+Steps: 
 ```bash
-git clone git@github.com:cms-sw/genproductions.git genproductions
+git clone Branch-Name
+mkdir -p Configuration/Configuration/GenProduction/python/HToSSTo2Mu2Hadrons/ ### needed for CMSSW to find genfragments
+cp -r NTupliser/generation/genfragments/* Configuration/GenProduction/python/HToSSTo2Mu2Hadrons/. ###copy all genfragments to created dir
+scram b -j4
 ```
-
-The Higgs (gluon fusion produced) decay via scalars are found in bin/Powheg/production/2017/13TeV/Higgs/gg_H_quark-mass-effects_NNPDF31_13TeV and in
-https://github.com/cms-sw/genproductions/tree/master/bin/Powheg/production/pre2017/13TeV/gg_H_quark-mass-effects_JHUGenV628_HWWLNuQQ_NNPDF30_13TeV
-
----
-
