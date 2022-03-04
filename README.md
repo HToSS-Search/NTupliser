@@ -29,7 +29,7 @@ scram b -j4
 
 Steps: 
 ```bash
-git clone Branch-Name
+git clone Branch-Name ### checkout relevant branch
 mkdir -p Configuration/GenProduction/python/HToSSTo2Mu2Hadrons/ ### needed for CMSSW to find genfragments
 cp -r NTupliser/generation/genfragments/* Configuration/GenProduction/python/HToSSTo2Mu2Hadrons/. ###copy all genfragments to created dir
 scram b -j4
