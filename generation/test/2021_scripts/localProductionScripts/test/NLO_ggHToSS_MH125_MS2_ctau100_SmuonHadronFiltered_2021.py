@@ -2,7 +2,7 @@
 # using: 
 # Revision: 1.19 
 # Source: /local/reps/CMSSW/CMSSW/Configuration/Applications/python/ConfigBuilder.py,v 
-# with command line options: Configuration/GenProduction/python/HToSSTo2Mu2Hadrons/NLO_HToSSTo2Mu2Hadrons_MH125_MS2_ctauS100_TuneCP_13TeV-powheg-pythia8.py --python_filename NLO_ggHToSS_MH125_MS2_ctau100_SmuonHadronFiltered_2021.py --eventcontent RAWSIM --customise Configuration/DataProcessing/Utils.addMonitoring --datatier GEN-SIM --fileout file:NLO_ggHToSS_MH125_MS2_ctau100_SmuonHadronFiltered_2021.root --conditions 120X_mcRun3_2021_realistic_v5 --beamspot Run3RoundOptics25ns13TeVLowSigmaZ --customise_commands process.g4SimHits.Physics.G4GeneralProcess = cms.bool(False)\nprocess.source.numberEventsInLuminosityBlock=cms.untracked.uint32(100) --step GEN,SIM --geometry DB:Extended --era Run3 --no_exec --mc -n 10
+# with command line options: Configuration/GenProduction/python/HToSSTo2Mu2Hadrons/NLO_HToSSTo2Mu2Hadrons_MH125_MS2_ctauS100_TuneCP_13TeV-powheg-pythia8.py --python_filename NLO_ggHToSS_MH125_MS2_ctau100_SmuonHadronFiltered_2021.py --eventcontent RAWSIM,LHE --customise Configuration/DataProcessing/Utils.addMonitoring --datatier GEN-SIM,LHE --fileout file:step0_10evts.root --conditions 120X_mcRun3_2021_realistic_v5 --beamspot Run3RoundOptics25ns13TeVLowSigmaZ --customise_commands process.g4SimHits.Physics.G4GeneralProcess = cms.bool(False)\nprocess.source.numberEventsInLuminosityBlock=cms.untracked.uint32(100) --step LHE,GEN,SIM --geometry DB:Extended --era Run3 --no_exec --mc -n 10
 import FWCore.ParameterSet.Config as cms
 
 from Configuration.Eras.Era_Run3_cff import Run3
@@ -82,8 +82,18 @@ process.RAWSIMoutput = cms.OutputModule("PoolOutputModule",
         filterName = cms.untracked.string('')
     ),
     eventAutoFlushCompressedSize = cms.untracked.int32(20971520),
-    fileName = cms.untracked.string('file:NLO_ggHToSS_MH125_MS2_ctau100_SmuonHadronFiltered_2021.root'),
+    fileName = cms.untracked.string('file:step0_10evts.root'),
     outputCommands = process.RAWSIMEventContent.outputCommands,
+    splitLevel = cms.untracked.int32(0)
+)
+
+process.LHEoutput = cms.OutputModule("PoolOutputModule",
+    dataset = cms.untracked.PSet(
+        dataTier = cms.untracked.string('LHE'),
+        filterName = cms.untracked.string('')
+    ),
+    fileName = cms.untracked.string('file:step0_10evts_inLHE.root'),
+    outputCommands = process.LHEEventContent.outputCommands,
     splitLevel = cms.untracked.int32(0)
 )
 
@@ -156,7 +166,6 @@ process.generator = cms.EDFilter("Pythia8ConcurrentHadronizerFilter",
             'Main:timesAllowErrors = 10000',
             'Check:epTolErr = 0.01',
             'Beams:setProductionScalesFromLHEF = off',
-            'SLHA:keepSM = on',
             'SLHA:minMassSM = 1000.',
             'ParticleDecays:limitTau0 = on',
             'ParticleDecays:tau0Max = 10',
@@ -180,21 +189,33 @@ process.generator = cms.EDFilter("Pythia8ConcurrentHadronizerFilter",
 )
 
 
+process.externalLHEProducer = cms.EDProducer("ExternalLHEProducer",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/powheg/V2/gg_H_quark-mass-effects_slc7_amd64_gcc820_CMSSW_10_6_20_ggH_M125/v1/gg_H_quark-mass-effects_slc7_amd64_gcc820_CMSSW_10_6_20_ggH_M125.tgz'),
+    nEvents = cms.untracked.uint32(10),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
 process.ProductionFilterSequence = cms.Sequence(process.generator+process.MuMuFilter)
 
 # Path and EndPath definitions
+process.lhe_step = cms.Path(process.externalLHEProducer)
 process.generation_step = cms.Path(process.pgen)
 process.simulation_step = cms.Path(process.psim)
 process.genfiltersummary_step = cms.EndPath(process.genFilterSummary)
 process.endjob_step = cms.EndPath(process.endOfProcess)
 process.RAWSIMoutput_step = cms.EndPath(process.RAWSIMoutput)
+process.LHEoutput_step = cms.EndPath(process.LHEoutput)
 
 # Schedule definition
-process.schedule = cms.Schedule(process.generation_step,process.genfiltersummary_step,process.simulation_step,process.endjob_step,process.RAWSIMoutput_step)
+process.schedule = cms.Schedule(process.lhe_step,process.generation_step,process.genfiltersummary_step,process.simulation_step,process.endjob_step,process.RAWSIMoutput_step,process.LHEoutput_step)
 from PhysicsTools.PatAlgos.tools.helpers import associatePatAlgosToolsTask
 associatePatAlgosToolsTask(process)
 # filter all path with the production filter sequence
 for path in process.paths:
+	if path in ['lhe_step']: continue
 	getattr(process,path).insert(0, process.ProductionFilterSequence)
 
 # customisation of the process.
