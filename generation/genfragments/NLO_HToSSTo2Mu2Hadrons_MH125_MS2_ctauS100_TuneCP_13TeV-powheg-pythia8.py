@@ -7,7 +7,7 @@ generator = cms.EDFilter("Pythia8ConcurrentHadronizerFilter",
     maxEventsToPrint = cms.untracked.int32(1),
     pythiaPylistVerbosity = cms.untracked.int32(1),
     pythiaHepMCVerbosity = cms.untracked.bool(False),
-    comEnergy = cms.double(13000.0),
+    comEnergy = cms.double(14000.0),
     PythiaParameters = cms.PSet(
         parameterSets = cms.vstring('pythia8CommonSettings', 
             'pythia8CP2Settings', 
