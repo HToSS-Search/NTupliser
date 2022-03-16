@@ -44,6 +44,6 @@ git clone git@github.com:cms-sw/genproductions.git genproductions
 The Higgs (gluon fusion produced) decay via scalars are found in bin/Powheg/production/2017/13TeV/Higgs/gg_H_quark-mass-effects_NNPDF31_13TeV and in
 https://github.com/cms-sw/genproductions/tree/master/bin/Powheg/production/pre2017/13TeV/gg_H_quark-mass-effects_JHUGenV628_HWWLNuQQ_NNPDF30_13TeV 
 
-Gridpack to be changed to 14TeV one found in /bin/Powheg/production/pre2017/14TeV/gg_H_quark-mass-effects_NNPDF30_14TeV and in https://github.com/cms-sw/genproductions/tree/master/bin/Powheg/production/pre2017/14TeV/gg_H_quark-mass-effects_NNPDF30_14TeV . In cvmfs, /cvmfs/cms.cern.ch/phys_generator/gridpacks//slc6_amd64_gcc700/14TeV/powheg/V2/gg_H_quark-mass-effects_HZZ4L_NNPDF30_14TeV_M125_JHUGenV724/v1/gg_H_quark-mass-effects_HZZ4L_NNPDF30_14TeV_M125_JHUGenV724.tgz
+Gridpack to be changed to 14TeV one found in /bin/Powheg/production/pre2017/14TeV/gg_H_quark-mass-effects_NNPDF30_14TeV and in https://github.com/cms-sw/genproductions/tree/master/bin/Powheg/production/pre2017/14TeV/gg_H_quark-mass-effects_NNPDF30_14TeV . In cvmfs, /cvmfs/cms.cern.ch/phys_generator/gridpacks/slc6_amd64_gcc481/14TeV/powheg/V2/gg_H_quark-mass-effects_NNPDF30_14TeV_M125/v2/gg_H_quark-mass-effects_NNPDF30_14TeV_M125_tarball.tgz
 
 ---
