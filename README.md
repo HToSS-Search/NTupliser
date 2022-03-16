@@ -2,15 +2,15 @@ VUB-EOS-Searches-nTuples
 ==============
 ***
 
-The CMSSW_12_0_2_patch1 branch contains code from CMSSW_10_6_27 branch which is modified to work for Run-3 MC. 
+The CMSSW_10_6_4 branch contains code from CMSSW_10_6_27 branch which is modified to work for Run-3 MC. 
 
 Remember to add all prerequisite modules/packages from CMSSW and build before compiling this branch. 
 
 Prerequisites: 
-Get CMSSW_12_0_2_patch1 
+Get CMSSW_10_6_4
 ```bash
-cmsrel CMSSW_12_0_2_patch1
-cd CMSSW_12_0_2_patch1/src/
+cmsrel CMSSW_10_6_4
+cd CMSSW_10_6_4/src/
 cmsenv
 ```
 Get the EGM scaling/smearing correction (enabled by default)
