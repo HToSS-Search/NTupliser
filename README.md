@@ -2,6 +2,9 @@ VUB-EOS-Searches-nTuples
 ==============
 ***
 
+According to EXO-Run3Summer19GS, CMSSW_10_6_4 was run but encountered issues with Pythia Interface filters. 
+Hence, work with CMSSW_10_6_27 instead with the same conditions. 
+
 The CMSSW_10_6_4 branch contains code from CMSSW_10_6_27 branch which is modified to work for Run-3 MC. 
 
 Remember to add all prerequisite modules/packages from CMSSW and build before compiling this branch. 
