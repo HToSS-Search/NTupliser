@@ -1,6 +1,14 @@
 import FWCore.ParameterSet.Config as cms
+
+externalLHEProducer = cms.EDProducer("ExternalLHEProducer",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/slc6_amd64_gcc481/14TeV/powheg/V2/gg_H_quark-mass-effects_NNPDF30_14TeV_M125/v2/gg_H_quark-mass-effects_NNPDF30_14TeV_M125_tarball.tgz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+import FWCore.ParameterSet.Config as cms
 from Configuration.Generator.Pythia8CommonSettings_cfi import *
-from Configuration.Generator.Pythia8CUEP8M1Settings_cfi import *
 from Configuration.Generator.Pythia8PowhegEmissionVetoSettings_cfi import *
 
 generator = cms.EDFilter("Pythia8ConcurrentHadronizerFilter",
@@ -48,7 +56,7 @@ generator = cms.EDFilter("Pythia8ConcurrentHadronizerFilter",
             'Main:timesAllowErrors = 10000', 
             'Check:epTolErr = 0.01', 
             'Beams:setProductionScalesFromLHEF = off', 
-            'SLHA:keepSM = on', 
+            #'SLHA:keepSM = on', #line below takes care of it 
             'SLHA:minMassSM = 1000.', 
             'ParticleDecays:limitTau0 = on', 
             'ParticleDecays:tau0Max = 10', 
@@ -77,4 +85,3 @@ MuMuFilter = cms.EDFilter("PythiaFilterMotherSister",
 )
 
 ProductionFilterSequence = cms.Sequence(generator+MuMuFilter)
-
