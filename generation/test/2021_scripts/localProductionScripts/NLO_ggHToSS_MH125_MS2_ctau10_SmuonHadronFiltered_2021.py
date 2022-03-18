@@ -2,7 +2,7 @@
 # using: 
 # Revision: 1.19 
 # Source: /local/reps/CMSSW/CMSSW/Configuration/Applications/python/ConfigBuilder.py,v 
-# with command line options: Configuration/GenProduction/python/HToSSTo2Mu2Hadrons/NLO_HToSSTo2Mu2Hadrons_MH125_MS2_ctauS100_TuneCP_13TeV-powheg-pythia8.py --python_filename NLO_ggHToSS_MH125_MS2_ctau100_SmuonHadronFiltered_2021.py --eventcontent RAWSIM --customise Configuration/DataProcessing/Utils.addMonitoring --datatier GEN-SIM --fileout file:step0.root --conditions 120X_mcRun3_2021_realistic_v5 --beamspot Run3RoundOptics25ns13TeVLowSigmaZ --customise_commands process.g4SimHits.Physics.G4GeneralProcess = cms.bool(False)\nprocess.source.numberEventsInLuminosityBlock=cms.untracked.uint32(100) --step LHE,GEN,SIM --geometry DB:Extended --era Run3 --no_exec --mc -n 10
+# with command line options: Configuration/GenProduction/python/HToSSTo2Mu2Hadrons/NLO_HToSSTo2Mu2Hadrons_MH125_MS2_ctauS10_TuneCP_13TeV-powheg-pythia8.py --python_filename NLO_ggHToSS_MH125_MS2_ctau10_SmuonHadronFiltered_2021.py --eventcontent RAWSIM --customise Configuration/DataProcessing/Utils.addMonitoring --datatier GEN-SIM --fileout file:step0.root --conditions 120X_mcRun3_2021_realistic_v5 --beamspot Run3RoundOptics25ns13TeVLowSigmaZ --customise_commands process.g4SimHits.Physics.G4GeneralProcess = cms.bool(False)\nprocess.source.numberEventsInLuminosityBlock=cms.untracked.uint32(100) --step LHE,GEN,SIM --geometry DB:Extended --era Run3 --no_exec --mc -n 10
 import FWCore.ParameterSet.Config as cms
 
 from Configuration.Eras.Era_Run3_cff import Run3
@@ -64,7 +64,7 @@ process.options = cms.untracked.PSet(
 
 # Production Info
 process.configurationMetadata = cms.untracked.PSet(
-    annotation = cms.untracked.string('Configuration/GenProduction/python/HToSSTo2Mu2Hadrons/NLO_HToSSTo2Mu2Hadrons_MH125_MS2_ctauS100_TuneCP_13TeV-powheg-pythia8.py nevts:10'),
+    annotation = cms.untracked.string('Configuration/GenProduction/python/HToSSTo2Mu2Hadrons/NLO_HToSSTo2Mu2Hadrons_MH125_MS2_ctauS10_TuneCP_13TeV-powheg-pythia8.py nevts:10'),
     name = cms.untracked.string('Applications'),
     version = cms.untracked.string('$Revision: 1.19 $')
 )
@@ -119,7 +119,7 @@ process.generator = cms.EDFilter("Pythia8ConcurrentHadronizerFilter",
         ),
         processParameters = cms.vstring(
             'POWHEG:nFinal = 1',
-            '9000006:all = sk   skbar    0        0          0       2.0  1.9732e-15  1.0  75.0 100',
+            '9000006:all = sk   skbar    0        0          0       2.0  1.9732e-15  1.0  75.0 10',
             '9000006:oneChannel = 2  0.239 101  13 -13',
             '9000006:addChannel = 3  0.041 101  211 -211',
             '9000006:addChannel = 3  0.35  101  321 -321',
