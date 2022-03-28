@@ -26,7 +26,7 @@ process.load('Configuration.StandardSequences.EndOfProcess_cff')
 process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
 
 process.maxEvents = cms.untracked.PSet(
-    input = cms.untracked.int32(10),
+    input = cms.untracked.int32(1000),
     output = cms.optional.untracked.allowed(cms.int32,cms.PSet)
 )
 
@@ -64,7 +64,7 @@ process.options = cms.untracked.PSet(
 
 # Production Info
 process.configurationMetadata = cms.untracked.PSet(
-    annotation = cms.untracked.string('Configuration/GenProduction/python/HToSSTo2Mu2Hadrons/NLO_HToSSTo2Mu2Hadrons_MH125_MS2_ctauS100_TuneCP_13TeV-powheg-pythia8.py nevts:10'),
+    annotation = cms.untracked.string('Configuration/GenProduction/python/HToSSTo2Mu2Hadrons/NLO_HToSSTo2Mu2Hadrons_MH125_MS2_ctauS100_TuneCP_13TeV-powheg-pythia8.py nevts:1000'),
     name = cms.untracked.string('Applications'),
     version = cms.untracked.string('$Revision: 1.19 $')
 )
@@ -181,7 +181,7 @@ process.generator = cms.EDFilter("Pythia8ConcurrentHadronizerFilter",
 
 process.externalLHEProducer = cms.EDProducer("ExternalLHEProducer",
     args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/slc6_amd64_gcc481/14TeV/powheg/V2/gg_H_quark-mass-effects_NNPDF30_14TeV_M125/v2/gg_H_quark-mass-effects_NNPDF30_14TeV_M125_tarball.tgz'),
-    nEvents = cms.untracked.uint32(10),
+    nEvents = cms.untracked.uint32(1000),
     numberOfParameters = cms.uint32(1),
     outputFile = cms.string('cmsgrid_final.lhe'),
     scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')

@@ -1,0 +1,7 @@
+executable   = /user/vannerom/FCP/MuonSystemSim/condor_jobs/gen-sim.sh
+arguments    = "$(runnumber)"
+#output       = /user/vannerom/FCP/CMSSW_10_6_26/src/condor_jobs/gen-sim.out.$(runnumber).$(cluster)
+#error        = /user/vannerom/FCP/CMSSW_10_6_26/src/condor_jobs/gen-sim.err.$(runnumber).$(cluster)
+#log          = /user/vannerom/FCP/CMSSW_10_6_26/src/condor_jobs/gen-sim_condor.$(runnumber).log
+universe     = vanilla
+queue
