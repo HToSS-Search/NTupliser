@@ -63,8 +63,8 @@
 #include "MagneticField/Records/interface/IdealMagneticFieldRecord.h"
 #include "RecoBTag/PerformanceDB/interface/BtagPerformance.h"
 #include "RecoBTag/Records/interface/BTagPerformanceRecord.h"
-#include "RecoEgamma/EgammaTools/interface/ConversionFinder.h"
-#include "RecoEgamma/EgammaTools/interface/ConversionInfo.h"
+//#include "RecoEgamma/EgammaTools/interface/ConversionFinder.h"
+//#include "RecoEgamma/EgammaTools/interface/ConversionInfo.h"
 
 // includes to make hadron/photonISO varaibles
 #include "DataFormats/EgammaCandidates/interface/GsfElectron.h"
@@ -74,7 +74,7 @@
 // Includes for conversion
 #include "DataFormats/EgammaCandidates/interface/Conversion.h"
 #include "DataFormats/EgammaCandidates/interface/ConversionFwd.h"
-#include "RecoEgamma/EgammaTools/interface/ConversionTools.h"
+#include "CommonTools/Egamma/interface/ConversionTools.h"
 
 // Including this for top pt reweighting
 #include "AnalysisDataFormats/TopObjects/interface/TtGenEvent.h"

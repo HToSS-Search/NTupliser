@@ -14,7 +14,7 @@ import FWCore.ParameterSet.VarParsing as VarParsing
 ###############################
 
 process.load('Configuration.Geometry.GeometryRecoDB_cff')
-process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_condDBv2_cff')
+process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
 process.load("Configuration.StandardSequences.MagneticField_cff")
 process.load('PhysicsTools.PatAlgos.slimming.unpackedTracksAndVertices_cfi')
 
@@ -55,8 +55,8 @@ from Configuration.AlCa.GlobalTag import GlobalTag
 ## 2016 - 106X_mcRun2_asymptotic_preVFP_v11 OR 106X_mcRun2_asymptotic_v17
 ## 2017 - 106X_mc2017_realistic_v9
 ## 2018 - 106X_upgrade2018_realistic_v16_L1v1
-
-process.GlobalTag.globaltag = cms.string('106X_mc2017_realistic_v9')
+## 2021 - 120X_mcRun3_2021_realistic_v5
+process.GlobalTag.globaltag = cms.string('120X_mcRun3_2021_realistic_v5')
 
 #There's a bit in here about some btau tags that the code looks for. I don't know if this is significant, however. I'm going to ignore it for now.
 
@@ -101,8 +101,8 @@ process.jetCorrection = cms.Sequence( process.patJetCorrFactorsUpdatedJEC * proc
 ###############################
 
 ## All embedded in 2017 miniAODv2, but to rerun on v1 ...
-from EgammaUser.EgammaPostRecoTools.EgammaPostRecoTools import setupEgammaPostRecoSeq
-setupEgammaPostRecoSeq(process,era='2017-UL')  ### 2016preVFP-UL OR 2016postVFP-UL OR 2017-UL OR 2018-UL
+#from EgammaUser.EgammaPostRecoTools.EgammaPostRecoTools import setupEgammaPostRecoSeq
+#setupEgammaPostRecoSeq(process,era='2017-UL')  ### 2016preVFP-UL OR 2016postVFP-UL OR 2017-UL OR 2018-UL
 #a sequence egammaPostRecoSeq has now been created and should be added to your path, eg process.p=cms.Path(process.egammaPostRecoSeq)
 
 ###############################
@@ -240,7 +240,7 @@ process.out.SelectEvents = cms.untracked.PSet(SelectEvents = cms.vstring('p'))
 #del process.out
 
 process.p = cms.Path(
-    process.egammaPostRecoSeq *
+#    process.egammaPostRecoSeq *
     process.jetCorrection *
     process.ecalBadCalibReducedMINIAODFilter *
     process.makeTopologyNtupleMiniAOD
