@@ -1,8 +1,8 @@
-VUB-EOS-Searches-nTuples
-==============
+VUB-EOS-Searches MC generation
+==============================
 ***
 
-The CMSSW_12_0_2_patch1 branch contains code from CMSSW_10_6_27 branch which is modified to work for Run-3 MC generation and subsequent processing. 
+The CMSSW_12_0_2_patch1_alt branch contains files for Run-3 MC generation using HTCondor and subsequent processing. 
 
 Remember to add all prerequisite modules/packages from CMSSW and build before compiling this branch. 
 
@@ -21,8 +21,8 @@ Based on HTo2LongLivedTo4mu_MH-125_MFF-12_CTau-900mm_TuneCP5_14TeV-pythia8 Run3S
 Steps: 
 ```bash
 git clone Branch-Name ### checkout relevant branch
-mkdir -p Configuration/GenProduction/python/HToSSTo2Mu2Hadrons/ ### needed for CMSSW to find genfragments
-cp -r NTupliser/generation/genfragments/* Configuration/GenProduction/python/HToSSTo2Mu2Hadrons/. ###copy all genfragments to created dir
+mkdir -p Configuration/GenProduction/python/ ### needed for CMSSW to find genfragments
+cp -r NTupliser/genfragments/* Configuration/GenProduction/python/. ###copy all genfragments to created dir
 scram b -j4
 ```
 
