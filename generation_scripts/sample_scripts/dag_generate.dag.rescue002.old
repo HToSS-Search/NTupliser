@@ -1,0 +1,18 @@
+# Rescue DAG file, created after running
+#   the dag_generate.dag DAG file
+# Created 4/27/2022 08:50:36 UTC
+# Rescue DAG version: 2.0.1 (partial)
+#
+# Total number of Nodes: 8
+# Nodes premarked DONE: 0
+# Nodes that failed: 0
+#   <ENDLIST>
+
+RETRY gen_J1 2
+RETRY digi_J1 2
+RETRY aod_J1 2
+RETRY miniaod_J1 2
+RETRY gen_J2 2
+RETRY digi_J2 2
+RETRY aod_J2 2
+RETRY miniaod_J2 2

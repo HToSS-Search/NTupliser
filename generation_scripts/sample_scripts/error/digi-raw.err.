@@ -1,0 +1,14 @@
+26-Apr-2022 15:27:36 CEST  Initiating request to open file file:/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/GEN-SIM/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2021_220424/step0_.root
+----- Begin Fatal Exception 26-Apr-2022 15:27:37 CEST-----------------------
+An exception of category 'FileOpenError' occurred while
+   [0] Constructing the EventProcessor
+   [1] Constructing input source of type PoolSource
+   [2] Calling RootInputFileSequence::initTheFile()
+   [3] Calling StorageFactory::open()
+   [4] Calling File::sysopen()
+Exception Message:
+Failed to open the file '///pnfs/iihe/cms/store/user/sdansana/HToSS/MC/GEN-SIM/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2021_220424/step0_.root'
+   Additional Info:
+      [a] Input file file:/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/GEN-SIM/NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2021_220424/step0_.root could not be opened.
+      [b] open() failed with system error 'No such file or directory' (error code 2)
+----- End Fatal Exception -------------------------------------------------

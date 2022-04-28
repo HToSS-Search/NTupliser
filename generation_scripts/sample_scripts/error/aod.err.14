@@ -1,0 +1,1941 @@
+23-Mar-2022 20:17:01 CET  Initiating request to open file file:/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/DIGI2RAW/DIGI2RAW_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2021_220322/step2_14.root
+23-Mar-2022 20:17:12 CET  Successfully opened file file:/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/DIGI2RAW/DIGI2RAW_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2021_220322/step2_14.root
+%MSG-e TkDetLayers:   ConversionTrackCandidateProducer:uncleanedOnlyConversionTrackCandidates@streamBeginRun  23-Mar-2022 20:19:17 CET Run: 1 Stream: 0
+ ForwardDiskSectorBuilderFromDet: Trying to build Petal Wedge from Dets at different z positions !! Delta_z = -0.951241
+%MSG
+Begin processing the 1st record. Run 1, Event 65001, LumiSection 651 on stream 0 at 23-Mar-2022 20:19:23.874 CET
+Begin processing the 2nd record. Run 1, Event 65003, LumiSection 651 on stream 0 at 23-Mar-2022 20:20:30.517 CET
+Begin processing the 3rd record. Run 1, Event 65005, LumiSection 651 on stream 0 at 23-Mar-2022 20:20:43.825 CET
+Begin processing the 4th record. Run 1, Event 65010, LumiSection 651 on stream 0 at 23-Mar-2022 20:20:55.185 CET
+Begin processing the 5th record. Run 1, Event 65011, LumiSection 651 on stream 0 at 23-Mar-2022 20:21:10.897 CET
+Begin processing the 6th record. Run 1, Event 65019, LumiSection 651 on stream 0 at 23-Mar-2022 20:21:25.493 CET
+Begin processing the 7th record. Run 1, Event 65022, LumiSection 651 on stream 0 at 23-Mar-2022 20:21:45.251 CET
+Begin processing the 8th record. Run 1, Event 65026, LumiSection 651 on stream 0 at 23-Mar-2022 20:22:06.902 CET
+%MSG-e TrajectoryNotPosDef:  TrackProducer:pixelPairStepTracks  23-Mar-2022 20:22:21 CET Run: 1 Event: 65026
+Trajectory covariance is not positive-definite
+%MSG
+Begin processing the 9th record. Run 1, Event 65044, LumiSection 651 on stream 0 at 23-Mar-2022 20:22:43.165 CET
+Begin processing the 10th record. Run 1, Event 65045, LumiSection 651 on stream 0 at 23-Mar-2022 20:22:48.173 CET
+Begin processing the 11th record. Run 1, Event 65046, LumiSection 651 on stream 0 at 23-Mar-2022 20:23:05.228 CET
+Begin processing the 12th record. Run 1, Event 65053, LumiSection 651 on stream 0 at 23-Mar-2022 20:23:18.704 CET
+Begin processing the 13th record. Run 1, Event 65054, LumiSection 651 on stream 0 at 23-Mar-2022 20:23:27.659 CET
+Begin processing the 14th record. Run 1, Event 65055, LumiSection 651 on stream 0 at 23-Mar-2022 20:23:40.363 CET
+Begin processing the 15th record. Run 1, Event 65058, LumiSection 651 on stream 0 at 23-Mar-2022 20:23:58.552 CET
+Begin processing the 16th record. Run 1, Event 65064, LumiSection 651 on stream 0 at 23-Mar-2022 20:24:03.899 CET
+Begin processing the 17th record. Run 1, Event 65068, LumiSection 651 on stream 0 at 23-Mar-2022 20:24:11.676 CET
+Begin processing the 18th record. Run 1, Event 65071, LumiSection 651 on stream 0 at 23-Mar-2022 20:24:29.321 CET
+Begin processing the 19th record. Run 1, Event 65073, LumiSection 651 on stream 0 at 23-Mar-2022 20:24:35.621 CET
+Begin processing the 20th record. Run 1, Event 65074, LumiSection 651 on stream 0 at 23-Mar-2022 20:24:52.620 CET
+Begin processing the 21st record. Run 1, Event 65078, LumiSection 651 on stream 0 at 23-Mar-2022 20:25:02.997 CET
+Begin processing the 22nd record. Run 1, Event 65083, LumiSection 651 on stream 0 at 23-Mar-2022 20:25:15.063 CET
+Begin processing the 23rd record. Run 1, Event 65084, LumiSection 651 on stream 0 at 23-Mar-2022 20:25:26.731 CET
+Begin processing the 24th record. Run 1, Event 65087, LumiSection 651 on stream 0 at 23-Mar-2022 20:25:34.185 CET
+Begin processing the 25th record. Run 1, Event 65092, LumiSection 651 on stream 0 at 23-Mar-2022 20:25:37.453 CET
+Begin processing the 26th record. Run 1, Event 65093, LumiSection 651 on stream 0 at 23-Mar-2022 20:25:56.821 CET
+Begin processing the 27th record. Run 1, Event 65095, LumiSection 651 on stream 0 at 23-Mar-2022 20:26:14.877 CET
+Begin processing the 28th record. Run 1, Event 65098, LumiSection 651 on stream 0 at 23-Mar-2022 20:26:22.723 CET
+Begin processing the 29th record. Run 1, Event 65101, LumiSection 652 on stream 0 at 23-Mar-2022 20:26:51.849 CET
+Begin processing the 30th record. Run 1, Event 65107, LumiSection 652 on stream 0 at 23-Mar-2022 20:27:19.347 CET
+Begin processing the 31st record. Run 1, Event 65115, LumiSection 652 on stream 0 at 23-Mar-2022 20:27:29.882 CET
+Begin processing the 32nd record. Run 1, Event 65122, LumiSection 652 on stream 0 at 23-Mar-2022 20:27:39.496 CET
+Begin processing the 33rd record. Run 1, Event 65125, LumiSection 652 on stream 0 at 23-Mar-2022 20:27:53.743 CET
+Begin processing the 34th record. Run 1, Event 65126, LumiSection 652 on stream 0 at 23-Mar-2022 20:28:09.207 CET
+Begin processing the 35th record. Run 1, Event 65129, LumiSection 652 on stream 0 at 23-Mar-2022 20:28:17.851 CET
+Begin processing the 36th record. Run 1, Event 65136, LumiSection 652 on stream 0 at 23-Mar-2022 20:28:23.795 CET
+Begin processing the 37th record. Run 1, Event 65138, LumiSection 652 on stream 0 at 23-Mar-2022 20:28:31.219 CET
+Begin processing the 38th record. Run 1, Event 65139, LumiSection 652 on stream 0 at 23-Mar-2022 20:28:56.021 CET
+Begin processing the 39th record. Run 1, Event 65140, LumiSection 652 on stream 0 at 23-Mar-2022 20:29:09.977 CET
+Begin processing the 40th record. Run 1, Event 65142, LumiSection 652 on stream 0 at 23-Mar-2022 20:29:27.810 CET
+Begin processing the 41st record. Run 1, Event 65145, LumiSection 652 on stream 0 at 23-Mar-2022 20:29:43.429 CET
+Begin processing the 42nd record. Run 1, Event 65147, LumiSection 652 on stream 0 at 23-Mar-2022 20:29:57.420 CET
+Begin processing the 43rd record. Run 1, Event 65150, LumiSection 652 on stream 0 at 23-Mar-2022 20:30:06.403 CET
+Begin processing the 44th record. Run 1, Event 65155, LumiSection 652 on stream 0 at 23-Mar-2022 20:30:15.717 CET
+Begin processing the 45th record. Run 1, Event 65158, LumiSection 652 on stream 0 at 23-Mar-2022 20:30:28.967 CET
+Begin processing the 46th record. Run 1, Event 65164, LumiSection 652 on stream 0 at 23-Mar-2022 20:30:43.823 CET
+Begin processing the 47th record. Run 1, Event 65166, LumiSection 652 on stream 0 at 23-Mar-2022 20:31:04.881 CET
+Begin processing the 48th record. Run 1, Event 65169, LumiSection 652 on stream 0 at 23-Mar-2022 20:31:35.402 CET
+Begin processing the 49th record. Run 1, Event 65171, LumiSection 652 on stream 0 at 23-Mar-2022 20:31:42.482 CET
+Begin processing the 50th record. Run 1, Event 65176, LumiSection 652 on stream 0 at 23-Mar-2022 20:32:13.809 CET
+Begin processing the 51st record. Run 1, Event 65179, LumiSection 652 on stream 0 at 23-Mar-2022 20:32:17.115 CET
+Begin processing the 52nd record. Run 1, Event 65186, LumiSection 652 on stream 0 at 23-Mar-2022 20:32:26.445 CET
+Begin processing the 53rd record. Run 1, Event 65195, LumiSection 652 on stream 0 at 23-Mar-2022 20:32:34.021 CET
+Begin processing the 54th record. Run 1, Event 65197, LumiSection 652 on stream 0 at 23-Mar-2022 20:32:40.127 CET
+Begin processing the 55th record. Run 1, Event 65201, LumiSection 653 on stream 0 at 23-Mar-2022 20:32:59.219 CET
+Begin processing the 56th record. Run 1, Event 65202, LumiSection 653 on stream 0 at 23-Mar-2022 20:33:11.353 CET
+Begin processing the 57th record. Run 1, Event 65207, LumiSection 653 on stream 0 at 23-Mar-2022 20:33:14.655 CET
+Begin processing the 58th record. Run 1, Event 65213, LumiSection 653 on stream 0 at 23-Mar-2022 20:33:24.363 CET
+Begin processing the 59th record. Run 1, Event 65216, LumiSection 653 on stream 0 at 23-Mar-2022 20:33:43.173 CET
+Begin processing the 60th record. Run 1, Event 65221, LumiSection 653 on stream 0 at 23-Mar-2022 20:34:15.237 CET
+Begin processing the 61st record. Run 1, Event 65223, LumiSection 653 on stream 0 at 23-Mar-2022 20:34:28.555 CET
+Begin processing the 62nd record. Run 1, Event 65224, LumiSection 653 on stream 0 at 23-Mar-2022 20:34:46.195 CET
+Begin processing the 63rd record. Run 1, Event 65225, LumiSection 653 on stream 0 at 23-Mar-2022 20:35:16.352 CET
+Begin processing the 64th record. Run 1, Event 65226, LumiSection 653 on stream 0 at 23-Mar-2022 20:35:33.791 CET
+Begin processing the 65th record. Run 1, Event 65232, LumiSection 653 on stream 0 at 23-Mar-2022 20:35:43.100 CET
+Begin processing the 66th record. Run 1, Event 65234, LumiSection 653 on stream 0 at 23-Mar-2022 20:36:02.644 CET
+Begin processing the 67th record. Run 1, Event 65245, LumiSection 653 on stream 0 at 23-Mar-2022 20:36:28.852 CET
+Begin processing the 68th record. Run 1, Event 65246, LumiSection 653 on stream 0 at 23-Mar-2022 20:37:05.602 CET
+Begin processing the 69th record. Run 1, Event 65257, LumiSection 653 on stream 0 at 23-Mar-2022 20:37:26.870 CET
+Begin processing the 70th record. Run 1, Event 65262, LumiSection 653 on stream 0 at 23-Mar-2022 20:37:41.980 CET
+Begin processing the 71st record. Run 1, Event 65271, LumiSection 653 on stream 0 at 23-Mar-2022 20:37:55.313 CET
+Begin processing the 72nd record. Run 1, Event 65273, LumiSection 653 on stream 0 at 23-Mar-2022 20:38:09.468 CET
+Begin processing the 73rd record. Run 1, Event 65274, LumiSection 653 on stream 0 at 23-Mar-2022 20:38:37.860 CET
+Begin processing the 74th record. Run 1, Event 65286, LumiSection 653 on stream 0 at 23-Mar-2022 20:38:42.713 CET
+Begin processing the 75th record. Run 1, Event 65289, LumiSection 653 on stream 0 at 23-Mar-2022 20:38:57.885 CET
+Begin processing the 76th record. Run 1, Event 65291, LumiSection 653 on stream 0 at 23-Mar-2022 20:39:21.534 CET
+Begin processing the 77th record. Run 1, Event 65301, LumiSection 654 on stream 0 at 23-Mar-2022 20:39:38.882 CET
+Begin processing the 78th record. Run 1, Event 65304, LumiSection 654 on stream 0 at 23-Mar-2022 20:39:55.842 CET
+Begin processing the 79th record. Run 1, Event 65307, LumiSection 654 on stream 0 at 23-Mar-2022 20:40:06.313 CET
+Begin processing the 80th record. Run 1, Event 65308, LumiSection 654 on stream 0 at 23-Mar-2022 20:40:30.345 CET
+Begin processing the 81st record. Run 1, Event 65317, LumiSection 654 on stream 0 at 23-Mar-2022 20:40:41.393 CET
+Begin processing the 82nd record. Run 1, Event 65319, LumiSection 654 on stream 0 at 23-Mar-2022 20:40:54.648 CET
+Begin processing the 83rd record. Run 1, Event 65323, LumiSection 654 on stream 0 at 23-Mar-2022 20:41:00.992 CET
+Begin processing the 84th record. Run 1, Event 65324, LumiSection 654 on stream 0 at 23-Mar-2022 20:41:08.545 CET
+Begin processing the 85th record. Run 1, Event 65330, LumiSection 654 on stream 0 at 23-Mar-2022 20:41:28.451 CET
+Begin processing the 86th record. Run 1, Event 65333, LumiSection 654 on stream 0 at 23-Mar-2022 20:41:53.740 CET
+Begin processing the 87th record. Run 1, Event 65334, LumiSection 654 on stream 0 at 23-Mar-2022 20:42:01.074 CET
+Begin processing the 88th record. Run 1, Event 65337, LumiSection 654 on stream 0 at 23-Mar-2022 20:42:11.302 CET
+Begin processing the 89th record. Run 1, Event 65340, LumiSection 654 on stream 0 at 23-Mar-2022 20:42:36.733 CET
+Begin processing the 90th record. Run 1, Event 65345, LumiSection 654 on stream 0 at 23-Mar-2022 20:42:51.678 CET
+Begin processing the 91st record. Run 1, Event 65348, LumiSection 654 on stream 0 at 23-Mar-2022 20:43:22.412 CET
+Begin processing the 92nd record. Run 1, Event 65349, LumiSection 654 on stream 0 at 23-Mar-2022 20:43:42.165 CET
+Begin processing the 93rd record. Run 1, Event 65350, LumiSection 654 on stream 0 at 23-Mar-2022 20:43:48.560 CET
+Begin processing the 94th record. Run 1, Event 65352, LumiSection 654 on stream 0 at 23-Mar-2022 20:44:09.098 CET
+Begin processing the 95th record. Run 1, Event 65353, LumiSection 654 on stream 0 at 23-Mar-2022 20:44:12.800 CET
+Begin processing the 96th record. Run 1, Event 65358, LumiSection 654 on stream 0 at 23-Mar-2022 20:44:22.604 CET
+Begin processing the 97th record. Run 1, Event 65359, LumiSection 654 on stream 0 at 23-Mar-2022 20:44:29.389 CET
+Begin processing the 98th record. Run 1, Event 65365, LumiSection 654 on stream 0 at 23-Mar-2022 20:44:43.596 CET
+Begin processing the 99th record. Run 1, Event 65368, LumiSection 654 on stream 0 at 23-Mar-2022 20:44:54.374 CET
+Begin processing the 100th record. Run 1, Event 65371, LumiSection 654 on stream 0 at 23-Mar-2022 20:45:03.868 CET
+Begin processing the 101st record. Run 1, Event 65375, LumiSection 654 on stream 0 at 23-Mar-2022 20:45:19.718 CET
+Begin processing the 102nd record. Run 1, Event 65377, LumiSection 654 on stream 0 at 23-Mar-2022 20:45:28.038 CET
+Begin processing the 103rd record. Run 1, Event 65379, LumiSection 654 on stream 0 at 23-Mar-2022 20:45:38.839 CET
+Begin processing the 104th record. Run 1, Event 65381, LumiSection 654 on stream 0 at 23-Mar-2022 20:46:35.252 CET
+Begin processing the 105th record. Run 1, Event 65385, LumiSection 654 on stream 0 at 23-Mar-2022 20:46:47.185 CET
+Begin processing the 106th record. Run 1, Event 65387, LumiSection 654 on stream 0 at 23-Mar-2022 20:46:58.310 CET
+Begin processing the 107th record. Run 1, Event 65388, LumiSection 654 on stream 0 at 23-Mar-2022 20:47:18.033 CET
+Begin processing the 108th record. Run 1, Event 65394, LumiSection 654 on stream 0 at 23-Mar-2022 20:47:36.358 CET
+Begin processing the 109th record. Run 1, Event 65395, LumiSection 654 on stream 0 at 23-Mar-2022 20:47:50.716 CET
+Begin processing the 110th record. Run 1, Event 65401, LumiSection 655 on stream 0 at 23-Mar-2022 20:47:59.895 CET
+Begin processing the 111th record. Run 1, Event 65407, LumiSection 655 on stream 0 at 23-Mar-2022 20:48:08.855 CET
+Begin processing the 112th record. Run 1, Event 65409, LumiSection 655 on stream 0 at 23-Mar-2022 20:48:23.224 CET
+Begin processing the 113th record. Run 1, Event 65419, LumiSection 655 on stream 0 at 23-Mar-2022 20:48:36.741 CET
+Begin processing the 114th record. Run 1, Event 65421, LumiSection 655 on stream 0 at 23-Mar-2022 20:48:49.808 CET
+Begin processing the 115th record. Run 1, Event 65426, LumiSection 655 on stream 0 at 23-Mar-2022 20:49:07.422 CET
+Begin processing the 116th record. Run 1, Event 65432, LumiSection 655 on stream 0 at 23-Mar-2022 20:49:27.492 CET
+Begin processing the 117th record. Run 1, Event 65438, LumiSection 655 on stream 0 at 23-Mar-2022 20:49:36.166 CET
+Begin processing the 118th record. Run 1, Event 65443, LumiSection 655 on stream 0 at 23-Mar-2022 20:49:44.331 CET
+Begin processing the 119th record. Run 1, Event 65445, LumiSection 655 on stream 0 at 23-Mar-2022 20:49:50.596 CET
+Begin processing the 120th record. Run 1, Event 65449, LumiSection 655 on stream 0 at 23-Mar-2022 20:50:02.691 CET
+Begin processing the 121st record. Run 1, Event 65451, LumiSection 655 on stream 0 at 23-Mar-2022 20:50:14.193 CET
+Begin processing the 122nd record. Run 1, Event 65453, LumiSection 655 on stream 0 at 23-Mar-2022 20:50:21.212 CET
+Begin processing the 123rd record. Run 1, Event 65454, LumiSection 655 on stream 0 at 23-Mar-2022 20:50:28.900 CET
+Begin processing the 124th record. Run 1, Event 65459, LumiSection 655 on stream 0 at 23-Mar-2022 20:50:45.411 CET
+Begin processing the 125th record. Run 1, Event 65460, LumiSection 655 on stream 0 at 23-Mar-2022 20:51:04.402 CET
+Begin processing the 126th record. Run 1, Event 65461, LumiSection 655 on stream 0 at 23-Mar-2022 20:51:13.235 CET
+Begin processing the 127th record. Run 1, Event 65466, LumiSection 655 on stream 0 at 23-Mar-2022 20:51:31.058 CET
+Begin processing the 128th record. Run 1, Event 65470, LumiSection 655 on stream 0 at 23-Mar-2022 20:51:37.872 CET
+Begin processing the 129th record. Run 1, Event 65477, LumiSection 655 on stream 0 at 23-Mar-2022 20:51:47.616 CET
+Begin processing the 130th record. Run 1, Event 65478, LumiSection 655 on stream 0 at 23-Mar-2022 20:51:51.768 CET
+Begin processing the 131st record. Run 1, Event 65483, LumiSection 655 on stream 0 at 23-Mar-2022 20:52:02.691 CET
+Begin processing the 132nd record. Run 1, Event 65486, LumiSection 655 on stream 0 at 23-Mar-2022 20:52:21.831 CET
+Begin processing the 133rd record. Run 1, Event 65488, LumiSection 655 on stream 0 at 23-Mar-2022 20:52:30.645 CET
+%MSG-w OutOfBounds:  TrackProducer:lowPtTripletStepTracks  23-Mar-2022 20:52:34 CET Run: 1 Event: 65488
+Prob Q outside the bounds of the quality word. Defaulting to Prob=0. Prob = 1 QualityWord = 16383
+%MSG
+Begin processing the 134th record. Run 1, Event 65492, LumiSection 655 on stream 0 at 23-Mar-2022 20:52:42.830 CET
+Begin processing the 135th record. Run 1, Event 65493, LumiSection 655 on stream 0 at 23-Mar-2022 20:52:54.811 CET
+Begin processing the 136th record. Run 1, Event 65495, LumiSection 655 on stream 0 at 23-Mar-2022 20:53:14.141 CET
+Begin processing the 137th record. Run 1, Event 65501, LumiSection 656 on stream 0 at 23-Mar-2022 20:53:25.474 CET
+Begin processing the 138th record. Run 1, Event 65505, LumiSection 656 on stream 0 at 23-Mar-2022 20:53:33.489 CET
+Begin processing the 139th record. Run 1, Event 65511, LumiSection 656 on stream 0 at 23-Mar-2022 20:53:50.735 CET
+Begin processing the 140th record. Run 1, Event 65516, LumiSection 656 on stream 0 at 23-Mar-2022 20:53:56.623 CET
+Begin processing the 141st record. Run 1, Event 65521, LumiSection 656 on stream 0 at 23-Mar-2022 20:54:08.559 CET
+Begin processing the 142nd record. Run 1, Event 65523, LumiSection 656 on stream 0 at 23-Mar-2022 20:54:14.869 CET
+Begin processing the 143rd record. Run 1, Event 65529, LumiSection 656 on stream 0 at 23-Mar-2022 20:54:18.150 CET
+Begin processing the 144th record. Run 1, Event 65532, LumiSection 656 on stream 0 at 23-Mar-2022 20:54:25.474 CET
+Begin processing the 145th record. Run 1, Event 65536, LumiSection 656 on stream 0 at 23-Mar-2022 20:54:40.183 CET
+Begin processing the 146th record. Run 1, Event 65537, LumiSection 656 on stream 0 at 23-Mar-2022 20:54:52.641 CET
+Begin processing the 147th record. Run 1, Event 65538, LumiSection 656 on stream 0 at 23-Mar-2022 20:55:15.159 CET
+Begin processing the 148th record. Run 1, Event 65540, LumiSection 656 on stream 0 at 23-Mar-2022 20:55:25.310 CET
+Begin processing the 149th record. Run 1, Event 65545, LumiSection 656 on stream 0 at 23-Mar-2022 20:55:33.417 CET
+Begin processing the 150th record. Run 1, Event 65547, LumiSection 656 on stream 0 at 23-Mar-2022 20:55:41.225 CET
+Begin processing the 151st record. Run 1, Event 65553, LumiSection 656 on stream 0 at 23-Mar-2022 20:55:48.121 CET
+Begin processing the 152nd record. Run 1, Event 65555, LumiSection 656 on stream 0 at 23-Mar-2022 20:55:53.544 CET
+Begin processing the 153rd record. Run 1, Event 65556, LumiSection 656 on stream 0 at 23-Mar-2022 20:56:00.017 CET
+Begin processing the 154th record. Run 1, Event 65558, LumiSection 656 on stream 0 at 23-Mar-2022 20:56:17.471 CET
+Begin processing the 155th record. Run 1, Event 65564, LumiSection 656 on stream 0 at 23-Mar-2022 20:56:24.637 CET
+Begin processing the 156th record. Run 1, Event 65565, LumiSection 656 on stream 0 at 23-Mar-2022 20:56:39.119 CET
+Begin processing the 157th record. Run 1, Event 65566, LumiSection 656 on stream 0 at 23-Mar-2022 20:56:46.292 CET
+Begin processing the 158th record. Run 1, Event 65567, LumiSection 656 on stream 0 at 23-Mar-2022 20:56:54.948 CET
+Begin processing the 159th record. Run 1, Event 65568, LumiSection 656 on stream 0 at 23-Mar-2022 20:57:15.635 CET
+Begin processing the 160th record. Run 1, Event 65569, LumiSection 656 on stream 0 at 23-Mar-2022 20:57:22.562 CET
+Begin processing the 161st record. Run 1, Event 65570, LumiSection 656 on stream 0 at 23-Mar-2022 20:57:33.726 CET
+Begin processing the 162nd record. Run 1, Event 65571, LumiSection 656 on stream 0 at 23-Mar-2022 20:57:59.601 CET
+Begin processing the 163rd record. Run 1, Event 65573, LumiSection 656 on stream 0 at 23-Mar-2022 20:58:08.488 CET
+Begin processing the 164th record. Run 1, Event 65577, LumiSection 656 on stream 0 at 23-Mar-2022 20:58:13.809 CET
+Begin processing the 165th record. Run 1, Event 65582, LumiSection 656 on stream 0 at 23-Mar-2022 20:58:23.902 CET
+Begin processing the 166th record. Run 1, Event 65584, LumiSection 656 on stream 0 at 23-Mar-2022 20:58:29.449 CET
+Begin processing the 167th record. Run 1, Event 65585, LumiSection 656 on stream 0 at 23-Mar-2022 20:58:38.016 CET
+Begin processing the 168th record. Run 1, Event 65589, LumiSection 656 on stream 0 at 23-Mar-2022 20:58:43.442 CET
+Begin processing the 169th record. Run 1, Event 65593, LumiSection 656 on stream 0 at 23-Mar-2022 20:59:02.423 CET
+Begin processing the 170th record. Run 1, Event 65595, LumiSection 656 on stream 0 at 23-Mar-2022 20:59:06.510 CET
+Begin processing the 171st record. Run 1, Event 65603, LumiSection 657 on stream 0 at 23-Mar-2022 20:59:16.950 CET
+Begin processing the 172nd record. Run 1, Event 65604, LumiSection 657 on stream 0 at 23-Mar-2022 20:59:28.159 CET
+Begin processing the 173rd record. Run 1, Event 65605, LumiSection 657 on stream 0 at 23-Mar-2022 20:59:36.842 CET
+Begin processing the 174th record. Run 1, Event 65606, LumiSection 657 on stream 0 at 23-Mar-2022 20:59:51.969 CET
+Begin processing the 175th record. Run 1, Event 65610, LumiSection 657 on stream 0 at 23-Mar-2022 20:59:59.683 CET
+Begin processing the 176th record. Run 1, Event 65611, LumiSection 657 on stream 0 at 23-Mar-2022 21:00:14.430 CET
+Begin processing the 177th record. Run 1, Event 65612, LumiSection 657 on stream 0 at 23-Mar-2022 21:00:19.097 CET
+Begin processing the 178th record. Run 1, Event 65613, LumiSection 657 on stream 0 at 23-Mar-2022 21:00:26.997 CET
+Begin processing the 179th record. Run 1, Event 65626, LumiSection 657 on stream 0 at 23-Mar-2022 21:00:45.186 CET
+Begin processing the 180th record. Run 1, Event 65630, LumiSection 657 on stream 0 at 23-Mar-2022 21:00:59.006 CET
+Begin processing the 181st record. Run 1, Event 65636, LumiSection 657 on stream 0 at 23-Mar-2022 21:01:06.098 CET
+Begin processing the 182nd record. Run 1, Event 65638, LumiSection 657 on stream 0 at 23-Mar-2022 21:01:11.496 CET
+Begin processing the 183rd record. Run 1, Event 65640, LumiSection 657 on stream 0 at 23-Mar-2022 21:01:48.356 CET
+Begin processing the 184th record. Run 1, Event 65645, LumiSection 657 on stream 0 at 23-Mar-2022 21:02:01.575 CET
+Begin processing the 185th record. Run 1, Event 65648, LumiSection 657 on stream 0 at 23-Mar-2022 21:02:22.693 CET
+Begin processing the 186th record. Run 1, Event 65650, LumiSection 657 on stream 0 at 23-Mar-2022 21:02:32.432 CET
+Begin processing the 187th record. Run 1, Event 65658, LumiSection 657 on stream 0 at 23-Mar-2022 21:02:39.528 CET
+Begin processing the 188th record. Run 1, Event 65668, LumiSection 657 on stream 0 at 23-Mar-2022 21:02:51.993 CET
+Begin processing the 189th record. Run 1, Event 65669, LumiSection 657 on stream 0 at 23-Mar-2022 21:03:01.559 CET
+Begin processing the 190th record. Run 1, Event 65672, LumiSection 657 on stream 0 at 23-Mar-2022 21:03:11.212 CET
+Begin processing the 191st record. Run 1, Event 65673, LumiSection 657 on stream 0 at 23-Mar-2022 21:03:15.382 CET
+Begin processing the 192nd record. Run 1, Event 65674, LumiSection 657 on stream 0 at 23-Mar-2022 21:03:26.586 CET
+Begin processing the 193rd record. Run 1, Event 65678, LumiSection 657 on stream 0 at 23-Mar-2022 21:03:45.872 CET
+Begin processing the 194th record. Run 1, Event 65684, LumiSection 657 on stream 0 at 23-Mar-2022 21:03:50.749 CET
+Begin processing the 195th record. Run 1, Event 65687, LumiSection 657 on stream 0 at 23-Mar-2022 21:04:20.527 CET
+Begin processing the 196th record. Run 1, Event 65689, LumiSection 657 on stream 0 at 23-Mar-2022 21:04:33.625 CET
+Begin processing the 197th record. Run 1, Event 65701, LumiSection 658 on stream 0 at 23-Mar-2022 21:04:44.367 CET
+Begin processing the 198th record. Run 1, Event 65703, LumiSection 658 on stream 0 at 23-Mar-2022 21:04:49.628 CET
+Begin processing the 199th record. Run 1, Event 65711, LumiSection 658 on stream 0 at 23-Mar-2022 21:04:54.815 CET
+Begin processing the 200th record. Run 1, Event 65722, LumiSection 658 on stream 0 at 23-Mar-2022 21:05:04.188 CET
+Begin processing the 201st record. Run 1, Event 65724, LumiSection 658 on stream 0 at 23-Mar-2022 21:05:07.699 CET
+Begin processing the 202nd record. Run 1, Event 65725, LumiSection 658 on stream 0 at 23-Mar-2022 21:05:15.551 CET
+Begin processing the 203rd record. Run 1, Event 65726, LumiSection 658 on stream 0 at 23-Mar-2022 21:05:27.336 CET
+%MSG-w Muon:  GlobalMuonProducer:displacedGlobalMuons 23-Mar-2022 21:05:43 CET  Run: 1 Event: 65726
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w RecoMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:05:43 CET Run: 1 Event: 65726
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:05:43 CET Run: 1 Event: 65726
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalTrajectoryBuilderBase:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:05:43 CET Run: 1 Event: 65726
+     Failed to load tracker track trajectory
+%MSG
+Begin processing the 204th record. Run 1, Event 65727, LumiSection 658 on stream 0 at 23-Mar-2022 21:05:44.230 CET
+Begin processing the 205th record. Run 1, Event 65731, LumiSection 658 on stream 0 at 23-Mar-2022 21:05:55.857 CET
+Begin processing the 206th record. Run 1, Event 65737, LumiSection 658 on stream 0 at 23-Mar-2022 21:06:14.801 CET
+Begin processing the 207th record. Run 1, Event 65739, LumiSection 658 on stream 0 at 23-Mar-2022 21:06:27.677 CET
+Begin processing the 208th record. Run 1, Event 65750, LumiSection 658 on stream 0 at 23-Mar-2022 21:06:31.016 CET
+Begin processing the 209th record. Run 1, Event 65752, LumiSection 658 on stream 0 at 23-Mar-2022 21:06:38.884 CET
+Begin processing the 210th record. Run 1, Event 65754, LumiSection 658 on stream 0 at 23-Mar-2022 21:06:51.553 CET
+Begin processing the 211th record. Run 1, Event 65760, LumiSection 658 on stream 0 at 23-Mar-2022 21:07:25.838 CET
+Begin processing the 212th record. Run 1, Event 65761, LumiSection 658 on stream 0 at 23-Mar-2022 21:07:33.560 CET
+Begin processing the 213th record. Run 1, Event 65762, LumiSection 658 on stream 0 at 23-Mar-2022 21:07:47.157 CET
+Begin processing the 214th record. Run 1, Event 65764, LumiSection 658 on stream 0 at 23-Mar-2022 21:07:56.033 CET
+Begin processing the 215th record. Run 1, Event 65765, LumiSection 658 on stream 0 at 23-Mar-2022 21:08:17.452 CET
+Begin processing the 216th record. Run 1, Event 65766, LumiSection 658 on stream 0 at 23-Mar-2022 21:08:21.737 CET
+Begin processing the 217th record. Run 1, Event 65767, LumiSection 658 on stream 0 at 23-Mar-2022 21:08:36.448 CET
+Begin processing the 218th record. Run 1, Event 65768, LumiSection 658 on stream 0 at 23-Mar-2022 21:08:48.975 CET
+Begin processing the 219th record. Run 1, Event 65769, LumiSection 658 on stream 0 at 23-Mar-2022 21:09:08.470 CET
+Begin processing the 220th record. Run 1, Event 65776, LumiSection 658 on stream 0 at 23-Mar-2022 21:09:24.617 CET
+Begin processing the 221st record. Run 1, Event 65777, LumiSection 658 on stream 0 at 23-Mar-2022 21:09:37.283 CET
+Begin processing the 222nd record. Run 1, Event 65781, LumiSection 658 on stream 0 at 23-Mar-2022 21:09:47.912 CET
+Begin processing the 223rd record. Run 1, Event 65783, LumiSection 658 on stream 0 at 23-Mar-2022 21:10:01.402 CET
+Begin processing the 224th record. Run 1, Event 65784, LumiSection 658 on stream 0 at 23-Mar-2022 21:10:12.532 CET
+Begin processing the 225th record. Run 1, Event 65785, LumiSection 658 on stream 0 at 23-Mar-2022 21:10:17.601 CET
+Begin processing the 226th record. Run 1, Event 65786, LumiSection 658 on stream 0 at 23-Mar-2022 21:10:37.390 CET
+Begin processing the 227th record. Run 1, Event 65792, LumiSection 658 on stream 0 at 23-Mar-2022 21:11:01.670 CET
+Begin processing the 228th record. Run 1, Event 65795, LumiSection 658 on stream 0 at 23-Mar-2022 21:11:07.656 CET
+Begin processing the 229th record. Run 1, Event 65802, LumiSection 659 on stream 0 at 23-Mar-2022 21:11:21.116 CET
+Begin processing the 230th record. Run 1, Event 65803, LumiSection 659 on stream 0 at 23-Mar-2022 21:11:29.102 CET
+Begin processing the 231st record. Run 1, Event 65807, LumiSection 659 on stream 0 at 23-Mar-2022 21:11:35.945 CET
+Begin processing the 232nd record. Run 1, Event 65814, LumiSection 659 on stream 0 at 23-Mar-2022 21:11:54.209 CET
+Begin processing the 233rd record. Run 1, Event 65819, LumiSection 659 on stream 0 at 23-Mar-2022 21:12:12.784 CET
+Begin processing the 234th record. Run 1, Event 65820, LumiSection 659 on stream 0 at 23-Mar-2022 21:12:25.779 CET
+Begin processing the 235th record. Run 1, Event 65829, LumiSection 659 on stream 0 at 23-Mar-2022 21:12:35.737 CET
+Begin processing the 236th record. Run 1, Event 65830, LumiSection 659 on stream 0 at 23-Mar-2022 21:12:44.444 CET
+Begin processing the 237th record. Run 1, Event 65831, LumiSection 659 on stream 0 at 23-Mar-2022 21:12:57.578 CET
+Begin processing the 238th record. Run 1, Event 65832, LumiSection 659 on stream 0 at 23-Mar-2022 21:13:24.385 CET
+Begin processing the 239th record. Run 1, Event 65840, LumiSection 659 on stream 0 at 23-Mar-2022 21:13:34.121 CET
+Begin processing the 240th record. Run 1, Event 65841, LumiSection 659 on stream 0 at 23-Mar-2022 21:13:56.764 CET
+Begin processing the 241st record. Run 1, Event 65842, LumiSection 659 on stream 0 at 23-Mar-2022 21:14:01.534 CET
+Begin processing the 242nd record. Run 1, Event 65846, LumiSection 659 on stream 0 at 23-Mar-2022 21:14:10.445 CET
+Begin processing the 243rd record. Run 1, Event 65850, LumiSection 659 on stream 0 at 23-Mar-2022 21:14:20.281 CET
+Begin processing the 244th record. Run 1, Event 65851, LumiSection 659 on stream 0 at 23-Mar-2022 21:14:33.903 CET
+Begin processing the 245th record. Run 1, Event 65855, LumiSection 659 on stream 0 at 23-Mar-2022 21:14:37.245 CET
+Begin processing the 246th record. Run 1, Event 65857, LumiSection 659 on stream 0 at 23-Mar-2022 21:14:47.002 CET
+Begin processing the 247th record. Run 1, Event 65858, LumiSection 659 on stream 0 at 23-Mar-2022 21:15:06.966 CET
+Begin processing the 248th record. Run 1, Event 65859, LumiSection 659 on stream 0 at 23-Mar-2022 21:15:15.908 CET
+Begin processing the 249th record. Run 1, Event 65862, LumiSection 659 on stream 0 at 23-Mar-2022 21:15:23.905 CET
+Begin processing the 250th record. Run 1, Event 65864, LumiSection 659 on stream 0 at 23-Mar-2022 21:15:29.547 CET
+Begin processing the 251st record. Run 1, Event 65866, LumiSection 659 on stream 0 at 23-Mar-2022 21:15:50.884 CET
+Begin processing the 252nd record. Run 1, Event 65869, LumiSection 659 on stream 0 at 23-Mar-2022 21:15:55.833 CET
+Begin processing the 253rd record. Run 1, Event 65872, LumiSection 659 on stream 0 at 23-Mar-2022 21:16:04.468 CET
+Begin processing the 254th record. Run 1, Event 65873, LumiSection 659 on stream 0 at 23-Mar-2022 21:16:22.401 CET
+Begin processing the 255th record. Run 1, Event 65874, LumiSection 659 on stream 0 at 23-Mar-2022 21:16:34.595 CET
+Begin processing the 256th record. Run 1, Event 65875, LumiSection 659 on stream 0 at 23-Mar-2022 21:16:41.812 CET
+%MSG-w Muon:  GlobalMuonProducer:displacedGlobalMuons 23-Mar-2022 21:16:45 CET  Run: 1 Event: 65875
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w RecoMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:16:45 CET Run: 1 Event: 65875
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:16:45 CET Run: 1 Event: 65875
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalTrajectoryBuilderBase:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:16:45 CET Run: 1 Event: 65875
+     Failed to load tracker track trajectory
+%MSG
+Begin processing the 257th record. Run 1, Event 65879, LumiSection 659 on stream 0 at 23-Mar-2022 21:16:45.859 CET
+Begin processing the 258th record. Run 1, Event 65881, LumiSection 659 on stream 0 at 23-Mar-2022 21:16:49.807 CET
+Begin processing the 259th record. Run 1, Event 65883, LumiSection 659 on stream 0 at 23-Mar-2022 21:16:56.948 CET
+Begin processing the 260th record. Run 1, Event 65884, LumiSection 659 on stream 0 at 23-Mar-2022 21:17:05.447 CET
+Begin processing the 261st record. Run 1, Event 65885, LumiSection 659 on stream 0 at 23-Mar-2022 21:17:18.683 CET
+Begin processing the 262nd record. Run 1, Event 65886, LumiSection 659 on stream 0 at 23-Mar-2022 21:17:29.590 CET
+Begin processing the 263rd record. Run 1, Event 65887, LumiSection 659 on stream 0 at 23-Mar-2022 21:17:35.511 CET
+%MSG-w Muon:  GlobalMuonProducer:displacedGlobalMuons 23-Mar-2022 21:17:51 CET  Run: 1 Event: 65887
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w RecoMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:17:51 CET Run: 1 Event: 65887
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:17:51 CET Run: 1 Event: 65887
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalTrajectoryBuilderBase:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:17:51 CET Run: 1 Event: 65887
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w Muon:  GlobalMuonProducer:displacedGlobalMuons 23-Mar-2022 21:17:51 CET  Run: 1 Event: 65887
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w RecoMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:17:51 CET Run: 1 Event: 65887
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:17:51 CET Run: 1 Event: 65887
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalTrajectoryBuilderBase:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:17:51 CET Run: 1 Event: 65887
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w Muon:  GlobalMuonProducer:displacedGlobalMuons 23-Mar-2022 21:17:51 CET  Run: 1 Event: 65887
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w RecoMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:17:51 CET Run: 1 Event: 65887
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:17:51 CET Run: 1 Event: 65887
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalTrajectoryBuilderBase:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:17:51 CET Run: 1 Event: 65887
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w Muon:  GlobalMuonProducer:displacedGlobalMuons 23-Mar-2022 21:17:51 CET  Run: 1 Event: 65887
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w RecoMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:17:51 CET Run: 1 Event: 65887
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:17:51 CET Run: 1 Event: 65887
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalTrajectoryBuilderBase:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:17:51 CET Run: 1 Event: 65887
+     Failed to load tracker track trajectory
+%MSG
+Begin processing the 264th record. Run 1, Event 65893, LumiSection 659 on stream 0 at 23-Mar-2022 21:17:52.331 CET
+Begin processing the 265th record. Run 1, Event 65895, LumiSection 659 on stream 0 at 23-Mar-2022 21:18:23.863 CET
+Begin processing the 266th record. Run 1, Event 65896, LumiSection 659 on stream 0 at 23-Mar-2022 21:18:28.070 CET
+Begin processing the 267th record. Run 1, Event 65899, LumiSection 659 on stream 0 at 23-Mar-2022 21:18:37.054 CET
+Begin processing the 268th record. Run 1, Event 65905, LumiSection 660 on stream 0 at 23-Mar-2022 21:18:43.422 CET
+Begin processing the 269th record. Run 1, Event 65909, LumiSection 660 on stream 0 at 23-Mar-2022 21:18:49.570 CET
+Begin processing the 270th record. Run 1, Event 65910, LumiSection 660 on stream 0 at 23-Mar-2022 21:19:00.299 CET
+Begin processing the 271st record. Run 1, Event 65914, LumiSection 660 on stream 0 at 23-Mar-2022 21:19:21.516 CET
+Begin processing the 272nd record. Run 1, Event 65915, LumiSection 660 on stream 0 at 23-Mar-2022 21:19:28.581 CET
+Begin processing the 273rd record. Run 1, Event 65921, LumiSection 660 on stream 0 at 23-Mar-2022 21:19:37.367 CET
+Begin processing the 274th record. Run 1, Event 65927, LumiSection 660 on stream 0 at 23-Mar-2022 21:19:45.354 CET
+Begin processing the 275th record. Run 1, Event 65929, LumiSection 660 on stream 0 at 23-Mar-2022 21:19:49.732 CET
+Begin processing the 276th record. Run 1, Event 65930, LumiSection 660 on stream 0 at 23-Mar-2022 21:20:04.280 CET
+Begin processing the 277th record. Run 1, Event 65933, LumiSection 660 on stream 0 at 23-Mar-2022 21:20:07.685 CET
+Begin processing the 278th record. Run 1, Event 65939, LumiSection 660 on stream 0 at 23-Mar-2022 21:20:16.213 CET
+Begin processing the 279th record. Run 1, Event 65940, LumiSection 660 on stream 0 at 23-Mar-2022 21:20:34.234 CET
+Begin processing the 280th record. Run 1, Event 65941, LumiSection 660 on stream 0 at 23-Mar-2022 21:20:45.130 CET
+Begin processing the 281st record. Run 1, Event 65944, LumiSection 660 on stream 0 at 23-Mar-2022 21:20:50.756 CET
+Begin processing the 282nd record. Run 1, Event 65945, LumiSection 660 on stream 0 at 23-Mar-2022 21:21:02.259 CET
+Begin processing the 283rd record. Run 1, Event 65948, LumiSection 660 on stream 0 at 23-Mar-2022 21:21:15.055 CET
+Begin processing the 284th record. Run 1, Event 65951, LumiSection 660 on stream 0 at 23-Mar-2022 21:21:20.831 CET
+Begin processing the 285th record. Run 1, Event 65952, LumiSection 660 on stream 0 at 23-Mar-2022 21:21:39.064 CET
+Begin processing the 286th record. Run 1, Event 65955, LumiSection 660 on stream 0 at 23-Mar-2022 21:21:54.020 CET
+Begin processing the 287th record. Run 1, Event 65958, LumiSection 660 on stream 0 at 23-Mar-2022 21:21:58.993 CET
+Begin processing the 288th record. Run 1, Event 65959, LumiSection 660 on stream 0 at 23-Mar-2022 21:22:06.139 CET
+Begin processing the 289th record. Run 1, Event 65961, LumiSection 660 on stream 0 at 23-Mar-2022 21:22:14.748 CET
+Begin processing the 290th record. Run 1, Event 65962, LumiSection 660 on stream 0 at 23-Mar-2022 21:22:21.630 CET
+Begin processing the 291st record. Run 1, Event 65976, LumiSection 660 on stream 0 at 23-Mar-2022 21:22:33.088 CET
+Begin processing the 292nd record. Run 1, Event 65978, LumiSection 660 on stream 0 at 23-Mar-2022 21:22:42.892 CET
+Begin processing the 293rd record. Run 1, Event 65980, LumiSection 660 on stream 0 at 23-Mar-2022 21:22:52.689 CET
+Begin processing the 294th record. Run 1, Event 65982, LumiSection 660 on stream 0 at 23-Mar-2022 21:22:55.324 CET
+Begin processing the 295th record. Run 1, Event 65986, LumiSection 660 on stream 0 at 23-Mar-2022 21:23:03.752 CET
+Begin processing the 296th record. Run 1, Event 65989, LumiSection 660 on stream 0 at 23-Mar-2022 21:23:09.596 CET
+Begin processing the 297th record. Run 1, Event 65991, LumiSection 660 on stream 0 at 23-Mar-2022 21:23:19.924 CET
+Begin processing the 298th record. Run 1, Event 65994, LumiSection 660 on stream 0 at 23-Mar-2022 21:23:36.863 CET
+Begin processing the 299th record. Run 1, Event 65996, LumiSection 660 on stream 0 at 23-Mar-2022 21:23:45.896 CET
+Begin processing the 300th record. Run 1, Event 65998, LumiSection 660 on stream 0 at 23-Mar-2022 21:23:53.036 CET
+Begin processing the 301st record. Run 1, Event 66006, LumiSection 661 on stream 0 at 23-Mar-2022 21:24:02.139 CET
+Begin processing the 302nd record. Run 1, Event 66014, LumiSection 661 on stream 0 at 23-Mar-2022 21:24:08.152 CET
+Begin processing the 303rd record. Run 1, Event 66016, LumiSection 661 on stream 0 at 23-Mar-2022 21:24:20.075 CET
+Begin processing the 304th record. Run 1, Event 66017, LumiSection 661 on stream 0 at 23-Mar-2022 21:24:29.718 CET
+Begin processing the 305th record. Run 1, Event 66019, LumiSection 661 on stream 0 at 23-Mar-2022 21:24:42.079 CET
+Begin processing the 306th record. Run 1, Event 66020, LumiSection 661 on stream 0 at 23-Mar-2022 21:24:52.227 CET
+Begin processing the 307th record. Run 1, Event 66024, LumiSection 661 on stream 0 at 23-Mar-2022 21:25:02.727 CET
+Begin processing the 308th record. Run 1, Event 66030, LumiSection 661 on stream 0 at 23-Mar-2022 21:25:09.819 CET
+Begin processing the 309th record. Run 1, Event 66032, LumiSection 661 on stream 0 at 23-Mar-2022 21:25:21.817 CET
+%MSG-w Muon:  GlobalMuonProducer:displacedGlobalMuons 23-Mar-2022 21:25:30 CET  Run: 1 Event: 66032
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w RecoMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:25:30 CET Run: 1 Event: 66032
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:25:30 CET Run: 1 Event: 66032
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalTrajectoryBuilderBase:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:25:30 CET Run: 1 Event: 66032
+     Failed to load tracker track trajectory
+%MSG
+Begin processing the 310th record. Run 1, Event 66036, LumiSection 661 on stream 0 at 23-Mar-2022 21:25:31.131 CET
+Begin processing the 311th record. Run 1, Event 66038, LumiSection 661 on stream 0 at 23-Mar-2022 21:25:39.711 CET
+Begin processing the 312th record. Run 1, Event 66039, LumiSection 661 on stream 0 at 23-Mar-2022 21:25:51.758 CET
+Begin processing the 313th record. Run 1, Event 66041, LumiSection 661 on stream 0 at 23-Mar-2022 21:25:55.860 CET
+Begin processing the 314th record. Run 1, Event 66043, LumiSection 661 on stream 0 at 23-Mar-2022 21:26:06.144 CET
+Begin processing the 315th record. Run 1, Event 66053, LumiSection 661 on stream 0 at 23-Mar-2022 21:26:18.210 CET
+Begin processing the 316th record. Run 1, Event 66054, LumiSection 661 on stream 0 at 23-Mar-2022 21:26:25.318 CET
+Begin processing the 317th record. Run 1, Event 66069, LumiSection 661 on stream 0 at 23-Mar-2022 21:26:32.818 CET
+Begin processing the 318th record. Run 1, Event 66072, LumiSection 661 on stream 0 at 23-Mar-2022 21:26:46.545 CET
+Begin processing the 319th record. Run 1, Event 66073, LumiSection 661 on stream 0 at 23-Mar-2022 21:27:02.604 CET
+Begin processing the 320th record. Run 1, Event 66075, LumiSection 661 on stream 0 at 23-Mar-2022 21:27:06.659 CET
+Begin processing the 321st record. Run 1, Event 66076, LumiSection 661 on stream 0 at 23-Mar-2022 21:27:21.619 CET
+Begin processing the 322nd record. Run 1, Event 66078, LumiSection 661 on stream 0 at 23-Mar-2022 21:27:34.784 CET
+Begin processing the 323rd record. Run 1, Event 66082, LumiSection 661 on stream 0 at 23-Mar-2022 21:27:51.901 CET
+Begin processing the 324th record. Run 1, Event 66084, LumiSection 661 on stream 0 at 23-Mar-2022 21:28:07.625 CET
+Begin processing the 325th record. Run 1, Event 66088, LumiSection 661 on stream 0 at 23-Mar-2022 21:28:14.824 CET
+Begin processing the 326th record. Run 1, Event 66091, LumiSection 661 on stream 0 at 23-Mar-2022 21:28:28.325 CET
+Begin processing the 327th record. Run 1, Event 66093, LumiSection 661 on stream 0 at 23-Mar-2022 21:28:33.547 CET
+Begin processing the 328th record. Run 1, Event 66094, LumiSection 661 on stream 0 at 23-Mar-2022 21:28:44.432 CET
+Begin processing the 329th record. Run 1, Event 66098, LumiSection 661 on stream 0 at 23-Mar-2022 21:28:53.403 CET
+Begin processing the 330th record. Run 1, Event 66099, LumiSection 661 on stream 0 at 23-Mar-2022 21:29:00.663 CET
+Begin processing the 331st record. Run 1, Event 66105, LumiSection 662 on stream 0 at 23-Mar-2022 21:29:15.477 CET
+Begin processing the 332nd record. Run 1, Event 66112, LumiSection 662 on stream 0 at 23-Mar-2022 21:29:27.756 CET
+Begin processing the 333rd record. Run 1, Event 66114, LumiSection 662 on stream 0 at 23-Mar-2022 21:29:41.312 CET
+Begin processing the 334th record. Run 1, Event 66115, LumiSection 662 on stream 0 at 23-Mar-2022 21:29:48.622 CET
+Begin processing the 335th record. Run 1, Event 66117, LumiSection 662 on stream 0 at 23-Mar-2022 21:29:59.958 CET
+Begin processing the 336th record. Run 1, Event 66128, LumiSection 662 on stream 0 at 23-Mar-2022 21:30:07.236 CET
+Begin processing the 337th record. Run 1, Event 66134, LumiSection 662 on stream 0 at 23-Mar-2022 21:30:14.429 CET
+Begin processing the 338th record. Run 1, Event 66138, LumiSection 662 on stream 0 at 23-Mar-2022 21:30:17.443 CET
+Begin processing the 339th record. Run 1, Event 66139, LumiSection 662 on stream 0 at 23-Mar-2022 21:30:23.824 CET
+Begin processing the 340th record. Run 1, Event 66142, LumiSection 662 on stream 0 at 23-Mar-2022 21:30:32.036 CET
+Begin processing the 341st record. Run 1, Event 66148, LumiSection 662 on stream 0 at 23-Mar-2022 21:30:35.320 CET
+Begin processing the 342nd record. Run 1, Event 66154, LumiSection 662 on stream 0 at 23-Mar-2022 21:30:41.341 CET
+Begin processing the 343rd record. Run 1, Event 66159, LumiSection 662 on stream 0 at 23-Mar-2022 21:30:49.979 CET
+Begin processing the 344th record. Run 1, Event 66160, LumiSection 662 on stream 0 at 23-Mar-2022 21:30:54.469 CET
+Begin processing the 345th record. Run 1, Event 66163, LumiSection 662 on stream 0 at 23-Mar-2022 21:30:58.923 CET
+Begin processing the 346th record. Run 1, Event 66165, LumiSection 662 on stream 0 at 23-Mar-2022 21:31:07.573 CET
+Begin processing the 347th record. Run 1, Event 66168, LumiSection 662 on stream 0 at 23-Mar-2022 21:31:17.579 CET
+Begin processing the 348th record. Run 1, Event 66172, LumiSection 662 on stream 0 at 23-Mar-2022 21:31:22.945 CET
+Begin processing the 349th record. Run 1, Event 66177, LumiSection 662 on stream 0 at 23-Mar-2022 21:31:28.166 CET
+Begin processing the 350th record. Run 1, Event 66182, LumiSection 662 on stream 0 at 23-Mar-2022 21:31:45.204 CET
+Begin processing the 351st record. Run 1, Event 66183, LumiSection 662 on stream 0 at 23-Mar-2022 21:32:00.338 CET
+Begin processing the 352nd record. Run 1, Event 66192, LumiSection 662 on stream 0 at 23-Mar-2022 21:32:06.650 CET
+Begin processing the 353rd record. Run 1, Event 66196, LumiSection 662 on stream 0 at 23-Mar-2022 21:32:24.906 CET
+Begin processing the 354th record. Run 1, Event 66198, LumiSection 662 on stream 0 at 23-Mar-2022 21:32:28.563 CET
+Begin processing the 355th record. Run 1, Event 66200, LumiSection 662 on stream 0 at 23-Mar-2022 21:32:32.541 CET
+Begin processing the 356th record. Run 1, Event 66204, LumiSection 663 on stream 0 at 23-Mar-2022 21:32:37.335 CET
+Begin processing the 357th record. Run 1, Event 66207, LumiSection 663 on stream 0 at 23-Mar-2022 21:32:44.353 CET
+Begin processing the 358th record. Run 1, Event 66209, LumiSection 663 on stream 0 at 23-Mar-2022 21:33:05.080 CET
+Begin processing the 359th record. Run 1, Event 66210, LumiSection 663 on stream 0 at 23-Mar-2022 21:33:13.317 CET
+Begin processing the 360th record. Run 1, Event 66218, LumiSection 663 on stream 0 at 23-Mar-2022 21:33:19.868 CET
+Begin processing the 361st record. Run 1, Event 66221, LumiSection 663 on stream 0 at 23-Mar-2022 21:33:26.004 CET
+Begin processing the 362nd record. Run 1, Event 66224, LumiSection 663 on stream 0 at 23-Mar-2022 21:33:38.653 CET
+Begin processing the 363rd record. Run 1, Event 66227, LumiSection 663 on stream 0 at 23-Mar-2022 21:33:41.650 CET
+Begin processing the 364th record. Run 1, Event 66231, LumiSection 663 on stream 0 at 23-Mar-2022 21:33:46.444 CET
+Begin processing the 365th record. Run 1, Event 66232, LumiSection 663 on stream 0 at 23-Mar-2022 21:33:52.285 CET
+Begin processing the 366th record. Run 1, Event 66235, LumiSection 663 on stream 0 at 23-Mar-2022 21:34:03.095 CET
+Begin processing the 367th record. Run 1, Event 66241, LumiSection 663 on stream 0 at 23-Mar-2022 21:34:08.759 CET
+Begin processing the 368th record. Run 1, Event 66248, LumiSection 663 on stream 0 at 23-Mar-2022 21:34:24.127 CET
+Begin processing the 369th record. Run 1, Event 66258, LumiSection 663 on stream 0 at 23-Mar-2022 21:34:33.155 CET
+Begin processing the 370th record. Run 1, Event 66259, LumiSection 663 on stream 0 at 23-Mar-2022 21:34:36.675 CET
+Begin processing the 371st record. Run 1, Event 66260, LumiSection 663 on stream 0 at 23-Mar-2022 21:34:42.164 CET
+Begin processing the 372nd record. Run 1, Event 66266, LumiSection 663 on stream 0 at 23-Mar-2022 21:34:50.218 CET
+Begin processing the 373rd record. Run 1, Event 66270, LumiSection 663 on stream 0 at 23-Mar-2022 21:34:58.819 CET
+Begin processing the 374th record. Run 1, Event 66273, LumiSection 663 on stream 0 at 23-Mar-2022 21:35:04.505 CET
+Begin processing the 375th record. Run 1, Event 66283, LumiSection 663 on stream 0 at 23-Mar-2022 21:35:19.197 CET
+Begin processing the 376th record. Run 1, Event 66293, LumiSection 663 on stream 0 at 23-Mar-2022 21:35:28.302 CET
+Begin processing the 377th record. Run 1, Event 66295, LumiSection 663 on stream 0 at 23-Mar-2022 21:35:37.951 CET
+Begin processing the 378th record. Run 1, Event 66299, LumiSection 663 on stream 0 at 23-Mar-2022 21:35:48.360 CET
+Begin processing the 379th record. Run 1, Event 66300, LumiSection 663 on stream 0 at 23-Mar-2022 21:36:02.843 CET
+Begin processing the 380th record. Run 1, Event 66303, LumiSection 664 on stream 0 at 23-Mar-2022 21:36:09.187 CET
+Begin processing the 381st record. Run 1, Event 66306, LumiSection 664 on stream 0 at 23-Mar-2022 21:36:23.516 CET
+Begin processing the 382nd record. Run 1, Event 66307, LumiSection 664 on stream 0 at 23-Mar-2022 21:36:33.797 CET
+Begin processing the 383rd record. Run 1, Event 66308, LumiSection 664 on stream 0 at 23-Mar-2022 21:36:45.811 CET
+Begin processing the 384th record. Run 1, Event 66313, LumiSection 664 on stream 0 at 23-Mar-2022 21:36:50.956 CET
+Begin processing the 385th record. Run 1, Event 66314, LumiSection 664 on stream 0 at 23-Mar-2022 21:37:01.930 CET
+Begin processing the 386th record. Run 1, Event 66322, LumiSection 664 on stream 0 at 23-Mar-2022 21:37:06.558 CET
+Begin processing the 387th record. Run 1, Event 66325, LumiSection 664 on stream 0 at 23-Mar-2022 21:37:17.811 CET
+Begin processing the 388th record. Run 1, Event 66327, LumiSection 664 on stream 0 at 23-Mar-2022 21:37:23.837 CET
+Begin processing the 389th record. Run 1, Event 66331, LumiSection 664 on stream 0 at 23-Mar-2022 21:37:30.779 CET
+Begin processing the 390th record. Run 1, Event 66335, LumiSection 664 on stream 0 at 23-Mar-2022 21:37:36.777 CET
+Begin processing the 391st record. Run 1, Event 66336, LumiSection 664 on stream 0 at 23-Mar-2022 21:37:42.018 CET
+Begin processing the 392nd record. Run 1, Event 66338, LumiSection 664 on stream 0 at 23-Mar-2022 21:37:50.879 CET
+Begin processing the 393rd record. Run 1, Event 66342, LumiSection 664 on stream 0 at 23-Mar-2022 21:37:58.213 CET
+%MSG-w Muon:  GlobalMuonProducer:displacedGlobalMuons 23-Mar-2022 21:38:02 CET  Run: 1 Event: 66342
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w RecoMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:38:02 CET Run: 1 Event: 66342
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:38:02 CET Run: 1 Event: 66342
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalTrajectoryBuilderBase:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:38:02 CET Run: 1 Event: 66342
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w Muon:  GlobalMuonProducer:displacedGlobalMuons 23-Mar-2022 21:38:02 CET  Run: 1 Event: 66342
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w RecoMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:38:02 CET Run: 1 Event: 66342
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:38:02 CET Run: 1 Event: 66342
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalTrajectoryBuilderBase:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:38:02 CET Run: 1 Event: 66342
+     Failed to load tracker track trajectory
+%MSG
+Begin processing the 394th record. Run 1, Event 66346, LumiSection 664 on stream 0 at 23-Mar-2022 21:38:03.303 CET
+Begin processing the 395th record. Run 1, Event 66347, LumiSection 664 on stream 0 at 23-Mar-2022 21:38:07.968 CET
+Begin processing the 396th record. Run 1, Event 66349, LumiSection 664 on stream 0 at 23-Mar-2022 21:38:17.925 CET
+Begin processing the 397th record. Run 1, Event 66353, LumiSection 664 on stream 0 at 23-Mar-2022 21:38:26.242 CET
+Begin processing the 398th record. Run 1, Event 66366, LumiSection 664 on stream 0 at 23-Mar-2022 21:38:40.492 CET
+%MSG-w OutOfBounds:  TrackProducer:lowPtTripletStepTracks  23-Mar-2022 21:38:43 CET Run: 1 Event: 66366
+Prob Q outside the bounds of the quality word. Defaulting to Prob=0. Prob = 1 QualityWord = 16123
+%MSG
+Begin processing the 399th record. Run 1, Event 66367, LumiSection 664 on stream 0 at 23-Mar-2022 21:38:50.604 CET
+Begin processing the 400th record. Run 1, Event 66374, LumiSection 664 on stream 0 at 23-Mar-2022 21:38:54.797 CET
+Begin processing the 401st record. Run 1, Event 66378, LumiSection 664 on stream 0 at 23-Mar-2022 21:38:59.865 CET
+Begin processing the 402nd record. Run 1, Event 66379, LumiSection 664 on stream 0 at 23-Mar-2022 21:39:11.576 CET
+Begin processing the 403rd record. Run 1, Event 66386, LumiSection 664 on stream 0 at 23-Mar-2022 21:39:24.299 CET
+%MSG-w Muon:  GlobalMuonProducer:displacedGlobalMuons 23-Mar-2022 21:39:39 CET  Run: 1 Event: 66386
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w RecoMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:39:39 CET Run: 1 Event: 66386
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:39:39 CET Run: 1 Event: 66386
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalTrajectoryBuilderBase:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:39:39 CET Run: 1 Event: 66386
+     Failed to load tracker track trajectory
+%MSG
+Begin processing the 404th record. Run 1, Event 66391, LumiSection 664 on stream 0 at 23-Mar-2022 21:39:39.889 CET
+Begin processing the 405th record. Run 1, Event 66398, LumiSection 664 on stream 0 at 23-Mar-2022 21:39:49.264 CET
+Begin processing the 406th record. Run 1, Event 66403, LumiSection 665 on stream 0 at 23-Mar-2022 21:39:55.044 CET
+Begin processing the 407th record. Run 1, Event 66404, LumiSection 665 on stream 0 at 23-Mar-2022 21:40:08.094 CET
+Begin processing the 408th record. Run 1, Event 66409, LumiSection 665 on stream 0 at 23-Mar-2022 21:40:14.130 CET
+Begin processing the 409th record. Run 1, Event 66412, LumiSection 665 on stream 0 at 23-Mar-2022 21:40:29.112 CET
+Begin processing the 410th record. Run 1, Event 66417, LumiSection 665 on stream 0 at 23-Mar-2022 21:40:37.959 CET
+Begin processing the 411th record. Run 1, Event 66418, LumiSection 665 on stream 0 at 23-Mar-2022 21:40:45.007 CET
+Begin processing the 412th record. Run 1, Event 66420, LumiSection 665 on stream 0 at 23-Mar-2022 21:40:47.358 CET
+Begin processing the 413th record. Run 1, Event 66424, LumiSection 665 on stream 0 at 23-Mar-2022 21:40:58.004 CET
+Begin processing the 414th record. Run 1, Event 66425, LumiSection 665 on stream 0 at 23-Mar-2022 21:41:09.929 CET
+Begin processing the 415th record. Run 1, Event 66427, LumiSection 665 on stream 0 at 23-Mar-2022 21:41:21.236 CET
+Begin processing the 416th record. Run 1, Event 66430, LumiSection 665 on stream 0 at 23-Mar-2022 21:41:27.787 CET
+Begin processing the 417th record. Run 1, Event 66431, LumiSection 665 on stream 0 at 23-Mar-2022 21:41:36.675 CET
+Begin processing the 418th record. Run 1, Event 66433, LumiSection 665 on stream 0 at 23-Mar-2022 21:41:44.604 CET
+Begin processing the 419th record. Run 1, Event 66434, LumiSection 665 on stream 0 at 23-Mar-2022 21:42:03.021 CET
+Begin processing the 420th record. Run 1, Event 66442, LumiSection 665 on stream 0 at 23-Mar-2022 21:42:08.648 CET
+Begin processing the 421st record. Run 1, Event 66443, LumiSection 665 on stream 0 at 23-Mar-2022 21:42:16.464 CET
+Begin processing the 422nd record. Run 1, Event 66444, LumiSection 665 on stream 0 at 23-Mar-2022 21:42:23.403 CET
+Begin processing the 423rd record. Run 1, Event 66446, LumiSection 665 on stream 0 at 23-Mar-2022 21:42:37.850 CET
+Begin processing the 424th record. Run 1, Event 66452, LumiSection 665 on stream 0 at 23-Mar-2022 21:42:49.310 CET
+Begin processing the 425th record. Run 1, Event 66454, LumiSection 665 on stream 0 at 23-Mar-2022 21:42:54.685 CET
+Begin processing the 426th record. Run 1, Event 66455, LumiSection 665 on stream 0 at 23-Mar-2022 21:43:07.652 CET
+Begin processing the 427th record. Run 1, Event 66460, LumiSection 665 on stream 0 at 23-Mar-2022 21:43:18.485 CET
+Begin processing the 428th record. Run 1, Event 66462, LumiSection 665 on stream 0 at 23-Mar-2022 21:43:27.063 CET
+Begin processing the 429th record. Run 1, Event 66463, LumiSection 665 on stream 0 at 23-Mar-2022 21:43:34.695 CET
+Begin processing the 430th record. Run 1, Event 66465, LumiSection 665 on stream 0 at 23-Mar-2022 21:43:44.177 CET
+Begin processing the 431st record. Run 1, Event 66466, LumiSection 665 on stream 0 at 23-Mar-2022 21:43:49.289 CET
+Begin processing the 432nd record. Run 1, Event 66472, LumiSection 665 on stream 0 at 23-Mar-2022 21:43:54.643 CET
+Begin processing the 433rd record. Run 1, Event 66477, LumiSection 665 on stream 0 at 23-Mar-2022 21:44:07.486 CET
+Begin processing the 434th record. Run 1, Event 66479, LumiSection 665 on stream 0 at 23-Mar-2022 21:44:17.568 CET
+Begin processing the 435th record. Run 1, Event 66483, LumiSection 665 on stream 0 at 23-Mar-2022 21:44:28.017 CET
+Begin processing the 436th record. Run 1, Event 66488, LumiSection 665 on stream 0 at 23-Mar-2022 21:44:45.257 CET
+Begin processing the 437th record. Run 1, Event 66491, LumiSection 665 on stream 0 at 23-Mar-2022 21:44:53.095 CET
+Begin processing the 438th record. Run 1, Event 66497, LumiSection 665 on stream 0 at 23-Mar-2022 21:45:03.074 CET
+Begin processing the 439th record. Run 1, Event 66503, LumiSection 666 on stream 0 at 23-Mar-2022 21:45:07.807 CET
+Begin processing the 440th record. Run 1, Event 66504, LumiSection 666 on stream 0 at 23-Mar-2022 21:45:12.807 CET
+Begin processing the 441st record. Run 1, Event 66505, LumiSection 666 on stream 0 at 23-Mar-2022 21:45:31.222 CET
+Begin processing the 442nd record. Run 1, Event 66507, LumiSection 666 on stream 0 at 23-Mar-2022 21:45:37.519 CET
+Begin processing the 443rd record. Run 1, Event 66510, LumiSection 666 on stream 0 at 23-Mar-2022 21:45:59.118 CET
+Begin processing the 444th record. Run 1, Event 66512, LumiSection 666 on stream 0 at 23-Mar-2022 21:46:09.595 CET
+Begin processing the 445th record. Run 1, Event 66521, LumiSection 666 on stream 0 at 23-Mar-2022 21:46:21.594 CET
+Begin processing the 446th record. Run 1, Event 66522, LumiSection 666 on stream 0 at 23-Mar-2022 21:46:31.155 CET
+Begin processing the 447th record. Run 1, Event 66525, LumiSection 666 on stream 0 at 23-Mar-2022 21:46:41.210 CET
+Begin processing the 448th record. Run 1, Event 66527, LumiSection 666 on stream 0 at 23-Mar-2022 21:46:55.569 CET
+Begin processing the 449th record. Run 1, Event 66532, LumiSection 666 on stream 0 at 23-Mar-2022 21:47:09.654 CET
+Begin processing the 450th record. Run 1, Event 66536, LumiSection 666 on stream 0 at 23-Mar-2022 21:47:13.902 CET
+Begin processing the 451st record. Run 1, Event 66539, LumiSection 666 on stream 0 at 23-Mar-2022 21:47:26.426 CET
+Begin processing the 452nd record. Run 1, Event 66541, LumiSection 666 on stream 0 at 23-Mar-2022 21:47:34.913 CET
+Begin processing the 453rd record. Run 1, Event 66547, LumiSection 666 on stream 0 at 23-Mar-2022 21:47:38.752 CET
+Begin processing the 454th record. Run 1, Event 66548, LumiSection 666 on stream 0 at 23-Mar-2022 21:47:45.294 CET
+Begin processing the 455th record. Run 1, Event 66550, LumiSection 666 on stream 0 at 23-Mar-2022 21:47:54.410 CET
+Begin processing the 456th record. Run 1, Event 66551, LumiSection 666 on stream 0 at 23-Mar-2022 21:47:57.829 CET
+Begin processing the 457th record. Run 1, Event 66554, LumiSection 666 on stream 0 at 23-Mar-2022 21:48:04.670 CET
+Begin processing the 458th record. Run 1, Event 66561, LumiSection 666 on stream 0 at 23-Mar-2022 21:48:19.945 CET
+Begin processing the 459th record. Run 1, Event 66562, LumiSection 666 on stream 0 at 23-Mar-2022 21:48:30.733 CET
+Begin processing the 460th record. Run 1, Event 66568, LumiSection 666 on stream 0 at 23-Mar-2022 21:48:51.077 CET
+Begin processing the 461st record. Run 1, Event 66570, LumiSection 666 on stream 0 at 23-Mar-2022 21:48:55.284 CET
+Begin processing the 462nd record. Run 1, Event 66571, LumiSection 666 on stream 0 at 23-Mar-2022 21:48:59.800 CET
+Begin processing the 463rd record. Run 1, Event 66573, LumiSection 666 on stream 0 at 23-Mar-2022 21:49:04.529 CET
+Begin processing the 464th record. Run 1, Event 66574, LumiSection 666 on stream 0 at 23-Mar-2022 21:49:11.153 CET
+Begin processing the 465th record. Run 1, Event 66576, LumiSection 666 on stream 0 at 23-Mar-2022 21:49:16.945 CET
+Begin processing the 466th record. Run 1, Event 66578, LumiSection 666 on stream 0 at 23-Mar-2022 21:49:27.815 CET
+Begin processing the 467th record. Run 1, Event 66579, LumiSection 666 on stream 0 at 23-Mar-2022 21:49:36.294 CET
+Begin processing the 468th record. Run 1, Event 66585, LumiSection 666 on stream 0 at 23-Mar-2022 21:49:41.443 CET
+Begin processing the 469th record. Run 1, Event 66586, LumiSection 666 on stream 0 at 23-Mar-2022 21:49:52.719 CET
+Begin processing the 470th record. Run 1, Event 66593, LumiSection 666 on stream 0 at 23-Mar-2022 21:49:57.446 CET
+Begin processing the 471st record. Run 1, Event 66595, LumiSection 666 on stream 0 at 23-Mar-2022 21:50:12.992 CET
+Begin processing the 472nd record. Run 1, Event 66599, LumiSection 666 on stream 0 at 23-Mar-2022 21:50:19.234 CET
+Begin processing the 473rd record. Run 1, Event 66602, LumiSection 667 on stream 0 at 23-Mar-2022 21:50:37.575 CET
+Begin processing the 474th record. Run 1, Event 66604, LumiSection 667 on stream 0 at 23-Mar-2022 21:50:56.157 CET
+Begin processing the 475th record. Run 1, Event 66608, LumiSection 667 on stream 0 at 23-Mar-2022 21:51:14.293 CET
+Begin processing the 476th record. Run 1, Event 66614, LumiSection 667 on stream 0 at 23-Mar-2022 21:51:20.506 CET
+Begin processing the 477th record. Run 1, Event 66616, LumiSection 667 on stream 0 at 23-Mar-2022 21:51:34.300 CET
+Begin processing the 478th record. Run 1, Event 66619, LumiSection 667 on stream 0 at 23-Mar-2022 21:51:44.084 CET
+Begin processing the 479th record. Run 1, Event 66620, LumiSection 667 on stream 0 at 23-Mar-2022 21:51:49.615 CET
+%MSG-w OutOfBounds:  TrackProducer:initialStepTracksPreSplitting  23-Mar-2022 21:51:50 CET Run: 1 Event: 66620
+Prob Q outside the bounds of the quality word. Defaulting to Prob=0. Prob = 1 QualityWord = 625
+%MSG
+%MSG-w OutOfBounds:  TrackProducer:initialStepTracksPreSplitting  23-Mar-2022 21:51:50 CET Run: 1 Event: 66620
+Prob Q outside the bounds of the quality word. Defaulting to Prob=0. Prob = 1 QualityWord = 625
+%MSG
+Begin processing the 480th record. Run 1, Event 66621, LumiSection 667 on stream 0 at 23-Mar-2022 21:51:56.939 CET
+Begin processing the 481st record. Run 1, Event 66623, LumiSection 667 on stream 0 at 23-Mar-2022 21:52:09.409 CET
+Begin processing the 482nd record. Run 1, Event 66624, LumiSection 667 on stream 0 at 23-Mar-2022 21:52:15.367 CET
+Begin processing the 483rd record. Run 1, Event 66628, LumiSection 667 on stream 0 at 23-Mar-2022 21:52:21.135 CET
+Begin processing the 484th record. Run 1, Event 66630, LumiSection 667 on stream 0 at 23-Mar-2022 21:52:26.992 CET
+Begin processing the 485th record. Run 1, Event 66631, LumiSection 667 on stream 0 at 23-Mar-2022 21:52:31.725 CET
+Begin processing the 486th record. Run 1, Event 66634, LumiSection 667 on stream 0 at 23-Mar-2022 21:52:45.690 CET
+Begin processing the 487th record. Run 1, Event 66635, LumiSection 667 on stream 0 at 23-Mar-2022 21:52:49.509 CET
+Begin processing the 488th record. Run 1, Event 66636, LumiSection 667 on stream 0 at 23-Mar-2022 21:53:04.972 CET
+Begin processing the 489th record. Run 1, Event 66637, LumiSection 667 on stream 0 at 23-Mar-2022 21:53:11.682 CET
+Begin processing the 490th record. Run 1, Event 66644, LumiSection 667 on stream 0 at 23-Mar-2022 21:53:30.216 CET
+Begin processing the 491st record. Run 1, Event 66654, LumiSection 667 on stream 0 at 23-Mar-2022 21:53:34.359 CET
+Begin processing the 492nd record. Run 1, Event 66660, LumiSection 667 on stream 0 at 23-Mar-2022 21:53:42.009 CET
+Begin processing the 493rd record. Run 1, Event 66662, LumiSection 667 on stream 0 at 23-Mar-2022 21:53:56.591 CET
+Begin processing the 494th record. Run 1, Event 66665, LumiSection 667 on stream 0 at 23-Mar-2022 21:54:11.695 CET
+Begin processing the 495th record. Run 1, Event 66668, LumiSection 667 on stream 0 at 23-Mar-2022 21:54:23.971 CET
+Begin processing the 496th record. Run 1, Event 66671, LumiSection 667 on stream 0 at 23-Mar-2022 21:54:32.760 CET
+Begin processing the 497th record. Run 1, Event 66673, LumiSection 667 on stream 0 at 23-Mar-2022 21:54:43.245 CET
+%MSG-e FailedPropagation:  TrackProducer:pixelLessStepTracks  23-Mar-2022 21:54:51 CET Run: 1 Event: 66673
+ too many iterations trying to reach plane 
+%MSG
+Begin processing the 498th record. Run 1, Event 66675, LumiSection 667 on stream 0 at 23-Mar-2022 21:54:58.747 CET
+Begin processing the 499th record. Run 1, Event 66678, LumiSection 667 on stream 0 at 23-Mar-2022 21:55:17.526 CET
+Begin processing the 500th record. Run 1, Event 66679, LumiSection 667 on stream 0 at 23-Mar-2022 21:55:21.894 CET
+Begin processing the 501st record. Run 1, Event 66683, LumiSection 667 on stream 0 at 23-Mar-2022 21:55:43.395 CET
+Begin processing the 502nd record. Run 1, Event 66687, LumiSection 667 on stream 0 at 23-Mar-2022 21:55:48.241 CET
+Begin processing the 503rd record. Run 1, Event 66688, LumiSection 667 on stream 0 at 23-Mar-2022 21:55:54.079 CET
+Begin processing the 504th record. Run 1, Event 66690, LumiSection 667 on stream 0 at 23-Mar-2022 21:56:00.514 CET
+Begin processing the 505th record. Run 1, Event 66696, LumiSection 667 on stream 0 at 23-Mar-2022 21:56:09.661 CET
+Begin processing the 506th record. Run 1, Event 66697, LumiSection 667 on stream 0 at 23-Mar-2022 21:56:20.897 CET
+Begin processing the 507th record. Run 1, Event 66702, LumiSection 668 on stream 0 at 23-Mar-2022 21:56:26.065 CET
+Begin processing the 508th record. Run 1, Event 66703, LumiSection 668 on stream 0 at 23-Mar-2022 21:56:37.867 CET
+Begin processing the 509th record. Run 1, Event 66704, LumiSection 668 on stream 0 at 23-Mar-2022 21:56:41.540 CET
+Begin processing the 510th record. Run 1, Event 66706, LumiSection 668 on stream 0 at 23-Mar-2022 21:56:49.852 CET
+Begin processing the 511th record. Run 1, Event 66707, LumiSection 668 on stream 0 at 23-Mar-2022 21:56:56.017 CET
+Begin processing the 512th record. Run 1, Event 66718, LumiSection 668 on stream 0 at 23-Mar-2022 21:57:17.587 CET
+Begin processing the 513th record. Run 1, Event 66719, LumiSection 668 on stream 0 at 23-Mar-2022 21:57:22.143 CET
+Begin processing the 514th record. Run 1, Event 66720, LumiSection 668 on stream 0 at 23-Mar-2022 21:57:31.290 CET
+Begin processing the 515th record. Run 1, Event 66727, LumiSection 668 on stream 0 at 23-Mar-2022 21:57:36.090 CET
+Begin processing the 516th record. Run 1, Event 66729, LumiSection 668 on stream 0 at 23-Mar-2022 21:57:45.940 CET
+Begin processing the 517th record. Run 1, Event 66730, LumiSection 668 on stream 0 at 23-Mar-2022 21:57:50.590 CET
+Begin processing the 518th record. Run 1, Event 66733, LumiSection 668 on stream 0 at 23-Mar-2022 21:57:56.689 CET
+Begin processing the 519th record. Run 1, Event 66741, LumiSection 668 on stream 0 at 23-Mar-2022 21:58:00.497 CET
+Begin processing the 520th record. Run 1, Event 66742, LumiSection 668 on stream 0 at 23-Mar-2022 21:58:09.260 CET
+Begin processing the 521st record. Run 1, Event 66743, LumiSection 668 on stream 0 at 23-Mar-2022 21:58:17.743 CET
+Begin processing the 522nd record. Run 1, Event 66746, LumiSection 668 on stream 0 at 23-Mar-2022 21:58:32.691 CET
+%MSG-w Muon:  GlobalMuonProducer:displacedGlobalMuons 23-Mar-2022 21:58:38 CET  Run: 1 Event: 66746
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w RecoMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:58:38 CET Run: 1 Event: 66746
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:58:38 CET Run: 1 Event: 66746
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalTrajectoryBuilderBase:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 21:58:38 CET Run: 1 Event: 66746
+     Failed to load tracker track trajectory
+%MSG
+Begin processing the 523rd record. Run 1, Event 66751, LumiSection 668 on stream 0 at 23-Mar-2022 21:58:38.963 CET
+Begin processing the 524th record. Run 1, Event 66759, LumiSection 668 on stream 0 at 23-Mar-2022 21:58:48.061 CET
+Begin processing the 525th record. Run 1, Event 66761, LumiSection 668 on stream 0 at 23-Mar-2022 21:58:57.985 CET
+Begin processing the 526th record. Run 1, Event 66765, LumiSection 668 on stream 0 at 23-Mar-2022 21:59:09.029 CET
+Begin processing the 527th record. Run 1, Event 66776, LumiSection 668 on stream 0 at 23-Mar-2022 21:59:13.400 CET
+Begin processing the 528th record. Run 1, Event 66778, LumiSection 668 on stream 0 at 23-Mar-2022 21:59:33.265 CET
+Begin processing the 529th record. Run 1, Event 66780, LumiSection 668 on stream 0 at 23-Mar-2022 21:59:37.610 CET
+Begin processing the 530th record. Run 1, Event 66784, LumiSection 668 on stream 0 at 23-Mar-2022 21:59:43.662 CET
+Begin processing the 531st record. Run 1, Event 66785, LumiSection 668 on stream 0 at 23-Mar-2022 21:59:49.324 CET
+Begin processing the 532nd record. Run 1, Event 66792, LumiSection 668 on stream 0 at 23-Mar-2022 21:59:57.592 CET
+Begin processing the 533rd record. Run 1, Event 66793, LumiSection 668 on stream 0 at 23-Mar-2022 22:00:02.250 CET
+Begin processing the 534th record. Run 1, Event 66794, LumiSection 668 on stream 0 at 23-Mar-2022 22:00:06.280 CET
+Begin processing the 535th record. Run 1, Event 66795, LumiSection 668 on stream 0 at 23-Mar-2022 22:00:19.069 CET
+Begin processing the 536th record. Run 1, Event 66797, LumiSection 668 on stream 0 at 23-Mar-2022 22:00:27.289 CET
+Begin processing the 537th record. Run 1, Event 66799, LumiSection 668 on stream 0 at 23-Mar-2022 22:00:37.313 CET
+Begin processing the 538th record. Run 1, Event 66806, LumiSection 669 on stream 0 at 23-Mar-2022 22:00:52.813 CET
+Begin processing the 539th record. Run 1, Event 66808, LumiSection 669 on stream 0 at 23-Mar-2022 22:01:12.690 CET
+Begin processing the 540th record. Run 1, Event 66824, LumiSection 669 on stream 0 at 23-Mar-2022 22:01:31.660 CET
+Begin processing the 541st record. Run 1, Event 66827, LumiSection 669 on stream 0 at 23-Mar-2022 22:01:41.926 CET
+Begin processing the 542nd record. Run 1, Event 66832, LumiSection 669 on stream 0 at 23-Mar-2022 22:01:58.902 CET
+Begin processing the 543rd record. Run 1, Event 66842, LumiSection 669 on stream 0 at 23-Mar-2022 22:02:05.534 CET
+Begin processing the 544th record. Run 1, Event 66843, LumiSection 669 on stream 0 at 23-Mar-2022 22:02:15.667 CET
+Begin processing the 545th record. Run 1, Event 66844, LumiSection 669 on stream 0 at 23-Mar-2022 22:02:26.236 CET
+Begin processing the 546th record. Run 1, Event 66846, LumiSection 669 on stream 0 at 23-Mar-2022 22:02:44.932 CET
+Begin processing the 547th record. Run 1, Event 66847, LumiSection 669 on stream 0 at 23-Mar-2022 22:03:00.925 CET
+Begin processing the 548th record. Run 1, Event 66853, LumiSection 669 on stream 0 at 23-Mar-2022 22:03:08.072 CET
+Begin processing the 549th record. Run 1, Event 66855, LumiSection 669 on stream 0 at 23-Mar-2022 22:03:27.132 CET
+Begin processing the 550th record. Run 1, Event 66856, LumiSection 669 on stream 0 at 23-Mar-2022 22:03:30.807 CET
+Begin processing the 551st record. Run 1, Event 66857, LumiSection 669 on stream 0 at 23-Mar-2022 22:03:42.983 CET
+Begin processing the 552nd record. Run 1, Event 66861, LumiSection 669 on stream 0 at 23-Mar-2022 22:03:44.897 CET
+Begin processing the 553rd record. Run 1, Event 66863, LumiSection 669 on stream 0 at 23-Mar-2022 22:03:53.539 CET
+Begin processing the 554th record. Run 1, Event 66866, LumiSection 669 on stream 0 at 23-Mar-2022 22:04:03.949 CET
+Begin processing the 555th record. Run 1, Event 66867, LumiSection 669 on stream 0 at 23-Mar-2022 22:04:10.618 CET
+Begin processing the 556th record. Run 1, Event 66868, LumiSection 669 on stream 0 at 23-Mar-2022 22:04:30.749 CET
+Begin processing the 557th record. Run 1, Event 66869, LumiSection 669 on stream 0 at 23-Mar-2022 22:04:41.977 CET
+Begin processing the 558th record. Run 1, Event 66870, LumiSection 669 on stream 0 at 23-Mar-2022 22:04:54.015 CET
+Begin processing the 559th record. Run 1, Event 66877, LumiSection 669 on stream 0 at 23-Mar-2022 22:05:00.261 CET
+Begin processing the 560th record. Run 1, Event 66880, LumiSection 669 on stream 0 at 23-Mar-2022 22:05:10.529 CET
+Begin processing the 561st record. Run 1, Event 66884, LumiSection 669 on stream 0 at 23-Mar-2022 22:05:20.045 CET
+Begin processing the 562nd record. Run 1, Event 66886, LumiSection 669 on stream 0 at 23-Mar-2022 22:05:37.168 CET
+Begin processing the 563rd record. Run 1, Event 66888, LumiSection 669 on stream 0 at 23-Mar-2022 22:05:42.452 CET
+Begin processing the 564th record. Run 1, Event 66891, LumiSection 669 on stream 0 at 23-Mar-2022 22:05:45.352 CET
+Begin processing the 565th record. Run 1, Event 66896, LumiSection 669 on stream 0 at 23-Mar-2022 22:05:53.187 CET
+Begin processing the 566th record. Run 1, Event 66901, LumiSection 670 on stream 0 at 23-Mar-2022 22:06:04.683 CET
+Begin processing the 567th record. Run 1, Event 66905, LumiSection 670 on stream 0 at 23-Mar-2022 22:06:10.498 CET
+Begin processing the 568th record. Run 1, Event 66906, LumiSection 670 on stream 0 at 23-Mar-2022 22:06:16.472 CET
+Begin processing the 569th record. Run 1, Event 66908, LumiSection 670 on stream 0 at 23-Mar-2022 22:06:25.649 CET
+Begin processing the 570th record. Run 1, Event 66913, LumiSection 670 on stream 0 at 23-Mar-2022 22:06:37.840 CET
+Begin processing the 571st record. Run 1, Event 66914, LumiSection 670 on stream 0 at 23-Mar-2022 22:06:41.520 CET
+Begin processing the 572nd record. Run 1, Event 66916, LumiSection 670 on stream 0 at 23-Mar-2022 22:06:49.459 CET
+Begin processing the 573rd record. Run 1, Event 66917, LumiSection 670 on stream 0 at 23-Mar-2022 22:07:01.164 CET
+Begin processing the 574th record. Run 1, Event 66920, LumiSection 670 on stream 0 at 23-Mar-2022 22:07:15.162 CET
+Begin processing the 575th record. Run 1, Event 66923, LumiSection 670 on stream 0 at 23-Mar-2022 22:07:36.331 CET
+Begin processing the 576th record. Run 1, Event 66924, LumiSection 670 on stream 0 at 23-Mar-2022 22:07:40.253 CET
+Begin processing the 577th record. Run 1, Event 66927, LumiSection 670 on stream 0 at 23-Mar-2022 22:07:44.714 CET
+Begin processing the 578th record. Run 1, Event 66932, LumiSection 670 on stream 0 at 23-Mar-2022 22:07:53.993 CET
+Begin processing the 579th record. Run 1, Event 66937, LumiSection 670 on stream 0 at 23-Mar-2022 22:07:58.485 CET
+Begin processing the 580th record. Run 1, Event 66938, LumiSection 670 on stream 0 at 23-Mar-2022 22:08:02.260 CET
+Begin processing the 581st record. Run 1, Event 66942, LumiSection 670 on stream 0 at 23-Mar-2022 22:08:08.949 CET
+Begin processing the 582nd record. Run 1, Event 66944, LumiSection 670 on stream 0 at 23-Mar-2022 22:08:16.686 CET
+Begin processing the 583rd record. Run 1, Event 66945, LumiSection 670 on stream 0 at 23-Mar-2022 22:08:21.095 CET
+Begin processing the 584th record. Run 1, Event 66950, LumiSection 670 on stream 0 at 23-Mar-2022 22:08:42.012 CET
+Begin processing the 585th record. Run 1, Event 66952, LumiSection 670 on stream 0 at 23-Mar-2022 22:08:48.898 CET
+Begin processing the 586th record. Run 1, Event 66955, LumiSection 670 on stream 0 at 23-Mar-2022 22:08:54.422 CET
+Begin processing the 587th record. Run 1, Event 66958, LumiSection 670 on stream 0 at 23-Mar-2022 22:09:08.520 CET
+Begin processing the 588th record. Run 1, Event 66964, LumiSection 670 on stream 0 at 23-Mar-2022 22:09:14.692 CET
+Begin processing the 589th record. Run 1, Event 66970, LumiSection 670 on stream 0 at 23-Mar-2022 22:09:29.547 CET
+Begin processing the 590th record. Run 1, Event 66971, LumiSection 670 on stream 0 at 23-Mar-2022 22:09:32.612 CET
+Begin processing the 591st record. Run 1, Event 66974, LumiSection 670 on stream 0 at 23-Mar-2022 22:09:38.997 CET
+Begin processing the 592nd record. Run 1, Event 66975, LumiSection 670 on stream 0 at 23-Mar-2022 22:09:57.356 CET
+Begin processing the 593rd record. Run 1, Event 66976, LumiSection 670 on stream 0 at 23-Mar-2022 22:10:08.659 CET
+Begin processing the 594th record. Run 1, Event 66980, LumiSection 670 on stream 0 at 23-Mar-2022 22:10:15.926 CET
+Begin processing the 595th record. Run 1, Event 66986, LumiSection 670 on stream 0 at 23-Mar-2022 22:10:20.733 CET
+Begin processing the 596th record. Run 1, Event 66987, LumiSection 670 on stream 0 at 23-Mar-2022 22:10:27.332 CET
+Begin processing the 597th record. Run 1, Event 66990, LumiSection 670 on stream 0 at 23-Mar-2022 22:10:47.846 CET
+Begin processing the 598th record. Run 1, Event 66993, LumiSection 670 on stream 0 at 23-Mar-2022 22:10:57.797 CET
+Begin processing the 599th record. Run 1, Event 66996, LumiSection 670 on stream 0 at 23-Mar-2022 22:11:10.039 CET
+Begin processing the 600th record. Run 1, Event 66997, LumiSection 670 on stream 0 at 23-Mar-2022 22:11:16.050 CET
+Begin processing the 601st record. Run 1, Event 66998, LumiSection 670 on stream 0 at 23-Mar-2022 22:11:22.637 CET
+Begin processing the 602nd record. Run 1, Event 67003, LumiSection 671 on stream 0 at 23-Mar-2022 22:11:45.143 CET
+Begin processing the 603rd record. Run 1, Event 67007, LumiSection 671 on stream 0 at 23-Mar-2022 22:11:50.920 CET
+Begin processing the 604th record. Run 1, Event 67009, LumiSection 671 on stream 0 at 23-Mar-2022 22:11:57.528 CET
+Begin processing the 605th record. Run 1, Event 67014, LumiSection 671 on stream 0 at 23-Mar-2022 22:12:04.951 CET
+Begin processing the 606th record. Run 1, Event 67016, LumiSection 671 on stream 0 at 23-Mar-2022 22:12:22.402 CET
+Begin processing the 607th record. Run 1, Event 67017, LumiSection 671 on stream 0 at 23-Mar-2022 22:12:33.293 CET
+Begin processing the 608th record. Run 1, Event 67025, LumiSection 671 on stream 0 at 23-Mar-2022 22:12:37.513 CET
+Begin processing the 609th record. Run 1, Event 67030, LumiSection 671 on stream 0 at 23-Mar-2022 22:12:46.238 CET
+Begin processing the 610th record. Run 1, Event 67045, LumiSection 671 on stream 0 at 23-Mar-2022 22:12:52.250 CET
+Begin processing the 611th record. Run 1, Event 67049, LumiSection 671 on stream 0 at 23-Mar-2022 22:12:59.326 CET
+Begin processing the 612th record. Run 1, Event 67052, LumiSection 671 on stream 0 at 23-Mar-2022 22:13:14.937 CET
+Begin processing the 613th record. Run 1, Event 67053, LumiSection 671 on stream 0 at 23-Mar-2022 22:13:27.682 CET
+Begin processing the 614th record. Run 1, Event 67055, LumiSection 671 on stream 0 at 23-Mar-2022 22:13:31.946 CET
+Begin processing the 615th record. Run 1, Event 67059, LumiSection 671 on stream 0 at 23-Mar-2022 22:13:44.302 CET
+Begin processing the 616th record. Run 1, Event 67061, LumiSection 671 on stream 0 at 23-Mar-2022 22:13:50.445 CET
+Begin processing the 617th record. Run 1, Event 67066, LumiSection 671 on stream 0 at 23-Mar-2022 22:13:58.418 CET
+Begin processing the 618th record. Run 1, Event 67079, LumiSection 671 on stream 0 at 23-Mar-2022 22:14:06.525 CET
+Begin processing the 619th record. Run 1, Event 67086, LumiSection 671 on stream 0 at 23-Mar-2022 22:14:11.234 CET
+Begin processing the 620th record. Run 1, Event 67093, LumiSection 671 on stream 0 at 23-Mar-2022 22:14:19.134 CET
+Begin processing the 621st record. Run 1, Event 67095, LumiSection 671 on stream 0 at 23-Mar-2022 22:14:28.912 CET
+Begin processing the 622nd record. Run 1, Event 67100, LumiSection 671 on stream 0 at 23-Mar-2022 22:14:36.787 CET
+Begin processing the 623rd record. Run 1, Event 67104, LumiSection 672 on stream 0 at 23-Mar-2022 22:14:47.043 CET
+Begin processing the 624th record. Run 1, Event 67108, LumiSection 672 on stream 0 at 23-Mar-2022 22:14:52.851 CET
+Begin processing the 625th record. Run 1, Event 67110, LumiSection 672 on stream 0 at 23-Mar-2022 22:15:03.615 CET
+Begin processing the 626th record. Run 1, Event 67115, LumiSection 672 on stream 0 at 23-Mar-2022 22:15:09.681 CET
+Begin processing the 627th record. Run 1, Event 67117, LumiSection 672 on stream 0 at 23-Mar-2022 22:15:17.861 CET
+Begin processing the 628th record. Run 1, Event 67120, LumiSection 672 on stream 0 at 23-Mar-2022 22:15:32.361 CET
+Begin processing the 629th record. Run 1, Event 67121, LumiSection 672 on stream 0 at 23-Mar-2022 22:15:40.179 CET
+Begin processing the 630th record. Run 1, Event 67122, LumiSection 672 on stream 0 at 23-Mar-2022 22:15:48.870 CET
+Begin processing the 631st record. Run 1, Event 67130, LumiSection 672 on stream 0 at 23-Mar-2022 22:15:58.560 CET
+Begin processing the 632nd record. Run 1, Event 67131, LumiSection 672 on stream 0 at 23-Mar-2022 22:16:12.027 CET
+Begin processing the 633rd record. Run 1, Event 67132, LumiSection 672 on stream 0 at 23-Mar-2022 22:16:23.500 CET
+Begin processing the 634th record. Run 1, Event 67133, LumiSection 672 on stream 0 at 23-Mar-2022 22:16:29.377 CET
+Begin processing the 635th record. Run 1, Event 67134, LumiSection 672 on stream 0 at 23-Mar-2022 22:16:42.870 CET
+Begin processing the 636th record. Run 1, Event 67137, LumiSection 672 on stream 0 at 23-Mar-2022 22:16:48.893 CET
+Begin processing the 637th record. Run 1, Event 67140, LumiSection 672 on stream 0 at 23-Mar-2022 22:16:56.902 CET
+Begin processing the 638th record. Run 1, Event 67145, LumiSection 672 on stream 0 at 23-Mar-2022 22:17:03.389 CET
+Begin processing the 639th record. Run 1, Event 67153, LumiSection 672 on stream 0 at 23-Mar-2022 22:17:11.223 CET
+Begin processing the 640th record. Run 1, Event 67162, LumiSection 672 on stream 0 at 23-Mar-2022 22:17:17.586 CET
+Begin processing the 641st record. Run 1, Event 67164, LumiSection 672 on stream 0 at 23-Mar-2022 22:17:28.765 CET
+Begin processing the 642nd record. Run 1, Event 67169, LumiSection 672 on stream 0 at 23-Mar-2022 22:17:33.909 CET
+Begin processing the 643rd record. Run 1, Event 67173, LumiSection 672 on stream 0 at 23-Mar-2022 22:17:41.388 CET
+Begin processing the 644th record. Run 1, Event 67179, LumiSection 672 on stream 0 at 23-Mar-2022 22:17:46.096 CET
+Begin processing the 645th record. Run 1, Event 67181, LumiSection 672 on stream 0 at 23-Mar-2022 22:17:53.767 CET
+Begin processing the 646th record. Run 1, Event 67184, LumiSection 672 on stream 0 at 23-Mar-2022 22:18:02.540 CET
+Begin processing the 647th record. Run 1, Event 67187, LumiSection 672 on stream 0 at 23-Mar-2022 22:18:09.417 CET
+%MSG-w Muon:  GlobalMuonProducer:displacedGlobalMuons 23-Mar-2022 22:18:16 CET  Run: 1 Event: 67187
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w RecoMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 22:18:16 CET Run: 1 Event: 67187
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 22:18:16 CET Run: 1 Event: 67187
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalTrajectoryBuilderBase:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 22:18:16 CET Run: 1 Event: 67187
+     Failed to load tracker track trajectory
+%MSG
+Begin processing the 648th record. Run 1, Event 67188, LumiSection 672 on stream 0 at 23-Mar-2022 22:18:16.440 CET
+Begin processing the 649th record. Run 1, Event 67193, LumiSection 672 on stream 0 at 23-Mar-2022 22:18:30.605 CET
+Begin processing the 650th record. Run 1, Event 67196, LumiSection 672 on stream 0 at 23-Mar-2022 22:18:45.088 CET
+Begin processing the 651st record. Run 1, Event 67199, LumiSection 672 on stream 0 at 23-Mar-2022 22:18:49.515 CET
+Begin processing the 652nd record. Run 1, Event 67205, LumiSection 673 on stream 0 at 23-Mar-2022 22:18:59.607 CET
+Begin processing the 653rd record. Run 1, Event 67208, LumiSection 673 on stream 0 at 23-Mar-2022 22:19:13.045 CET
+Begin processing the 654th record. Run 1, Event 67213, LumiSection 673 on stream 0 at 23-Mar-2022 22:19:16.421 CET
+Begin processing the 655th record. Run 1, Event 67214, LumiSection 673 on stream 0 at 23-Mar-2022 22:19:25.229 CET
+Begin processing the 656th record. Run 1, Event 67216, LumiSection 673 on stream 0 at 23-Mar-2022 22:19:27.822 CET
+Begin processing the 657th record. Run 1, Event 67217, LumiSection 673 on stream 0 at 23-Mar-2022 22:19:50.509 CET
+Begin processing the 658th record. Run 1, Event 67218, LumiSection 673 on stream 0 at 23-Mar-2022 22:19:57.434 CET
+Begin processing the 659th record. Run 1, Event 67219, LumiSection 673 on stream 0 at 23-Mar-2022 22:20:04.780 CET
+Begin processing the 660th record. Run 1, Event 67222, LumiSection 673 on stream 0 at 23-Mar-2022 22:20:10.432 CET
+Begin processing the 661st record. Run 1, Event 67232, LumiSection 673 on stream 0 at 23-Mar-2022 22:20:24.476 CET
+Begin processing the 662nd record. Run 1, Event 67233, LumiSection 673 on stream 0 at 23-Mar-2022 22:20:32.621 CET
+Begin processing the 663rd record. Run 1, Event 67235, LumiSection 673 on stream 0 at 23-Mar-2022 22:20:46.393 CET
+Begin processing the 664th record. Run 1, Event 67237, LumiSection 673 on stream 0 at 23-Mar-2022 22:20:52.689 CET
+Begin processing the 665th record. Run 1, Event 67243, LumiSection 673 on stream 0 at 23-Mar-2022 22:20:58.752 CET
+%MSG-w BasicTrajectoryState:  TrackProducer:pixelLessStepTracks  23-Mar-2022 22:21:07 CET Run: 1 Event: 67243
+local error not pos-def
+[ -1.58489e-05   0.0108169  -0.0170764  0.00124376  -0.0252752
+     0.0108169     0.40198    0.123564   0.0397634   -0.818406
+    -0.0170764    0.123564     2.05656  -0.0038053   0.0915115
+    0.00124376   0.0397634  -0.0038053  0.00438191  -0.0797057
+    -0.0252752   -0.818406   0.0915115  -0.0797057     1.79804 ]
+pos/mom/mf  (16.056,30.4747,81.4146)   (-0.925354,-0.0957632,0.801709)   (0.00264478,0.00501985,3.79922) 
+%MSG
+%MSG-w BasicTrajectoryState:  TrackProducer:pixelLessStepTracks  23-Mar-2022 22:21:07 CET Run: 1 Event: 67243
+curv error not pos-def
+[ -1.58489e-05-0.000326527  -0.0173257  -0.0224746  0.00759265
+  -0.000326527    0.168447   -0.287427    0.250638  -0.0847015
+    -0.0173257   -0.287427     1.13432    0.370307   -0.125621
+    -0.0224746    0.250638    0.370307     1.41404   -0.483108
+    0.00759265  -0.0847015   -0.125621   -0.483108    0.165514 ]
+pos/mom/mf  (16.056,30.4747,81.4146)   (-0.925354,-0.0957632,0.801709)   (0.00264478,0.00501985,3.79922) 
+%MSG
+%MSG-w TrackNaN:  TrackProducer:pixelLessStepTracks 23-Mar-2022 22:21:07 CET  Run: 1 Event: 67243
+Track has NaN or the cov is not pos-definite
+%MSG
+Begin processing the 666th record. Run 1, Event 67246, LumiSection 673 on stream 0 at 23-Mar-2022 22:21:16.094 CET
+Begin processing the 667th record. Run 1, Event 67251, LumiSection 673 on stream 0 at 23-Mar-2022 22:21:25.486 CET
+Begin processing the 668th record. Run 1, Event 67253, LumiSection 673 on stream 0 at 23-Mar-2022 22:21:37.868 CET
+Begin processing the 669th record. Run 1, Event 67258, LumiSection 673 on stream 0 at 23-Mar-2022 22:21:48.523 CET
+Begin processing the 670th record. Run 1, Event 67260, LumiSection 673 on stream 0 at 23-Mar-2022 22:22:01.591 CET
+Begin processing the 671st record. Run 1, Event 67264, LumiSection 673 on stream 0 at 23-Mar-2022 22:22:09.175 CET
+Begin processing the 672nd record. Run 1, Event 67272, LumiSection 673 on stream 0 at 23-Mar-2022 22:22:24.844 CET
+Begin processing the 673rd record. Run 1, Event 67273, LumiSection 673 on stream 0 at 23-Mar-2022 22:22:28.873 CET
+Begin processing the 674th record. Run 1, Event 67286, LumiSection 673 on stream 0 at 23-Mar-2022 22:22:34.931 CET
+Begin processing the 675th record. Run 1, Event 67288, LumiSection 673 on stream 0 at 23-Mar-2022 22:22:50.538 CET
+Begin processing the 676th record. Run 1, Event 67291, LumiSection 673 on stream 0 at 23-Mar-2022 22:22:59.346 CET
+Begin processing the 677th record. Run 1, Event 67294, LumiSection 673 on stream 0 at 23-Mar-2022 22:23:05.648 CET
+Begin processing the 678th record. Run 1, Event 67301, LumiSection 674 on stream 0 at 23-Mar-2022 22:23:11.424 CET
+Begin processing the 679th record. Run 1, Event 67302, LumiSection 674 on stream 0 at 23-Mar-2022 22:23:27.137 CET
+Begin processing the 680th record. Run 1, Event 67309, LumiSection 674 on stream 0 at 23-Mar-2022 22:23:32.008 CET
+Begin processing the 681st record. Run 1, Event 67310, LumiSection 674 on stream 0 at 23-Mar-2022 22:23:41.190 CET
+Begin processing the 682nd record. Run 1, Event 67311, LumiSection 674 on stream 0 at 23-Mar-2022 22:23:49.480 CET
+Begin processing the 683rd record. Run 1, Event 67317, LumiSection 674 on stream 0 at 23-Mar-2022 22:24:00.320 CET
+Begin processing the 684th record. Run 1, Event 67318, LumiSection 674 on stream 0 at 23-Mar-2022 22:24:11.878 CET
+Begin processing the 685th record. Run 1, Event 67319, LumiSection 674 on stream 0 at 23-Mar-2022 22:24:15.525 CET
+Begin processing the 686th record. Run 1, Event 67327, LumiSection 674 on stream 0 at 23-Mar-2022 22:24:20.240 CET
+Begin processing the 687th record. Run 1, Event 67333, LumiSection 674 on stream 0 at 23-Mar-2022 22:24:40.388 CET
+Begin processing the 688th record. Run 1, Event 67337, LumiSection 674 on stream 0 at 23-Mar-2022 22:24:51.398 CET
+Begin processing the 689th record. Run 1, Event 67338, LumiSection 674 on stream 0 at 23-Mar-2022 22:25:04.457 CET
+Begin processing the 690th record. Run 1, Event 67340, LumiSection 674 on stream 0 at 23-Mar-2022 22:25:08.628 CET
+Begin processing the 691st record. Run 1, Event 67345, LumiSection 674 on stream 0 at 23-Mar-2022 22:25:19.429 CET
+Begin processing the 692nd record. Run 1, Event 67347, LumiSection 674 on stream 0 at 23-Mar-2022 22:25:35.118 CET
+Begin processing the 693rd record. Run 1, Event 67349, LumiSection 674 on stream 0 at 23-Mar-2022 22:25:40.326 CET
+Begin processing the 694th record. Run 1, Event 67350, LumiSection 674 on stream 0 at 23-Mar-2022 22:25:45.512 CET
+Begin processing the 695th record. Run 1, Event 67351, LumiSection 674 on stream 0 at 23-Mar-2022 22:25:53.368 CET
+Begin processing the 696th record. Run 1, Event 67360, LumiSection 674 on stream 0 at 23-Mar-2022 22:26:18.808 CET
+Begin processing the 697th record. Run 1, Event 67364, LumiSection 674 on stream 0 at 23-Mar-2022 22:26:27.463 CET
+Begin processing the 698th record. Run 1, Event 67365, LumiSection 674 on stream 0 at 23-Mar-2022 22:26:30.757 CET
+Begin processing the 699th record. Run 1, Event 67372, LumiSection 674 on stream 0 at 23-Mar-2022 22:26:37.052 CET
+Begin processing the 700th record. Run 1, Event 67373, LumiSection 674 on stream 0 at 23-Mar-2022 22:26:40.407 CET
+Begin processing the 701st record. Run 1, Event 67374, LumiSection 674 on stream 0 at 23-Mar-2022 22:26:45.551 CET
+Begin processing the 702nd record. Run 1, Event 67376, LumiSection 674 on stream 0 at 23-Mar-2022 22:26:49.891 CET
+Begin processing the 703rd record. Run 1, Event 67378, LumiSection 674 on stream 0 at 23-Mar-2022 22:26:54.597 CET
+Begin processing the 704th record. Run 1, Event 67383, LumiSection 674 on stream 0 at 23-Mar-2022 22:27:00.309 CET
+Begin processing the 705th record. Run 1, Event 67392, LumiSection 674 on stream 0 at 23-Mar-2022 22:27:07.547 CET
+Begin processing the 706th record. Run 1, Event 67395, LumiSection 674 on stream 0 at 23-Mar-2022 22:27:12.788 CET
+Begin processing the 707th record. Run 1, Event 67396, LumiSection 674 on stream 0 at 23-Mar-2022 22:27:26.170 CET
+Begin processing the 708th record. Run 1, Event 67398, LumiSection 674 on stream 0 at 23-Mar-2022 22:27:31.137 CET
+Begin processing the 709th record. Run 1, Event 67403, LumiSection 675 on stream 0 at 23-Mar-2022 22:27:43.177 CET
+Begin processing the 710th record. Run 1, Event 67407, LumiSection 675 on stream 0 at 23-Mar-2022 22:27:52.377 CET
+Begin processing the 711th record. Run 1, Event 67409, LumiSection 675 on stream 0 at 23-Mar-2022 22:27:58.255 CET
+Begin processing the 712th record. Run 1, Event 67411, LumiSection 675 on stream 0 at 23-Mar-2022 22:28:07.543 CET
+Begin processing the 713th record. Run 1, Event 67420, LumiSection 675 on stream 0 at 23-Mar-2022 22:28:13.838 CET
+Begin processing the 714th record. Run 1, Event 67427, LumiSection 675 on stream 0 at 23-Mar-2022 22:28:28.174 CET
+Begin processing the 715th record. Run 1, Event 67433, LumiSection 675 on stream 0 at 23-Mar-2022 22:28:33.628 CET
+Begin processing the 716th record. Run 1, Event 67437, LumiSection 675 on stream 0 at 23-Mar-2022 22:28:46.424 CET
+Begin processing the 717th record. Run 1, Event 67441, LumiSection 675 on stream 0 at 23-Mar-2022 22:28:51.699 CET
+Begin processing the 718th record. Run 1, Event 67446, LumiSection 675 on stream 0 at 23-Mar-2022 22:28:56.085 CET
+Begin processing the 719th record. Run 1, Event 67448, LumiSection 675 on stream 0 at 23-Mar-2022 22:29:18.544 CET
+Begin processing the 720th record. Run 1, Event 67451, LumiSection 675 on stream 0 at 23-Mar-2022 22:29:28.598 CET
+Begin processing the 721st record. Run 1, Event 67454, LumiSection 675 on stream 0 at 23-Mar-2022 22:29:36.508 CET
+Begin processing the 722nd record. Run 1, Event 67455, LumiSection 675 on stream 0 at 23-Mar-2022 22:29:41.661 CET
+Begin processing the 723rd record. Run 1, Event 67457, LumiSection 675 on stream 0 at 23-Mar-2022 22:29:54.646 CET
+Begin processing the 724th record. Run 1, Event 67460, LumiSection 675 on stream 0 at 23-Mar-2022 22:30:05.010 CET
+Begin processing the 725th record. Run 1, Event 67461, LumiSection 675 on stream 0 at 23-Mar-2022 22:30:14.091 CET
+Begin processing the 726th record. Run 1, Event 67463, LumiSection 675 on stream 0 at 23-Mar-2022 22:30:21.587 CET
+Begin processing the 727th record. Run 1, Event 67465, LumiSection 675 on stream 0 at 23-Mar-2022 22:30:42.551 CET
+Begin processing the 728th record. Run 1, Event 67466, LumiSection 675 on stream 0 at 23-Mar-2022 22:30:47.419 CET
+Begin processing the 729th record. Run 1, Event 67468, LumiSection 675 on stream 0 at 23-Mar-2022 22:30:56.083 CET
+Begin processing the 730th record. Run 1, Event 67471, LumiSection 675 on stream 0 at 23-Mar-2022 22:31:15.059 CET
+Begin processing the 731st record. Run 1, Event 67472, LumiSection 675 on stream 0 at 23-Mar-2022 22:31:22.478 CET
+Begin processing the 732nd record. Run 1, Event 67473, LumiSection 675 on stream 0 at 23-Mar-2022 22:31:32.737 CET
+Begin processing the 733rd record. Run 1, Event 67475, LumiSection 675 on stream 0 at 23-Mar-2022 22:31:51.561 CET
+Begin processing the 734th record. Run 1, Event 67480, LumiSection 675 on stream 0 at 23-Mar-2022 22:32:05.023 CET
+Begin processing the 735th record. Run 1, Event 67485, LumiSection 675 on stream 0 at 23-Mar-2022 22:32:11.015 CET
+Begin processing the 736th record. Run 1, Event 67486, LumiSection 675 on stream 0 at 23-Mar-2022 22:32:17.293 CET
+Begin processing the 737th record. Run 1, Event 67492, LumiSection 675 on stream 0 at 23-Mar-2022 22:32:25.877 CET
+Begin processing the 738th record. Run 1, Event 67498, LumiSection 675 on stream 0 at 23-Mar-2022 22:32:29.445 CET
+Begin processing the 739th record. Run 1, Event 67500, LumiSection 675 on stream 0 at 23-Mar-2022 22:32:37.027 CET
+Begin processing the 740th record. Run 1, Event 67501, LumiSection 676 on stream 0 at 23-Mar-2022 22:32:41.791 CET
+Begin processing the 741st record. Run 1, Event 67503, LumiSection 676 on stream 0 at 23-Mar-2022 22:33:15.349 CET
+Begin processing the 742nd record. Run 1, Event 67514, LumiSection 676 on stream 0 at 23-Mar-2022 22:33:23.645 CET
+Begin processing the 743rd record. Run 1, Event 67518, LumiSection 676 on stream 0 at 23-Mar-2022 22:33:28.930 CET
+Begin processing the 744th record. Run 1, Event 67519, LumiSection 676 on stream 0 at 23-Mar-2022 22:33:37.438 CET
+Begin processing the 745th record. Run 1, Event 67520, LumiSection 676 on stream 0 at 23-Mar-2022 22:33:48.136 CET
+Begin processing the 746th record. Run 1, Event 67525, LumiSection 676 on stream 0 at 23-Mar-2022 22:33:56.446 CET
+Begin processing the 747th record. Run 1, Event 67526, LumiSection 676 on stream 0 at 23-Mar-2022 22:34:04.416 CET
+Begin processing the 748th record. Run 1, Event 67536, LumiSection 676 on stream 0 at 23-Mar-2022 22:34:08.182 CET
+Begin processing the 749th record. Run 1, Event 67537, LumiSection 676 on stream 0 at 23-Mar-2022 22:34:15.774 CET
+Begin processing the 750th record. Run 1, Event 67538, LumiSection 676 on stream 0 at 23-Mar-2022 22:34:28.065 CET
+Begin processing the 751st record. Run 1, Event 67541, LumiSection 676 on stream 0 at 23-Mar-2022 22:34:38.096 CET
+Begin processing the 752nd record. Run 1, Event 67548, LumiSection 676 on stream 0 at 23-Mar-2022 22:34:44.907 CET
+Begin processing the 753rd record. Run 1, Event 67552, LumiSection 676 on stream 0 at 23-Mar-2022 22:34:49.494 CET
+Begin processing the 754th record. Run 1, Event 67553, LumiSection 676 on stream 0 at 23-Mar-2022 22:35:05.809 CET
+Begin processing the 755th record. Run 1, Event 67554, LumiSection 676 on stream 0 at 23-Mar-2022 22:35:17.651 CET
+Begin processing the 756th record. Run 1, Event 67557, LumiSection 676 on stream 0 at 23-Mar-2022 22:35:25.363 CET
+Begin processing the 757th record. Run 1, Event 67564, LumiSection 676 on stream 0 at 23-Mar-2022 22:35:33.859 CET
+Begin processing the 758th record. Run 1, Event 67567, LumiSection 676 on stream 0 at 23-Mar-2022 22:35:46.051 CET
+Begin processing the 759th record. Run 1, Event 67568, LumiSection 676 on stream 0 at 23-Mar-2022 22:35:50.445 CET
+Begin processing the 760th record. Run 1, Event 67577, LumiSection 676 on stream 0 at 23-Mar-2022 22:35:57.858 CET
+Begin processing the 761st record. Run 1, Event 67578, LumiSection 676 on stream 0 at 23-Mar-2022 22:36:04.704 CET
+Begin processing the 762nd record. Run 1, Event 67580, LumiSection 676 on stream 0 at 23-Mar-2022 22:36:25.970 CET
+Begin processing the 763rd record. Run 1, Event 67594, LumiSection 676 on stream 0 at 23-Mar-2022 22:36:33.071 CET
+Begin processing the 764th record. Run 1, Event 67596, LumiSection 676 on stream 0 at 23-Mar-2022 22:36:43.871 CET
+Begin processing the 765th record. Run 1, Event 67597, LumiSection 676 on stream 0 at 23-Mar-2022 22:36:48.939 CET
+Begin processing the 766th record. Run 1, Event 67598, LumiSection 676 on stream 0 at 23-Mar-2022 22:37:02.499 CET
+Begin processing the 767th record. Run 1, Event 67599, LumiSection 676 on stream 0 at 23-Mar-2022 22:37:07.931 CET
+Begin processing the 768th record. Run 1, Event 67606, LumiSection 677 on stream 0 at 23-Mar-2022 22:37:16.999 CET
+%MSG-w BasicTrajectoryState:  TrackProducer:convStepTracks  23-Mar-2022 22:37:31 CET Run: 1 Event: 67606
+local error not pos-def
+[     -28.2407    -2.80779     38.2192   -0.567349     5.44918
+      -2.80779     1.14063     6.48511    0.194188    -1.86491
+       38.2192     6.48511    -78.1383     1.13548    -10.9058
+     -0.567349    0.194188     1.13548   0.0445572   -0.427907
+       5.44918    -1.86491    -10.9058   -0.427907        4.11 ]
+pos/mom/mf  (23.4362,16.993,-90.6189)   (0.479579,-0.380332,-1.29886)   (-0.00444778,-0.00322496,3.79435) 
+%MSG
+%MSG-w BasicTrajectoryState:  TrackProducer:convStepTracks  23-Mar-2022 22:37:31 CET Run: 1 Event: 67606
+curv error not pos-def
+[     -28.2407     9.36797     77.6119     -5.2758    -1.33604
+       9.36797    -3.44887    -38.8801     4.55218     1.15278
+       77.6119    -38.8801    -323.561     19.4218     4.91837
+       -5.2758     4.55218     19.4218     3.85261    0.975642
+      -1.33604     1.15278     4.91837    0.975642    0.247079 ]
+pos/mom/mf  (23.4362,16.993,-90.6189)   (0.479579,-0.380332,-1.29886)   (-0.00444778,-0.00322496,3.79435) 
+%MSG
+%MSG-w BasicTrajectoryState:  TrackProducer:convStepTracks  23-Mar-2022 22:37:31 CET Run: 1 Event: 67606
+curv error not pos-def
+[     -28.2407     9.36099     73.0386    -462.168    -109.183
+       9.36099    -3.44406    -37.3325     234.758     37.4454
+       73.0386    -37.3325     -298.98     1867.79     433.935
+      -462.168     234.758     1867.79      -11669    -2731.74
+      -109.183     37.4454     433.935    -2731.74    -399.661 ]
+pos/mom/mf  (18.9627,20.9652,-77.9148)   (0.434239,-0.431106,-1.29895)   (-0.00312848,-0.00345885,3.79882) 
+%MSG
+%MSG-w BasicTrajectoryState:  TrackProducer:convStepTracks  23-Mar-2022 22:37:31 CET Run: 1 Event: 67606
+local error not pos-def
+[     -28.2407    -1.54327    -36.0423      52.425     474.781
+      -1.54327     1.42391    -4.24621    -15.0324        53.7
+      -36.0423    -4.24621    -72.1931     115.356     940.657
+        52.425    -15.0324     115.356     99.5967    -1482.91
+       474.781        53.7     940.657    -1482.91      -12257 ]
+pos/mom/mf  (18.9627,20.9652,-77.9148)   (0.434239,-0.431106,-1.29895)   (-0.00312848,-0.00345885,3.79882) 
+%MSG
+%MSG-w BasicTrajectoryState:  TrackProducer:convStepTracks  23-Mar-2022 22:37:31 CET Run: 1 Event: 67606
+local error not pos-def
+[      -9.9264    0.147652    0.451334  0.00310754   -0.372971
+      0.147652 -0.00177898 -0.00982928-0.000477928   0.0573376
+      0.451334 -0.00982928   0.0500937  0.00661139   -0.793495
+    0.00310754-0.000477928  0.00661139 0.000713629  -0.0853486
+     -0.372971   0.0573376   -0.793495  -0.0853486     10.2435 ]
+pos/mom/mf  (24.8929,14.1023,-77.9148)   (-0.221945,0.242477,-1.28142)   (-0.00410671,-0.00232653,3.79884) 
+%MSG
+%MSG-w BasicTrajectoryState:  TrackProducer:convStepTracks  23-Mar-2022 22:37:31 CET Run: 1 Event: 67606
+curv error not pos-def
+[      -9.9264 0.000639133     1.85143   -0.353347   -0.115683
+   0.000639133  0.00802128   0.0854184    -0.26868  -0.0879641
+       1.85143   0.0854184    0.599677    -2.72445   -0.891966
+     -0.353347    -0.26868    -2.72445     9.19392     3.01002
+     -0.115683  -0.0879641   -0.891966     3.01002    0.985462 ]
+pos/mom/mf  (24.8929,14.1023,-77.9148)   (-0.221945,0.242477,-1.28142)   (-0.00410671,-0.00232653,3.79884) 
+%MSG
+%MSG-w BasicTrajectoryState:  TrackProducer:convStepTracks  23-Mar-2022 22:37:31 CET Run: 1 Event: 67606
+curv error not pos-def
+[      -9.9264 0.000672659      1.8228   -0.468995   -0.114981
+   0.000672659  0.00802118   0.0854115    -0.27423  -0.0894181
+        1.8228   0.0854115     0.61023    -2.76547   -0.908076
+     -0.468995    -0.27423    -2.76547     9.55171     3.11752
+     -0.114981  -0.0894181   -0.908076     3.11752     1.01738 ]
+pos/mom/mf  (24.9353,14.0559,-77.6699)   (-0.221418,0.242963,-1.28142)   (-0.00410174,-0.00231214,3.79892) 
+%MSG
+%MSG-w BasicTrajectoryState:  TrackProducer:convStepTracks  23-Mar-2022 22:37:31 CET Run: 1 Event: 67606
+local error not pos-def
+[      -9.9264   0.0992502   -0.456877  -0.0156962   -0.483529
+     0.0992502 0.000787423   0.0147408   0.0150957    0.140724
+     -0.456877   0.0147408   0.0482179   0.0883326    0.790947
+    -0.0156962   0.0150957   0.0883326    0.127019     1.15594
+     -0.483529    0.140724    0.790947     1.15594      10.509 ]
+pos/mom/mf  (24.9353,14.0559,-77.6699)   (-0.221418,0.242963,-1.28142)   (-0.00410174,-0.00231214,3.79892) 
+%MSG
+%MSG-w BasicTrajectoryState:  TrackProducer:convStepTracks  23-Mar-2022 22:37:31 CET Run: 1 Event: 67606
+local error not pos-def
+[     -19.7034    -3.56896     1.02806    0.787552     8.27063
+      -3.56896   -0.433917    0.193045      0.1634      1.5848
+       1.02806    0.193045 -0.00577408  -0.0346764   -0.402764
+      0.787552      0.1634  -0.0346764    0.011635   -0.142024
+       8.27063      1.5848   -0.402764   -0.142024    -2.64213 ]
+pos/mom/mf  (33.6643,22.5401,-90.8639)   (0.042203,-0.0471301,-0.0100349)   (-0.00639576,-0.00428232,3.79506) 
+%MSG
+%MSG-w BasicTrajectoryState:  TrackProducer:convStepTracks  23-Mar-2022 22:37:31 CET Run: 1 Event: 67606
+curv error not pos-def
+[     -19.7034  -0.0917371   -0.290856    -8.12246   -0.273558
+    -0.0917371-0.000310596 -0.00158274  -0.0396551 -0.00129379
+     -0.290856 -0.00158274  -0.0021764  -0.0985443 -0.00375746
+      -8.12246  -0.0396551  -0.0985443      -2.482   -0.101466
+     -0.273558 -0.00129379 -0.00375746   -0.101466 -0.00364456 ]
+pos/mom/mf  (33.6643,22.5401,-90.8639)   (0.042203,-0.0471301,-0.0100349)   (-0.00639576,-0.00428232,3.79506) 
+%MSG
+%MSG-w TrackNaN:  TrackProducer:convStepTracks 23-Mar-2022 22:37:31 CET  Run: 1 Event: 67606
+Track has NaN or the cov is not pos-definite
+%MSG
+Begin processing the 769th record. Run 1, Event 67620, LumiSection 677 on stream 0 at 23-Mar-2022 22:37:35.429 CET
+Begin processing the 770th record. Run 1, Event 67626, LumiSection 677 on stream 0 at 23-Mar-2022 22:37:45.342 CET
+Begin processing the 771st record. Run 1, Event 67627, LumiSection 677 on stream 0 at 23-Mar-2022 22:37:55.878 CET
+Begin processing the 772nd record. Run 1, Event 67630, LumiSection 677 on stream 0 at 23-Mar-2022 22:38:09.510 CET
+Begin processing the 773rd record. Run 1, Event 67638, LumiSection 677 on stream 0 at 23-Mar-2022 22:38:14.363 CET
+Begin processing the 774th record. Run 1, Event 67639, LumiSection 677 on stream 0 at 23-Mar-2022 22:38:26.301 CET
+Begin processing the 775th record. Run 1, Event 67646, LumiSection 677 on stream 0 at 23-Mar-2022 22:38:35.267 CET
+Begin processing the 776th record. Run 1, Event 67647, LumiSection 677 on stream 0 at 23-Mar-2022 22:38:52.786 CET
+Begin processing the 777th record. Run 1, Event 67650, LumiSection 677 on stream 0 at 23-Mar-2022 22:39:02.131 CET
+Begin processing the 778th record. Run 1, Event 67651, LumiSection 677 on stream 0 at 23-Mar-2022 22:39:08.270 CET
+Begin processing the 779th record. Run 1, Event 67653, LumiSection 677 on stream 0 at 23-Mar-2022 22:39:25.797 CET
+Begin processing the 780th record. Run 1, Event 67657, LumiSection 677 on stream 0 at 23-Mar-2022 22:39:32.180 CET
+Begin processing the 781st record. Run 1, Event 67662, LumiSection 677 on stream 0 at 23-Mar-2022 22:39:37.593 CET
+Begin processing the 782nd record. Run 1, Event 67664, LumiSection 677 on stream 0 at 23-Mar-2022 22:39:48.108 CET
+Begin processing the 783rd record. Run 1, Event 67678, LumiSection 677 on stream 0 at 23-Mar-2022 22:39:53.502 CET
+Begin processing the 784th record. Run 1, Event 67683, LumiSection 677 on stream 0 at 23-Mar-2022 22:40:03.507 CET
+Begin processing the 785th record. Run 1, Event 67686, LumiSection 677 on stream 0 at 23-Mar-2022 22:40:14.473 CET
+Begin processing the 786th record. Run 1, Event 67689, LumiSection 677 on stream 0 at 23-Mar-2022 22:40:26.405 CET
+Begin processing the 787th record. Run 1, Event 67690, LumiSection 677 on stream 0 at 23-Mar-2022 22:40:32.085 CET
+Begin processing the 788th record. Run 1, Event 67692, LumiSection 677 on stream 0 at 23-Mar-2022 22:40:44.808 CET
+Begin processing the 789th record. Run 1, Event 67694, LumiSection 677 on stream 0 at 23-Mar-2022 22:40:57.031 CET
+Begin processing the 790th record. Run 1, Event 67698, LumiSection 677 on stream 0 at 23-Mar-2022 22:41:09.757 CET
+Begin processing the 791st record. Run 1, Event 67704, LumiSection 678 on stream 0 at 23-Mar-2022 22:41:21.506 CET
+Begin processing the 792nd record. Run 1, Event 67707, LumiSection 678 on stream 0 at 23-Mar-2022 22:41:27.295 CET
+Begin processing the 793rd record. Run 1, Event 67710, LumiSection 678 on stream 0 at 23-Mar-2022 22:41:44.260 CET
+Begin processing the 794th record. Run 1, Event 67716, LumiSection 678 on stream 0 at 23-Mar-2022 22:41:52.039 CET
+Begin processing the 795th record. Run 1, Event 67718, LumiSection 678 on stream 0 at 23-Mar-2022 22:41:55.310 CET
+Begin processing the 796th record. Run 1, Event 67720, LumiSection 678 on stream 0 at 23-Mar-2022 22:41:58.939 CET
+Begin processing the 797th record. Run 1, Event 67721, LumiSection 678 on stream 0 at 23-Mar-2022 22:42:09.169 CET
+Begin processing the 798th record. Run 1, Event 67724, LumiSection 678 on stream 0 at 23-Mar-2022 22:42:19.044 CET
+Begin processing the 799th record. Run 1, Event 67725, LumiSection 678 on stream 0 at 23-Mar-2022 22:42:22.986 CET
+Begin processing the 800th record. Run 1, Event 67726, LumiSection 678 on stream 0 at 23-Mar-2022 22:42:35.179 CET
+Begin processing the 801st record. Run 1, Event 67730, LumiSection 678 on stream 0 at 23-Mar-2022 22:42:47.317 CET
+Begin processing the 802nd record. Run 1, Event 67734, LumiSection 678 on stream 0 at 23-Mar-2022 22:42:51.809 CET
+Begin processing the 803rd record. Run 1, Event 67739, LumiSection 678 on stream 0 at 23-Mar-2022 22:42:55.371 CET
+Begin processing the 804th record. Run 1, Event 67743, LumiSection 678 on stream 0 at 23-Mar-2022 22:43:02.981 CET
+Begin processing the 805th record. Run 1, Event 67745, LumiSection 678 on stream 0 at 23-Mar-2022 22:43:15.619 CET
+Begin processing the 806th record. Run 1, Event 67753, LumiSection 678 on stream 0 at 23-Mar-2022 22:43:21.935 CET
+Begin processing the 807th record. Run 1, Event 67754, LumiSection 678 on stream 0 at 23-Mar-2022 22:43:28.079 CET
+Begin processing the 808th record. Run 1, Event 67758, LumiSection 678 on stream 0 at 23-Mar-2022 22:43:35.542 CET
+Begin processing the 809th record. Run 1, Event 67769, LumiSection 678 on stream 0 at 23-Mar-2022 22:43:39.446 CET
+Begin processing the 810th record. Run 1, Event 67773, LumiSection 678 on stream 0 at 23-Mar-2022 22:43:49.402 CET
+Begin processing the 811th record. Run 1, Event 67777, LumiSection 678 on stream 0 at 23-Mar-2022 22:43:51.540 CET
+Begin processing the 812th record. Run 1, Event 67779, LumiSection 678 on stream 0 at 23-Mar-2022 22:44:00.784 CET
+Begin processing the 813th record. Run 1, Event 67780, LumiSection 678 on stream 0 at 23-Mar-2022 22:44:10.378 CET
+Begin processing the 814th record. Run 1, Event 67782, LumiSection 678 on stream 0 at 23-Mar-2022 22:44:19.489 CET
+Begin processing the 815th record. Run 1, Event 67790, LumiSection 678 on stream 0 at 23-Mar-2022 22:44:26.838 CET
+Begin processing the 816th record. Run 1, Event 67791, LumiSection 678 on stream 0 at 23-Mar-2022 22:44:42.698 CET
+Begin processing the 817th record. Run 1, Event 67808, LumiSection 679 on stream 0 at 23-Mar-2022 22:44:50.793 CET
+Begin processing the 818th record. Run 1, Event 67809, LumiSection 679 on stream 0 at 23-Mar-2022 22:45:13.223 CET
+Begin processing the 819th record. Run 1, Event 67817, LumiSection 679 on stream 0 at 23-Mar-2022 22:45:16.965 CET
+Begin processing the 820th record. Run 1, Event 67822, LumiSection 679 on stream 0 at 23-Mar-2022 22:45:22.995 CET
+Begin processing the 821st record. Run 1, Event 67828, LumiSection 679 on stream 0 at 23-Mar-2022 22:45:31.037 CET
+Begin processing the 822nd record. Run 1, Event 67832, LumiSection 679 on stream 0 at 23-Mar-2022 22:45:38.677 CET
+Begin processing the 823rd record. Run 1, Event 67836, LumiSection 679 on stream 0 at 23-Mar-2022 22:45:47.568 CET
+Begin processing the 824th record. Run 1, Event 67838, LumiSection 679 on stream 0 at 23-Mar-2022 22:45:49.908 CET
+Begin processing the 825th record. Run 1, Event 67846, LumiSection 679 on stream 0 at 23-Mar-2022 22:45:55.996 CET
+Begin processing the 826th record. Run 1, Event 67847, LumiSection 679 on stream 0 at 23-Mar-2022 22:46:18.071 CET
+Begin processing the 827th record. Run 1, Event 67853, LumiSection 679 on stream 0 at 23-Mar-2022 22:46:25.690 CET
+Begin processing the 828th record. Run 1, Event 67858, LumiSection 679 on stream 0 at 23-Mar-2022 22:46:29.215 CET
+Begin processing the 829th record. Run 1, Event 67860, LumiSection 679 on stream 0 at 23-Mar-2022 22:46:35.180 CET
+Begin processing the 830th record. Run 1, Event 67863, LumiSection 679 on stream 0 at 23-Mar-2022 22:46:49.692 CET
+Begin processing the 831st record. Run 1, Event 67864, LumiSection 679 on stream 0 at 23-Mar-2022 22:47:00.534 CET
+Begin processing the 832nd record. Run 1, Event 67868, LumiSection 679 on stream 0 at 23-Mar-2022 22:47:15.361 CET
+Begin processing the 833rd record. Run 1, Event 67873, LumiSection 679 on stream 0 at 23-Mar-2022 22:47:20.953 CET
+Begin processing the 834th record. Run 1, Event 67874, LumiSection 679 on stream 0 at 23-Mar-2022 22:47:38.684 CET
+Begin processing the 835th record. Run 1, Event 67875, LumiSection 679 on stream 0 at 23-Mar-2022 22:47:45.645 CET
+Begin processing the 836th record. Run 1, Event 67876, LumiSection 679 on stream 0 at 23-Mar-2022 22:48:15.700 CET
+Begin processing the 837th record. Run 1, Event 67878, LumiSection 679 on stream 0 at 23-Mar-2022 22:48:22.650 CET
+Begin processing the 838th record. Run 1, Event 67880, LumiSection 679 on stream 0 at 23-Mar-2022 22:48:29.725 CET
+Begin processing the 839th record. Run 1, Event 67884, LumiSection 679 on stream 0 at 23-Mar-2022 22:48:37.451 CET
+Begin processing the 840th record. Run 1, Event 67885, LumiSection 679 on stream 0 at 23-Mar-2022 22:48:45.158 CET
+Begin processing the 841st record. Run 1, Event 67887, LumiSection 679 on stream 0 at 23-Mar-2022 22:48:58.964 CET
+Begin processing the 842nd record. Run 1, Event 67894, LumiSection 679 on stream 0 at 23-Mar-2022 22:49:13.469 CET
+Begin processing the 843rd record. Run 1, Event 67897, LumiSection 679 on stream 0 at 23-Mar-2022 22:49:20.009 CET
+Begin processing the 844th record. Run 1, Event 67904, LumiSection 680 on stream 0 at 23-Mar-2022 22:49:23.796 CET
+Begin processing the 845th record. Run 1, Event 67905, LumiSection 680 on stream 0 at 23-Mar-2022 22:49:33.176 CET
+Begin processing the 846th record. Run 1, Event 67906, LumiSection 680 on stream 0 at 23-Mar-2022 22:49:45.986 CET
+Begin processing the 847th record. Run 1, Event 67907, LumiSection 680 on stream 0 at 23-Mar-2022 22:49:51.243 CET
+Begin processing the 848th record. Run 1, Event 67910, LumiSection 680 on stream 0 at 23-Mar-2022 22:50:00.434 CET
+Begin processing the 849th record. Run 1, Event 67916, LumiSection 680 on stream 0 at 23-Mar-2022 22:50:08.623 CET
+Begin processing the 850th record. Run 1, Event 67917, LumiSection 680 on stream 0 at 23-Mar-2022 22:50:19.787 CET
+Begin processing the 851st record. Run 1, Event 67920, LumiSection 680 on stream 0 at 23-Mar-2022 22:50:22.763 CET
+Begin processing the 852nd record. Run 1, Event 67922, LumiSection 680 on stream 0 at 23-Mar-2022 22:50:35.942 CET
+Begin processing the 853rd record. Run 1, Event 67924, LumiSection 680 on stream 0 at 23-Mar-2022 22:50:52.655 CET
+Begin processing the 854th record. Run 1, Event 67928, LumiSection 680 on stream 0 at 23-Mar-2022 22:51:05.564 CET
+Begin processing the 855th record. Run 1, Event 67934, LumiSection 680 on stream 0 at 23-Mar-2022 22:51:10.674 CET
+Begin processing the 856th record. Run 1, Event 67942, LumiSection 680 on stream 0 at 23-Mar-2022 22:51:16.684 CET
+Begin processing the 857th record. Run 1, Event 67947, LumiSection 680 on stream 0 at 23-Mar-2022 22:51:20.822 CET
+Begin processing the 858th record. Run 1, Event 67949, LumiSection 680 on stream 0 at 23-Mar-2022 22:51:34.185 CET
+Begin processing the 859th record. Run 1, Event 67956, LumiSection 680 on stream 0 at 23-Mar-2022 22:51:41.999 CET
+Begin processing the 860th record. Run 1, Event 67961, LumiSection 680 on stream 0 at 23-Mar-2022 22:51:49.009 CET
+Begin processing the 861st record. Run 1, Event 67968, LumiSection 680 on stream 0 at 23-Mar-2022 22:51:59.503 CET
+Begin processing the 862nd record. Run 1, Event 67970, LumiSection 680 on stream 0 at 23-Mar-2022 22:52:18.880 CET
+Begin processing the 863rd record. Run 1, Event 67983, LumiSection 680 on stream 0 at 23-Mar-2022 22:52:21.896 CET
+Begin processing the 864th record. Run 1, Event 67984, LumiSection 680 on stream 0 at 23-Mar-2022 22:52:34.201 CET
+Begin processing the 865th record. Run 1, Event 67987, LumiSection 680 on stream 0 at 23-Mar-2022 22:52:42.375 CET
+Begin processing the 866th record. Run 1, Event 67988, LumiSection 680 on stream 0 at 23-Mar-2022 22:52:46.984 CET
+Begin processing the 867th record. Run 1, Event 67991, LumiSection 680 on stream 0 at 23-Mar-2022 22:52:58.740 CET
+Begin processing the 868th record. Run 1, Event 67993, LumiSection 680 on stream 0 at 23-Mar-2022 22:53:07.798 CET
+Begin processing the 869th record. Run 1, Event 67994, LumiSection 680 on stream 0 at 23-Mar-2022 22:53:18.689 CET
+%MSG-e FailedPropagation:  TrackProducer:lowPtQuadStepTracks  23-Mar-2022 22:53:21 CET Run: 1 Event: 67994
+ too many iterations trying to reach plane 
+%MSG
+Begin processing the 870th record. Run 1, Event 67996, LumiSection 680 on stream 0 at 23-Mar-2022 22:53:28.556 CET
+Begin processing the 871st record. Run 1, Event 67997, LumiSection 680 on stream 0 at 23-Mar-2022 22:53:35.216 CET
+Begin processing the 872nd record. Run 1, Event 68001, LumiSection 681 on stream 0 at 23-Mar-2022 22:53:57.759 CET
+Begin processing the 873rd record. Run 1, Event 68002, LumiSection 681 on stream 0 at 23-Mar-2022 22:54:14.124 CET
+Begin processing the 874th record. Run 1, Event 68003, LumiSection 681 on stream 0 at 23-Mar-2022 22:54:20.483 CET
+Begin processing the 875th record. Run 1, Event 68004, LumiSection 681 on stream 0 at 23-Mar-2022 22:54:26.355 CET
+Begin processing the 876th record. Run 1, Event 68005, LumiSection 681 on stream 0 at 23-Mar-2022 22:54:42.098 CET
+Begin processing the 877th record. Run 1, Event 68006, LumiSection 681 on stream 0 at 23-Mar-2022 22:54:55.737 CET
+Begin processing the 878th record. Run 1, Event 68007, LumiSection 681 on stream 0 at 23-Mar-2022 22:55:02.089 CET
+Begin processing the 879th record. Run 1, Event 68008, LumiSection 681 on stream 0 at 23-Mar-2022 22:55:09.462 CET
+Begin processing the 880th record. Run 1, Event 68010, LumiSection 681 on stream 0 at 23-Mar-2022 22:55:17.610 CET
+Begin processing the 881st record. Run 1, Event 68012, LumiSection 681 on stream 0 at 23-Mar-2022 22:55:21.759 CET
+Begin processing the 882nd record. Run 1, Event 68013, LumiSection 681 on stream 0 at 23-Mar-2022 22:55:32.523 CET
+Begin processing the 883rd record. Run 1, Event 68022, LumiSection 681 on stream 0 at 23-Mar-2022 22:55:38.977 CET
+Begin processing the 884th record. Run 1, Event 68024, LumiSection 681 on stream 0 at 23-Mar-2022 22:55:43.184 CET
+Begin processing the 885th record. Run 1, Event 68028, LumiSection 681 on stream 0 at 23-Mar-2022 22:55:57.747 CET
+Begin processing the 886th record. Run 1, Event 68037, LumiSection 681 on stream 0 at 23-Mar-2022 22:56:02.303 CET
+Begin processing the 887th record. Run 1, Event 68038, LumiSection 681 on stream 0 at 23-Mar-2022 22:56:05.914 CET
+Begin processing the 888th record. Run 1, Event 68039, LumiSection 681 on stream 0 at 23-Mar-2022 22:56:12.103 CET
+Begin processing the 889th record. Run 1, Event 68040, LumiSection 681 on stream 0 at 23-Mar-2022 22:56:19.539 CET
+Begin processing the 890th record. Run 1, Event 68042, LumiSection 681 on stream 0 at 23-Mar-2022 22:56:29.393 CET
+Begin processing the 891st record. Run 1, Event 68043, LumiSection 681 on stream 0 at 23-Mar-2022 22:56:42.011 CET
+Begin processing the 892nd record. Run 1, Event 68044, LumiSection 681 on stream 0 at 23-Mar-2022 22:56:55.734 CET
+Begin processing the 893rd record. Run 1, Event 68049, LumiSection 681 on stream 0 at 23-Mar-2022 22:57:01.947 CET
+Begin processing the 894th record. Run 1, Event 68050, LumiSection 681 on stream 0 at 23-Mar-2022 22:57:08.213 CET
+Begin processing the 895th record. Run 1, Event 68054, LumiSection 681 on stream 0 at 23-Mar-2022 22:57:12.272 CET
+Begin processing the 896th record. Run 1, Event 68055, LumiSection 681 on stream 0 at 23-Mar-2022 22:57:21.263 CET
+Begin processing the 897th record. Run 1, Event 68057, LumiSection 681 on stream 0 at 23-Mar-2022 22:57:32.060 CET
+Begin processing the 898th record. Run 1, Event 68060, LumiSection 681 on stream 0 at 23-Mar-2022 22:57:47.196 CET
+Begin processing the 899th record. Run 1, Event 68061, LumiSection 681 on stream 0 at 23-Mar-2022 22:58:00.765 CET
+Begin processing the 900th record. Run 1, Event 68062, LumiSection 681 on stream 0 at 23-Mar-2022 22:58:12.827 CET
+Begin processing the 901st record. Run 1, Event 68065, LumiSection 681 on stream 0 at 23-Mar-2022 22:58:22.992 CET
+Begin processing the 902nd record. Run 1, Event 68071, LumiSection 681 on stream 0 at 23-Mar-2022 22:58:30.218 CET
+Begin processing the 903rd record. Run 1, Event 68074, LumiSection 681 on stream 0 at 23-Mar-2022 22:58:40.927 CET
+Begin processing the 904th record. Run 1, Event 68079, LumiSection 681 on stream 0 at 23-Mar-2022 22:58:45.686 CET
+Begin processing the 905th record. Run 1, Event 68081, LumiSection 681 on stream 0 at 23-Mar-2022 22:58:53.258 CET
+Begin processing the 906th record. Run 1, Event 68083, LumiSection 681 on stream 0 at 23-Mar-2022 22:58:59.272 CET
+Begin processing the 907th record. Run 1, Event 68084, LumiSection 681 on stream 0 at 23-Mar-2022 22:59:11.488 CET
+Begin processing the 908th record. Run 1, Event 68085, LumiSection 681 on stream 0 at 23-Mar-2022 22:59:19.324 CET
+Begin processing the 909th record. Run 1, Event 68087, LumiSection 681 on stream 0 at 23-Mar-2022 22:59:31.377 CET
+Begin processing the 910th record. Run 1, Event 68089, LumiSection 681 on stream 0 at 23-Mar-2022 22:59:36.189 CET
+Begin processing the 911th record. Run 1, Event 68092, LumiSection 681 on stream 0 at 23-Mar-2022 22:59:43.012 CET
+Begin processing the 912th record. Run 1, Event 68096, LumiSection 681 on stream 0 at 23-Mar-2022 22:59:45.808 CET
+Begin processing the 913th record. Run 1, Event 68097, LumiSection 681 on stream 0 at 23-Mar-2022 22:59:48.732 CET
+Begin processing the 914th record. Run 1, Event 68098, LumiSection 681 on stream 0 at 23-Mar-2022 22:59:52.723 CET
+Begin processing the 915th record. Run 1, Event 68100, LumiSection 681 on stream 0 at 23-Mar-2022 23:00:00.542 CET
+Begin processing the 916th record. Run 1, Event 68101, LumiSection 682 on stream 0 at 23-Mar-2022 23:00:07.644 CET
+Begin processing the 917th record. Run 1, Event 68106, LumiSection 682 on stream 0 at 23-Mar-2022 23:00:11.325 CET
+Begin processing the 918th record. Run 1, Event 68107, LumiSection 682 on stream 0 at 23-Mar-2022 23:00:18.939 CET
+Begin processing the 919th record. Run 1, Event 68108, LumiSection 682 on stream 0 at 23-Mar-2022 23:00:25.550 CET
+Begin processing the 920th record. Run 1, Event 68111, LumiSection 682 on stream 0 at 23-Mar-2022 23:00:35.176 CET
+Begin processing the 921st record. Run 1, Event 68114, LumiSection 682 on stream 0 at 23-Mar-2022 23:00:48.559 CET
+Begin processing the 922nd record. Run 1, Event 68115, LumiSection 682 on stream 0 at 23-Mar-2022 23:00:59.222 CET
+Begin processing the 923rd record. Run 1, Event 68119, LumiSection 682 on stream 0 at 23-Mar-2022 23:01:14.532 CET
+Begin processing the 924th record. Run 1, Event 68120, LumiSection 682 on stream 0 at 23-Mar-2022 23:01:29.654 CET
+Begin processing the 925th record. Run 1, Event 68126, LumiSection 682 on stream 0 at 23-Mar-2022 23:01:41.944 CET
+Begin processing the 926th record. Run 1, Event 68137, LumiSection 682 on stream 0 at 23-Mar-2022 23:01:52.993 CET
+Begin processing the 927th record. Run 1, Event 68139, LumiSection 682 on stream 0 at 23-Mar-2022 23:02:00.080 CET
+Begin processing the 928th record. Run 1, Event 68140, LumiSection 682 on stream 0 at 23-Mar-2022 23:02:09.348 CET
+Begin processing the 929th record. Run 1, Event 68141, LumiSection 682 on stream 0 at 23-Mar-2022 23:02:12.891 CET
+Begin processing the 930th record. Run 1, Event 68142, LumiSection 682 on stream 0 at 23-Mar-2022 23:02:22.121 CET
+Begin processing the 931st record. Run 1, Event 68147, LumiSection 682 on stream 0 at 23-Mar-2022 23:02:33.798 CET
+Begin processing the 932nd record. Run 1, Event 68149, LumiSection 682 on stream 0 at 23-Mar-2022 23:02:44.072 CET
+Begin processing the 933rd record. Run 1, Event 68152, LumiSection 682 on stream 0 at 23-Mar-2022 23:02:56.317 CET
+Begin processing the 934th record. Run 1, Event 68158, LumiSection 682 on stream 0 at 23-Mar-2022 23:03:06.411 CET
+Begin processing the 935th record. Run 1, Event 68160, LumiSection 682 on stream 0 at 23-Mar-2022 23:03:09.438 CET
+Begin processing the 936th record. Run 1, Event 68163, LumiSection 682 on stream 0 at 23-Mar-2022 23:03:29.002 CET
+Begin processing the 937th record. Run 1, Event 68167, LumiSection 682 on stream 0 at 23-Mar-2022 23:03:38.962 CET
+Begin processing the 938th record. Run 1, Event 68174, LumiSection 682 on stream 0 at 23-Mar-2022 23:03:50.808 CET
+Begin processing the 939th record. Run 1, Event 68177, LumiSection 682 on stream 0 at 23-Mar-2022 23:04:00.028 CET
+Begin processing the 940th record. Run 1, Event 68183, LumiSection 682 on stream 0 at 23-Mar-2022 23:04:08.395 CET
+Begin processing the 941st record. Run 1, Event 68184, LumiSection 682 on stream 0 at 23-Mar-2022 23:04:13.982 CET
+Begin processing the 942nd record. Run 1, Event 68194, LumiSection 682 on stream 0 at 23-Mar-2022 23:04:31.317 CET
+Begin processing the 943rd record. Run 1, Event 68201, LumiSection 683 on stream 0 at 23-Mar-2022 23:04:51.846 CET
+Begin processing the 944th record. Run 1, Event 68209, LumiSection 683 on stream 0 at 23-Mar-2022 23:05:03.093 CET
+Begin processing the 945th record. Run 1, Event 68211, LumiSection 683 on stream 0 at 23-Mar-2022 23:05:12.323 CET
+Begin processing the 946th record. Run 1, Event 68212, LumiSection 683 on stream 0 at 23-Mar-2022 23:05:17.415 CET
+Begin processing the 947th record. Run 1, Event 68224, LumiSection 683 on stream 0 at 23-Mar-2022 23:05:27.002 CET
+Begin processing the 948th record. Run 1, Event 68228, LumiSection 683 on stream 0 at 23-Mar-2022 23:05:47.683 CET
+Begin processing the 949th record. Run 1, Event 68232, LumiSection 683 on stream 0 at 23-Mar-2022 23:05:59.430 CET
+Begin processing the 950th record. Run 1, Event 68235, LumiSection 683 on stream 0 at 23-Mar-2022 23:06:15.889 CET
+Begin processing the 951st record. Run 1, Event 68237, LumiSection 683 on stream 0 at 23-Mar-2022 23:06:22.746 CET
+Begin processing the 952nd record. Run 1, Event 68239, LumiSection 683 on stream 0 at 23-Mar-2022 23:06:32.413 CET
+Begin processing the 953rd record. Run 1, Event 68240, LumiSection 683 on stream 0 at 23-Mar-2022 23:06:39.640 CET
+Begin processing the 954th record. Run 1, Event 68243, LumiSection 683 on stream 0 at 23-Mar-2022 23:06:51.994 CET
+Begin processing the 955th record. Run 1, Event 68244, LumiSection 683 on stream 0 at 23-Mar-2022 23:06:58.702 CET
+Begin processing the 956th record. Run 1, Event 68246, LumiSection 683 on stream 0 at 23-Mar-2022 23:07:09.914 CET
+Begin processing the 957th record. Run 1, Event 68254, LumiSection 683 on stream 0 at 23-Mar-2022 23:07:20.721 CET
+Begin processing the 958th record. Run 1, Event 68255, LumiSection 683 on stream 0 at 23-Mar-2022 23:07:28.892 CET
+%MSG-w Muon:  GlobalMuonProducer:displacedGlobalMuons 23-Mar-2022 23:07:37 CET  Run: 1 Event: 68255
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w RecoMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 23:07:37 CET Run: 1 Event: 68255
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 23:07:37 CET Run: 1 Event: 68255
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalTrajectoryBuilderBase:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 23:07:37 CET Run: 1 Event: 68255
+     Failed to load tracker track trajectory
+%MSG
+Begin processing the 959th record. Run 1, Event 68256, LumiSection 683 on stream 0 at 23-Mar-2022 23:07:38.323 CET
+Begin processing the 960th record. Run 1, Event 68265, LumiSection 683 on stream 0 at 23-Mar-2022 23:07:51.988 CET
+Begin processing the 961st record. Run 1, Event 68266, LumiSection 683 on stream 0 at 23-Mar-2022 23:07:58.688 CET
+Begin processing the 962nd record. Run 1, Event 68268, LumiSection 683 on stream 0 at 23-Mar-2022 23:08:06.476 CET
+Begin processing the 963rd record. Run 1, Event 68269, LumiSection 683 on stream 0 at 23-Mar-2022 23:08:21.257 CET
+Begin processing the 964th record. Run 1, Event 68270, LumiSection 683 on stream 0 at 23-Mar-2022 23:08:30.188 CET
+Begin processing the 965th record. Run 1, Event 68273, LumiSection 683 on stream 0 at 23-Mar-2022 23:08:43.309 CET
+Begin processing the 966th record. Run 1, Event 68274, LumiSection 683 on stream 0 at 23-Mar-2022 23:08:53.693 CET
+Begin processing the 967th record. Run 1, Event 68287, LumiSection 683 on stream 0 at 23-Mar-2022 23:09:01.171 CET
+Begin processing the 968th record. Run 1, Event 68291, LumiSection 683 on stream 0 at 23-Mar-2022 23:09:08.896 CET
+Begin processing the 969th record. Run 1, Event 68293, LumiSection 683 on stream 0 at 23-Mar-2022 23:09:13.088 CET
+Begin processing the 970th record. Run 1, Event 68299, LumiSection 683 on stream 0 at 23-Mar-2022 23:09:21.585 CET
+Begin processing the 971st record. Run 1, Event 68300, LumiSection 683 on stream 0 at 23-Mar-2022 23:09:29.138 CET
+Begin processing the 972nd record. Run 1, Event 68305, LumiSection 684 on stream 0 at 23-Mar-2022 23:09:42.556 CET
+Begin processing the 973rd record. Run 1, Event 68308, LumiSection 684 on stream 0 at 23-Mar-2022 23:09:48.528 CET
+Begin processing the 974th record. Run 1, Event 68314, LumiSection 684 on stream 0 at 23-Mar-2022 23:09:53.483 CET
+Begin processing the 975th record. Run 1, Event 68316, LumiSection 684 on stream 0 at 23-Mar-2022 23:10:09.560 CET
+Begin processing the 976th record. Run 1, Event 68317, LumiSection 684 on stream 0 at 23-Mar-2022 23:10:14.035 CET
+Begin processing the 977th record. Run 1, Event 68321, LumiSection 684 on stream 0 at 23-Mar-2022 23:10:17.874 CET
+Begin processing the 978th record. Run 1, Event 68322, LumiSection 684 on stream 0 at 23-Mar-2022 23:10:24.063 CET
+Begin processing the 979th record. Run 1, Event 68329, LumiSection 684 on stream 0 at 23-Mar-2022 23:10:33.606 CET
+Begin processing the 980th record. Run 1, Event 68330, LumiSection 684 on stream 0 at 23-Mar-2022 23:10:42.666 CET
+Begin processing the 981st record. Run 1, Event 68331, LumiSection 684 on stream 0 at 23-Mar-2022 23:10:55.941 CET
+Begin processing the 982nd record. Run 1, Event 68335, LumiSection 684 on stream 0 at 23-Mar-2022 23:11:11.463 CET
+Begin processing the 983rd record. Run 1, Event 68337, LumiSection 684 on stream 0 at 23-Mar-2022 23:11:19.908 CET
+Begin processing the 984th record. Run 1, Event 68339, LumiSection 684 on stream 0 at 23-Mar-2022 23:11:24.062 CET
+Begin processing the 985th record. Run 1, Event 68342, LumiSection 684 on stream 0 at 23-Mar-2022 23:11:30.800 CET
+Begin processing the 986th record. Run 1, Event 68350, LumiSection 684 on stream 0 at 23-Mar-2022 23:11:38.005 CET
+Begin processing the 987th record. Run 1, Event 68356, LumiSection 684 on stream 0 at 23-Mar-2022 23:12:02.845 CET
+Begin processing the 988th record. Run 1, Event 68357, LumiSection 684 on stream 0 at 23-Mar-2022 23:12:18.152 CET
+Begin processing the 989th record. Run 1, Event 68360, LumiSection 684 on stream 0 at 23-Mar-2022 23:12:28.487 CET
+Begin processing the 990th record. Run 1, Event 68362, LumiSection 684 on stream 0 at 23-Mar-2022 23:12:36.667 CET
+Begin processing the 991st record. Run 1, Event 68365, LumiSection 684 on stream 0 at 23-Mar-2022 23:12:45.139 CET
+Begin processing the 992nd record. Run 1, Event 68373, LumiSection 684 on stream 0 at 23-Mar-2022 23:12:48.450 CET
+Begin processing the 993rd record. Run 1, Event 68376, LumiSection 684 on stream 0 at 23-Mar-2022 23:12:55.653 CET
+%MSG-w Muon:  GlobalMuonProducer:displacedGlobalMuons 23-Mar-2022 23:13:08 CET  Run: 1 Event: 68376
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w RecoMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 23:13:08 CET Run: 1 Event: 68376
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 23:13:08 CET Run: 1 Event: 68376
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalTrajectoryBuilderBase:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 23:13:08 CET Run: 1 Event: 68376
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w Muon:  GlobalMuonProducer:displacedGlobalMuons 23-Mar-2022 23:13:08 CET  Run: 1 Event: 68376
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w RecoMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 23:13:08 CET Run: 1 Event: 68376
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 23:13:08 CET Run: 1 Event: 68376
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalTrajectoryBuilderBase:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 23:13:08 CET Run: 1 Event: 68376
+     Failed to load tracker track trajectory
+%MSG
+Begin processing the 994th record. Run 1, Event 68384, LumiSection 684 on stream 0 at 23-Mar-2022 23:13:09.443 CET
+Begin processing the 995th record. Run 1, Event 68386, LumiSection 684 on stream 0 at 23-Mar-2022 23:13:36.142 CET
+Begin processing the 996th record. Run 1, Event 68391, LumiSection 684 on stream 0 at 23-Mar-2022 23:13:45.543 CET
+Begin processing the 997th record. Run 1, Event 68394, LumiSection 684 on stream 0 at 23-Mar-2022 23:13:54.699 CET
+Begin processing the 998th record. Run 1, Event 68395, LumiSection 684 on stream 0 at 23-Mar-2022 23:14:03.759 CET
+Begin processing the 999th record. Run 1, Event 68397, LumiSection 684 on stream 0 at 23-Mar-2022 23:14:25.688 CET
+Begin processing the 1000th record. Run 1, Event 68404, LumiSection 685 on stream 0 at 23-Mar-2022 23:14:33.398 CET
+%MSG-w Muon:  GlobalMuonProducer:displacedGlobalMuons 23-Mar-2022 23:14:46 CET  Run: 1 Event: 68404
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w RecoMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 23:14:46 CET Run: 1 Event: 68404
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 23:14:46 CET Run: 1 Event: 68404
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalTrajectoryBuilderBase:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 23:14:46 CET Run: 1 Event: 68404
+     Failed to load tracker track trajectory
+%MSG
+Begin processing the 1001st record. Run 1, Event 68408, LumiSection 685 on stream 0 at 23-Mar-2022 23:14:47.408 CET
+Begin processing the 1002nd record. Run 1, Event 68409, LumiSection 685 on stream 0 at 23-Mar-2022 23:14:56.406 CET
+Begin processing the 1003rd record. Run 1, Event 68411, LumiSection 685 on stream 0 at 23-Mar-2022 23:15:05.628 CET
+Begin processing the 1004th record. Run 1, Event 68412, LumiSection 685 on stream 0 at 23-Mar-2022 23:15:10.237 CET
+Begin processing the 1005th record. Run 1, Event 68416, LumiSection 685 on stream 0 at 23-Mar-2022 23:15:21.636 CET
+Begin processing the 1006th record. Run 1, Event 68426, LumiSection 685 on stream 0 at 23-Mar-2022 23:15:29.169 CET
+Begin processing the 1007th record. Run 1, Event 68427, LumiSection 685 on stream 0 at 23-Mar-2022 23:15:37.959 CET
+Begin processing the 1008th record. Run 1, Event 68433, LumiSection 685 on stream 0 at 23-Mar-2022 23:15:46.387 CET
+Begin processing the 1009th record. Run 1, Event 68434, LumiSection 685 on stream 0 at 23-Mar-2022 23:15:53.321 CET
+Begin processing the 1010th record. Run 1, Event 68442, LumiSection 685 on stream 0 at 23-Mar-2022 23:16:05.860 CET
+Begin processing the 1011th record. Run 1, Event 68446, LumiSection 685 on stream 0 at 23-Mar-2022 23:16:24.206 CET
+Begin processing the 1012th record. Run 1, Event 68455, LumiSection 685 on stream 0 at 23-Mar-2022 23:16:33.001 CET
+Begin processing the 1013th record. Run 1, Event 68460, LumiSection 685 on stream 0 at 23-Mar-2022 23:16:38.790 CET
+Begin processing the 1014th record. Run 1, Event 68468, LumiSection 685 on stream 0 at 23-Mar-2022 23:16:43.017 CET
+Begin processing the 1015th record. Run 1, Event 68469, LumiSection 685 on stream 0 at 23-Mar-2022 23:16:54.323 CET
+Begin processing the 1016th record. Run 1, Event 68476, LumiSection 685 on stream 0 at 23-Mar-2022 23:16:58.294 CET
+Begin processing the 1017th record. Run 1, Event 68479, LumiSection 685 on stream 0 at 23-Mar-2022 23:17:12.579 CET
+Begin processing the 1018th record. Run 1, Event 68482, LumiSection 685 on stream 0 at 23-Mar-2022 23:17:26.056 CET
+Begin processing the 1019th record. Run 1, Event 68483, LumiSection 685 on stream 0 at 23-Mar-2022 23:17:38.078 CET
+Begin processing the 1020th record. Run 1, Event 68486, LumiSection 685 on stream 0 at 23-Mar-2022 23:17:45.445 CET
+Begin processing the 1021st record. Run 1, Event 68493, LumiSection 685 on stream 0 at 23-Mar-2022 23:17:48.392 CET
+Begin processing the 1022nd record. Run 1, Event 68495, LumiSection 685 on stream 0 at 23-Mar-2022 23:17:51.834 CET
+Begin processing the 1023rd record. Run 1, Event 68499, LumiSection 685 on stream 0 at 23-Mar-2022 23:17:59.937 CET
+Begin processing the 1024th record. Run 1, Event 68505, LumiSection 686 on stream 0 at 23-Mar-2022 23:18:07.794 CET
+Begin processing the 1025th record. Run 1, Event 68508, LumiSection 686 on stream 0 at 23-Mar-2022 23:18:15.433 CET
+Begin processing the 1026th record. Run 1, Event 68510, LumiSection 686 on stream 0 at 23-Mar-2022 23:18:25.571 CET
+Begin processing the 1027th record. Run 1, Event 68511, LumiSection 686 on stream 0 at 23-Mar-2022 23:18:34.532 CET
+Begin processing the 1028th record. Run 1, Event 68512, LumiSection 686 on stream 0 at 23-Mar-2022 23:18:49.108 CET
+Begin processing the 1029th record. Run 1, Event 68514, LumiSection 686 on stream 0 at 23-Mar-2022 23:18:52.398 CET
+Begin processing the 1030th record. Run 1, Event 68526, LumiSection 686 on stream 0 at 23-Mar-2022 23:19:05.855 CET
+Begin processing the 1031st record. Run 1, Event 68535, LumiSection 686 on stream 0 at 23-Mar-2022 23:19:13.055 CET
+Begin processing the 1032nd record. Run 1, Event 68541, LumiSection 686 on stream 0 at 23-Mar-2022 23:19:17.954 CET
+Begin processing the 1033rd record. Run 1, Event 68542, LumiSection 686 on stream 0 at 23-Mar-2022 23:19:34.640 CET
+Begin processing the 1034th record. Run 1, Event 68558, LumiSection 686 on stream 0 at 23-Mar-2022 23:19:40.404 CET
+Begin processing the 1035th record. Run 1, Event 68559, LumiSection 686 on stream 0 at 23-Mar-2022 23:19:48.061 CET
+Begin processing the 1036th record. Run 1, Event 68560, LumiSection 686 on stream 0 at 23-Mar-2022 23:20:00.335 CET
+Begin processing the 1037th record. Run 1, Event 68561, LumiSection 686 on stream 0 at 23-Mar-2022 23:20:05.215 CET
+Begin processing the 1038th record. Run 1, Event 68567, LumiSection 686 on stream 0 at 23-Mar-2022 23:20:09.736 CET
+Begin processing the 1039th record. Run 1, Event 68573, LumiSection 686 on stream 0 at 23-Mar-2022 23:20:21.715 CET
+Begin processing the 1040th record. Run 1, Event 68575, LumiSection 686 on stream 0 at 23-Mar-2022 23:20:23.958 CET
+Begin processing the 1041st record. Run 1, Event 68585, LumiSection 686 on stream 0 at 23-Mar-2022 23:20:36.327 CET
+Begin processing the 1042nd record. Run 1, Event 68587, LumiSection 686 on stream 0 at 23-Mar-2022 23:20:43.996 CET
+Begin processing the 1043rd record. Run 1, Event 68590, LumiSection 686 on stream 0 at 23-Mar-2022 23:20:52.682 CET
+Begin processing the 1044th record. Run 1, Event 68591, LumiSection 686 on stream 0 at 23-Mar-2022 23:20:54.391 CET
+Begin processing the 1045th record. Run 1, Event 68595, LumiSection 686 on stream 0 at 23-Mar-2022 23:21:02.459 CET
+Begin processing the 1046th record. Run 1, Event 68596, LumiSection 686 on stream 0 at 23-Mar-2022 23:21:11.295 CET
+Begin processing the 1047th record. Run 1, Event 68598, LumiSection 686 on stream 0 at 23-Mar-2022 23:21:25.295 CET
+Begin processing the 1048th record. Run 1, Event 68600, LumiSection 686 on stream 0 at 23-Mar-2022 23:21:37.610 CET
+Begin processing the 1049th record. Run 1, Event 68603, LumiSection 687 on stream 0 at 23-Mar-2022 23:21:47.502 CET
+Begin processing the 1050th record. Run 1, Event 68606, LumiSection 687 on stream 0 at 23-Mar-2022 23:22:05.569 CET
+Begin processing the 1051st record. Run 1, Event 68611, LumiSection 687 on stream 0 at 23-Mar-2022 23:22:18.985 CET
+Begin processing the 1052nd record. Run 1, Event 68616, LumiSection 687 on stream 0 at 23-Mar-2022 23:22:32.870 CET
+Begin processing the 1053rd record. Run 1, Event 68617, LumiSection 687 on stream 0 at 23-Mar-2022 23:22:43.205 CET
+%MSG-w PFTrackTransformer:  PFElecTkProducer:lowPtGsfElePfGsfTracks  23-Mar-2022 23:22:46 CET Run: 1 Event: 68617
+BREM Reco track charge = 0, type = 0, Pt = 0, P = 0
+	R0 = 0 Z0 = 0
+	number of tracker measurements = 0
+	number of points total = 4
+Traj point id = -1, layer = -1, Eta,Phi = 0,0, X,Y = 0,0, R,Z = 0,0, E,Pt = 0,0
+Traj point id = -1, layer = -1, Eta,Phi = 0,0, X,Y = 0,0, R,Z = 0,0, E,Pt = 0,0
+Traj point id = -1, layer = -1, Eta,Phi = 0,0, X,Y = 0,0, R,Z = 0,0, E,Pt = 0,0
+Traj point id = -1, layer = -1, Eta,Phi = 0,0, X,Y = 0,0, R,Z = 0,0, E,Pt = 0,0
+ PROPAGATION TO THE ECAL HAS FAILED
+theBremParticle.particle() pt,eta,cos2ThetaV: 4.59028 0.998939 0.664807
+%MSG
+Begin processing the 1054th record. Run 1, Event 68621, LumiSection 687 on stream 0 at 23-Mar-2022 23:22:47.382 CET
+Begin processing the 1055th record. Run 1, Event 68625, LumiSection 687 on stream 0 at 23-Mar-2022 23:23:00.817 CET
+Begin processing the 1056th record. Run 1, Event 68632, LumiSection 687 on stream 0 at 23-Mar-2022 23:23:08.765 CET
+Begin processing the 1057th record. Run 1, Event 68635, LumiSection 687 on stream 0 at 23-Mar-2022 23:23:24.105 CET
+Begin processing the 1058th record. Run 1, Event 68637, LumiSection 687 on stream 0 at 23-Mar-2022 23:23:32.526 CET
+Begin processing the 1059th record. Run 1, Event 68638, LumiSection 687 on stream 0 at 23-Mar-2022 23:23:37.930 CET
+Begin processing the 1060th record. Run 1, Event 68641, LumiSection 687 on stream 0 at 23-Mar-2022 23:23:46.045 CET
+Begin processing the 1061st record. Run 1, Event 68642, LumiSection 687 on stream 0 at 23-Mar-2022 23:23:52.757 CET
+Begin processing the 1062nd record. Run 1, Event 68648, LumiSection 687 on stream 0 at 23-Mar-2022 23:23:56.871 CET
+Begin processing the 1063rd record. Run 1, Event 68650, LumiSection 687 on stream 0 at 23-Mar-2022 23:24:05.965 CET
+Begin processing the 1064th record. Run 1, Event 68661, LumiSection 687 on stream 0 at 23-Mar-2022 23:24:12.781 CET
+Begin processing the 1065th record. Run 1, Event 68663, LumiSection 687 on stream 0 at 23-Mar-2022 23:24:26.575 CET
+Begin processing the 1066th record. Run 1, Event 68664, LumiSection 687 on stream 0 at 23-Mar-2022 23:24:38.510 CET
+Begin processing the 1067th record. Run 1, Event 68665, LumiSection 687 on stream 0 at 23-Mar-2022 23:24:47.303 CET
+%MSG-w Muon:  GlobalMuonProducer:displacedGlobalMuons 23-Mar-2022 23:25:02 CET  Run: 1 Event: 68665
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w RecoMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 23:25:02 CET Run: 1 Event: 68665
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 23:25:02 CET Run: 1 Event: 68665
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalTrajectoryBuilderBase:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 23:25:02 CET Run: 1 Event: 68665
+     Failed to load tracker track trajectory
+%MSG
+Begin processing the 1068th record. Run 1, Event 68671, LumiSection 687 on stream 0 at 23-Mar-2022 23:25:03.173 CET
+Begin processing the 1069th record. Run 1, Event 68679, LumiSection 687 on stream 0 at 23-Mar-2022 23:25:09.911 CET
+Begin processing the 1070th record. Run 1, Event 68680, LumiSection 687 on stream 0 at 23-Mar-2022 23:25:17.794 CET
+Begin processing the 1071st record. Run 1, Event 68682, LumiSection 687 on stream 0 at 23-Mar-2022 23:25:26.535 CET
+Begin processing the 1072nd record. Run 1, Event 68683, LumiSection 687 on stream 0 at 23-Mar-2022 23:25:33.886 CET
+Begin processing the 1073rd record. Run 1, Event 68685, LumiSection 687 on stream 0 at 23-Mar-2022 23:26:09.626 CET
+Begin processing the 1074th record. Run 1, Event 68686, LumiSection 687 on stream 0 at 23-Mar-2022 23:26:18.311 CET
+Begin processing the 1075th record. Run 1, Event 68693, LumiSection 687 on stream 0 at 23-Mar-2022 23:26:24.708 CET
+Begin processing the 1076th record. Run 1, Event 68699, LumiSection 687 on stream 0 at 23-Mar-2022 23:26:34.313 CET
+Begin processing the 1077th record. Run 1, Event 68700, LumiSection 687 on stream 0 at 23-Mar-2022 23:26:47.276 CET
+Begin processing the 1078th record. Run 1, Event 68707, LumiSection 688 on stream 0 at 23-Mar-2022 23:26:55.153 CET
+Begin processing the 1079th record. Run 1, Event 68708, LumiSection 688 on stream 0 at 23-Mar-2022 23:26:59.280 CET
+Begin processing the 1080th record. Run 1, Event 68709, LumiSection 688 on stream 0 at 23-Mar-2022 23:27:05.208 CET
+Begin processing the 1081st record. Run 1, Event 68711, LumiSection 688 on stream 0 at 23-Mar-2022 23:27:13.090 CET
+Begin processing the 1082nd record. Run 1, Event 68720, LumiSection 688 on stream 0 at 23-Mar-2022 23:27:20.635 CET
+Begin processing the 1083rd record. Run 1, Event 68735, LumiSection 688 on stream 0 at 23-Mar-2022 23:27:28.991 CET
+Begin processing the 1084th record. Run 1, Event 68736, LumiSection 688 on stream 0 at 23-Mar-2022 23:27:40.596 CET
+Begin processing the 1085th record. Run 1, Event 68737, LumiSection 688 on stream 0 at 23-Mar-2022 23:27:49.834 CET
+%MSG-w Muon:  GlobalMuonProducer:displacedGlobalMuons 23-Mar-2022 23:27:59 CET  Run: 1 Event: 68737
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w RecoMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 23:27:59 CET Run: 1 Event: 68737
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalMuon:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 23:27:59 CET Run: 1 Event: 68737
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalTrajectoryBuilderBase:  GlobalMuonProducer:displacedGlobalMuons  23-Mar-2022 23:27:59 CET Run: 1 Event: 68737
+     Failed to load tracker track trajectory
+%MSG
+Begin processing the 1086th record. Run 1, Event 68739, LumiSection 688 on stream 0 at 23-Mar-2022 23:28:00.226 CET
+Begin processing the 1087th record. Run 1, Event 68740, LumiSection 688 on stream 0 at 23-Mar-2022 23:28:08.289 CET
+Begin processing the 1088th record. Run 1, Event 68742, LumiSection 688 on stream 0 at 23-Mar-2022 23:28:30.120 CET
+Begin processing the 1089th record. Run 1, Event 68743, LumiSection 688 on stream 0 at 23-Mar-2022 23:28:42.758 CET
+Begin processing the 1090th record. Run 1, Event 68745, LumiSection 688 on stream 0 at 23-Mar-2022 23:28:49.614 CET
+Begin processing the 1091st record. Run 1, Event 68751, LumiSection 688 on stream 0 at 23-Mar-2022 23:29:11.976 CET
+Begin processing the 1092nd record. Run 1, Event 68752, LumiSection 688 on stream 0 at 23-Mar-2022 23:29:18.380 CET
+Begin processing the 1093rd record. Run 1, Event 68754, LumiSection 688 on stream 0 at 23-Mar-2022 23:29:35.030 CET
+Begin processing the 1094th record. Run 1, Event 68758, LumiSection 688 on stream 0 at 23-Mar-2022 23:29:43.282 CET
+Begin processing the 1095th record. Run 1, Event 68760, LumiSection 688 on stream 0 at 23-Mar-2022 23:29:58.081 CET
+Begin processing the 1096th record. Run 1, Event 68762, LumiSection 688 on stream 0 at 23-Mar-2022 23:30:21.654 CET
+Begin processing the 1097th record. Run 1, Event 68776, LumiSection 688 on stream 0 at 23-Mar-2022 23:30:36.601 CET
+Begin processing the 1098th record. Run 1, Event 68777, LumiSection 688 on stream 0 at 23-Mar-2022 23:30:41.896 CET
+Begin processing the 1099th record. Run 1, Event 68783, LumiSection 688 on stream 0 at 23-Mar-2022 23:30:51.542 CET
+Begin processing the 1100th record. Run 1, Event 68784, LumiSection 688 on stream 0 at 23-Mar-2022 23:30:58.157 CET
+Begin processing the 1101st record. Run 1, Event 68788, LumiSection 688 on stream 0 at 23-Mar-2022 23:31:15.735 CET
+Begin processing the 1102nd record. Run 1, Event 68795, LumiSection 688 on stream 0 at 23-Mar-2022 23:31:23.582 CET
+Begin processing the 1103rd record. Run 1, Event 68797, LumiSection 688 on stream 0 at 23-Mar-2022 23:31:27.395 CET
+Begin processing the 1104th record. Run 1, Event 68804, LumiSection 689 on stream 0 at 23-Mar-2022 23:31:38.883 CET
+Begin processing the 1105th record. Run 1, Event 68806, LumiSection 689 on stream 0 at 23-Mar-2022 23:32:00.772 CET
+Begin processing the 1106th record. Run 1, Event 68807, LumiSection 689 on stream 0 at 23-Mar-2022 23:32:05.341 CET
+Begin processing the 1107th record. Run 1, Event 68810, LumiSection 689 on stream 0 at 23-Mar-2022 23:32:08.395 CET
+Begin processing the 1108th record. Run 1, Event 68811, LumiSection 689 on stream 0 at 23-Mar-2022 23:32:22.993 CET
+Begin processing the 1109th record. Run 1, Event 68819, LumiSection 689 on stream 0 at 23-Mar-2022 23:32:29.276 CET
+Begin processing the 1110th record. Run 1, Event 68820, LumiSection 689 on stream 0 at 23-Mar-2022 23:32:36.855 CET
+Begin processing the 1111th record. Run 1, Event 68823, LumiSection 689 on stream 0 at 23-Mar-2022 23:32:51.584 CET
+Begin processing the 1112th record. Run 1, Event 68824, LumiSection 689 on stream 0 at 23-Mar-2022 23:33:01.182 CET
+Begin processing the 1113th record. Run 1, Event 68825, LumiSection 689 on stream 0 at 23-Mar-2022 23:33:15.884 CET
+Begin processing the 1114th record. Run 1, Event 68827, LumiSection 689 on stream 0 at 23-Mar-2022 23:33:21.406 CET
+Begin processing the 1115th record. Run 1, Event 68830, LumiSection 689 on stream 0 at 23-Mar-2022 23:33:31.211 CET
+Begin processing the 1116th record. Run 1, Event 68831, LumiSection 689 on stream 0 at 23-Mar-2022 23:33:40.753 CET
+Begin processing the 1117th record. Run 1, Event 68832, LumiSection 689 on stream 0 at 23-Mar-2022 23:33:44.482 CET
+Begin processing the 1118th record. Run 1, Event 68840, LumiSection 689 on stream 0 at 23-Mar-2022 23:33:53.868 CET
+Begin processing the 1119th record. Run 1, Event 68844, LumiSection 689 on stream 0 at 23-Mar-2022 23:34:09.286 CET
+Begin processing the 1120th record. Run 1, Event 68852, LumiSection 689 on stream 0 at 23-Mar-2022 23:34:13.898 CET
+Begin processing the 1121st record. Run 1, Event 68854, LumiSection 689 on stream 0 at 23-Mar-2022 23:34:35.369 CET
+Begin processing the 1122nd record. Run 1, Event 68861, LumiSection 689 on stream 0 at 23-Mar-2022 23:34:43.979 CET
+Begin processing the 1123rd record. Run 1, Event 68862, LumiSection 689 on stream 0 at 23-Mar-2022 23:34:48.197 CET
+Begin processing the 1124th record. Run 1, Event 68864, LumiSection 689 on stream 0 at 23-Mar-2022 23:34:55.960 CET
+Begin processing the 1125th record. Run 1, Event 68868, LumiSection 689 on stream 0 at 23-Mar-2022 23:35:07.671 CET
+Begin processing the 1126th record. Run 1, Event 68871, LumiSection 689 on stream 0 at 23-Mar-2022 23:35:17.083 CET
+Begin processing the 1127th record. Run 1, Event 68873, LumiSection 689 on stream 0 at 23-Mar-2022 23:35:23.778 CET
+Begin processing the 1128th record. Run 1, Event 68875, LumiSection 689 on stream 0 at 23-Mar-2022 23:35:30.971 CET
+Begin processing the 1129th record. Run 1, Event 68885, LumiSection 689 on stream 0 at 23-Mar-2022 23:35:39.631 CET
+Begin processing the 1130th record. Run 1, Event 68889, LumiSection 689 on stream 0 at 23-Mar-2022 23:35:57.361 CET
+Begin processing the 1131st record. Run 1, Event 68905, LumiSection 690 on stream 0 at 23-Mar-2022 23:36:01.785 CET
+Begin processing the 1132nd record. Run 1, Event 68907, LumiSection 690 on stream 0 at 23-Mar-2022 23:36:08.312 CET
+Begin processing the 1133rd record. Run 1, Event 68911, LumiSection 690 on stream 0 at 23-Mar-2022 23:36:23.619 CET
+Begin processing the 1134th record. Run 1, Event 68920, LumiSection 690 on stream 0 at 23-Mar-2022 23:36:33.208 CET
+Begin processing the 1135th record. Run 1, Event 68924, LumiSection 690 on stream 0 at 23-Mar-2022 23:36:41.263 CET
+Begin processing the 1136th record. Run 1, Event 68925, LumiSection 690 on stream 0 at 23-Mar-2022 23:36:53.375 CET
+Begin processing the 1137th record. Run 1, Event 68930, LumiSection 690 on stream 0 at 23-Mar-2022 23:37:07.570 CET
+Begin processing the 1138th record. Run 1, Event 68934, LumiSection 690 on stream 0 at 23-Mar-2022 23:37:18.718 CET
+Begin processing the 1139th record. Run 1, Event 68935, LumiSection 690 on stream 0 at 23-Mar-2022 23:37:21.532 CET
+Begin processing the 1140th record. Run 1, Event 68938, LumiSection 690 on stream 0 at 23-Mar-2022 23:37:30.156 CET
+Begin processing the 1141st record. Run 1, Event 68945, LumiSection 690 on stream 0 at 23-Mar-2022 23:37:40.646 CET
+Begin processing the 1142nd record. Run 1, Event 68953, LumiSection 690 on stream 0 at 23-Mar-2022 23:37:50.305 CET
+Begin processing the 1143rd record. Run 1, Event 68954, LumiSection 690 on stream 0 at 23-Mar-2022 23:38:00.461 CET
+Begin processing the 1144th record. Run 1, Event 68956, LumiSection 690 on stream 0 at 23-Mar-2022 23:38:13.643 CET
+Begin processing the 1145th record. Run 1, Event 68957, LumiSection 690 on stream 0 at 23-Mar-2022 23:38:20.223 CET
+Begin processing the 1146th record. Run 1, Event 68962, LumiSection 690 on stream 0 at 23-Mar-2022 23:38:26.021 CET
+Begin processing the 1147th record. Run 1, Event 68965, LumiSection 690 on stream 0 at 23-Mar-2022 23:38:38.144 CET
+Begin processing the 1148th record. Run 1, Event 68968, LumiSection 690 on stream 0 at 23-Mar-2022 23:38:50.840 CET
+Begin processing the 1149th record. Run 1, Event 68972, LumiSection 690 on stream 0 at 23-Mar-2022 23:38:59.120 CET
+Begin processing the 1150th record. Run 1, Event 68973, LumiSection 690 on stream 0 at 23-Mar-2022 23:39:20.544 CET
+Begin processing the 1151st record. Run 1, Event 68974, LumiSection 690 on stream 0 at 23-Mar-2022 23:39:29.264 CET
+Begin processing the 1152nd record. Run 1, Event 68985, LumiSection 690 on stream 0 at 23-Mar-2022 23:39:36.152 CET
+Begin processing the 1153rd record. Run 1, Event 68988, LumiSection 690 on stream 0 at 23-Mar-2022 23:39:42.611 CET
+Begin processing the 1154th record. Run 1, Event 68989, LumiSection 690 on stream 0 at 23-Mar-2022 23:39:48.226 CET
+Begin processing the 1155th record. Run 1, Event 68990, LumiSection 690 on stream 0 at 23-Mar-2022 23:40:00.367 CET
+Begin processing the 1156th record. Run 1, Event 68996, LumiSection 690 on stream 0 at 23-Mar-2022 23:40:21.734 CET
+Begin processing the 1157th record. Run 1, Event 68997, LumiSection 690 on stream 0 at 23-Mar-2022 23:40:30.236 CET
+Begin processing the 1158th record. Run 1, Event 68998, LumiSection 690 on stream 0 at 23-Mar-2022 23:40:35.277 CET
+Begin processing the 1159th record. Run 1, Event 69000, LumiSection 690 on stream 0 at 23-Mar-2022 23:40:39.800 CET
+Begin processing the 1160th record. Run 1, Event 69002, LumiSection 691 on stream 0 at 23-Mar-2022 23:40:53.049 CET
+Begin processing the 1161st record. Run 1, Event 69003, LumiSection 691 on stream 0 at 23-Mar-2022 23:41:07.529 CET
+Begin processing the 1162nd record. Run 1, Event 69008, LumiSection 691 on stream 0 at 23-Mar-2022 23:41:21.371 CET
+Begin processing the 1163rd record. Run 1, Event 69012, LumiSection 691 on stream 0 at 23-Mar-2022 23:41:29.929 CET
+Begin processing the 1164th record. Run 1, Event 69014, LumiSection 691 on stream 0 at 23-Mar-2022 23:41:38.362 CET
+Begin processing the 1165th record. Run 1, Event 69016, LumiSection 691 on stream 0 at 23-Mar-2022 23:41:52.136 CET
+Begin processing the 1166th record. Run 1, Event 69020, LumiSection 691 on stream 0 at 23-Mar-2022 23:41:56.365 CET
+Begin processing the 1167th record. Run 1, Event 69021, LumiSection 691 on stream 0 at 23-Mar-2022 23:42:04.329 CET
+Begin processing the 1168th record. Run 1, Event 69023, LumiSection 691 on stream 0 at 23-Mar-2022 23:42:10.827 CET
+Begin processing the 1169th record. Run 1, Event 69025, LumiSection 691 on stream 0 at 23-Mar-2022 23:42:26.795 CET
+Begin processing the 1170th record. Run 1, Event 69032, LumiSection 691 on stream 0 at 23-Mar-2022 23:42:32.477 CET
+Begin processing the 1171st record. Run 1, Event 69034, LumiSection 691 on stream 0 at 23-Mar-2022 23:42:37.244 CET
+Begin processing the 1172nd record. Run 1, Event 69035, LumiSection 691 on stream 0 at 23-Mar-2022 23:42:41.870 CET
+Begin processing the 1173rd record. Run 1, Event 69037, LumiSection 691 on stream 0 at 23-Mar-2022 23:42:54.469 CET
+Begin processing the 1174th record. Run 1, Event 69038, LumiSection 691 on stream 0 at 23-Mar-2022 23:43:06.547 CET
+Begin processing the 1175th record. Run 1, Event 69039, LumiSection 691 on stream 0 at 23-Mar-2022 23:43:14.023 CET
+Begin processing the 1176th record. Run 1, Event 69041, LumiSection 691 on stream 0 at 23-Mar-2022 23:43:20.591 CET
+Begin processing the 1177th record. Run 1, Event 69042, LumiSection 691 on stream 0 at 23-Mar-2022 23:43:28.507 CET
+Begin processing the 1178th record. Run 1, Event 69043, LumiSection 691 on stream 0 at 23-Mar-2022 23:43:43.192 CET
+Begin processing the 1179th record. Run 1, Event 69045, LumiSection 691 on stream 0 at 23-Mar-2022 23:43:51.913 CET
+Begin processing the 1180th record. Run 1, Event 69056, LumiSection 691 on stream 0 at 23-Mar-2022 23:44:06.218 CET
+Begin processing the 1181st record. Run 1, Event 69057, LumiSection 691 on stream 0 at 23-Mar-2022 23:44:15.559 CET
+Begin processing the 1182nd record. Run 1, Event 69064, LumiSection 691 on stream 0 at 23-Mar-2022 23:44:28.889 CET
+Begin processing the 1183rd record. Run 1, Event 69067, LumiSection 691 on stream 0 at 23-Mar-2022 23:44:34.494 CET
+Begin processing the 1184th record. Run 1, Event 69068, LumiSection 691 on stream 0 at 23-Mar-2022 23:44:45.884 CET
+Begin processing the 1185th record. Run 1, Event 69074, LumiSection 691 on stream 0 at 23-Mar-2022 23:44:54.234 CET
+Begin processing the 1186th record. Run 1, Event 69081, LumiSection 691 on stream 0 at 23-Mar-2022 23:45:00.135 CET
+Begin processing the 1187th record. Run 1, Event 69088, LumiSection 691 on stream 0 at 23-Mar-2022 23:45:09.599 CET
+Begin processing the 1188th record. Run 1, Event 69090, LumiSection 691 on stream 0 at 23-Mar-2022 23:45:17.626 CET
+Begin processing the 1189th record. Run 1, Event 69092, LumiSection 691 on stream 0 at 23-Mar-2022 23:45:28.080 CET
+Begin processing the 1190th record. Run 1, Event 69093, LumiSection 691 on stream 0 at 23-Mar-2022 23:45:38.683 CET
+Begin processing the 1191st record. Run 1, Event 69094, LumiSection 691 on stream 0 at 23-Mar-2022 23:45:49.594 CET
+Begin processing the 1192nd record. Run 1, Event 69097, LumiSection 691 on stream 0 at 23-Mar-2022 23:45:58.346 CET
+Begin processing the 1193rd record. Run 1, Event 69100, LumiSection 691 on stream 0 at 23-Mar-2022 23:46:13.245 CET
+Begin processing the 1194th record. Run 1, Event 69101, LumiSection 692 on stream 0 at 23-Mar-2022 23:46:28.240 CET
+Begin processing the 1195th record. Run 1, Event 69103, LumiSection 692 on stream 0 at 23-Mar-2022 23:46:41.593 CET
+Begin processing the 1196th record. Run 1, Event 69111, LumiSection 692 on stream 0 at 23-Mar-2022 23:46:56.548 CET
+Begin processing the 1197th record. Run 1, Event 69116, LumiSection 692 on stream 0 at 23-Mar-2022 23:47:03.514 CET
+Begin processing the 1198th record. Run 1, Event 69117, LumiSection 692 on stream 0 at 23-Mar-2022 23:47:11.654 CET
+Begin processing the 1199th record. Run 1, Event 69120, LumiSection 692 on stream 0 at 23-Mar-2022 23:47:14.774 CET
+Begin processing the 1200th record. Run 1, Event 69126, LumiSection 692 on stream 0 at 23-Mar-2022 23:47:22.855 CET
+Begin processing the 1201st record. Run 1, Event 69127, LumiSection 692 on stream 0 at 23-Mar-2022 23:47:44.751 CET
+Begin processing the 1202nd record. Run 1, Event 69130, LumiSection 692 on stream 0 at 23-Mar-2022 23:47:56.233 CET
+Begin processing the 1203rd record. Run 1, Event 69132, LumiSection 692 on stream 0 at 23-Mar-2022 23:48:01.313 CET
+Begin processing the 1204th record. Run 1, Event 69139, LumiSection 692 on stream 0 at 23-Mar-2022 23:48:07.312 CET
+Begin processing the 1205th record. Run 1, Event 69141, LumiSection 692 on stream 0 at 23-Mar-2022 23:48:16.252 CET
+Begin processing the 1206th record. Run 1, Event 69144, LumiSection 692 on stream 0 at 23-Mar-2022 23:48:26.839 CET
+Begin processing the 1207th record. Run 1, Event 69145, LumiSection 692 on stream 0 at 23-Mar-2022 23:48:41.412 CET
+Begin processing the 1208th record. Run 1, Event 69148, LumiSection 692 on stream 0 at 23-Mar-2022 23:48:55.196 CET
+Begin processing the 1209th record. Run 1, Event 69150, LumiSection 692 on stream 0 at 23-Mar-2022 23:49:00.022 CET
+Begin processing the 1210th record. Run 1, Event 69151, LumiSection 692 on stream 0 at 23-Mar-2022 23:49:07.206 CET
+Begin processing the 1211th record. Run 1, Event 69152, LumiSection 692 on stream 0 at 23-Mar-2022 23:49:17.300 CET
+Begin processing the 1212th record. Run 1, Event 69153, LumiSection 692 on stream 0 at 23-Mar-2022 23:49:24.583 CET
+Begin processing the 1213th record. Run 1, Event 69156, LumiSection 692 on stream 0 at 23-Mar-2022 23:49:34.168 CET
+Begin processing the 1214th record. Run 1, Event 69158, LumiSection 692 on stream 0 at 23-Mar-2022 23:49:40.852 CET
+Begin processing the 1215th record. Run 1, Event 69160, LumiSection 692 on stream 0 at 23-Mar-2022 23:49:53.305 CET
+Begin processing the 1216th record. Run 1, Event 69163, LumiSection 692 on stream 0 at 23-Mar-2022 23:49:57.099 CET
+%MSG-e TrajectoryNotPosDef:  TrackProducer:pixelPairStepTracks  23-Mar-2022 23:50:03 CET Run: 1 Event: 69163
+Trajectory covariance is not positive-definite
+%MSG
+Begin processing the 1217th record. Run 1, Event 69166, LumiSection 692 on stream 0 at 23-Mar-2022 23:50:10.482 CET
+Begin processing the 1218th record. Run 1, Event 69167, LumiSection 692 on stream 0 at 23-Mar-2022 23:50:19.521 CET
+Begin processing the 1219th record. Run 1, Event 69168, LumiSection 692 on stream 0 at 23-Mar-2022 23:50:37.748 CET
+Begin processing the 1220th record. Run 1, Event 69170, LumiSection 692 on stream 0 at 23-Mar-2022 23:50:42.021 CET
+Begin processing the 1221st record. Run 1, Event 69174, LumiSection 692 on stream 0 at 23-Mar-2022 23:50:51.874 CET
+Begin processing the 1222nd record. Run 1, Event 69176, LumiSection 692 on stream 0 at 23-Mar-2022 23:51:10.169 CET
+Begin processing the 1223rd record. Run 1, Event 69179, LumiSection 692 on stream 0 at 23-Mar-2022 23:51:15.854 CET
+Begin processing the 1224th record. Run 1, Event 69181, LumiSection 692 on stream 0 at 23-Mar-2022 23:51:23.087 CET
+Begin processing the 1225th record. Run 1, Event 69182, LumiSection 692 on stream 0 at 23-Mar-2022 23:51:29.753 CET
+Begin processing the 1226th record. Run 1, Event 69187, LumiSection 692 on stream 0 at 23-Mar-2022 23:51:58.359 CET
+Begin processing the 1227th record. Run 1, Event 69192, LumiSection 692 on stream 0 at 23-Mar-2022 23:52:09.688 CET
+Begin processing the 1228th record. Run 1, Event 69193, LumiSection 692 on stream 0 at 23-Mar-2022 23:52:14.251 CET
+Begin processing the 1229th record. Run 1, Event 69194, LumiSection 692 on stream 0 at 23-Mar-2022 23:52:27.170 CET
+Begin processing the 1230th record. Run 1, Event 69196, LumiSection 692 on stream 0 at 23-Mar-2022 23:52:31.641 CET
+Begin processing the 1231st record. Run 1, Event 69198, LumiSection 692 on stream 0 at 23-Mar-2022 23:52:48.976 CET
+Begin processing the 1232nd record. Run 1, Event 69199, LumiSection 692 on stream 0 at 23-Mar-2022 23:52:58.566 CET
+Begin processing the 1233rd record. Run 1, Event 69203, LumiSection 693 on stream 0 at 23-Mar-2022 23:53:15.387 CET
+Begin processing the 1234th record. Run 1, Event 69206, LumiSection 693 on stream 0 at 23-Mar-2022 23:53:22.144 CET
+Begin processing the 1235th record. Run 1, Event 69208, LumiSection 693 on stream 0 at 23-Mar-2022 23:53:24.354 CET
+Begin processing the 1236th record. Run 1, Event 69212, LumiSection 693 on stream 0 at 23-Mar-2022 23:53:29.869 CET
+Begin processing the 1237th record. Run 1, Event 69214, LumiSection 693 on stream 0 at 23-Mar-2022 23:53:38.280 CET
+Begin processing the 1238th record. Run 1, Event 69218, LumiSection 693 on stream 0 at 23-Mar-2022 23:53:55.023 CET
+Begin processing the 1239th record. Run 1, Event 69222, LumiSection 693 on stream 0 at 23-Mar-2022 23:54:02.778 CET
+Begin processing the 1240th record. Run 1, Event 69229, LumiSection 693 on stream 0 at 23-Mar-2022 23:54:11.520 CET
+Begin processing the 1241st record. Run 1, Event 69230, LumiSection 693 on stream 0 at 23-Mar-2022 23:54:21.465 CET
+Begin processing the 1242nd record. Run 1, Event 69235, LumiSection 693 on stream 0 at 23-Mar-2022 23:54:25.977 CET
+Begin processing the 1243rd record. Run 1, Event 69245, LumiSection 693 on stream 0 at 23-Mar-2022 23:54:33.863 CET
+Begin processing the 1244th record. Run 1, Event 69258, LumiSection 693 on stream 0 at 23-Mar-2022 23:54:43.838 CET
+Begin processing the 1245th record. Run 1, Event 69260, LumiSection 693 on stream 0 at 23-Mar-2022 23:54:57.663 CET
+Begin processing the 1246th record. Run 1, Event 69265, LumiSection 693 on stream 0 at 23-Mar-2022 23:55:14.308 CET
+Begin processing the 1247th record. Run 1, Event 69268, LumiSection 693 on stream 0 at 23-Mar-2022 23:55:22.691 CET
+Begin processing the 1248th record. Run 1, Event 69269, LumiSection 693 on stream 0 at 23-Mar-2022 23:55:35.147 CET
+Begin processing the 1249th record. Run 1, Event 69272, LumiSection 693 on stream 0 at 23-Mar-2022 23:55:52.991 CET
+Begin processing the 1250th record. Run 1, Event 69273, LumiSection 693 on stream 0 at 23-Mar-2022 23:55:59.249 CET
+Begin processing the 1251st record. Run 1, Event 69274, LumiSection 693 on stream 0 at 23-Mar-2022 23:56:14.904 CET
+Begin processing the 1252nd record. Run 1, Event 69279, LumiSection 693 on stream 0 at 23-Mar-2022 23:56:23.778 CET
+Begin processing the 1253rd record. Run 1, Event 69281, LumiSection 693 on stream 0 at 23-Mar-2022 23:56:38.068 CET
+Begin processing the 1254th record. Run 1, Event 69285, LumiSection 693 on stream 0 at 23-Mar-2022 23:56:46.971 CET
+Begin processing the 1255th record. Run 1, Event 69290, LumiSection 693 on stream 0 at 23-Mar-2022 23:56:54.135 CET
+Begin processing the 1256th record. Run 1, Event 69298, LumiSection 693 on stream 0 at 23-Mar-2022 23:57:01.409 CET
+Begin processing the 1257th record. Run 1, Event 69302, LumiSection 694 on stream 0 at 23-Mar-2022 23:57:10.081 CET
+Begin processing the 1258th record. Run 1, Event 69308, LumiSection 694 on stream 0 at 23-Mar-2022 23:57:20.213 CET
+Begin processing the 1259th record. Run 1, Event 69320, LumiSection 694 on stream 0 at 23-Mar-2022 23:57:36.054 CET
+Begin processing the 1260th record. Run 1, Event 69322, LumiSection 694 on stream 0 at 23-Mar-2022 23:57:47.510 CET
+Begin processing the 1261st record. Run 1, Event 69325, LumiSection 694 on stream 0 at 23-Mar-2022 23:57:52.237 CET
+Begin processing the 1262nd record. Run 1, Event 69326, LumiSection 694 on stream 0 at 23-Mar-2022 23:58:00.502 CET
+Begin processing the 1263rd record. Run 1, Event 69338, LumiSection 694 on stream 0 at 23-Mar-2022 23:58:13.272 CET
+Begin processing the 1264th record. Run 1, Event 69341, LumiSection 694 on stream 0 at 23-Mar-2022 23:58:46.736 CET
+Begin processing the 1265th record. Run 1, Event 69345, LumiSection 694 on stream 0 at 23-Mar-2022 23:58:56.337 CET
+Begin processing the 1266th record. Run 1, Event 69347, LumiSection 694 on stream 0 at 23-Mar-2022 23:59:05.925 CET
+Begin processing the 1267th record. Run 1, Event 69352, LumiSection 694 on stream 0 at 23-Mar-2022 23:59:14.741 CET
+Begin processing the 1268th record. Run 1, Event 69353, LumiSection 694 on stream 0 at 23-Mar-2022 23:59:25.083 CET
+Begin processing the 1269th record. Run 1, Event 69358, LumiSection 694 on stream 0 at 23-Mar-2022 23:59:37.196 CET
+Begin processing the 1270th record. Run 1, Event 69360, LumiSection 694 on stream 0 at 23-Mar-2022 23:59:46.768 CET
+Begin processing the 1271st record. Run 1, Event 69364, LumiSection 694 on stream 0 at 23-Mar-2022 23:59:58.519 CET
+Begin processing the 1272nd record. Run 1, Event 69369, LumiSection 694 on stream 0 at 24-Mar-2022 00:00:06.961 CET
+Begin processing the 1273rd record. Run 1, Event 69378, LumiSection 694 on stream 0 at 24-Mar-2022 00:00:13.387 CET
+Begin processing the 1274th record. Run 1, Event 69380, LumiSection 694 on stream 0 at 24-Mar-2022 00:00:27.278 CET
+Begin processing the 1275th record. Run 1, Event 69381, LumiSection 694 on stream 0 at 24-Mar-2022 00:00:36.355 CET
+Begin processing the 1276th record. Run 1, Event 69385, LumiSection 694 on stream 0 at 24-Mar-2022 00:00:42.696 CET
+Begin processing the 1277th record. Run 1, Event 69387, LumiSection 694 on stream 0 at 24-Mar-2022 00:01:03.477 CET
+Begin processing the 1278th record. Run 1, Event 69391, LumiSection 694 on stream 0 at 24-Mar-2022 00:01:10.168 CET
+Begin processing the 1279th record. Run 1, Event 69392, LumiSection 694 on stream 0 at 24-Mar-2022 00:01:23.219 CET
+Begin processing the 1280th record. Run 1, Event 69398, LumiSection 694 on stream 0 at 24-Mar-2022 00:01:30.646 CET
+Begin processing the 1281st record. Run 1, Event 69403, LumiSection 695 on stream 0 at 24-Mar-2022 00:01:41.215 CET
+Begin processing the 1282nd record. Run 1, Event 69410, LumiSection 695 on stream 0 at 24-Mar-2022 00:01:52.400 CET
+Begin processing the 1283rd record. Run 1, Event 69411, LumiSection 695 on stream 0 at 24-Mar-2022 00:01:58.795 CET
+Begin processing the 1284th record. Run 1, Event 69414, LumiSection 695 on stream 0 at 24-Mar-2022 00:02:07.622 CET
+Begin processing the 1285th record. Run 1, Event 69416, LumiSection 695 on stream 0 at 24-Mar-2022 00:02:13.437 CET
+Begin processing the 1286th record. Run 1, Event 69424, LumiSection 695 on stream 0 at 24-Mar-2022 00:02:25.699 CET
+Begin processing the 1287th record. Run 1, Event 69426, LumiSection 695 on stream 0 at 24-Mar-2022 00:02:31.437 CET
+Begin processing the 1288th record. Run 1, Event 69427, LumiSection 695 on stream 0 at 24-Mar-2022 00:02:42.544 CET
+Begin processing the 1289th record. Run 1, Event 69428, LumiSection 695 on stream 0 at 24-Mar-2022 00:02:51.206 CET
+Begin processing the 1290th record. Run 1, Event 69431, LumiSection 695 on stream 0 at 24-Mar-2022 00:02:59.442 CET
+Begin processing the 1291st record. Run 1, Event 69436, LumiSection 695 on stream 0 at 24-Mar-2022 00:03:11.158 CET
+Begin processing the 1292nd record. Run 1, Event 69445, LumiSection 695 on stream 0 at 24-Mar-2022 00:03:17.607 CET
+Begin processing the 1293rd record. Run 1, Event 69446, LumiSection 695 on stream 0 at 24-Mar-2022 00:03:28.640 CET
+Begin processing the 1294th record. Run 1, Event 69455, LumiSection 695 on stream 0 at 24-Mar-2022 00:03:36.566 CET
+Begin processing the 1295th record. Run 1, Event 69457, LumiSection 695 on stream 0 at 24-Mar-2022 00:04:03.101 CET
+Begin processing the 1296th record. Run 1, Event 69462, LumiSection 695 on stream 0 at 24-Mar-2022 00:04:07.403 CET
+Begin processing the 1297th record. Run 1, Event 69463, LumiSection 695 on stream 0 at 24-Mar-2022 00:04:16.557 CET
+Begin processing the 1298th record. Run 1, Event 69467, LumiSection 695 on stream 0 at 24-Mar-2022 00:04:30.361 CET
+Begin processing the 1299th record. Run 1, Event 69471, LumiSection 695 on stream 0 at 24-Mar-2022 00:04:41.241 CET
+Begin processing the 1300th record. Run 1, Event 69474, LumiSection 695 on stream 0 at 24-Mar-2022 00:04:46.148 CET
+Begin processing the 1301st record. Run 1, Event 69475, LumiSection 695 on stream 0 at 24-Mar-2022 00:04:50.845 CET
+Begin processing the 1302nd record. Run 1, Event 69483, LumiSection 695 on stream 0 at 24-Mar-2022 00:04:58.088 CET
+Begin processing the 1303rd record. Run 1, Event 69493, LumiSection 695 on stream 0 at 24-Mar-2022 00:05:02.983 CET
+Begin processing the 1304th record. Run 1, Event 69494, LumiSection 695 on stream 0 at 24-Mar-2022 00:05:14.933 CET
+Begin processing the 1305th record. Run 1, Event 69497, LumiSection 695 on stream 0 at 24-Mar-2022 00:05:21.255 CET
+Begin processing the 1306th record. Run 1, Event 69501, LumiSection 696 on stream 0 at 24-Mar-2022 00:05:34.713 CET
+Begin processing the 1307th record. Run 1, Event 69502, LumiSection 696 on stream 0 at 24-Mar-2022 00:05:42.901 CET
+Begin processing the 1308th record. Run 1, Event 69504, LumiSection 696 on stream 0 at 24-Mar-2022 00:05:54.178 CET
+Begin processing the 1309th record. Run 1, Event 69511, LumiSection 696 on stream 0 at 24-Mar-2022 00:06:06.187 CET
+Begin processing the 1310th record. Run 1, Event 69513, LumiSection 696 on stream 0 at 24-Mar-2022 00:06:17.909 CET
+Begin processing the 1311th record. Run 1, Event 69517, LumiSection 696 on stream 0 at 24-Mar-2022 00:06:23.164 CET
+Begin processing the 1312th record. Run 1, Event 69522, LumiSection 696 on stream 0 at 24-Mar-2022 00:06:25.521 CET
+Begin processing the 1313th record. Run 1, Event 69526, LumiSection 696 on stream 0 at 24-Mar-2022 00:06:31.489 CET
+Begin processing the 1314th record. Run 1, Event 69527, LumiSection 696 on stream 0 at 24-Mar-2022 00:06:38.703 CET
+Begin processing the 1315th record. Run 1, Event 69531, LumiSection 696 on stream 0 at 24-Mar-2022 00:06:53.048 CET
+Begin processing the 1316th record. Run 1, Event 69536, LumiSection 696 on stream 0 at 24-Mar-2022 00:07:14.205 CET
+Begin processing the 1317th record. Run 1, Event 69537, LumiSection 696 on stream 0 at 24-Mar-2022 00:07:22.207 CET
+Begin processing the 1318th record. Run 1, Event 69538, LumiSection 696 on stream 0 at 24-Mar-2022 00:07:41.169 CET
+Begin processing the 1319th record. Run 1, Event 69543, LumiSection 696 on stream 0 at 24-Mar-2022 00:07:48.075 CET
+Begin processing the 1320th record. Run 1, Event 69544, LumiSection 696 on stream 0 at 24-Mar-2022 00:07:54.598 CET
+Begin processing the 1321st record. Run 1, Event 69553, LumiSection 696 on stream 0 at 24-Mar-2022 00:08:03.027 CET
+Begin processing the 1322nd record. Run 1, Event 69554, LumiSection 696 on stream 0 at 24-Mar-2022 00:08:21.030 CET
+Begin processing the 1323rd record. Run 1, Event 69555, LumiSection 696 on stream 0 at 24-Mar-2022 00:08:36.239 CET
+Begin processing the 1324th record. Run 1, Event 69556, LumiSection 696 on stream 0 at 24-Mar-2022 00:08:50.349 CET
+Begin processing the 1325th record. Run 1, Event 69563, LumiSection 696 on stream 0 at 24-Mar-2022 00:08:53.446 CET
+Begin processing the 1326th record. Run 1, Event 69564, LumiSection 696 on stream 0 at 24-Mar-2022 00:08:57.814 CET
+Begin processing the 1327th record. Run 1, Event 69565, LumiSection 696 on stream 0 at 24-Mar-2022 00:09:03.257 CET
+Begin processing the 1328th record. Run 1, Event 69566, LumiSection 696 on stream 0 at 24-Mar-2022 00:09:12.613 CET
+Begin processing the 1329th record. Run 1, Event 69569, LumiSection 696 on stream 0 at 24-Mar-2022 00:09:20.248 CET
+Begin processing the 1330th record. Run 1, Event 69570, LumiSection 696 on stream 0 at 24-Mar-2022 00:09:26.564 CET
+Begin processing the 1331st record. Run 1, Event 69571, LumiSection 696 on stream 0 at 24-Mar-2022 00:09:34.176 CET
+Begin processing the 1332nd record. Run 1, Event 69572, LumiSection 696 on stream 0 at 24-Mar-2022 00:09:39.360 CET
+Begin processing the 1333rd record. Run 1, Event 69573, LumiSection 696 on stream 0 at 24-Mar-2022 00:09:51.513 CET
+Begin processing the 1334th record. Run 1, Event 69575, LumiSection 696 on stream 0 at 24-Mar-2022 00:09:58.748 CET
+Begin processing the 1335th record. Run 1, Event 69578, LumiSection 696 on stream 0 at 24-Mar-2022 00:10:16.321 CET
+Begin processing the 1336th record. Run 1, Event 69581, LumiSection 696 on stream 0 at 24-Mar-2022 00:10:21.035 CET
+Begin processing the 1337th record. Run 1, Event 69587, LumiSection 696 on stream 0 at 24-Mar-2022 00:10:28.028 CET
+Begin processing the 1338th record. Run 1, Event 69591, LumiSection 696 on stream 0 at 24-Mar-2022 00:10:47.129 CET
+Begin processing the 1339th record. Run 1, Event 69598, LumiSection 696 on stream 0 at 24-Mar-2022 00:10:53.549 CET
+Begin processing the 1340th record. Run 1, Event 69602, LumiSection 697 on stream 0 at 24-Mar-2022 00:11:02.403 CET
+Begin processing the 1341st record. Run 1, Event 69606, LumiSection 697 on stream 0 at 24-Mar-2022 00:11:07.907 CET
+%MSG-w OutOfBounds:  TrackProducer:lowPtTripletStepTracks  24-Mar-2022 00:11:12 CET Run: 1 Event: 69606
+Prob Q outside the bounds of the quality word. Defaulting to Prob=0. Prob = 1 QualityWord = 87
+%MSG
+Begin processing the 1342nd record. Run 1, Event 69607, LumiSection 697 on stream 0 at 24-Mar-2022 00:11:20.111 CET
+Begin processing the 1343rd record. Run 1, Event 69609, LumiSection 697 on stream 0 at 24-Mar-2022 00:11:29.699 CET
+Begin processing the 1344th record. Run 1, Event 69611, LumiSection 697 on stream 0 at 24-Mar-2022 00:11:38.492 CET
+Begin processing the 1345th record. Run 1, Event 69615, LumiSection 697 on stream 0 at 24-Mar-2022 00:11:46.025 CET
+Begin processing the 1346th record. Run 1, Event 69618, LumiSection 697 on stream 0 at 24-Mar-2022 00:11:55.493 CET
+Begin processing the 1347th record. Run 1, Event 69619, LumiSection 697 on stream 0 at 24-Mar-2022 00:12:04.616 CET
+Begin processing the 1348th record. Run 1, Event 69628, LumiSection 697 on stream 0 at 24-Mar-2022 00:12:10.756 CET
+Begin processing the 1349th record. Run 1, Event 69629, LumiSection 697 on stream 0 at 24-Mar-2022 00:12:17.673 CET
+Begin processing the 1350th record. Run 1, Event 69630, LumiSection 697 on stream 0 at 24-Mar-2022 00:12:21.693 CET
+Begin processing the 1351st record. Run 1, Event 69631, LumiSection 697 on stream 0 at 24-Mar-2022 00:12:25.956 CET
+Begin processing the 1352nd record. Run 1, Event 69632, LumiSection 697 on stream 0 at 24-Mar-2022 00:12:43.141 CET
+Begin processing the 1353rd record. Run 1, Event 69638, LumiSection 697 on stream 0 at 24-Mar-2022 00:12:55.831 CET
+Begin processing the 1354th record. Run 1, Event 69640, LumiSection 697 on stream 0 at 24-Mar-2022 00:13:04.993 CET
+%MSG-w Muon:  GlobalMuonProducer:displacedGlobalMuons 24-Mar-2022 00:13:16 CET  Run: 1 Event: 69640
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w RecoMuon:  GlobalMuonProducer:displacedGlobalMuons  24-Mar-2022 00:13:16 CET Run: 1 Event: 69640
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalMuon:  GlobalMuonProducer:displacedGlobalMuons  24-Mar-2022 00:13:16 CET Run: 1 Event: 69640
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalTrajectoryBuilderBase:  GlobalMuonProducer:displacedGlobalMuons  24-Mar-2022 00:13:16 CET Run: 1 Event: 69640
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w Muon:  GlobalMuonProducer:displacedGlobalMuons 24-Mar-2022 00:13:16 CET  Run: 1 Event: 69640
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w RecoMuon:  GlobalMuonProducer:displacedGlobalMuons  24-Mar-2022 00:13:16 CET Run: 1 Event: 69640
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalMuon:  GlobalMuonProducer:displacedGlobalMuons  24-Mar-2022 00:13:16 CET Run: 1 Event: 69640
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalTrajectoryBuilderBase:  GlobalMuonProducer:displacedGlobalMuons  24-Mar-2022 00:13:16 CET Run: 1 Event: 69640
+     Failed to load tracker track trajectory
+%MSG
+Begin processing the 1355th record. Run 1, Event 69644, LumiSection 697 on stream 0 at 24-Mar-2022 00:13:17.447 CET
+Begin processing the 1356th record. Run 1, Event 69645, LumiSection 697 on stream 0 at 24-Mar-2022 00:13:34.905 CET
+Begin processing the 1357th record. Run 1, Event 69646, LumiSection 697 on stream 0 at 24-Mar-2022 00:13:46.177 CET
+Begin processing the 1358th record. Run 1, Event 69648, LumiSection 697 on stream 0 at 24-Mar-2022 00:13:59.505 CET
+Begin processing the 1359th record. Run 1, Event 69651, LumiSection 697 on stream 0 at 24-Mar-2022 00:14:08.105 CET
+Begin processing the 1360th record. Run 1, Event 69653, LumiSection 697 on stream 0 at 24-Mar-2022 00:14:23.383 CET
+Begin processing the 1361st record. Run 1, Event 69655, LumiSection 697 on stream 0 at 24-Mar-2022 00:14:29.011 CET
+Begin processing the 1362nd record. Run 1, Event 69665, LumiSection 697 on stream 0 at 24-Mar-2022 00:14:37.034 CET
+Begin processing the 1363rd record. Run 1, Event 69671, LumiSection 697 on stream 0 at 24-Mar-2022 00:14:48.109 CET
+Begin processing the 1364th record. Run 1, Event 69673, LumiSection 697 on stream 0 at 24-Mar-2022 00:15:04.358 CET
+Begin processing the 1365th record. Run 1, Event 69681, LumiSection 697 on stream 0 at 24-Mar-2022 00:15:10.719 CET
+Begin processing the 1366th record. Run 1, Event 69686, LumiSection 697 on stream 0 at 24-Mar-2022 00:15:25.282 CET
+Begin processing the 1367th record. Run 1, Event 69687, LumiSection 697 on stream 0 at 24-Mar-2022 00:15:31.547 CET
+Begin processing the 1368th record. Run 1, Event 69692, LumiSection 697 on stream 0 at 24-Mar-2022 00:15:43.977 CET
+Begin processing the 1369th record. Run 1, Event 69697, LumiSection 697 on stream 0 at 24-Mar-2022 00:15:49.064 CET
+Begin processing the 1370th record. Run 1, Event 69698, LumiSection 697 on stream 0 at 24-Mar-2022 00:15:55.467 CET
+Begin processing the 1371st record. Run 1, Event 69704, LumiSection 698 on stream 0 at 24-Mar-2022 00:16:11.514 CET
+Begin processing the 1372nd record. Run 1, Event 69711, LumiSection 698 on stream 0 at 24-Mar-2022 00:16:21.507 CET
+Begin processing the 1373rd record. Run 1, Event 69712, LumiSection 698 on stream 0 at 24-Mar-2022 00:16:32.180 CET
+Begin processing the 1374th record. Run 1, Event 69722, LumiSection 698 on stream 0 at 24-Mar-2022 00:16:38.388 CET
+Begin processing the 1375th record. Run 1, Event 69735, LumiSection 698 on stream 0 at 24-Mar-2022 00:16:41.876 CET
+Begin processing the 1376th record. Run 1, Event 69751, LumiSection 698 on stream 0 at 24-Mar-2022 00:16:54.163 CET
+Begin processing the 1377th record. Run 1, Event 69752, LumiSection 698 on stream 0 at 24-Mar-2022 00:17:05.095 CET
+Begin processing the 1378th record. Run 1, Event 69765, LumiSection 698 on stream 0 at 24-Mar-2022 00:17:14.341 CET
+Begin processing the 1379th record. Run 1, Event 69767, LumiSection 698 on stream 0 at 24-Mar-2022 00:17:23.900 CET
+Begin processing the 1380th record. Run 1, Event 69769, LumiSection 698 on stream 0 at 24-Mar-2022 00:17:39.200 CET
+Begin processing the 1381st record. Run 1, Event 69773, LumiSection 698 on stream 0 at 24-Mar-2022 00:17:46.685 CET
+Begin processing the 1382nd record. Run 1, Event 69774, LumiSection 698 on stream 0 at 24-Mar-2022 00:18:02.685 CET
+Begin processing the 1383rd record. Run 1, Event 69782, LumiSection 698 on stream 0 at 24-Mar-2022 00:18:13.543 CET
+Begin processing the 1384th record. Run 1, Event 69785, LumiSection 698 on stream 0 at 24-Mar-2022 00:18:20.077 CET
+Begin processing the 1385th record. Run 1, Event 69786, LumiSection 698 on stream 0 at 24-Mar-2022 00:18:30.955 CET
+Begin processing the 1386th record. Run 1, Event 69790, LumiSection 698 on stream 0 at 24-Mar-2022 00:18:37.729 CET
+Begin processing the 1387th record. Run 1, Event 69800, LumiSection 698 on stream 0 at 24-Mar-2022 00:18:43.970 CET
+Begin processing the 1388th record. Run 1, Event 69802, LumiSection 699 on stream 0 at 24-Mar-2022 00:18:53.970 CET
+Begin processing the 1389th record. Run 1, Event 69803, LumiSection 699 on stream 0 at 24-Mar-2022 00:19:02.962 CET
+Begin processing the 1390th record. Run 1, Event 69806, LumiSection 699 on stream 0 at 24-Mar-2022 00:19:19.474 CET
+Begin processing the 1391st record. Run 1, Event 69817, LumiSection 699 on stream 0 at 24-Mar-2022 00:19:25.888 CET
+Begin processing the 1392nd record. Run 1, Event 69818, LumiSection 699 on stream 0 at 24-Mar-2022 00:19:39.687 CET
+Begin processing the 1393rd record. Run 1, Event 69819, LumiSection 699 on stream 0 at 24-Mar-2022 00:19:45.362 CET
+Begin processing the 1394th record. Run 1, Event 69827, LumiSection 699 on stream 0 at 24-Mar-2022 00:20:00.059 CET
+%MSG-w Muon:  GlobalMuonProducer:displacedGlobalMuons 24-Mar-2022 00:20:04 CET  Run: 1 Event: 69827
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w RecoMuon:  GlobalMuonProducer:displacedGlobalMuons  24-Mar-2022 00:20:04 CET Run: 1 Event: 69827
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalMuon:  GlobalMuonProducer:displacedGlobalMuons  24-Mar-2022 00:20:04 CET Run: 1 Event: 69827
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalTrajectoryBuilderBase:  GlobalMuonProducer:displacedGlobalMuons  24-Mar-2022 00:20:04 CET Run: 1 Event: 69827
+     Failed to load tracker track trajectory
+%MSG
+Begin processing the 1395th record. Run 1, Event 69832, LumiSection 699 on stream 0 at 24-Mar-2022 00:20:05.287 CET
+Begin processing the 1396th record. Run 1, Event 69834, LumiSection 699 on stream 0 at 24-Mar-2022 00:20:10.329 CET
+Begin processing the 1397th record. Run 1, Event 69835, LumiSection 699 on stream 0 at 24-Mar-2022 00:20:22.429 CET
+Begin processing the 1398th record. Run 1, Event 69837, LumiSection 699 on stream 0 at 24-Mar-2022 00:20:26.452 CET
+Begin processing the 1399th record. Run 1, Event 69838, LumiSection 699 on stream 0 at 24-Mar-2022 00:20:40.843 CET
+Begin processing the 1400th record. Run 1, Event 69841, LumiSection 699 on stream 0 at 24-Mar-2022 00:21:00.069 CET
+Begin processing the 1401st record. Run 1, Event 69846, LumiSection 699 on stream 0 at 24-Mar-2022 00:21:19.701 CET
+Begin processing the 1402nd record. Run 1, Event 69849, LumiSection 699 on stream 0 at 24-Mar-2022 00:21:25.045 CET
+Begin processing the 1403rd record. Run 1, Event 69851, LumiSection 699 on stream 0 at 24-Mar-2022 00:21:29.224 CET
+Begin processing the 1404th record. Run 1, Event 69852, LumiSection 699 on stream 0 at 24-Mar-2022 00:21:39.920 CET
+Begin processing the 1405th record. Run 1, Event 69854, LumiSection 699 on stream 0 at 24-Mar-2022 00:21:50.308 CET
+Begin processing the 1406th record. Run 1, Event 69861, LumiSection 699 on stream 0 at 24-Mar-2022 00:21:55.997 CET
+Begin processing the 1407th record. Run 1, Event 69869, LumiSection 699 on stream 0 at 24-Mar-2022 00:22:08.360 CET
+Begin processing the 1408th record. Run 1, Event 69871, LumiSection 699 on stream 0 at 24-Mar-2022 00:22:13.806 CET
+Begin processing the 1409th record. Run 1, Event 69873, LumiSection 699 on stream 0 at 24-Mar-2022 00:22:22.465 CET
+Begin processing the 1410th record. Run 1, Event 69875, LumiSection 699 on stream 0 at 24-Mar-2022 00:22:28.205 CET
+Begin processing the 1411th record. Run 1, Event 69882, LumiSection 699 on stream 0 at 24-Mar-2022 00:22:31.316 CET
+Begin processing the 1412th record. Run 1, Event 69895, LumiSection 699 on stream 0 at 24-Mar-2022 00:23:00.285 CET
+Begin processing the 1413th record. Run 1, Event 69897, LumiSection 699 on stream 0 at 24-Mar-2022 00:23:04.254 CET
+Begin processing the 1414th record. Run 1, Event 69905, LumiSection 700 on stream 0 at 24-Mar-2022 00:23:19.061 CET
+Begin processing the 1415th record. Run 1, Event 69906, LumiSection 700 on stream 0 at 24-Mar-2022 00:23:33.151 CET
+Begin processing the 1416th record. Run 1, Event 69908, LumiSection 700 on stream 0 at 24-Mar-2022 00:23:45.899 CET
+Begin processing the 1417th record. Run 1, Event 69909, LumiSection 700 on stream 0 at 24-Mar-2022 00:23:59.759 CET
+Begin processing the 1418th record. Run 1, Event 69912, LumiSection 700 on stream 0 at 24-Mar-2022 00:24:09.176 CET
+Begin processing the 1419th record. Run 1, Event 69914, LumiSection 700 on stream 0 at 24-Mar-2022 00:24:17.306 CET
+Begin processing the 1420th record. Run 1, Event 69921, LumiSection 700 on stream 0 at 24-Mar-2022 00:24:21.997 CET
+Begin processing the 1421st record. Run 1, Event 69923, LumiSection 700 on stream 0 at 24-Mar-2022 00:24:26.391 CET
+Begin processing the 1422nd record. Run 1, Event 69931, LumiSection 700 on stream 0 at 24-Mar-2022 00:24:42.965 CET
+%MSG-w OutOfBounds:  TrackProducer:initialStepTracksPreSplitting  24-Mar-2022 00:24:44 CET Run: 1 Event: 69931
+Prob Q outside the bounds of the quality word. Defaulting to Prob=0. Prob = 1 QualityWord = 3909
+%MSG
+%MSG-w OutOfBounds:  TrackProducer:initialStepTracks 24-Mar-2022 00:24:45 CET  Run: 1 Event: 69931
+Prob Q outside the bounds of the quality word. Defaulting to Prob=0. Prob = 1 QualityWord = 3909
+%MSG
+Begin processing the 1423rd record. Run 1, Event 69932, LumiSection 700 on stream 0 at 24-Mar-2022 00:25:01.264 CET
+Begin processing the 1424th record. Run 1, Event 69934, LumiSection 700 on stream 0 at 24-Mar-2022 00:25:11.804 CET
+Begin processing the 1425th record. Run 1, Event 69938, LumiSection 700 on stream 0 at 24-Mar-2022 00:25:19.160 CET
+Begin processing the 1426th record. Run 1, Event 69942, LumiSection 700 on stream 0 at 24-Mar-2022 00:25:26.649 CET
+Begin processing the 1427th record. Run 1, Event 69949, LumiSection 700 on stream 0 at 24-Mar-2022 00:25:34.498 CET
+Begin processing the 1428th record. Run 1, Event 69953, LumiSection 700 on stream 0 at 24-Mar-2022 00:25:39.995 CET
+Begin processing the 1429th record. Run 1, Event 69954, LumiSection 700 on stream 0 at 24-Mar-2022 00:25:52.966 CET
+Begin processing the 1430th record. Run 1, Event 69957, LumiSection 700 on stream 0 at 24-Mar-2022 00:26:07.186 CET
+Begin processing the 1431st record. Run 1, Event 69962, LumiSection 700 on stream 0 at 24-Mar-2022 00:26:13.055 CET
+Begin processing the 1432nd record. Run 1, Event 69963, LumiSection 700 on stream 0 at 24-Mar-2022 00:26:28.329 CET
+Begin processing the 1433rd record. Run 1, Event 69969, LumiSection 700 on stream 0 at 24-Mar-2022 00:26:40.985 CET
+Begin processing the 1434th record. Run 1, Event 69970, LumiSection 700 on stream 0 at 24-Mar-2022 00:26:47.452 CET
+Begin processing the 1435th record. Run 1, Event 69973, LumiSection 700 on stream 0 at 24-Mar-2022 00:26:55.949 CET
+Begin processing the 1436th record. Run 1, Event 69974, LumiSection 700 on stream 0 at 24-Mar-2022 00:27:09.472 CET
+Begin processing the 1437th record. Run 1, Event 69979, LumiSection 700 on stream 0 at 24-Mar-2022 00:27:17.058 CET
+Begin processing the 1438th record. Run 1, Event 69981, LumiSection 700 on stream 0 at 24-Mar-2022 00:27:27.218 CET
+Begin processing the 1439th record. Run 1, Event 69985, LumiSection 700 on stream 0 at 24-Mar-2022 00:27:31.636 CET
+Begin processing the 1440th record. Run 1, Event 69986, LumiSection 700 on stream 0 at 24-Mar-2022 00:27:46.539 CET
+Begin processing the 1441st record. Run 1, Event 69987, LumiSection 700 on stream 0 at 24-Mar-2022 00:27:53.287 CET
+Begin processing the 1442nd record. Run 1, Event 69988, LumiSection 700 on stream 0 at 24-Mar-2022 00:27:58.379 CET
+Begin processing the 1443rd record. Run 1, Event 69989, LumiSection 700 on stream 0 at 24-Mar-2022 00:28:03.513 CET
+Begin processing the 1444th record. Run 1, Event 69990, LumiSection 700 on stream 0 at 24-Mar-2022 00:28:10.287 CET
+Begin processing the 1445th record. Run 1, Event 69994, LumiSection 700 on stream 0 at 24-Mar-2022 00:28:19.269 CET
+Begin processing the 1446th record. Run 1, Event 69995, LumiSection 700 on stream 0 at 24-Mar-2022 00:28:26.253 CET
+Begin processing the 1447th record. Run 1, Event 69997, LumiSection 700 on stream 0 at 24-Mar-2022 00:28:30.938 CET
+24-Mar-2022 00:28:43 CET  Closed file file:/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/DIGI2RAW/DIGI2RAW_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2021_220322/step2_14.root
+TimeReport> Time report complete in 15256.6 seconds
+ Time Summary: 
+ - Min event:   1.7001
+ - Max event:   66.5166
+ - Avg event:   10.3061
+ - Total loop:  15001.1
+ - Total init:  230.068
+ - Total job:   15256.6
+ - EventSetup Lock:   0
+ - EventSetup Get:   0
+ Event Throughput: 0.0964594 ev/s
+ CPU Summary: 
+ - Total loop:  14937.3
+ - Total init:  103.81
+ - Total extra: 0
+ - Total job:   15059.2
+ Processing Summary: 
+ - Number of Events:  1447
+ - Number of Global Begin Lumi Calls:  50
+ - Number of Global Begin Run Calls: 1
+
+
+=============================================
+
+MessageLogger Summary
+
+ type     category        sev    module        subroutine        count    total
+ ---- -------------------- -- ---------------- ----------------  -----    -----
+    1 BasicTrajectoryState -w TrackProducer:co                      10       10
+    2 BasicTrajectoryState -w TrackProducer:pi                       2        2
+    3 GlobalMuon           -w GlobalMuonProduc                      21       21
+    4 GlobalTrajectoryBuil -w GlobalMuonProduc                      21       21
+    5 Muon                 -w GlobalMuonProduc                      21       21
+    6 OutOfBounds          -w TrackProducer:in                       1        1
+    7 OutOfBounds          -w TrackProducer:in                       3        3
+    8 OutOfBounds          -w TrackProducer:lo                       3        3
+    9 PFTrackTransformer   -w PFElecTkProducer                       1        1
+   10 RecoMuon             -w GlobalMuonProduc                      21       21
+   11 TrackNaN             -w TrackProducer:co                       1        1
+   12 TrackNaN             -w TrackProducer:pi                       1        1
+   13 FailedPropagation    -e TrackProducer:lo                       1        1
+   14 FailedPropagation    -e TrackProducer:pi                       1        1
+   15 TimeReport           -e AfterModEndJob                         1        1
+   16 TkDetLayers          -e ConversionTrackC                       1        1
+   17 TrajectoryNotPosDef  -e TrackProducer:pi                       2        2
+   18 fileAction           -s file_close                             1        1
+   19 fileAction           -s file_open                              2        2
+
+ type    category    Examples: run/evt        run/evt          run/evt
+ ---- -------------------- ---------------- ---------------- ----------------
+    1 BasicTrajectoryState 1/67606          1/67606          1/67606
+    2 BasicTrajectoryState 1/67243          1/67243          
+    3 GlobalMuon           1/65726          1/65875          1/69827
+    4 GlobalTrajectoryBuilderBase 1/65726          1/65875          1/69827
+    5 Muon                 1/65726          1/65875          1/69827
+    6 OutOfBounds          1/69931                           
+    7 OutOfBounds          1/66620          1/66620          1/69931
+    8 OutOfBounds          1/65488          1/66366          1/69606
+    9 PFTrackTransformer   1/68617                           
+   10 RecoMuon             1/65726          1/65875          1/69827
+   11 TrackNaN             1/67606                           
+   12 TrackNaN             1/67243                           
+   13 FailedPropagation    1/67994                           
+   14 FailedPropagation    1/66673                           
+   15 TimeReport           EndJob                            
+   16 TkDetLayers          Run: 1 Stream: 0                  
+   17 TrajectoryNotPosDef  1/65026          1/69163          
+   18 fileAction           PostGlobalEndRun                  
+   19 fileAction           pre-events       pre-events       
+
+Severity    # Occurrences   Total Occurrences
+--------    -------------   -----------------
+Warning               106                 106
+Error                   6                   6
+System                  3                   3
+
+dropped waiting message count 0

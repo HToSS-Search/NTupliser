@@ -1,0 +1,25 @@
+JOB  gen_J1     /user/sdansana/HToSS-Search/MC_production/CMSSW_12_0_2_patch1/src/generation_scripts/sample_scripts/condor_gen-sim.condor
+JOB  digi_J1    /user/sdansana/HToSS-Search/MC_production/CMSSW_12_0_2_patch1/src/generation_scripts/sample_scripts/condor_digi-raw.condor
+JOB  aod_J1     /user/sdansana/HToSS-Search/MC_production/CMSSW_12_0_2_patch1/src/generation_scripts/sample_scripts/condor_aod.condor
+JOB  miniaod_J1 /user/sdansana/HToSS-Search/MC_production/CMSSW_12_0_2_patch1/src/generation_scripts/sample_scripts/condor_miniaod.condor
+PARENT gen_J1  CHILD digi_J1
+PARENT digi_J1  CHILD aod_J1
+PARENT aod_J1  CHILD miniaod_J1
+VARS gen_J1     runnumber="1"
+VARS digi_J1    runnumber="1"
+VARS aod_J1     runnumber="1"
+VARS miniaod_J1 runnumber="1"
+RETRY all_nodes 2
+JOB  gen_J2     /user/sdansana/HToSS-Search/MC_production/CMSSW_12_0_2_patch1/src/generation_scripts/sample_scripts/condor_gen-sim.condor
+JOB  digi_J2    /user/sdansana/HToSS-Search/MC_production/CMSSW_12_0_2_patch1/src/generation_scripts/sample_scripts/condor_digi-raw.condor
+JOB  aod_J2     /user/sdansana/HToSS-Search/MC_production/CMSSW_12_0_2_patch1/src/generation_scripts/sample_scripts/condor_aod.condor
+JOB  miniaod_J2 /user/sdansana/HToSS-Search/MC_production/CMSSW_12_0_2_patch1/src/generation_scripts/sample_scripts/condor_miniaod.condor
+PARENT gen_J2  CHILD digi_J2
+PARENT digi_J2  CHILD aod_J2
+PARENT aod_J2  CHILD miniaod_J2
+VARS gen_J2     runnumber="2"
+VARS digi_J2    runnumber="2"
+VARS aod_J2     runnumber="2"
+VARS miniaod_J2 runnumber="2"
+RETRY all_nodes 2
+
