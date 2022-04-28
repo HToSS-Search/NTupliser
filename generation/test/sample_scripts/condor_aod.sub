@@ -1,9 +1,0 @@
-executable   = /user/sdansana/HToSS-Search/CMSSW_12_0_2_patch1/src/NTupliser/generation/test/sample_scripts/run_AOD.sh
-arguments    = $(runnumber)
-should_transfer_files = no
-output       =/user/sdansana/HToSS-Search/CMSSW_12_0_2_patch1/src/NTupliser/generation/test/sample_scripts/output/aod.out.$(runnumber)
-error        = /user/sdansana/HToSS-Search/CMSSW_12_0_2_patch1/src/NTupliser/generation/test/sample_scripts/error/aod.err.$(runnumber)
-log          = /user/sdansana/HToSS-Search/CMSSW_12_0_2_patch1/src/NTupliser/generation/test/sample_scripts/log/aod_condor.$(runnumber).log
-universe     = vanilla
-+JobFlavour = "workday"
-queue runnumber from params_small.txt 

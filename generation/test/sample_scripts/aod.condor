@@ -1,7 +1,0 @@
-executable   = /user/vannerom/FCP/MuonSystemSim/condor_jobs/aod.sh
-arguments    = "$(runnumber)"
-#output       = /user/vannerom/FCP/CMSSW_10_6_26/src/condor_jobs/aod.$(runnumber).out
-#error        = /user/vannerom/FCP/CMSSW_10_6_26/src/condor_jobs/aod.$(runnumber).err
-#log          = /user/vannerom/FCP/CMSSW_10_6_26/src/condor_jobs/aod_condor.$(runnumber).log
-universe     = vanilla
-queue

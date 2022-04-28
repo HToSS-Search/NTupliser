@@ -1,7 +1,0 @@
-executable   = /user/vannerom/FCP/MuonSystemSim/condor_jobs/digi.sh
-arguments    = "$(runnumber)"
-output       = /user/vannerom/FCP/MuonSystemSim/condor_jobs/digi.$(runnumber).out
-error        = /user/vannerom/FCP/MuonSystemSim/condor_jobs/digi.$(runnumber).err
-log          = /user/vannerom/FCP/MuonSystemSim/condor_jobs/digi.$(runnumber).log
-universe     = vanilla
-queue
