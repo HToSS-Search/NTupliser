@@ -5,7 +5,7 @@ ctauS=100
 in_dir="/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/AODSIM/AODSIM_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS${ctauS}_2021_220323"
 out_dir="/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/MINIAODSIM/MINIAODSIM_NLO_ggH_HToSS_SmuonHadronFiltered_MH125_MS2_ctauS${ctauS}_2021_220324"
 wd="/user/sdansana/HToSS-Search"
-rel="MC_production/CMSSW_12_0_2_patch1/src/generation_scripts/sample_scripts"
+rel="MC_production/CMSSW_12_0_2_patch1/src/NTupliser/generation_scripts/sample_scripts"
 reldir=$wd/$rel
 cd $reldir
 

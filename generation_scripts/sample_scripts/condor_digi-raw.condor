@@ -1,9 +1,9 @@
-executable   = /user/sdansana/HToSS-Search/MC_production/CMSSW_12_0_2_patch1/src/generation_scripts/sample_scripts/run_DIGI-RAW.sh
+executable   = /user/sdansana/HToSS-Search/MC_production/CMSSW_12_0_2_patch1/src/NTupliser/generation_scripts/sample_scripts/run_DIGI-RAW.sh
 arguments    = $(runnumber)
 should_transfer_files = no
-output       = /user/sdansana/HToSS-Search/MC_production/CMSSW_12_0_2_patch1/src/generation_scripts/sample_scripts/output/digi-raw.out.$(runnumber)
-error        = /user/sdansana/HToSS-Search/MC_production/CMSSW_12_0_2_patch1/src/generation_scripts/sample_scripts/error/digi-raw.err.$(runnumber)
-log          = /user/sdansana/HToSS-Search/MC_production/CMSSW_12_0_2_patch1/src/generation_scripts/sample_scripts/log/digi-raw.log.$(runnumber)
+output       = /user/sdansana/HToSS-Search/MC_production/CMSSW_12_0_2_patch1/src/NTupliser/generation_scripts/sample_scripts/output/digi-raw.out.$(runnumber)
+error        = /user/sdansana/HToSS-Search/MC_production/CMSSW_12_0_2_patch1/src/NTupliser/generation_scripts/sample_scripts/error/digi-raw.err.$(runnumber)
+log          = /user/sdansana/HToSS-Search/MC_production/CMSSW_12_0_2_patch1/src/NTupliser/generation_scripts/sample_scripts/log/digi-raw.log.$(runnumber)
 universe     = vanilla
 #+JobFlavour = "longlunch"
 queue runnumber from params_small.txt

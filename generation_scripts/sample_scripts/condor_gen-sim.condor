@@ -1,9 +1,9 @@
-executable   = /user/sdansana/HToSS-Search/MC_production/CMSSW_12_0_2_patch1/src/generation_scripts/sample_scripts/run_GEN-SIM.sh
+executable   = /user/sdansana/HToSS-Search/MC_production/CMSSW_12_0_2_patch1/src/NTupliser/generation_scripts/sample_scripts/run_GEN-SIM.sh
 arguments    = $(runnumber)
 should_transfer_files = no
-output       = /user/sdansana/HToSS-Search/MC_production/CMSSW_12_0_2_patch1/src/generation_scripts/sample_scripts/output/gen-sim.out.$(runnumber)
-error        = /user/sdansana/HToSS-Search/MC_production/CMSSW_12_0_2_patch1/src/generation_scripts/sample_scripts/error/gen-sim.err.$(runnumber)
-log          = /user/sdansana/HToSS-Search/MC_production/CMSSW_12_0_2_patch1/src/generation_scripts/sample_scripts/log/gen-sim.log.$(runnumber)
+output       = /user/sdansana/HToSS-Search/MC_production/CMSSW_12_0_2_patch1/src/NTupliser/generation_scripts/sample_scripts/output/gen-sim.out.$(runnumber)
+error        = /user/sdansana/HToSS-Search/MC_production/CMSSW_12_0_2_patch1/src/NTupliser/generation_scripts/sample_scripts/error/gen-sim.err.$(runnumber)
+log          = /user/sdansana/HToSS-Search/MC_production/CMSSW_12_0_2_patch1/src/NTupliser/generation_scripts/sample_scripts/log/gen-sim.log.$(runnumber)
 universe     = vanilla
 #+JobFlavour = "longlunch"
 queue 
