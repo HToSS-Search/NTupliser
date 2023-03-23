@@ -4044,22 +4044,22 @@ void MakeTopologyNtupleMiniAOD::analyze(const edm::Event& iEvent, const edm::Eve
 
     // fill debugging histograms.
     if ( isLHEflag_ ) {
-        origWeightForNorm_    >= 0.0 ? histocontainer1I_["sumWeights"]->AddBinContent(1)   : histocontainer1I_["sumWeights"]->AddBinContent(2);
-        weight_muF0p5_        >= 0.0 ? histocontainer1I_["sumWeights"]->AddBinContent(3)   : histocontainer1I_["sumWeights"]->AddBinContent(4);
-        weight_muR0p5_        >= 0.0 ? histocontainer1I_["sumWeights"]->AddBinContent(5)   : histocontainer1I_["sumWeights"]->AddBinContent(6);
-        weight_muF0p5muR0p5_  >= 0.0 ? histocontainer1I_["sumWeights"]->AddBinContent(7)   : histocontainer1I_["sumWeights"]->AddBinContent(8);
-        weight_muF2_          >= 0.0 ? histocontainer1I_["sumWeights"]->AddBinContent(9)   : histocontainer1I_["sumWeights"]->AddBinContent(10);
-        weight_muR2_          >= 0.0 ? histocontainer1I_["sumWeights"]->AddBinContent(11)  : histocontainer1I_["sumWeights"]->AddBinContent(12);
-        weight_muF2muR2_      >= 0.0 ? histocontainer1I_["sumWeights"]->AddBinContent(13)  : histocontainer1I_["sumWeights"]->AddBinContent(14);
+        origWeightForNorm_    >= 0.0 ? histocontainer1I_["sumWeights"]->AddBinContent(1, origWeightForNorm_)   : histocontainer1I_["sumWeights"]->AddBinContent(2, -origWeightForNorm_);
+        weight_muF0p5_        >= 0.0 ? histocontainer1I_["sumWeights"]->AddBinContent(3, weight_muF0p5_)   : histocontainer1I_["sumWeights"]->AddBinContent(4, -weight_muF0p5_);
+        weight_muR0p5_        >= 0.0 ? histocontainer1I_["sumWeights"]->AddBinContent(5, weight_muR0p5_)   : histocontainer1I_["sumWeights"]->AddBinContent(6, -weight_muR0p5_);
+        weight_muF0p5muR0p5_  >= 0.0 ? histocontainer1I_["sumWeights"]->AddBinContent(7, weight_muF0p5muR0p5_)   : histocontainer1I_["sumWeights"]->AddBinContent(8, -weight_muF0p5muR0p5_);
+        weight_muF2_          >= 0.0 ? histocontainer1I_["sumWeights"]->AddBinContent(9, weight_muF2_)   : histocontainer1I_["sumWeights"]->AddBinContent(10, -weight_muF2_);
+        weight_muR2_          >= 0.0 ? histocontainer1I_["sumWeights"]->AddBinContent(11, weight_muR2_)  : histocontainer1I_["sumWeights"]->AddBinContent(12, -weight_muR2_);
+        weight_muF2muR2_      >= 0.0 ? histocontainer1I_["sumWeights"]->AddBinContent(13, weight_muF2muR2_)  : histocontainer1I_["sumWeights"]->AddBinContent(14, -weight_muF2muR2_);
     }
     else {
-        histocontainer1I_["sumWeights"]->AddBinContent(1);
-        histocontainer1I_["sumWeights"]->AddBinContent(3);
-        histocontainer1I_["sumWeights"]->AddBinContent(5);
-        histocontainer1I_["sumWeights"]->AddBinContent(7);
-        histocontainer1I_["sumWeights"]->AddBinContent(9);
-        histocontainer1I_["sumWeights"]->AddBinContent(11);
-        histocontainer1I_["sumWeights"]->AddBinContent(13);
+        histocontainer1I_["sumWeights"]->AddBinContent(1, weight_);
+        histocontainer1I_["sumWeights"]->AddBinContent(3, weight_muF0p5_);
+        histocontainer1I_["sumWeights"]->AddBinContent(5, weight_muR0p5_);
+        histocontainer1I_["sumWeights"]->AddBinContent(7, weight_muF0p5muR0p5_);
+        histocontainer1I_["sumWeights"]->AddBinContent(9, weight_muF2_);
+        histocontainer1I_["sumWeights"]->AddBinContent(11, weight_muR2_);
+        histocontainer1I_["sumWeights"]->AddBinContent(13, weight_muF2muR2_);
     }
 }
 
