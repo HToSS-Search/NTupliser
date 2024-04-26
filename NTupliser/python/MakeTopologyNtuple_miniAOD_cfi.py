@@ -78,147 +78,113 @@ makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
         ),
                                           triggerList = cms.vstring(*[
         #Updated Muon Triggers for 2016
-        'HLT_IsoMu24_v1',
-        'HLT_IsoMu24_v2',
-        'HLT_IsoMu24_v4',
-        'HLT_IsoTkMu24_v1',
-        'HLT_IsoTkMu24_v2',
-        'HLT_IsoTkMu24_v3',
-        'HLT_IsoTkMu24_v4',
-        'HLT_IsoMu27_v3',
-        'HLT_IsoMu27_v4',
-        'HLT_IsoMu27_v5',
-        'HLT_IsoMu27_v7',
-        'HLT_IsoTkMu27_v3',
-        'HLT_IsoTkMu27_v4',
-        'HLT_IsoTkMu27_v5',
-        'HLT_IsoTkMu27_v6',
-        'HLT_IsoTkMu27_v7',
-
-        'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v2',
-        'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v3',
-        'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v4',
-        'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v7',
-       	'HLT_Mu17_TrkIsoVVL_TkMu8_TrkIsoVVL_DZ_v2',
-       	'HLT_Mu17_TrkIsoVVL_TkMu8_TrkIsoVVL_DZ_v3',
-       	'HLT_Mu17_TrkIsoVVL_TkMu8_TrkIsoVVL_DZ_v6',
+        # 'HLT_IsoMu24_v', #2018 also
+        'HLT_IsoMu27_v', #2017, 2018 also
 
 	#Updated Muon Triggers for 2017
-	'HLT_IsoMu27_v8',
-	'HLT_IsoMu27_v9',
-	'HLT_IsoMu27_v10',
-	'HLT_IsoMu27_v11',
-	'HLT_IsoMu27_v12',
-	'HLT_IsoMu27_v13',
-	'HLT_IsoMu27_v14', ## also 2018
-
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v8',
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v9',
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v10',
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v11',
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v12',
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v13',
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v14',
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v1',
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v2',
-
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v3',
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v4', ## also 2018
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v7',
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v8',
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8_v1',
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8_v2',
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8_v3',
-	'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8_v4', ## also 2018
 
         #Updated Muon Triggers for 2018
-        'HLT_IsoMu24_v11',
-        'HLT_IsoMu24_v12',
-        'HLT_IsoMu24_v13',
-        'HLT_IsoMu27_v15',
-        'HLT_IsoMu27_v16',
+        # 'HLT_DoubleL2Mu23NoVtx_2Cha_v',
+        # 'HLT_DoubleL2Mu23NoVtx_2Cha_CosmicSeed_v',
 
-        'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8_v5',
-        'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v5',
 
         ## Displaced Muon triggers
 
 ### displaced muons andLevel-2/muon chambers only triggers
-        'HLT_DoubleMu33NoFiltersNoVtx_v2', #2016 only
-        'HLT_DoubleMu33NoFiltersNoVtx_v3', #2016 only
-        'HLT_DoubleMu33NoFiltersNoVtx_v5', #2016 only
-        'HLT_DoubleMu23NoFiltersNoVtxDisplaced_v2', #2016 only
-        'HLT_DoubleMu23NoFiltersNoVtxDisplaced_v3', #2016 only
-        'HLT_DoubleMu23NoFiltersNoVtxDisplaced_v5', #2016 only
-        'HLT_L2DoubleMu23_NoVertex_v2', #2016 only
-        'HLT_L2DoubleMu23_NoVertex_v3', #2016 only
-        'HLT_L2DoubleMu23_NoVertex_v4', #2016 only
-        'HLT_L2DoubleMu23_NoVertex_v6', #2016 only
+        # 'HLT_DoubleMu33NoFiltersNoVtx_v', #2016 only
+        # 'HLT_DoubleMu23NoFiltersNoVtxDisplaced_v', #2016 only
+        # 'HLT_L2DoubleMu23_NoVertex_v' #2016 only
 
-        'HLT_DoubleMu43NoFiltersNoVtx_v2', #2017
-        'HLT_DoubleMu43NoFiltersNoVtx_v3', #2017
-        'HLT_DoubleMu48NoFiltersNoVtx_v2', #2017
-        'HLT_DoubleMu48NoFiltersNoVtx_v3', #2017
 
-        'HLT_DoubleL2Mu50_v1',#2017
-        'HLT_DoubleL2Mu50_v2',#2017+2018
+        # 'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v8',
+	# 'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v9',
+	# 'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v10',
+	# 'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v11',
+	# 'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v12',
+	# 'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v13',
+	# 'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v14',
+	# 'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v1',
+	# 'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v2',
 
-        'HLT_DoubleL2Mu23NoVtx_2Cha_v1', #2018 only
-        'HLT_DoubleL2Mu23NoVtx_2Cha_v2', #2018 only
-        'HLT_DoubleL2Mu25NoVtx_2Cha_Eta2p4_v1', #2018 only
-        'HLT_DoubleL2Mu25NoVtx_2Cha_Eta2p4_v2', #2018 only
-        'HLT_DoubleL2Mu25NoVtx_2Cha_v1', #2018 only
-        'HLT_DoubleL2Mu25NoVtx_2Cha_v2', #2018 only
-        'HLT_DoubleL2Mu30NoVtx_2Cha_Eta2p4_v1', #2018 only
-        'HLT_DoubleL2Mu30NoVtx_2Cha_Eta2p4_v2', #2018 only
-        'HLT_DoubleMu33NoFiltersNoVtxDisplaced_v1', #2018 only
-        'HLT_DoubleMu40NoFiltersNoVtxDisplaced_v1', #2018 only
-        'HLT_DoubleMu43NoFiltersNoVtx_v3', #2018 only 
-        'HLT_DoubleMu43NoFiltersNoVtx_v4', #2018 only 
-        'HLT_DoubleMu48NoFiltersNoVtx_v3', #2018 only
-        'HLT_DoubleMu48NoFiltersNoVtx_v4', #2018 only
+	# 'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v3',
+	# 'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v4', ## also 2018
+	# 'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v7',
+	# 'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v8',
+	# 'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8_v1',
+	# 'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8_v2',
+	# 'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8_v3',
+	# 'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8_v4', ## also 2018
+        # 'HLT_DoubleMu43NoFiltersNoVtx_v2', #2017
+        # 'HLT_DoubleMu43NoFiltersNoVtx_v3', #2017
+        # 'HLT_DoubleMu48NoFiltersNoVtx_v2', #2017
+        # 'HLT_DoubleMu48NoFiltersNoVtx_v3', #2017
 
-        ## BPH muon triggers - 2018 only
-        'HLT_Mu12_IP6_part0_v2', #MC
-        'HLT_Mu12_IP6_part1_v2', #MC 
-        'HLT_Mu12_IP6_part2_v2', #MC
-        'HLT_Mu12_IP6_part3_v2', #MC
-        'HLT_Mu12_IP6_part4_v2', #MC
-        'HLT_Mu9_IP5_part0_v2', #MC
-        'HLT_Mu9_IP5_part1_v2', #MC
-        'HLT_Mu9_IP5_part2_v2', #MC
-        'HLT_Mu9_IP5_part3_v2', #MC
-        'HLT_Mu9_IP5_part4_v2', #MC
-        'HLT_Mu7_IP4_part0_v2', #MC
-        'HLT_Mu7_IP4_part1_v2', #MC
-        'HLT_Mu7_IP4_part2_v2', #MC
-        'HLT_Mu7_IP4_part3_v2', #MC
-        'HLT_Mu7_IP4_part4_v2', #MC
-        'HLT_Mu8_IP5_part0_v2', #MC
-        'HLT_Mu8_IP5_part1_v2', #MC
-        'HLT_Mu8_IP5_part2_v2', #MC
-        'HLT_Mu8_IP5_part3_v2', #MC
-        'HLT_Mu8_IP5_part4_v2', #MC
-        'HLT_Mu8_IP6_part0_v2', #MC
-        'HLT_Mu8_IP6_part1_v2', #MC
-        'HLT_Mu8_IP6_part2_v2', #MC
-        'HLT_Mu8_IP6_part3_v2', #MC
-        'HLT_Mu8_IP6_part4_v2', #MC
-        'HLT_Mu9_IP6_part0_v1', #MC
-        'HLT_Mu9_IP6_part1_v1', #MC
-        'HLT_Mu9_IP6_part2_v1', #MC
-        'HLT_Mu9_IP6_part3_v1', #MC
-        'HLT_Mu9_IP6_part4_v1', #MC
-        'HLT_Mu9_IP6_part0_v2', #MC
-        'HLT_Mu9_IP6_part1_v2', #MC
-        'HLT_Mu9_IP6_part2_v2', #MC
-        'HLT_Mu9_IP6_part3_v2', #MC
-        'HLT_Mu9_IP6_part4_v2', #MC
-        'HLT_Mu9_IP6_part0_v3', #MC
-        'HLT_Mu9_IP6_part1_v3', #MC
-        'HLT_Mu9_IP6_part2_v3', #MC
-        'HLT_Mu9_IP6_part3_v3', #MC
-        'HLT_Mu9_IP6_part4_v3', #MC
+        # 'HLT_DoubleL2Mu50_v1',#2017
+        # 'HLT_DoubleL2Mu50_v2',#2017+2018
+
+
+        # 'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v2',
+        # 'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v3',
+        # 'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v4',
+        # 'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v7',
+       	# 'HLT_Mu17_TrkIsoVVL_TkMu8_TrkIsoVVL_DZ_v2',
+       	# 'HLT_Mu17_TrkIsoVVL_TkMu8_TrkIsoVVL_DZ_v3',
+       	# 'HLT_Mu17_TrkIsoVVL_TkMu8_TrkIsoVVL_DZ_v6',
+
+        # 'HLT_DoubleL2Mu25NoVtx_2Cha_Eta2p4_v1', #2018 only
+        # 'HLT_DoubleL2Mu25NoVtx_2Cha_Eta2p4_v2', #2018 only
+        # 'HLT_DoubleL2Mu25NoVtx_2Cha_v1', #2018 only
+        # 'HLT_DoubleL2Mu25NoVtx_2Cha_v2', #2018 only
+        # 'HLT_DoubleL2Mu30NoVtx_2Cha_Eta2p4_v1', #2018 only
+        # 'HLT_DoubleL2Mu30NoVtx_2Cha_Eta2p4_v2', #2018 only
+        # 'HLT_DoubleMu33NoFiltersNoVtxDisplaced_v1', #2018 only
+        # 'HLT_DoubleMu40NoFiltersNoVtxDisplaced_v1', #2018 only
+        # 'HLT_DoubleMu43NoFiltersNoVtx_v3', #2018 only 
+        # 'HLT_DoubleMu43NoFiltersNoVtx_v4', #2018 only 
+        # 'HLT_DoubleMu48NoFiltersNoVtx_v3', #2018 only
+        # 'HLT_DoubleMu48NoFiltersNoVtx_v4', #2018 only
+
+        # ## BPH muon triggers - 2018 only
+        # 'HLT_Mu12_IP6_part0_v2', #MC
+        # 'HLT_Mu12_IP6_part1_v2', #MC 
+        # 'HLT_Mu12_IP6_part2_v2', #MC
+        # 'HLT_Mu12_IP6_part3_v2', #MC
+        # 'HLT_Mu12_IP6_part4_v2', #MC
+        # 'HLT_Mu9_IP5_part0_v2', #MC
+        # 'HLT_Mu9_IP5_part1_v2', #MC
+        # 'HLT_Mu9_IP5_part2_v2', #MC
+        # 'HLT_Mu9_IP5_part3_v2', #MC
+        # 'HLT_Mu9_IP5_part4_v2', #MC
+        # 'HLT_Mu7_IP4_part0_v2', #MC
+        # 'HLT_Mu7_IP4_part1_v2', #MC
+        # 'HLT_Mu7_IP4_part2_v2', #MC
+        # 'HLT_Mu7_IP4_part3_v2', #MC
+        # 'HLT_Mu7_IP4_part4_v2', #MC
+        # 'HLT_Mu8_IP5_part0_v2', #MC
+        # 'HLT_Mu8_IP5_part1_v2', #MC
+        # 'HLT_Mu8_IP5_part2_v2', #MC
+        # 'HLT_Mu8_IP5_part3_v2', #MC
+        # 'HLT_Mu8_IP5_part4_v2', #MC
+        # 'HLT_Mu8_IP6_part0_v2', #MC
+        # 'HLT_Mu8_IP6_part1_v2', #MC
+        # 'HLT_Mu8_IP6_part2_v2', #MC
+        # 'HLT_Mu8_IP6_part3_v2', #MC
+        # 'HLT_Mu8_IP6_part4_v2', #MC
+        # 'HLT_Mu9_IP6_part0_v1', #MC
+        # 'HLT_Mu9_IP6_part1_v1', #MC
+        # 'HLT_Mu9_IP6_part2_v1', #MC
+        # 'HLT_Mu9_IP6_part3_v1', #MC
+        # 'HLT_Mu9_IP6_part4_v1', #MC
+        # 'HLT_Mu9_IP6_part0_v2', #MC
+        # 'HLT_Mu9_IP6_part1_v2', #MC
+        # 'HLT_Mu9_IP6_part2_v2', #MC
+        # 'HLT_Mu9_IP6_part3_v2', #MC
+        # 'HLT_Mu9_IP6_part4_v2', #MC
+        # 'HLT_Mu9_IP6_part0_v3', #MC
+        # 'HLT_Mu9_IP6_part1_v3', #MC
+        # 'HLT_Mu9_IP6_part2_v3', #MC
+        # 'HLT_Mu9_IP6_part3_v3', #MC
+        # 'HLT_Mu9_IP6_part4_v3', #MC
 
         ## 2017 DatasetScouting Triggers with prescale = 1
 #        'DST_HT250_CaloScouting_v6',
@@ -254,9 +220,12 @@ makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
 	'Flag_HBHENoiseIsoFilter',
 	'Flag_EcalDeadCellTriggerPrimitiveFilter',
         'Flag_BadPFMuonFilter',
-	'Flag_BadChargedCandidateFilter',
+	'Flag_BadChargedCandidateFilter', # according to latest recommendation - stop using
 	'Flag_eeBadScFilter',
-        'Flag_ecalBadCalibFilter',
+        'Flag_ecalBadCalibFilter', # not included in 2016, according to latest recommendations?
+        #'Flag_globalSuperTightHalo2016Filter', # add new filters?
+        #'Flag_BadPFMuonDzFilter',# add new filters?
+
 	),	
                                            l1TriggerTag = cms.InputTag("gtDigis"),                                    
                                            checkTriggers = cms.bool(True),
@@ -265,6 +234,7 @@ makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
                                            runMCInfo = cms.bool(True), # if set to true will skip MCInfo section
                                            runPUReWeight = cms.bool(False), #Run pile-up reweighting. Don't do if this is data I guess.
                                            doCuts = cms.bool(False), # if set to false will skip ALL cuts. Z veto still applies electron cuts.
+                                           Skim = cms.string("Default"),
                                            # default preselection settings! see https://twiki.cern.ch/twiki/bin/view/CMS/VplusJets for inspiration
 
                                            #Some jet cuts.
@@ -278,10 +248,17 @@ makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
                                            maxEleEta = cms.double(2.70), #  electron |eta|
 					   eleRelIso = cms.double(0.50), # electron combined rel track iso with rho corrections
                                            # muon identification
-                                           minMuonPt = cms.double(6.0),
-                                           maxMuonEta = cms.double(2.80),
+                                           minMuonPt1 = cms.double(6.0),
+                                           minMuonPt2 = cms.double(6.0),
+                                           maxMuonEta = cms.double(2.50),
+                                           maxMuonDeltaR = cms.double(1),
+                                           maxInvMuMuMass=cms.double(100),
+                                           minInvMuMuhhMass=cms.double(300),
                                            muoRelIso = cms.double(0.50), # muon combined track isolation with delta beta corrections
                                            metCut = cms.double(0.0),
+                                           # hadron identification
+                                           minHadronPt = cms.double(3.0),
+                                           maxHadronEta = cms.double(2.50),
                                            # photon rejection:
                                            dREleGeneralTrackMatchForPhotonRej=cms.double(0.3),
                                            magneticFieldForPhotonRej=cms.double(3.8),
@@ -289,6 +266,8 @@ makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
                                            maxDistForPhotonRej=cms.double(0),
                                            maxDcotForPhotonRej=cms.double(0),
                                            isMCatNLO=cms.bool(False),
+                                           isMC=cms.bool(False),
                                            isttBar = cms.bool(True),# This affects reweighting things. If set to false, then has a weight of 1.
-                                           ttGenEvent = cms.InputTag("null")
+                                           isggH = cms.bool(False),
+                                           hadronType = cms.string("")
                                            )# end of MakeTopologyNtupleMiniAOD

@@ -35,9 +35,9 @@ class MakeTopologyNtupleMiniAOD : public edm::EDAnalyzer
     // ----------member data ---------------------------
 
     edm::Service<TFileService> fs;
-    std::map<std::string, TH1I*> histocontainer1I_; // simple map to contain all 1I histograms. Histograms are booked in the beginJob() method
+    // std::map<std::string, TH1I*> histocontainer1I_; // simple map to contain all 1I histograms. Histograms are booked in the beginJob() method
     std::map<std::string, TH1D*> histocontainer1D_; // simple map to contain all 1D histograms. Histograms are booked in the beginJob() method
-    std::map<std::string, TH2D*> histocontainer2D_; // simple map to contain all 2D histograms. Histograms are booked in the beginJob() method
+    // std::map<std::string, TH2D*> histocontainer2D_; // simple map to contain all 2D histograms. Histograms are booked in the beginJob() method
 
     edm::EDGetTokenT<reco::BeamSpot> beamSpotToken_;
     edm::EDGetTokenT<std::vector<pat::PackedCandidate>> packedCandToken_;
@@ -97,7 +97,9 @@ class MakeTopologyNtupleMiniAOD : public edm::EDAnalyzer
     // Sets whether the sample is ttbar or not. Default is false. This affects
     // top pt reweighting of the sample.
     const bool isttbar_{};
-    edm::InputTag ttGenEvent_;
+    const bool isggH_{};
+    std::string hadronType_;
+
 
     // Generator level info
     const int scalarPid_;
@@ -117,6 +119,7 @@ class MakeTopologyNtupleMiniAOD : public edm::EDAnalyzer
     bool runMCInfo_{};
     bool runPUReWeight_{};
     bool doCuts_{};
+    std::string Skim_{};
     bool doSynch_{};
 
     // jet cuts
@@ -134,7 +137,11 @@ class MakeTopologyNtupleMiniAOD : public edm::EDAnalyzer
     double muoPt2Cut_{};
     double muoEtaCut_{};
     double invMuMuMassCut_{};
+    double invMuMuhhMassCut_{};
+    double muoDRCut_{};
     double muoIsoCut_{};
+    double chPtCut_{};
+    double chEtaCut_{};
     double metCut_{};
     double rhoIso{};
 
@@ -160,42 +167,43 @@ class MakeTopologyNtupleMiniAOD : public edm::EDAnalyzer
     edm::InputTag ebRecHits_;
     edm::InputTag eeRecHits_;
     const bool isMCatNLO_{};
+    const bool isMC_{};
     const bool isLHEflag_{};
     const bool hasAlphaWeightFlag_{};
     const bool skipIsrFsrWeights_{};
 
     // and an ntuple (filling in the methods)
     void fillBeamSpot(const edm::Event&, const edm::EventSetup&);
-    void fillJets(const edm::Event&,
-                  const edm::EventSetup&,
-                  edm::EDGetTokenT<pat::JetCollection>,
-                  const std::string&);
-    void fillBTagInfo(const pat::Jet& jet,
-                      const size_t jetindex,
-                      const std::string& ID);
-    void fillOtherJetInfo(const pat::Jet& jet,
-                          const size_t jetindex,
-                          const std::string& ID,
-                          const edm::Event& iEvent);
-    void fillMCJetInfo(const reco::GenJet& jet,
-                       const size_t jetindex,
-                       const std::string& ID,
-                       bool runMC);
-    void fillMCJetInfo(int empty,
-                       const size_t jetindex,
-                       const std::string& ID,
-                       bool fillMC);
+    // void fillJets(const edm::Event&,
+    //               const edm::EventSetup&,
+    //               edm::EDGetTokenT<pat::JetCollection>,
+    //               const std::string&);
+    // void fillBTagInfo(const pat::Jet& jet,
+    //                   const size_t jetindex,
+    //                   const std::string& ID);
+    // void fillOtherJetInfo(const pat::Jet& jet,
+    //                       const size_t jetindex,
+    //                       const std::string& ID,
+    //                       const edm::Event& iEvent);
+    // void fillMCJetInfo(const reco::GenJet& jet,
+    //                    const size_t jetindex,
+    //                    const std::string& ID,
+    //                    bool runMC);
+    // void fillMCJetInfo(int empty,
+    //                    const size_t jetindex,
+    //                    const std::string& ID,
+    //                    bool fillMC);
     void fillMuons          (const edm::Event&, const edm::EventSetup&, edm::EDGetTokenT<pat::MuonCollection>, const std::string&);
-    void fillElectrons(const edm::Event&,
-                       const edm::EventSetup&,
-                       edm::EDGetTokenT<pat::ElectronCollection>,
-                       const std::string&,
-                       edm::EDGetTokenT<pat::ElectronCollection>);
-    void fillPhotons(const edm::Event&,
-                       const edm::EventSetup&,
-                       edm::EDGetTokenT<pat::PhotonCollection>,
-                       const std::string&,
-                       edm::EDGetTokenT<pat::PhotonCollection>);
+    // void fillElectrons(const edm::Event&,
+    //                    const edm::EventSetup&,
+    //                    edm::EDGetTokenT<pat::ElectronCollection>,
+    //                    const std::string&,
+    //                    edm::EDGetTokenT<pat::ElectronCollection>);
+    // void fillPhotons(const edm::Event&,
+    //                    const edm::EventSetup&,
+    //                    edm::EDGetTokenT<pat::PhotonCollection>,
+    //                    const std::string&,
+    //                    edm::EDGetTokenT<pat::PhotonCollection>);
     void fillMissingET(const edm::Event&,
                        const edm::EventSetup&,
                        edm::EDGetTokenT<pat::METCollection>,
@@ -206,40 +214,40 @@ class MakeTopologyNtupleMiniAOD : public edm::EDAnalyzer
     void fillMCInfo(const edm::Event&, const edm::EventSetup&);
     void fillTriggerData(const edm::Event&);
     void fillSummaryVariables(void); // should only be called after all other functions.
-    void fillGeneralTracks(const edm::Event&, const edm::EventSetup&);
-    void fillIsolatedTracks(const edm::Event&, const edm::EventSetup&);
+    // void fillGeneralTracks(const edm::Event&, const edm::EventSetup&);
+    // void fillIsolatedTracks(const edm::Event&, const edm::EventSetup&);
 //    void fillLostTracksCands(const edm::Event&, const edm::EventSetup&);
     void fillPackedCands(const edm::Event&, const edm::EventSetup&);
 
     // Helper functions
     void bookBranches(void); // does all the branching.
-    void bookJetBranches(const std::string& ID,
-                         const std::string& name); // called by bookBranches,
-                                                   // makes jet branches.
-    void bookBIDInfoBranches(const std::string&,
-                             const std::string&); // called by bookJetBranches,
-                                                  // makes branches for B-ID.
-    void bookPFJetBranches(const std::string& ID,
-                           const std::string& name); // called by bookBranches,
-                                                     // makes jet branches.
-    void bookTauBranches(const std::string& ID, const std::string& name);
-    void bookPhotonBranches(const std::string& ID, const std::string& name);
-    void bookElectronBranches(
-        const std::string& ID,
-        const std::string&
-            name); // called by bookBranches, makes electron branches.
+    // void bookJetBranches(const std::string& ID,
+    //                      const std::string& name); // called by bookBranches,
+    //                                                // makes jet branches.
+    // void bookBIDInfoBranches(const std::string&,
+    //                          const std::string&); // called by bookJetBranches,
+    //                                               // makes branches for B-ID.
+    // void bookPFJetBranches(const std::string& ID,
+    //                        const std::string& name); // called by bookBranches,
+    //                                                  // makes jet branches.
+    // void bookTauBranches(const std::string& ID, const std::string& name);
+    // void bookPhotonBranches(const std::string& ID, const std::string& name);
+    // void bookElectronBranches(
+    //     const std::string& ID,
+    //     const std::string&
+    //         name); // called by bookBranches, makes electron branches.
     void bookMuonBranches(const std::string& ID,
                           const std::string& name); // called by bookBranches,
                                                     // makes muon branches.
     void bookMETBranches(const std::string& ID,
                          const std::string& name); // called by bookBranches ,
                                                    // makes MET branches
-    void bookCaloMETBranches(const std::string& ID,
-                             const std::string& name); // called by bookBranches
-                                                       // , makes MET branches
+    // void bookCaloMETBranches(const std::string& ID,
+    //                          const std::string& name); // called by bookBranches
+    //                                                    // , makes MET branches
     void bookMCBranches(void); // called by bookBranches, makes MC branches.
-    void bookGeneralTracksBranches(void); // called by bookBranches, makes generalTracks branches.
-    void bookIsolatedTracksBranches(void); // called by bookBranches, makes isolatedTracks branches.
+    // void bookGeneralTracksBranches(void); // called by bookBranches, makes generalTracks branches.
+    // void bookIsolatedTracksBranches(void); // called by bookBranches, makes isolatedTracks branches.
 //    void bookLostTracksBranches(void); // called by bookBranches, makes lostTracks branches.
     void bookPackedCandsBranches(void); // called by bookBranches, makes packedCands branches.
     void bookPVbranches(void); // called by bookBranches, makes PV branches.
@@ -247,7 +255,7 @@ class MakeTopologyNtupleMiniAOD : public edm::EDAnalyzer
 
     // Check reco particle gen ancestry
     bool leptonScalarAncestor(const reco::Candidate*, const bool& directDecay = false, const int& lepId = 0);
-    bool jetScalarAncestor(const reco::Candidate*);
+    // bool jetScalarAncestor(const reco::Candidate*);
 
     TTree* mytree_{};
 
@@ -258,18 +266,18 @@ class MakeTopologyNtupleMiniAOD : public edm::EDAnalyzer
     double weight_muF0p5muR0p5_{};
     double weight_muF2muR2_{};
 
-    double isrRedHi{};
-    double fsrRedHi{};
-    double isrRedLo{};
-    double fsrRedLo{};
-    double isrDefHi{};
-    double fsrDefHi{};
-    double isrDefLo{};
-    double fsrDefLo{};
-    double isrConHi{};
-    double fsrConHi{};
-    double isrConLo{};
-    double fsrConLo{};
+    // double isrRedHi{};
+    // double fsrRedHi{};
+    // double isrRedLo{};
+    // double fsrRedLo{};
+    // double isrDefHi{};
+    // double fsrDefHi{};
+    // double isrDefLo{};
+    // double fsrDefLo{};
+    // double isrConHi{};
+    // double fsrConHi{};
+    // double isrConLo{};
+    // double fsrConLo{};
 
     double origWeightForNorm_{};
 
@@ -332,15 +340,15 @@ class MakeTopologyNtupleMiniAOD : public edm::EDAnalyzer
                             // to zero or unphysical numbers
     void clearPVarrays(void); // clearing PV info, used by cleararrays
     void clearSVarrays(void); // clearing SV info, used by cleararrays
-    void clearjetarrays(const std::string&); // clearing jet info, used by cleararrays]
-    void clearTauArrays(const std::string&);
-    void clearPhotonArrays(const std::string&);
-    void clearelectronarrays(const std::string&); // clearing electron info, used by cleararrays
+    // void clearjetarrays(const std::string&); // clearing jet info, used by cleararrays]
+    // void clearTauArrays(const std::string&);
+    // void clearPhotonArrays(const std::string&);
+    // void clearelectronarrays(const std::string&); // clearing electron info, used by cleararrays
     void clearmuonarrays(const std::string&); // clearing muon info, used by cleararrays
     void clearMetArrays(const std::string&); // clearing met info
     void clearMCarrays(void); // clearing MC info
-    void clearGeneralTracksArrays(void); // clearing generalTracks info, used by cleararrays
-    void clearIsolatedTracksArrays(void); // clearing isolatedTracks info, used by cleararrays
+    // void clearGeneralTracksArrays(void); // clearing generalTracks info, used by cleararrays
+    // void clearIsolatedTracksArrays(void); // clearing isolatedTracks info, used by cleararrays
 //    void clearLostTracksArrays(void); // clearing lostTracks info, used by cleararrays
     void clearPackedCandsArrays(void); // clearing packedCands info, used by cleararrays
 
@@ -432,258 +440,258 @@ class MakeTopologyNtupleMiniAOD : public edm::EDAnalyzer
     // that are saved in the root tree...
     static constexpr size_t NELECTRONSMAX{30};
 
-    std::map<std::string, std::vector<float>> electronSortedE;
-    std::map<std::string, std::vector<float>> electronSortedEt;
-    std::map<std::string, std::vector<float>> electronSortedEta;
-    std::map<std::string, std::vector<float>> electronSortedPt;
-    std::map<std::string, std::vector<float>> electronSortedTheta;
-    std::map<std::string, std::vector<float>> electronSortedPhi;
-    std::map<std::string, std::vector<float>> electronSortedPx;
-    std::map<std::string, std::vector<float>> electronSortedPy;
-    std::map<std::string, std::vector<float>> electronSortedPz;
-    std::map<std::string, std::vector<int>> electronSortedCharge;
+    // std::map<std::string, std::vector<float>> electronSortedE;
+    // std::map<std::string, std::vector<float>> electronSortedEt;
+    // std::map<std::string, std::vector<float>> electronSortedEta;
+    // std::map<std::string, std::vector<float>> electronSortedPt;
+    // std::map<std::string, std::vector<float>> electronSortedTheta;
+    // std::map<std::string, std::vector<float>> electronSortedPhi;
+    // std::map<std::string, std::vector<float>> electronSortedPx;
+    // std::map<std::string, std::vector<float>> electronSortedPy;
+    // std::map<std::string, std::vector<float>> electronSortedPz;
+    // std::map<std::string, std::vector<int>> electronSortedCharge;
 
-    std::map<std::string, std::vector<int>> electronSortedCutIdVeto;
-    std::map<std::string, std::vector<int>> electronSortedCutIdLoose;
-    std::map<std::string, std::vector<int>> electronSortedCutIdMedium;
-    std::map<std::string, std::vector<int>> electronSortedCutIdTight;
-    std::map<std::string, std::vector<int>> electronSortedMvaIdWp80;
-    std::map<std::string, std::vector<int>> electronSortedMvaIdWp90;
-    std::map<std::string, std::vector<int>> electronSortedMvaIdWpLoose;
-    std::map<std::string, std::vector<int>> electronSortedMvaIdWpHzz;
-    std::map<std::string, std::vector<int>> electronSortedMvaIdNoIsoWp80;
-    std::map<std::string, std::vector<int>> electronSortedMvaIdNoIsoWp90;
-    std::map<std::string, std::vector<int>> electronSortedMvaIdWpNoIsoLoose;
+    // std::map<std::string, std::vector<int>> electronSortedCutIdVeto;
+    // std::map<std::string, std::vector<int>> electronSortedCutIdLoose;
+    // std::map<std::string, std::vector<int>> electronSortedCutIdMedium;
+    // std::map<std::string, std::vector<int>> electronSortedCutIdTight;
+    // std::map<std::string, std::vector<int>> electronSortedMvaIdWp80;
+    // std::map<std::string, std::vector<int>> electronSortedMvaIdWp90;
+    // std::map<std::string, std::vector<int>> electronSortedMvaIdWpLoose;
+    // std::map<std::string, std::vector<int>> electronSortedMvaIdWpHzz;
+    // std::map<std::string, std::vector<int>> electronSortedMvaIdNoIsoWp80;
+    // std::map<std::string, std::vector<int>> electronSortedMvaIdNoIsoWp90;
+    // std::map<std::string, std::vector<int>> electronSortedMvaIdWpNoIsoLoose;
 
-    std::map<std::string, std::vector<float>> electronSortedChargedHadronIso;
-    std::map<std::string, std::vector<float>> electronSortedNeutralHadronIso;
-    std::map<std::string, std::vector<float>> electronSortedPhotonIso;
-    std::map<std::string, std::vector<float>> electronSortedTrackPt;
-    std::map<std::string, std::vector<float>> electronSortedTrackEta;
-    std::map<std::string, std::vector<float>> electronSortedTrackPhi;
-    std::map<std::string, std::vector<float>> electronSortedTrackChi2;
-    std::map<std::string, std::vector<float>> electronSortedTrackNDOF;
-    std::map<std::string, std::vector<float>> electronSortedTrackD0;
-    std::map<std::string, std::vector<float>>
-        electronSortedBeamSpotCorrectedTrackD0;
-    std::map<std::string, std::vector<float>>
-        electronSortedDBBeamSpotCorrectedTrackD0;
+    // std::map<std::string, std::vector<float>> electronSortedChargedHadronIso;
+    // std::map<std::string, std::vector<float>> electronSortedNeutralHadronIso;
+    // std::map<std::string, std::vector<float>> electronSortedPhotonIso;
+    // std::map<std::string, std::vector<float>> electronSortedTrackPt;
+    // std::map<std::string, std::vector<float>> electronSortedTrackEta;
+    // std::map<std::string, std::vector<float>> electronSortedTrackPhi;
+    // std::map<std::string, std::vector<float>> electronSortedTrackChi2;
+    // std::map<std::string, std::vector<float>> electronSortedTrackNDOF;
+    // std::map<std::string, std::vector<float>> electronSortedTrackD0;
+    // std::map<std::string, std::vector<float>>
+    //     electronSortedBeamSpotCorrectedTrackD0;
+    // std::map<std::string, std::vector<float>>
+    //     electronSortedDBBeamSpotCorrectedTrackD0;
 
-    // std::map< std::string, std::vector<float> > electronSortedDBInnerTrackD0;
+    // // std::map< std::string, std::vector<float> > electronSortedDBInnerTrackD0;
 
-    std::map<std::string, std::vector<float>> electronSortedTrackDz;
-    std::map<std::string, std::vector<float>> electronSortedTrackD0PV;
-    std::map<std::string, std::vector<float>> electronSortedTrackDZPV;
-    std::map<std::string, std::vector<float>> electronSortedVtxZ;
-    std::map<std::string, std::vector<float>>
-        electronSortedBeamSpotCorrectedTrackDz;
-    std::map<std::string, std::vector<int>> electronSortedIsGsf;
-    std::map<std::string, std::vector<float>> electronSortedGsfPx;
-    std::map<std::string, std::vector<float>> electronSortedGsfPy;
-    std::map<std::string, std::vector<float>> electronSortedGsfPz;
-    std::map<std::string, std::vector<float>> electronSortedGsfE;
-    std::map<std::string, std::vector<float>> electronSortedEcalEnergy;
+    // std::map<std::string, std::vector<float>> electronSortedTrackDz;
+    // std::map<std::string, std::vector<float>> electronSortedTrackD0PV;
+    // std::map<std::string, std::vector<float>> electronSortedTrackDZPV;
+    // std::map<std::string, std::vector<float>> electronSortedVtxZ;
+    // std::map<std::string, std::vector<float>>
+    //     electronSortedBeamSpotCorrectedTrackDz;
+    // std::map<std::string, std::vector<int>> electronSortedIsGsf;
+    // std::map<std::string, std::vector<float>> electronSortedGsfPx;
+    // std::map<std::string, std::vector<float>> electronSortedGsfPy;
+    // std::map<std::string, std::vector<float>> electronSortedGsfPz;
+    // std::map<std::string, std::vector<float>> electronSortedGsfE;
+    // std::map<std::string, std::vector<float>> electronSortedEcalEnergy;
 
-    std::map<std::string, std::vector<float>> electronSortedSuperClusterEta;
-    std::map<std::string, std::vector<float>> electronSortedSuperClusterE;
-    std::map<std::string, std::vector<float>> electronSortedSuperClusterPhi;
-    std::map<std::string, std::vector<float>> electronSortedSuperClusterEoverP;
-    std::map<std::string, std::vector<float>>
-        electronSortedSuperClusterSigmaEtaEta;
-    std::map<std::string, std::vector<float>> electronSortedSuperClusterE1x5;
-    std::map<std::string, std::vector<float>> electronSortedSuperClusterE2x5max;
-    std::map<std::string, std::vector<float>> electronSortedSuperClusterE5x5;
-    std::map<std::string, std::vector<float>>
-        electronSortedSuperClusterSigmaIEtaIEta;
-    std::map<std::string, std::vector<float>>
-        electronSortedSuperClusterSigmaIEtaIEta5x5;
-    std::map<std::string, std::vector<float>> electronSortedTrackIso04;
-    std::map<std::string, std::vector<float>> electronSortedECalIso04;
-    std::map<std::string, std::vector<float>> electronSortedHCalIso04;
-    std::map<std::string, std::vector<float>> electronSortedTrackIso03;
-    std::map<std::string, std::vector<float>> electronSortedECalIso03;
-    std::map<std::string, std::vector<float>> electronSortedHCalIso03;
-    std::map<std::string, std::vector<float>> electronSorteddr04EcalRecHitSumEt;
-    std::map<std::string, std::vector<float>> electronSorteddr03EcalRecHitSumEt;
-    std::map<std::string, std::vector<float>> electronSortedECalIsoDeposit;
-    std::map<std::string, std::vector<float>> electronSortedHCalIsoDeposit;
-    std::map<std::string, std::vector<float>> electronSortedCaloIso;
-    std::map<std::string, std::vector<float>> electronSortedTriggerMatch;
-    std::map<std::string, std::vector<float>> electronSortedJetOverlap;
-    std::map<std::string, std::vector<float>> electronSortedComRelIso;
-    std::map<std::string, std::vector<float>> electronSortedComRelIsodBeta;
-    std::map<std::string, std::vector<float>> electronSortedComRelIsoRho;
-    std::map<std::string, std::vector<float>> electronSortedChHadIso;
-    std::map<std::string, std::vector<float>> electronSortedNtHadIso;
-    std::map<std::string, std::vector<float>> electronSortedGammaIso;
-    std::map<std::string, std::vector<float>> electronSortedPuIso;
-    std::map<std::string, std::vector<float>> electronSortedRhoIso;
-    std::map<std::string, std::vector<float>> electronSortedAEff03;
-    std::map<std::string, std::vector<int>> electronSortedMissingInnerLayers;
-    std::map<std::string, std::vector<float>> electronSortedHoverE;
-    std::map<std::string, std::vector<float>> electronSortedDeltaPhiSC;
-    std::map<std::string, std::vector<float>> electronSortedDeltaEtaSC;
-    std::map<std::string, std::vector<float>> electronSortedDeltaEtaSeedSC;
-    std::map<std::string, std::vector<int>> electronSortedIsBarrel;
-    std::map<std::string, std::vector<int>> electronSortedPhotonConversionTag;
-    std::map<std::string, std::vector<int>> electronSortedPhotonConversionTagCustom;
-    std::map<std::string, std::vector<float>> electronSortedPhotonConversionDcot;
-    std::map<std::string, std::vector<float>> electronSortedPhotonConversionDist;
-    std::map<std::string, std::vector<int>> electronSortedPhotonConversionVeto;
-    std::map<std::string, std::vector<float>> electronSortedPhotonConversionDcotCustom;
-    std::map<std::string, std::vector<float>> electronSortedPhotonConversionDistCustom;
+    // std::map<std::string, std::vector<float>> electronSortedSuperClusterEta;
+    // std::map<std::string, std::vector<float>> electronSortedSuperClusterE;
+    // std::map<std::string, std::vector<float>> electronSortedSuperClusterPhi;
+    // std::map<std::string, std::vector<float>> electronSortedSuperClusterEoverP;
+    // std::map<std::string, std::vector<float>>
+    //     electronSortedSuperClusterSigmaEtaEta;
+    // std::map<std::string, std::vector<float>> electronSortedSuperClusterE1x5;
+    // std::map<std::string, std::vector<float>> electronSortedSuperClusterE2x5max;
+    // std::map<std::string, std::vector<float>> electronSortedSuperClusterE5x5;
+    // std::map<std::string, std::vector<float>>
+    //     electronSortedSuperClusterSigmaIEtaIEta;
+    // std::map<std::string, std::vector<float>>
+    //     electronSortedSuperClusterSigmaIEtaIEta5x5;
+    // std::map<std::string, std::vector<float>> electronSortedTrackIso04;
+    // std::map<std::string, std::vector<float>> electronSortedECalIso04;
+    // std::map<std::string, std::vector<float>> electronSortedHCalIso04;
+    // std::map<std::string, std::vector<float>> electronSortedTrackIso03;
+    // std::map<std::string, std::vector<float>> electronSortedECalIso03;
+    // std::map<std::string, std::vector<float>> electronSortedHCalIso03;
+    // std::map<std::string, std::vector<float>> electronSorteddr04EcalRecHitSumEt;
+    // std::map<std::string, std::vector<float>> electronSorteddr03EcalRecHitSumEt;
+    // std::map<std::string, std::vector<float>> electronSortedECalIsoDeposit;
+    // std::map<std::string, std::vector<float>> electronSortedHCalIsoDeposit;
+    // std::map<std::string, std::vector<float>> electronSortedCaloIso;
+    // std::map<std::string, std::vector<float>> electronSortedTriggerMatch;
+    // std::map<std::string, std::vector<float>> electronSortedJetOverlap;
+    // std::map<std::string, std::vector<float>> electronSortedComRelIso;
+    // std::map<std::string, std::vector<float>> electronSortedComRelIsodBeta;
+    // std::map<std::string, std::vector<float>> electronSortedComRelIsoRho;
+    // std::map<std::string, std::vector<float>> electronSortedChHadIso;
+    // std::map<std::string, std::vector<float>> electronSortedNtHadIso;
+    // std::map<std::string, std::vector<float>> electronSortedGammaIso;
+    // std::map<std::string, std::vector<float>> electronSortedPuIso;
+    // std::map<std::string, std::vector<float>> electronSortedRhoIso;
+    // std::map<std::string, std::vector<float>> electronSortedAEff03;
+    // std::map<std::string, std::vector<int>> electronSortedMissingInnerLayers;
+    // std::map<std::string, std::vector<float>> electronSortedHoverE;
+    // std::map<std::string, std::vector<float>> electronSortedDeltaPhiSC;
+    // std::map<std::string, std::vector<float>> electronSortedDeltaEtaSC;
+    // std::map<std::string, std::vector<float>> electronSortedDeltaEtaSeedSC;
+    // std::map<std::string, std::vector<int>> electronSortedIsBarrel;
+    // std::map<std::string, std::vector<int>> electronSortedPhotonConversionTag;
+    // std::map<std::string, std::vector<int>> electronSortedPhotonConversionTagCustom;
+    // std::map<std::string, std::vector<float>> electronSortedPhotonConversionDcot;
+    // std::map<std::string, std::vector<float>> electronSortedPhotonConversionDist;
+    // std::map<std::string, std::vector<int>> electronSortedPhotonConversionVeto;
+    // std::map<std::string, std::vector<float>> electronSortedPhotonConversionDcotCustom;
+    // std::map<std::string, std::vector<float>> electronSortedPhotonConversionDistCustom;
 
-    std::map<std::string, std::vector<float>> electronSortedImpactTransDist;
-    std::map<std::string, std::vector<float>> electronSortedImpactTransError;
-    std::map<std::string, std::vector<float>> electronSortedImpactTransSignificance;
-    std::map<std::string, std::vector<float>> electronSortedImpact3DDist;
-    std::map<std::string, std::vector<float>> electronSortedImpact3DError;
-    std::map<std::string, std::vector<float>> electronSortedImpact3DSignificance;
+    // std::map<std::string, std::vector<float>> electronSortedImpactTransDist;
+    // std::map<std::string, std::vector<float>> electronSortedImpactTransError;
+    // std::map<std::string, std::vector<float>> electronSortedImpactTransSignificance;
+    // std::map<std::string, std::vector<float>> electronSortedImpact3DDist;
+    // std::map<std::string, std::vector<float>> electronSortedImpact3DError;
+    // std::map<std::string, std::vector<float>> electronSortedImpact3DSignificance;
 
-    //  std::map< std::string, std::vector<float> > electronSortedIDResults_;
+    // //  std::map< std::string, std::vector<float> > electronSortedIDResults_;
 
-    std::map<std::string, std::vector<int>> electronSortedNumSourceCandidates;
-    std::map<std::string, std::vector<int>> electronSortedPackedCandIndex;
+    // std::map<std::string, std::vector<int>> electronSortedNumSourceCandidates;
+    // std::map<std::string, std::vector<int>> electronSortedPackedCandIndex;
 
-    std::map<std::string, std::vector<float>> genElectronSortedPt;
-    std::map<std::string, std::vector<float>> genElectronSortedEt;
-    std::map<std::string, std::vector<float>> genElectronSortedEta;
-    std::map<std::string, std::vector<float>> genElectronSortedTheta;
-    std::map<std::string, std::vector<float>> genElectronSortedPhi;
-    std::map<std::string, std::vector<float>> genElectronSortedPx;
-    std::map<std::string, std::vector<float>> genElectronSortedPy;
-    std::map<std::string, std::vector<float>> genElectronSortedPz;
-    std::map<std::string, std::vector<int>> genElectronSortedCharge;
-    std::map<std::string, std::vector<int>> genElectronSortedPdgId;
-    std::map<std::string, std::vector<int>> genElectronSortedMotherId;
-    std::map<std::string, std::vector<int>> genElectronSortedPromptDecayed;
-    std::map<std::string, std::vector<int>> genElectronSortedPromptFinalState;
-    std::map<std::string, std::vector<int>> genElectronSortedHardProcess;
-    std::map<std::string, std::vector<int>> genElectronSortedPythiaSixStatusThree;
-    std::map<std::string, std::vector<int>> genElectronSortedScalarAncestor;
-    std::map<std::string, std::vector<int>> genElectronSortedDirectScalarAncestor;
+    // std::map<std::string, std::vector<float>> genElectronSortedPt;
+    // std::map<std::string, std::vector<float>> genElectronSortedEt;
+    // std::map<std::string, std::vector<float>> genElectronSortedEta;
+    // std::map<std::string, std::vector<float>> genElectronSortedTheta;
+    // std::map<std::string, std::vector<float>> genElectronSortedPhi;
+    // std::map<std::string, std::vector<float>> genElectronSortedPx;
+    // std::map<std::string, std::vector<float>> genElectronSortedPy;
+    // std::map<std::string, std::vector<float>> genElectronSortedPz;
+    // std::map<std::string, std::vector<int>> genElectronSortedCharge;
+    // std::map<std::string, std::vector<int>> genElectronSortedPdgId;
+    // std::map<std::string, std::vector<int>> genElectronSortedMotherId;
+    // std::map<std::string, std::vector<int>> genElectronSortedPromptDecayed;
+    // std::map<std::string, std::vector<int>> genElectronSortedPromptFinalState;
+    // std::map<std::string, std::vector<int>> genElectronSortedHardProcess;
+    // std::map<std::string, std::vector<int>> genElectronSortedPythiaSixStatusThree;
+    // std::map<std::string, std::vector<int>> genElectronSortedScalarAncestor;
+    // std::map<std::string, std::vector<int>> genElectronSortedDirectScalarAncestor;
 
-    // hardcoded, do NOT change unless you also change the size of the arrays
-    // that are saved in the root tree...
+    // // hardcoded, do NOT change unless you also change the size of the arrays
+    // // that are saved in the root tree...
     static constexpr size_t NPHOTONSMAX{30};
 
-    std::map<std::string, std::vector<float>> photonSortedE;
-    std::map<std::string, std::vector<float>> photonSortedSigmaE;
-    std::map<std::string, std::vector<float>> photonSortedET;
-    std::map<std::string, std::vector<float>> photonSortedPhi;
-    std::map<std::string, std::vector<float>> photonSortedEta;
-    std::map<std::string, std::vector<float>> photonSortedTheta;
-    std::map<std::string, std::vector<float>> photonSortedPt;
-    std::map<std::string, std::vector<float>> photonSortedPx;
-    std::map<std::string, std::vector<float>> photonSortedPy;
-    std::map<std::string, std::vector<float>> photonSortedPz;
-    std::map<std::string, std::vector<float>> photonSortedCalibE;
-    std::map<std::string, std::vector<float>> photonSortedCalibEt;
-    std::map<std::string, std::vector<float>> photonSortedSCE;
-    std::map<std::string, std::vector<float>> photonSortedSCRawE;
-    std::map<std::string, std::vector<float>> photonSortedESEnP1;
-    std::map<std::string, std::vector<float>> photonSortedESEnP2;
-    std::map<std::string, std::vector<float>> photonSortedSCEta;
-    std::map<std::string, std::vector<float>> photonSortedSCEtaWidth;
-    std::map<std::string, std::vector<float>> photonSortedSCPhi;
-    std::map<std::string, std::vector<float>> photonSortedSCPhiWidth;
-    std::map<std::string, std::vector<float>> photonSortedSCBrem;
-    std::map<std::string, std::vector<int>> photonSortedHasPixelSeed;
-    std::map<std::string, std::vector<int>> photonSortedEleVeto;
-    std::map<std::string, std::vector<float>> photonSortedR9;
-    std::map<std::string, std::vector<float>> photonSortedHoverE;
-    std::map<std::string, std::vector<float>> photonSortedESEffSigmaRR;
-    std::map<std::string, std::vector<float>> photonSortedSigmaIEtaIEtaFull5x5;
-    std::map<std::string, std::vector<float>> photonSortedSigmaIEtaIPhiFull5x5;
-    std::map<std::string, std::vector<float>> photonSortedSigmaIPhiIPhiFull5x5;
-    std::map<std::string, std::vector<float>> photonSortedE2x2Full5x5;
-    std::map<std::string, std::vector<float>> photonSortedE5x5Full5x5;
-    std::map<std::string, std::vector<float>> photonSortedR9Full5x5;
-    std::map<std::string, std::vector<float>> photonSortedPFChIso;
-    std::map<std::string, std::vector<float>> photonSortedPFPhoIso;
-    std::map<std::string, std::vector<float>> photonSortedPFNeuIso;
-    std::map<std::string, std::vector<float>> photonSortedMIPTotEnergy;    
-    std::map<std::string, std::vector<int>> photonSortedCutIdLoose;
-    std::map<std::string, std::vector<int>> photonSortedCutIdMedium;
-    std::map<std::string, std::vector<int>> photonSortedCutIdTight;
-    std::map<std::string, std::vector<int>> photonSortedMvaIdWp80;
-    std::map<std::string, std::vector<int>> photonSortedMvaIdWp90;
+    // std::map<std::string, std::vector<float>> photonSortedE;
+    // std::map<std::string, std::vector<float>> photonSortedSigmaE;
+    // std::map<std::string, std::vector<float>> photonSortedET;
+    // std::map<std::string, std::vector<float>> photonSortedPhi;
+    // std::map<std::string, std::vector<float>> photonSortedEta;
+    // std::map<std::string, std::vector<float>> photonSortedTheta;
+    // std::map<std::string, std::vector<float>> photonSortedPt;
+    // std::map<std::string, std::vector<float>> photonSortedPx;
+    // std::map<std::string, std::vector<float>> photonSortedPy;
+    // std::map<std::string, std::vector<float>> photonSortedPz;
+    // std::map<std::string, std::vector<float>> photonSortedCalibE;
+    // std::map<std::string, std::vector<float>> photonSortedCalibEt;
+    // std::map<std::string, std::vector<float>> photonSortedSCE;
+    // std::map<std::string, std::vector<float>> photonSortedSCRawE;
+    // std::map<std::string, std::vector<float>> photonSortedESEnP1;
+    // std::map<std::string, std::vector<float>> photonSortedESEnP2;
+    // std::map<std::string, std::vector<float>> photonSortedSCEta;
+    // std::map<std::string, std::vector<float>> photonSortedSCEtaWidth;
+    // std::map<std::string, std::vector<float>> photonSortedSCPhi;
+    // std::map<std::string, std::vector<float>> photonSortedSCPhiWidth;
+    // std::map<std::string, std::vector<float>> photonSortedSCBrem;
+    // std::map<std::string, std::vector<int>> photonSortedHasPixelSeed;
+    // std::map<std::string, std::vector<int>> photonSortedEleVeto;
+    // std::map<std::string, std::vector<float>> photonSortedR9;
+    // std::map<std::string, std::vector<float>> photonSortedHoverE;
+    // std::map<std::string, std::vector<float>> photonSortedESEffSigmaRR;
+    // std::map<std::string, std::vector<float>> photonSortedSigmaIEtaIEtaFull5x5;
+    // std::map<std::string, std::vector<float>> photonSortedSigmaIEtaIPhiFull5x5;
+    // std::map<std::string, std::vector<float>> photonSortedSigmaIPhiIPhiFull5x5;
+    // std::map<std::string, std::vector<float>> photonSortedE2x2Full5x5;
+    // std::map<std::string, std::vector<float>> photonSortedE5x5Full5x5;
+    // std::map<std::string, std::vector<float>> photonSortedR9Full5x5;
+    // std::map<std::string, std::vector<float>> photonSortedPFChIso;
+    // std::map<std::string, std::vector<float>> photonSortedPFPhoIso;
+    // std::map<std::string, std::vector<float>> photonSortedPFNeuIso;
+    // std::map<std::string, std::vector<float>> photonSortedMIPTotEnergy;    
+    // std::map<std::string, std::vector<int>> photonSortedCutIdLoose;
+    // std::map<std::string, std::vector<int>> photonSortedCutIdMedium;
+    // std::map<std::string, std::vector<int>> photonSortedCutIdTight;
+    // std::map<std::string, std::vector<int>> photonSortedMvaIdWp80;
+    // std::map<std::string, std::vector<int>> photonSortedMvaIdWp90;
 
-    std::map<std::string, std::vector<int>> photonSortedNumSourceCandidates;
-    std::map<std::string, std::vector<int>> photonSortedPackedCandIndex;
+    // std::map<std::string, std::vector<int>> photonSortedNumSourceCandidates;
+    // std::map<std::string, std::vector<int>> photonSortedPackedCandIndex;
 
-    std::map<std::string, std::vector<float>> genPhotonSortedPt;
-    std::map<std::string, std::vector<float>> genPhotonSortedET;
-    std::map<std::string, std::vector<float>> genPhotonSortedEta;
-    std::map<std::string, std::vector<float>> genPhotonSortedTheta;
-    std::map<std::string, std::vector<float>> genPhotonSortedPhi;
-    std::map<std::string, std::vector<float>> genPhotonSortedPx;
-    std::map<std::string, std::vector<float>> genPhotonSortedPy;
-    std::map<std::string, std::vector<float>> genPhotonSortedPz;
-    std::map<std::string, std::vector<int>> genPhotonSortedCharge;
-    std::map<std::string, std::vector<int>> genPhotonSortedPdgId;
-    std::map<std::string, std::vector<int>> genPhotonSortedMotherId;
-    std::map<std::string, std::vector<int>> genPhotonSortedIsPhoton;
-    std::map<std::string, std::vector<int>> genPhotonSortedIsConvertedPhoton;
-    std::map<std::string, std::vector<int>> genPhotonSortedIsJet;
-    std::map<std::string, std::vector<int>> genPhotonSortedPromptDecayed;
-    std::map<std::string, std::vector<int>> genPhotonSortedPromptFinalState;
-    std::map<std::string, std::vector<int>> genPhotonSortedHardProcess;
-    std::map<std::string, std::vector<int>> genPhotonSortedPythiaSixStatusThree;
-    std::map<std::string, std::vector<int>> genPhotonSortedScalarAncestor;
-    std::map<std::string, std::vector<int>> genPhotonSortedDirectScalarAncestor;
+    // std::map<std::string, std::vector<float>> genPhotonSortedPt;
+    // std::map<std::string, std::vector<float>> genPhotonSortedET;
+    // std::map<std::string, std::vector<float>> genPhotonSortedEta;
+    // std::map<std::string, std::vector<float>> genPhotonSortedTheta;
+    // std::map<std::string, std::vector<float>> genPhotonSortedPhi;
+    // std::map<std::string, std::vector<float>> genPhotonSortedPx;
+    // std::map<std::string, std::vector<float>> genPhotonSortedPy;
+    // std::map<std::string, std::vector<float>> genPhotonSortedPz;
+    // std::map<std::string, std::vector<int>> genPhotonSortedCharge;
+    // std::map<std::string, std::vector<int>> genPhotonSortedPdgId;
+    // std::map<std::string, std::vector<int>> genPhotonSortedMotherId;
+    // std::map<std::string, std::vector<int>> genPhotonSortedIsPhoton;
+    // std::map<std::string, std::vector<int>> genPhotonSortedIsConvertedPhoton;
+    // std::map<std::string, std::vector<int>> genPhotonSortedIsJet;
+    // std::map<std::string, std::vector<int>> genPhotonSortedPromptDecayed;
+    // std::map<std::string, std::vector<int>> genPhotonSortedPromptFinalState;
+    // std::map<std::string, std::vector<int>> genPhotonSortedHardProcess;
+    // std::map<std::string, std::vector<int>> genPhotonSortedPythiaSixStatusThree;
+    // std::map<std::string, std::vector<int>> genPhotonSortedScalarAncestor;
+    // std::map<std::string, std::vector<int>> genPhotonSortedDirectScalarAncestor;
 
     // gen branches
 
 
     // MC Truth
-    size_t nT{};
-    size_t nThadronic{};
-    size_t nb{};
-    size_t nWhadronic{};
-    size_t nTleptonic{};
-    size_t nWleptonic{};
-    int VQQBosonAbsId{};
+    // size_t nT{};
+    // size_t nThadronic{};
+    // size_t nb{};
+    // size_t nWhadronic{};
+    // size_t nTleptonic{};
+    // size_t nWleptonic{};
+    // int VQQBosonAbsId{};
 
-    static constexpr size_t NTOPMCINFOSMAX{20};
-    float T_hadronicMCTruthE[NTOPMCINFOSMAX]{};
-    float T_hadronicMCTruthEt[NTOPMCINFOSMAX]{};
-    float T_hadronicMCTruthPx[NTOPMCINFOSMAX]{};
-    float T_hadronicMCTruthPy[NTOPMCINFOSMAX]{};
-    float T_hadronicMCTruthPz[NTOPMCINFOSMAX]{};
-    int T_hadronicMotherIndex[NTOPMCINFOSMAX]{};
+    // static constexpr size_t NTOPMCINFOSMAX{20};
+    // float T_hadronicMCTruthE[NTOPMCINFOSMAX]{};
+    // float T_hadronicMCTruthEt[NTOPMCINFOSMAX]{};
+    // float T_hadronicMCTruthPx[NTOPMCINFOSMAX]{};
+    // float T_hadronicMCTruthPy[NTOPMCINFOSMAX]{};
+    // float T_hadronicMCTruthPz[NTOPMCINFOSMAX]{};
+    // int T_hadronicMotherIndex[NTOPMCINFOSMAX]{};
 
-    float T_leptonicMCTruthE[NTOPMCINFOSMAX]{};
-    float T_leptonicMCTruthEt[NTOPMCINFOSMAX]{};
-    float T_leptonicMCTruthPx[NTOPMCINFOSMAX]{};
-    float T_leptonicMCTruthPy[NTOPMCINFOSMAX]{};
-    float T_leptonicMCTruthPz[NTOPMCINFOSMAX]{};
-    int T_leptonicMotherIndex[NTOPMCINFOSMAX]{};
+    // float T_leptonicMCTruthE[NTOPMCINFOSMAX]{};
+    // float T_leptonicMCTruthEt[NTOPMCINFOSMAX]{};
+    // float T_leptonicMCTruthPx[NTOPMCINFOSMAX]{};
+    // float T_leptonicMCTruthPy[NTOPMCINFOSMAX]{};
+    // float T_leptonicMCTruthPz[NTOPMCINFOSMAX]{};
+    // int T_leptonicMotherIndex[NTOPMCINFOSMAX]{};
 
-    float bMCTruthE[NTOPMCINFOSMAX]{};
-    float bMCTruthEt[NTOPMCINFOSMAX]{};
-    float bMCTruthPx[NTOPMCINFOSMAX]{};
-    float bMCTruthPy[NTOPMCINFOSMAX]{};
-    float bMCTruthPz[NTOPMCINFOSMAX]{};
-    int bMCTruthMother[NTOPMCINFOSMAX]{};
+    // float bMCTruthE[NTOPMCINFOSMAX]{};
+    // float bMCTruthEt[NTOPMCINFOSMAX]{};
+    // float bMCTruthPx[NTOPMCINFOSMAX]{};
+    // float bMCTruthPy[NTOPMCINFOSMAX]{};
+    // float bMCTruthPz[NTOPMCINFOSMAX]{};
+    // int bMCTruthMother[NTOPMCINFOSMAX]{};
 
-    float W_hadronicMCTruthE[NTOPMCINFOSMAX]{};
-    float W_hadronicMCTruthEt[NTOPMCINFOSMAX]{};
-    float W_hadronicMCTruthPx[NTOPMCINFOSMAX]{};
-    float W_hadronicMCTruthPy[NTOPMCINFOSMAX]{};
-    float W_hadronicMCTruthPz[NTOPMCINFOSMAX]{};
-    int W_hadronicMCTruthPID[NTOPMCINFOSMAX]{};
-    int W_hadronicMCTruthMother[NTOPMCINFOSMAX]{};
+    // float W_hadronicMCTruthE[NTOPMCINFOSMAX]{};
+    // float W_hadronicMCTruthEt[NTOPMCINFOSMAX]{};
+    // float W_hadronicMCTruthPx[NTOPMCINFOSMAX]{};
+    // float W_hadronicMCTruthPy[NTOPMCINFOSMAX]{};
+    // float W_hadronicMCTruthPz[NTOPMCINFOSMAX]{};
+    // int W_hadronicMCTruthPID[NTOPMCINFOSMAX]{};
+    // int W_hadronicMCTruthMother[NTOPMCINFOSMAX]{};
 
-    float W_leptonicMCTruthE[NTOPMCINFOSMAX]{};
-    float W_leptonicMCTruthEt[NTOPMCINFOSMAX]{};
-    float W_leptonicMCTruthPx[NTOPMCINFOSMAX]{};
-    float W_leptonicMCTruthPy[NTOPMCINFOSMAX]{};
-    float W_leptonicMCTruthPz[NTOPMCINFOSMAX]{};
-    int W_leptonicMCTruthPID[NTOPMCINFOSMAX]{};
-    int W_leptonicMCTruthMother[NTOPMCINFOSMAX]{};
+    // float W_leptonicMCTruthE[NTOPMCINFOSMAX]{};
+    // float W_leptonicMCTruthEt[NTOPMCINFOSMAX]{};
+    // float W_leptonicMCTruthPx[NTOPMCINFOSMAX]{};
+    // float W_leptonicMCTruthPy[NTOPMCINFOSMAX]{};
+    // float W_leptonicMCTruthPz[NTOPMCINFOSMAX]{};
+    // int W_leptonicMCTruthPID[NTOPMCINFOSMAX]{};
+    // int W_leptonicMCTruthMother[NTOPMCINFOSMAX]{};
 
-    int isElePlusJets{};
+    // int isElePlusJets{};
 
     //  float remainingEnergy[20];
 
@@ -902,146 +910,146 @@ class MakeTopologyNtupleMiniAOD : public edm::EDAnalyzer
     JetCorrectionUncertainty* jecPFUncertainty{};
     JetCorrectionUncertainty* jecJPTUncertainty{};
 
-    std::map<std::string, std::vector<double>> jetSortedE;
-    std::map<std::string, std::vector<double>> jetSortedEt;
-    std::map<std::string, std::vector<double>> jetSortedPt;
-    std::map<std::string, std::vector<double>> jetSortedPtRaw;
-    std::map<std::string, std::vector<double>> jetSortedUnCorEt;
-    std::map<std::string, std::vector<double>> jetSortedUnCorPt;
-    std::map<std::string, std::vector<double>> jetSortedEta;
-    std::map<std::string, std::vector<double>> jetSortedTheta;
-    std::map<std::string, std::vector<double>> jetSortedPhi;
-    std::map<std::string, std::vector<double>> jetSortedPx;
-    std::map<std::string, std::vector<double>> jetSortedPy;
-    std::map<std::string, std::vector<double>> jetSortedPz;
-    std::map<std::string, std::vector<double>> jetSortedMass;
-    std::map<std::string, std::vector<int>> jetSortedID;
-    std::map<std::string, std::vector<double>> jetSortedClosestLepton;
-    std::map<std::string, std::vector<int>> jetSortedNtracksInJet;
-    std::map<std::string, std::vector<float>> jetSortedJetCharge;
-    std::map<std::string, std::vector<float>> jetSortedfHPD;
-    std::map<std::string, std::vector<float>>
-        jetSortedCorrFactor; // only include full JES corrections for now.
-    std::map<std::string, std::vector<float>> jetSortedCorrResidual;
-    std::map<std::string, std::vector<float>> jetSortedL2L3ResErr;
-    std::map<std::string, std::vector<float>>
-        jetSortedCorrErrLow; // JES uncertainty
-    std::map<std::string, std::vector<float>> jetSortedCorrErrHi;
-    std::map<std::string, std::vector<float>> jetSortedN90Hits;
-    std::map<std::string, std::vector<float>> jetSortedTriggered;
-    std::map<std::string, std::vector<float>> jetSortedSVX;
-    std::map<std::string, std::vector<float>> jetSortedSVY;
-    std::map<std::string, std::vector<float>> jetSortedSVZ;
-    std::map<std::string, std::vector<float>> jetSortedSVDX;
-    std::map<std::string, std::vector<float>> jetSortedSVDY;
-    std::map<std::string, std::vector<float>> jetSortedSVDZ;
-    std::map<std::string, std::vector<int>> jetSortedNConstituents;
+    // std::map<std::string, std::vector<double>> jetSortedE;
+    // std::map<std::string, std::vector<double>> jetSortedEt;
+    // std::map<std::string, std::vector<double>> jetSortedPt;
+    // std::map<std::string, std::vector<double>> jetSortedPtRaw;
+    // std::map<std::string, std::vector<double>> jetSortedUnCorEt;
+    // std::map<std::string, std::vector<double>> jetSortedUnCorPt;
+    // std::map<std::string, std::vector<double>> jetSortedEta;
+    // std::map<std::string, std::vector<double>> jetSortedTheta;
+    // std::map<std::string, std::vector<double>> jetSortedPhi;
+    // std::map<std::string, std::vector<double>> jetSortedPx;
+    // std::map<std::string, std::vector<double>> jetSortedPy;
+    // std::map<std::string, std::vector<double>> jetSortedPz;
+    // std::map<std::string, std::vector<double>> jetSortedMass;
+    // std::map<std::string, std::vector<int>> jetSortedID;
+    // std::map<std::string, std::vector<double>> jetSortedClosestLepton;
+    // std::map<std::string, std::vector<int>> jetSortedNtracksInJet;
+    // std::map<std::string, std::vector<float>> jetSortedJetCharge;
+    // std::map<std::string, std::vector<float>> jetSortedfHPD;
+    // std::map<std::string, std::vector<float>>
+    //     jetSortedCorrFactor; // only include full JES corrections for now.
+    // std::map<std::string, std::vector<float>> jetSortedCorrResidual;
+    // std::map<std::string, std::vector<float>> jetSortedL2L3ResErr;
+    // std::map<std::string, std::vector<float>>
+    //     jetSortedCorrErrLow; // JES uncertainty
+    // std::map<std::string, std::vector<float>> jetSortedCorrErrHi;
+    // std::map<std::string, std::vector<float>> jetSortedN90Hits;
+    // std::map<std::string, std::vector<float>> jetSortedTriggered;
+    // std::map<std::string, std::vector<float>> jetSortedSVX;
+    // std::map<std::string, std::vector<float>> jetSortedSVY;
+    // std::map<std::string, std::vector<float>> jetSortedSVZ;
+    // std::map<std::string, std::vector<float>> jetSortedSVDX;
+    // std::map<std::string, std::vector<float>> jetSortedSVDY;
+    // std::map<std::string, std::vector<float>> jetSortedSVDZ;
+    // std::map<std::string, std::vector<int>> jetSortedNConstituents;
 
-    // Calo Jet
-    std::map<std::string, std::vector<float>> jetSortedEMEnergyInEB;
-    std::map<std::string, std::vector<float>> jetSortedEMEnergyInEE;
-    std::map<std::string, std::vector<float>> jetSortedEMEnergyFraction;
-    std::map<std::string, std::vector<float>> jetSortedEMEnergyInHF;
-    std::map<std::string, std::vector<float>> jetSortedHadEnergyInHB;
-    std::map<std::string, std::vector<float>> jetSortedHadEnergyInHE;
-    std::map<std::string, std::vector<float>> jetSortedHadEnergyInHF;
-    std::map<std::string, std::vector<float>> jetSortedHadEnergyInHO;
-    std::map<std::string, std::vector<float>> jetSortedN60;
-    std::map<std::string, std::vector<float>> jetSortedN90;
-    // PF Specific
-    std::map<std::string, std::vector<float>> jetSortedNeutralEmEnergy;
-    std::map<std::string, std::vector<float>> jetSortedMuEnergy;
-    std::map<std::string, std::vector<float>> jetSortedMuEnergyFraction;
-    std::map<std::string, std::vector<int>> jetSortedChargedMultiplicity;
-    std::map<std::string, std::vector<float>> jetSortedNeutralHadEnergy;
+    // // Calo Jet
+    // std::map<std::string, std::vector<float>> jetSortedEMEnergyInEB;
+    // std::map<std::string, std::vector<float>> jetSortedEMEnergyInEE;
+    // std::map<std::string, std::vector<float>> jetSortedEMEnergyFraction;
+    // std::map<std::string, std::vector<float>> jetSortedEMEnergyInHF;
+    // std::map<std::string, std::vector<float>> jetSortedHadEnergyInHB;
+    // std::map<std::string, std::vector<float>> jetSortedHadEnergyInHE;
+    // std::map<std::string, std::vector<float>> jetSortedHadEnergyInHF;
+    // std::map<std::string, std::vector<float>> jetSortedHadEnergyInHO;
+    // std::map<std::string, std::vector<float>> jetSortedN60;
+    // std::map<std::string, std::vector<float>> jetSortedN90;
+    // // PF Specific
+    // std::map<std::string, std::vector<float>> jetSortedNeutralEmEnergy;
+    // std::map<std::string, std::vector<float>> jetSortedMuEnergy;
+    // std::map<std::string, std::vector<float>> jetSortedMuEnergyFraction;
+    // std::map<std::string, std::vector<int>> jetSortedChargedMultiplicity;
+    // std::map<std::string, std::vector<float>> jetSortedNeutralHadEnergy;
 
-    std::map<std::string, std::vector<int>> jetSortedNeutralMultiplicity;
-    std::map<std::string, std::vector<float>>
-        jetSortedChargedHadronEnergyFraction;
-    std::map<std::string, std::vector<float>>
-        jetSortedNeutralHadronEnergyFraction;
-    std::map<std::string, std::vector<float>> jetSortedChargedEmEnergyFraction;
-    std::map<std::string, std::vector<float>> jetSortedNeutralEmEnergyFraction;
-    std::map<std::string, std::vector<float>> jetSortedMuonFraction;
-    std::map<std::string, std::vector<float>>
-        jetSortedChargedHadronEnergyFractionCorr;
-    std::map<std::string, std::vector<float>>
-        jetSortedNeutralHadronEnergyFractionCorr;
-    std::map<std::string, std::vector<float>>
-        jetSortedChargedEmEnergyFractionCorr;
-    std::map<std::string, std::vector<float>>
-        jetSortedNeutralEmEnergyFractionCorr;
-    std::map<std::string, std::vector<float>> jetSortedMuonFractionCorr;
+    // std::map<std::string, std::vector<int>> jetSortedNeutralMultiplicity;
+    // std::map<std::string, std::vector<float>>
+    //     jetSortedChargedHadronEnergyFraction;
+    // std::map<std::string, std::vector<float>>
+    //     jetSortedNeutralHadronEnergyFraction;
+    // std::map<std::string, std::vector<float>> jetSortedChargedEmEnergyFraction;
+    // std::map<std::string, std::vector<float>> jetSortedNeutralEmEnergyFraction;
+    // std::map<std::string, std::vector<float>> jetSortedMuonFraction;
+    // std::map<std::string, std::vector<float>>
+    //     jetSortedChargedHadronEnergyFractionCorr;
+    // std::map<std::string, std::vector<float>>
+    //     jetSortedNeutralHadronEnergyFractionCorr;
+    // std::map<std::string, std::vector<float>>
+    //     jetSortedChargedEmEnergyFractionCorr;
+    // std::map<std::string, std::vector<float>>
+    //     jetSortedNeutralEmEnergyFractionCorr;
+    // std::map<std::string, std::vector<float>> jetSortedMuonFractionCorr;
 
-    // more detailed BID info for a few algorithms.
-    std::map<std::string, std::vector<float>> jetSortedBtagSoftMuonPtRel;
-    std::map<std::string, std::vector<float>> jetSortedBtagSoftMuonQuality;
-    std::map<std::string, std::vector<float>>
-        jetSortedBIDParams_; // stores the parameter (db) output
-    std::map<std::string, float> bidParamsDiscCut_;
+    // // more detailed BID info for a few algorithms.
+    // std::map<std::string, std::vector<float>> jetSortedBtagSoftMuonPtRel;
+    // std::map<std::string, std::vector<float>> jetSortedBtagSoftMuonQuality;
+    // std::map<std::string, std::vector<float>>
+    //     jetSortedBIDParams_; // stores the parameter (db) output
+    // std::map<std::string, float> bidParamsDiscCut_;
 
-    std::map<std::string, std::vector<float>> genJetSortedE;
-    std::map<std::string, std::vector<float>> genJetSortedEt;
-    std::map<std::string, std::vector<float>> genJetSortedPt;
-    std::map<std::string, std::vector<float>> genJetSortedEta;
-    std::map<std::string, std::vector<float>> genJetSortedTheta;
-    std::map<std::string, std::vector<float>> genJetSortedPhi;
-    std::map<std::string, std::vector<float>> genJetSortedPx;
-    std::map<std::string, std::vector<float>> genJetSortedPy;
-    std::map<std::string, std::vector<float>> genJetSortedPz;
-    std::map<std::string, std::vector<float>> genJetSortedMass;
-    std::map<std::string, std::vector<int>> genJetSortedID;
-    std::map<std::string, std::vector<int>> jetSortedPID;
-    std::map<std::string, std::vector<int>> genJetSortedPID;
-    std::map<std::string, std::vector<int>> genJetSortedMotherPID;
-    std::map<std::string, std::vector<int>> genJetSortedScalarAncestor;
-    std::map<std::string, std::vector<float>> genJetSortedClosestB;
-    std::map<std::string, std::vector<float>> genJetSortedClosestC;
+    // std::map<std::string, std::vector<float>> genJetSortedE;
+    // std::map<std::string, std::vector<float>> genJetSortedEt;
+    // std::map<std::string, std::vector<float>> genJetSortedPt;
+    // std::map<std::string, std::vector<float>> genJetSortedEta;
+    // std::map<std::string, std::vector<float>> genJetSortedTheta;
+    // std::map<std::string, std::vector<float>> genJetSortedPhi;
+    // std::map<std::string, std::vector<float>> genJetSortedPx;
+    // std::map<std::string, std::vector<float>> genJetSortedPy;
+    // std::map<std::string, std::vector<float>> genJetSortedPz;
+    // std::map<std::string, std::vector<float>> genJetSortedMass;
+    // std::map<std::string, std::vector<int>> genJetSortedID;
+    // std::map<std::string, std::vector<int>> jetSortedPID;
+    // std::map<std::string, std::vector<int>> genJetSortedPID;
+    // std::map<std::string, std::vector<int>> genJetSortedMotherPID;
+    // std::map<std::string, std::vector<int>> genJetSortedScalarAncestor;
+    // std::map<std::string, std::vector<float>> genJetSortedClosestB;
+    // std::map<std::string, std::vector<float>> genJetSortedClosestC;
 
-    std::map<std::string, float> fixedGridRhoFastjetAll;
+    // std::map<std::string, float> fixedGridRhoFastjetAll;
 
-    // generalTracks are drawn from AOD collection
-    static constexpr size_t NTRACKSMAX{1000};
-    float generalTracksPt[NTRACKSMAX]{};
-    float generalTracksPx[NTRACKSMAX]{};
-    float generalTracksPy[NTRACKSMAX]{};
-    float generalTracksPz[NTRACKSMAX]{};
-    float generalTracksEta[NTRACKSMAX]{};
-    float generalTracksTheta[NTRACKSMAX]{};
-    float generalTracksPhi[NTRACKSMAX]{};
-    float generalTracksCharge[NTRACKSMAX]{};
-    float generalTracksVx[NTRACKSMAX]{};
-    float generalTracksVy[NTRACKSMAX]{};
-    float generalTracksVz[NTRACKSMAX]{};
-    float generalTracksBeamSpotCorrectedD0[NTRACKSMAX]{};
+    // // generalTracks are drawn from AOD collection
+    // static constexpr size_t NTRACKSMAX{1000};
+    // float generalTracksPt[NTRACKSMAX]{};
+    // float generalTracksPx[NTRACKSMAX]{};
+    // float generalTracksPy[NTRACKSMAX]{};
+    // float generalTracksPz[NTRACKSMAX]{};
+    // float generalTracksEta[NTRACKSMAX]{};
+    // float generalTracksTheta[NTRACKSMAX]{};
+    // float generalTracksPhi[NTRACKSMAX]{};
+    // float generalTracksCharge[NTRACKSMAX]{};
+    // float generalTracksVx[NTRACKSMAX]{};
+    // float generalTracksVy[NTRACKSMAX]{};
+    // float generalTracksVz[NTRACKSMAX]{};
+    // float generalTracksBeamSpotCorrectedD0[NTRACKSMAX]{};
 
-    // isoTracks that are drawn from packedPFCands, lostTracks and packedCands
-    static constexpr size_t NISOTRACKSMAX{40};
-    float isoTracksPt[NISOTRACKSMAX]{};
-    float isoTracksPx[NISOTRACKSMAX]{};
-    float isoTracksPy[NISOTRACKSMAX]{};
-    float isoTracksPz[NISOTRACKSMAX]{};
-    float isoTracksE[NISOTRACKSMAX]{};
-    float isoTracksEta[NISOTRACKSMAX]{};
-    float isoTracksTheta[NISOTRACKSMAX]{};
-    float isoTracksPhi[NISOTRACKSMAX]{};
-    int isoTracksCharge[NISOTRACKSMAX]{};
-    int isoTracksPdgId[NISOTRACKSMAX]{};
-    float isoTracksMatchedCaloJetEmEnergy[NISOTRACKSMAX]{};
-    float isoTracksMatchedCaloJetHadEnergy[NISOTRACKSMAX]{};
-    float isoTracksDz[NISOTRACKSMAX]{};
-    float isoTracksDxy[NISOTRACKSMAX]{};
-    float isoTracksDzError[NISOTRACKSMAX]{};
-    float isoTracksDxyError[NISOTRACKSMAX]{};
-    int isoTracksFromPV[NISOTRACKSMAX]{};
-    int isoTracksVx[NISOTRACKSMAX]{};
-    int isoTracksVy[NISOTRACKSMAX]{};
-    int isoTracksVz[NISOTRACKSMAX]{};
-    int isoTracksHighPurity[NISOTRACKSMAX]{};
-    int isoTracksTight[NISOTRACKSMAX]{};
-    int isoTracksLoose[NISOTRACKSMAX]{};
-    float isoTracksDeltaEta[NISOTRACKSMAX]{};
-    float isoTracksDeltaPhi[NISOTRACKSMAX]{};
+    // // isoTracks that are drawn from packedPFCands, lostTracks and packedCands
+    // static constexpr size_t NISOTRACKSMAX{40};
+    // float isoTracksPt[NISOTRACKSMAX]{};
+    // float isoTracksPx[NISOTRACKSMAX]{};
+    // float isoTracksPy[NISOTRACKSMAX]{};
+    // float isoTracksPz[NISOTRACKSMAX]{};
+    // float isoTracksE[NISOTRACKSMAX]{};
+    // float isoTracksEta[NISOTRACKSMAX]{};
+    // float isoTracksTheta[NISOTRACKSMAX]{};
+    // float isoTracksPhi[NISOTRACKSMAX]{};
+    // int isoTracksCharge[NISOTRACKSMAX]{};
+    // int isoTracksPdgId[NISOTRACKSMAX]{};
+    // float isoTracksMatchedCaloJetEmEnergy[NISOTRACKSMAX]{};
+    // float isoTracksMatchedCaloJetHadEnergy[NISOTRACKSMAX]{};
+    // float isoTracksDz[NISOTRACKSMAX]{};
+    // float isoTracksDxy[NISOTRACKSMAX]{};
+    // float isoTracksDzError[NISOTRACKSMAX]{};
+    // float isoTracksDxyError[NISOTRACKSMAX]{};
+    // int isoTracksFromPV[NISOTRACKSMAX]{};
+    // int isoTracksVx[NISOTRACKSMAX]{};
+    // int isoTracksVy[NISOTRACKSMAX]{};
+    // int isoTracksVz[NISOTRACKSMAX]{};
+    // int isoTracksHighPurity[NISOTRACKSMAX]{};
+    // int isoTracksTight[NISOTRACKSMAX]{};
+    // int isoTracksLoose[NISOTRACKSMAX]{};
+    // float isoTracksDeltaEta[NISOTRACKSMAX]{};
+    // float isoTracksDeltaPhi[NISOTRACKSMAX]{};
 
     // packedCands are used to subtract photon conversion background
     static constexpr size_t NPACKEDCANDSMAX{3000};
@@ -1181,15 +1189,15 @@ class MakeTopologyNtupleMiniAOD : public edm::EDAnalyzer
     int genParDaughter2Index[NGENPARMAX]{};
     int genParCharge[NGENPARMAX]{};
     // PDF info
-    float genPDFScale{};
-    float genPDFx1{};
-    float genPDFx2{};
-    int genPDFf1{};
-    int genPDFf2{};
-    // CTEQ_6.6 general purpose
-    float genCTEQ66_Weight[44]{};
-    // MRST98 NLO
-    float genMRST2006nnlo_Weight[31]{};
+    // float genPDFScale{};
+    // float genPDFx1{};
+    // float genPDFx2{};
+    // int genPDFf1{};
+    // int genPDFf2{};
+    // // CTEQ_6.6 general purpose
+    // float genCTEQ66_Weight[44]{};
+    // // MRST98 NLO
+    // float genMRST2006nnlo_Weight[31]{};
 
     // basic 4-vectors for photons,taus as we're not interested in them.
     static constexpr size_t NTAUSMAX{20};
@@ -1202,23 +1210,23 @@ class MakeTopologyNtupleMiniAOD : public edm::EDAnalyzer
     std::map<std::string, std::map<std::string, std::vector<float>>> bTagRes;
     std::vector<int> triggerRes;
     std::vector<int> metFilterRes;
-//    int Flag_ecalBadCalibReducedMINIAODFilter;
+   int Flag_ecalBadCalibReducedMINIAODFilter;
     std::vector<int> HLT_fakeTriggerValues;
 
     static constexpr size_t NTRIGGERBITSMAX{700};
     int nTriggerBits{};
-    int TriggerBits[NTRIGGERBITSMAX]{};
+    // int TriggerBits[NTRIGGERBITSMAX]{};
 
-    float topo_sphericity{};
-    float topo_aplanarity{};
-    float topo_sphericitye{};
-    float topo_aplanaritye{};
-    float topo_oblateness{};
-    float topo_sqrts{};
-    float topo_sqrtse{};
-    float topo_ht3{};
-    float topo_hte{};
-    float topo_ht{};
+    // float topo_sphericity{};
+    // float topo_aplanarity{};
+    // float topo_sphericitye{};
+    // float topo_aplanaritye{};
+    // float topo_oblateness{};
+    // float topo_sqrts{};
+    // float topo_sqrtse{};
+    // float topo_ht3{};
+    // float topo_hte{};
+    // float topo_ht{};
 
     int evtRun{};
     int evtnum{};
