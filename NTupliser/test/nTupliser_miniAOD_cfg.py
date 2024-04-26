@@ -134,8 +134,9 @@ process.jetCorrection = cms.Sequence( process.patJetCorrFactorsUpdatedJEC * proc
 ###############################
 
 ## All embedded in 2017 miniAODv2, but to rerun on v1 ...
-from EgammaUser.EgammaPostRecoTools.EgammaPostRecoTools import setupEgammaPostRecoSeq
-setupEgammaPostRecoSeq(process,era=EgammaEra)  ### 2016preVFP-UL OR 2016postVFP-UL OR 2017-UL OR 2018-UL
+#from EgammaUser.EgammaPostRecoTools.EgammaPostRecoTools import setupEgammaPostRecoSeq
+from RecoEgamma.EgammaTools.EgammaPostRecoTools import setupEgammaPostRecoSeq
+setupEgammaPostRecoSeq(process,runEnergyCorrections=True,runVID=False,era=EgammaEra)  ### 2016preVFP-UL OR 2016postVFP-UL OR 2017-UL OR 2018-UL
 #a sequence egammaPostRecoSeq has now been created and should be added to your path, eg process.p=cms.Path(process.egammaPostRecoSeq)
 
 ###############################
