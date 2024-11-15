@@ -148,6 +148,47 @@ DYJetsToLL_Pt-650ToInf_2018:
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
   status: 'NA'
   process: ''
+
+HToSS_SmuonHadronFiltered_MH125_MS0p4_ctauS0_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p4_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p4_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2_MCUL2016APV_HToSS_ChargedPion_LT/240617_212653'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS0p4_ctauS100_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p4_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p4_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1_MCUL2016APV_HToSS_ChargedPion_LT/240617_212739'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS0p4_ctauS10_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p4_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p4_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1_MCUL2016APV_HToSS_ChargedPion_LT/240617_212725'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS0p4_ctauS1_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p4_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p4_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2_MCUL2016APV_HToSS_ChargedPion_LT/240617_212706'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS0p4_ctauS0_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p4_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p4_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2_MCUL2016nonAPV_HToSS_ChargedPion/240503_100807'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS0p4_ctauS100_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p4_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v1/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p4_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v1_MCUL2016nonAPV_HToSS_ChargedPion/240503_100852'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS0p4_ctauS10_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p4_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v1/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p4_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v1_MCUL2016nonAPV_HToSS_ChargedPion/240503_100839'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS0p4_ctauS1_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p4_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p4_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2_MCUL2016nonAPV_HToSS_ChargedPion/240710_232306'
+  status: 'DONE'
+  process: 'ggH'
 HToSS_SmuonHadronFiltered_MH125_MS0p4_ctauS0_2017:
   location: /HToSSTo2Mu2Hadrons_MH125_MS0p4_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p4_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedPion/231114_152133'
@@ -189,6 +230,51 @@ HToSS_SmuonHadronFiltered_MH125_MS0p4_ctauS1_2018:
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p4_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL18MiniAOD-106X_upgrade2018_realistic_v11_L1v1-v1_MCUL2018_HToSS_ChargedPion/240313_135418'
   status: 'DONE'
   process: 'ggH'
+
+
+HToSS_SmuonHadronFiltered_MH125_MS0p6_ctauS0_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p6_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p6_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2_MCUL2016APV_HToSS_ChargedPion_LT/240617_212557'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS0p6_ctauS100_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p6_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p6_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1_MCUL2016APV_HToSS_ChargedPion_LT/240617_212640'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS0p6_ctauS10_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p6_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p6_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1_MCUL2016APV_HToSS_ChargedPion_LT/240617_212627'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS0p6_ctauS1_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p6_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p6_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2_MCUL2016APV_HToSS_ChargedPion_LT/240617_212610'
+  status: 'DONE'
+  process: 'ggH'
+
+
+HToSS_SmuonHadronFiltered_MH125_MS0p6_ctauS0_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p6_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p6_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2_MCUL2016nonAPV_HToSS_ChargedPion/240503_100707'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS0p6_ctauS100_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p6_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v1/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p6_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v1_MCUL2016nonAPV_HToSS_ChargedPion/240503_100747'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS0p6_ctauS10_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p6_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v1/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p6_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v1_MCUL2016nonAPV_HToSS_ChargedPion/240503_100734'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS0p6_ctauS1_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p6_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p6_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2_MCUL2016nonAPV_HToSS_ChargedPion/240503_100720'
+  status: 'DONE'
+  process: 'ggH'
+
 HToSS_SmuonHadronFiltered_MH125_MS0p6_ctauS0_2017:
   location: /HToSSTo2Mu2Hadrons_MH125_MS0p6_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p6_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedPion/231114_150524'
@@ -206,7 +292,7 @@ HToSS_SmuonHadronFiltered_MH125_MS0p6_ctauS10_2017:
   process: 'ggH'
 HToSS_SmuonHadronFiltered_MH125_MS0p6_ctauS1_2017:
   location: /HToSSTo2Mu2Hadrons_MH125_MS0p6_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p6_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedPion/240227_220233'
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p6_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedPion/240710_232202'
   status: 'DONE'
   process: 'ggH'
   
@@ -232,6 +318,48 @@ HToSS_SmuonHadronFiltered_MH125_MS0p6_ctauS1_2018:
   process: 'ggH'
 
 
+HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS0_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p8_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p8_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2_MCUL2016APV_HToSS_ChargedPion_LT/240617_212503'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS100_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p8_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p8_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1_MCUL2016APV_HToSS_ChargedPion_LT/240617_212544'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS10_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p8_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p8_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1_MCUL2016APV_HToSS_ChargedPion_LT/240617_212531'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS1_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p8_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p8_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2_MCUL2016APV_HToSS_ChargedPion_LT/240617_212517'
+  status: 'DONE'
+  process: 'ggH'
+
+HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS0_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p8_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p8_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2_MCUL2016nonAPV_HToSS_ChargedPion/240503_100613'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS100_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p8_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v1/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p8_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v1_MCUL2016nonAPV_HToSS_ChargedPion/240503_100654'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS10_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p8_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p8_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2_MCUL2016nonAPV_HToSS_ChargedPion/240503_100640'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS1_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p8_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p8_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2_MCUL2016nonAPV_HToSS_ChargedPion/240503_100626'
+  status: 'DONE'
+  process: 'ggH'
+
 HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS0_2017:
   location: /HToSSTo2Mu2Hadrons_MH125_MS0p8_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p8_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedPion/231114_144912'
@@ -244,7 +372,7 @@ HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS0_2018:
   process: 'ggH'
 HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS100_2017:
   location: /HToSSTo2Mu2Hadrons_MH125_MS0p8_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p8_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedPion/240227_220222'
   status: 'DONE'
   process: 'ggH'
 HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS100_2018:
@@ -272,6 +400,50 @@ HToSS_SmuonHadronFiltered_MH125_MS0p8_ctauS1_2018:
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p8_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL18MiniAOD-106X_upgrade2018_realistic_v11_L1v1-v1_MCUL2018_HToSS_ChargedPion/240313_135242'
   status: 'DONE'
   process: 'ggH'
+
+
+HToSS_SmuonHadronFiltered_MH125_MS0p9_ctauS0_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p9_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM 
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p9_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2_MCUL2016APV_HToSS_ChargedPion/240618_014728'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS0p9_ctauS100_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p9_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM 
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p9_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1_MCUL2016APV_HToSS_ChargedPion/240618_015444'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS0p9_ctauS10_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p9_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM 
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p9_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1_MCUL2016APV_HToSS_ChargedPion/240618_015430'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS0p9_ctauS1_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p9_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM 
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p9_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2_MCUL2016APV_HToSS_ChargedPion/240618_015417'
+  status: 'DONE'
+  process: 'ggH'
+
+HToSS_SmuonHadronFiltered_MH125_MS0p9_ctauS0_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p9_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM 
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p9_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2_MCUL2016nonAPV_HToSS_ChargedPion_LT/240617_220821'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS0p9_ctauS100_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p9_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v1/MINIAODSIM 
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p9_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v1_MCUL2016nonAPV_HToSS_ChargedPion_LT/240617_220906'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS0p9_ctauS10_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p9_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v1/MINIAODSIM 
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p9_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v1_MCUL2016nonAPV_HToSS_ChargedPion_LT/240617_220849'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS0p9_ctauS1_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS0p9_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM 
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p9_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2_MCUL2016nonAPV_HToSS_ChargedPion/240503_100554'
+  status: 'DONE'
+  process: 'ggH'
+
 HToSS_SmuonHadronFiltered_MH125_MS0p9_ctauS0_2017:
   location: /HToSSTo2Mu2Hadrons_MH125_MS0p9_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p9_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedPion/231114_143303'
@@ -314,16 +486,48 @@ HToSS_SmuonHadronFiltered_MH125_MS0p9_ctauS1_2018:
   status: 'DONE'
   process: 'ggH'
 
-HToSS_SmuonHadronFiltered_MH125_MS1_ctauS0_2016:
-  location: ''
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+
 HToSS_SmuonHadronFiltered_MH125_MS1_ctauS0_2016_APV:
-  location: ''
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2_MCUL2016APV_HToSS_ChargedPion_LT/240617_212350'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1_ctauS100_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1_MCUL2016APV_HToSS_ChargedPion_LT/240617_212431'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1_ctauS10_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1_MCUL2016APV_HToSS_ChargedPion_LT/240617_212418'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2_MCUL2016APV_HToSS_ChargedPion_LT/240617_212405'
+  status: 'DONE'
+  process: 'ggH'
+
+HToSS_SmuonHadronFiltered_MH125_MS1_ctauS0_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2_MCUL2016nonAPV_HToSS_ChargedPion/240503_100455'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1_ctauS100_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v1/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v1_MCUL2016nonAPV_HToSS_ChargedPion/240503_100536'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1_ctauS10_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2_MCUL2016nonAPV_HToSS_ChargedPion/240503_100523'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2_MCUL2016nonAPV_HToSS_ChargedPion/240503_100510'
+  status: 'DONE'
+  process: 'ggH'
 HToSS_SmuonHadronFiltered_MH125_MS1_ctauS0_2017:
   location: /HToSSTo2Mu2Hadrons_MH125_MS1_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedPion/231114_141709'
@@ -334,16 +538,7 @@ HToSS_SmuonHadronFiltered_MH125_MS1_ctauS0_2018:
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL18MiniAOD-106X_upgrade2018_realistic_v11_L1v1-v1_MCUL2018_HToSS_ChargedPion/240313_135057'
   status: 'DONE'
   process: 'ggH'
-HToSS_SmuonHadronFiltered_MH125_MS1_ctauS100_2016:
-  location: ''
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
-HToSS_SmuonHadronFiltered_MH125_MS1_ctauS100_2016_APV:
-  location: ''
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+
 HToSS_SmuonHadronFiltered_MH125_MS1_ctauS100_2017:
   location: /HToSSTo2Mu2Hadrons_MH125_MS1_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedPion/240227_220111'
@@ -354,11 +549,7 @@ HToSS_SmuonHadronFiltered_MH125_MS1_ctauS100_2018:
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL18MiniAOD-106X_upgrade2018_realistic_v11_L1v1-v1_MCUL2018_HToSS_ChargedPion/240313_135132'
   status: 'DONE'
   process: 'ggH'
-HToSS_SmuonHadronFiltered_MH125_MS1_ctauS10_2016:
-  location: ''
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+
 HToSS_SmuonHadronFiltered_MH125_MS1_ctauS10_2017:
   location: /HToSSTo2Mu2Hadrons_MH125_MS1_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedPion/240227_220100'
@@ -369,16 +560,7 @@ HToSS_SmuonHadronFiltered_MH125_MS1_ctauS10_2018:
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL18MiniAOD-106X_upgrade2018_realistic_v11_L1v1-v1_MCUL2018_HToSS_ChargedPion/240313_135120'
   status: 'DONE'
   process: 'ggH'
-HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1_2016:
-  location: ''
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
-HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1_2016_APV:
-  location: ''
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+
 HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1_2017:
   location: /HToSSTo2Mu2Hadrons_MH125_MS1_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedPion/240227_220048'
@@ -389,19 +571,246 @@ HToSS_SmuonHadronFiltered_MH125_MS1_ctauS1_2018:
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL18MiniAOD-106X_upgrade2018_realistic_v11_L1v1-v1_MCUL2018_HToSS_ChargedPion/240313_135109'
   status: 'DONE'
   process: 'ggH'
+
+
+
+
+HToSS_SmuonHadronFiltered_MH125_MS1p1_ctauS0_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2_MCUL2016APV_HToSS_ChargedKaon_LT/240617_212157'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p1_ctauS100_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1_MCUL2016APV_HToSS_ChargedKaon_LT/240617_212242'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p1_ctauS10_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2_MCUL2016APV_HToSS_ChargedKaon_LT/240617_212224'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p1_ctauS1_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2_MCUL2016APV_HToSS_ChargedKaon_LT/240617_212210'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p2_ctauS0_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p2_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p2_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2_MCUL2016APV_HToSS_ChargedKaon_LT/240617_212104'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p2_ctauS100_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p2_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p2_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1_MCUL2016APV_HToSS_ChargedKaon_LT/240617_212144'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p2_ctauS10_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p2_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p2_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1_MCUL2016APV_HToSS_ChargedKaon_LT/240617_212130'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p2_ctauS1_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p2_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p2_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2_MCUL2016APV_HToSS_ChargedKaon_LT/240617_212117'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p4_ctauS0_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p4_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p4_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1_MCUL2016APV_HToSS_ChargedKaon_LT/240617_212011'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p4_ctauS100_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p4_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p4_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1_MCUL2016APV_HToSS_ChargedKaon_LT/240617_212050'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p4_ctauS10_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p4_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p4_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2_MCUL2016APV_HToSS_ChargedKaon_LT/240617_212038'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p4_ctauS1_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p4_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p4_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2_MCUL2016APV_HToSS_ChargedKaon_LT/240617_212024'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p6_ctauS0_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p6_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p6_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2_MCUL2016APV_HToSS_ChargedKaon_LT/240617_211930'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p6_ctauS100_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p6_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p6_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1_MCUL2016APV_HToSS_ChargedKaon_LT/240617_221521'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p6_ctauS10_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p6_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p6_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2_MCUL2016APV_HToSS_ChargedKaon_LT/240617_211956'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p6_ctauS1_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p6_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p6_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2_MCUL2016APV_HToSS_ChargedKaon_LT/240617_211943'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p8_ctauS0_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1_MCUL2016APV_HToSS_ChargedKaon_LT/240617_211835'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p8_ctauS100_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1_MCUL2016APV_HToSS_ChargedKaon_LT/240617_211916'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p8_ctauS10_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2_MCUL2016APV_HToSS_ChargedKaon_LT/240617_211903'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p8_ctauS1_2016_APV:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2_MCUL2016APV_HToSS_ChargedKaon_LT/240617_211848'
+  status: 'DONE'
+  process: 'ggH'
+
+HToSS_SmuonHadronFiltered_MH125_MS1p1_ctauS0_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2_MCUL2016nonAPV_HToSS_ChargedKaon/240503_100245'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p1_ctauS100_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v1/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v1_MCUL2016nonAPV_HToSS_ChargedKaon/240503_100346'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p1_ctauS10_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2_MCUL2016nonAPV_HToSS_ChargedKaon/240503_100332'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p1_ctauS1_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2_MCUL2016nonAPV_HToSS_ChargedKaon/240503_100317'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p2_ctauS0_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p2_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p2_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2_MCUL2016nonAPV_HToSS_ChargedKaon/240503_100144'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p2_ctauS100_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p2_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v1/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p2_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v1_MCUL2016nonAPV_HToSS_ChargedKaon/240503_100228'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p2_ctauS10_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p2_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p2_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2_MCUL2016nonAPV_HToSS_ChargedKaon/241018_171114'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p2_ctauS1_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p2_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p2_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2_MCUL2016nonAPV_HToSS_ChargedKaon/240503_100158'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p4_ctauS0_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p4_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p4_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2_MCUL2016nonAPV_HToSS_ChargedKaon/240503_100047'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p4_ctauS100_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p4_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v1/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p4_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v1_MCUL2016nonAPV_HToSS_ChargedKaon/240503_100128'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p4_ctauS10_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p4_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p4_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2_MCUL2016nonAPV_HToSS_ChargedKaon/240503_100114'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p4_ctauS1_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p4_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p4_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2_MCUL2016nonAPV_HToSS_ChargedKaon/240503_100100'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p6_ctauS0_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p6_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p6_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2_MCUL2016nonAPV_HToSS_ChargedKaon/240503_095954'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p6_ctauS100_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p6_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v1/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p6_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v1_MCUL2016nonAPV_HToSS_ChargedKaon/240503_100034'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p6_ctauS10_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p6_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p6_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2_MCUL2016nonAPV_HToSS_ChargedKaon/240503_100020'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p6_ctauS1_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p6_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p6_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2_MCUL2016nonAPV_HToSS_ChargedKaon/240503_100007'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p8_ctauS0_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2_MCUL2016nonAPV_HToSS_ChargedKaon/240503_095900'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p8_ctauS100_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v1/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v1_MCUL2016nonAPV_HToSS_ChargedKaon/240503_095940'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p8_ctauS10_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2_MCUL2016nonAPV_HToSS_ChargedKaon/240503_095927'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p8_ctauS1_2016:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2_MCUL2016nonAPV_HToSS_ChargedKaon/240503_095913'
+  status: 'DONE'
+  process: 'ggH'
+
+  HToSS_SmuonHadronFiltered_MH125_MS1p1_ctauS0_pion_2017:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedPion/231114_140138'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p1_ctauS100_pion_2017:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedPion/240227_220037'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p1_ctauS10_pion_2017:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedPion/240227_220026'
+  status: 'DONE'
+  process: 'ggH'
+HToSS_SmuonHadronFiltered_MH125_MS1p1_ctauS1_pion_2017:
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedPion/240227_220014'
+  status: 'DONE'
+  process: 'ggH'
+
 HToSS_SmuonHadronFiltered_MH125_MS1p1_ctauS0_2017:
   location: /HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedKaon/231114_134616'
   status: 'DONE'
   process: 'ggH'
 HToSS_SmuonHadronFiltered_MH125_MS1p1_ctauS100_2017:
-  location: /HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS100_Tune240227_220001CP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
+  location: /HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedKaon/240227_220001'
   status: 'DONE'
   process: 'ggH'
 HToSS_SmuonHadronFiltered_MH125_MS1p1_ctauS10_2017:
   location: /HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedKaon/240227_215939'
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p1_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedKaon/240227_215950'
   status: 'DONE'
   process: 'ggH'
 HToSS_SmuonHadronFiltered_MH125_MS1p1_ctauS1_2017:
@@ -446,7 +855,7 @@ HToSS_SmuonHadronFiltered_MH125_MS1p4_ctauS10_2017:
   process: 'ggH'
 HToSS_SmuonHadronFiltered_MH125_MS1p4_ctauS1_2017:
   location: /HToSSTo2Mu2Hadrons_MH125_MS1p4_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p4_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedKaon/240227_215828'
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p4_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedKaon/240710_232352'
   status: 'DONE'
   process: 'ggH'
 HToSS_SmuonHadronFiltered_MH125_MS1p6_ctauS0_2017:
@@ -471,22 +880,22 @@ HToSS_SmuonHadronFiltered_MH125_MS1p6_ctauS1_2017:
   process: 'ggH'
 HToSS_SmuonHadronFiltered_MH125_MS1p8_ctauS0_2017:
   location: /HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedKaon/231114_124352'
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedKaon/240701_121554'
   status: 'DONE'
   process: 'ggH'
 HToSS_SmuonHadronFiltered_MH125_MS1p8_ctauS100_2017:
   location: /HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedKaon/240227_215742'
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedKaon/240701_121633'
   status: 'DONE'
   process: 'ggH'
 HToSS_SmuonHadronFiltered_MH125_MS1p8_ctauS10_2017:
   location: /HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedKaon/240227_215730'
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedKaon/240701_121620'
   status: 'DONE'
   process: 'ggH'
 HToSS_SmuonHadronFiltered_MH125_MS1p8_ctauS1_2017:
   location: /HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedKaon/240227_215718'
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS1p8_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedKaon/240701_121607'
   status: 'DONE'
   process: 'ggH'
 
@@ -593,14 +1002,14 @@ HToSS_SmuonHadronFiltered_MH125_MS1p8_ctauS1_2018:
 
 HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0_2016:
   location: '/HToSSTo2Mu2Hadrons_MH125_MS2_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM'
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS2_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2_MCUL2016nonAPV_HToSS_ChargedKaon/240426_204021'
+  status: 'DONE'
+  process: 'ggH'
 HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0_2016_APV:
   location: '/HToSSTo2Mu2Hadrons_MH125_MS2_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM'
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS2_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2_MCUL2016APV_HToSS_ChargedKaon/240505_211516'
+  status: 'DONE'
+  process: 'ggH'
 HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0_2017:
   location: /HToSSTo2Mu2Hadrons_MH125_MS2_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS2_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedKaon/231004_185438'
@@ -613,14 +1022,14 @@ HToSS_SmuonHadronFiltered_MH125_MS2_ctauS0_2018:
   process: 'ggH'
 HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2016:
   location: '/HToSSTo2Mu2Hadrons_MH125_MS2_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v1/MINIAODSIM'
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS2_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v1_MCUL2016nonAPV_HToSS_ChargedKaon/240426_204107'
+  status: 'DONE'
+  process: 'ggH'
 HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2016_APV:
   location: '/HToSSTo2Mu2Hadrons_MH125_MS2_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM'
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS2_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1_MCUL2016APV_HToSS_ChargedKaon/240505_211556'
+  status: 'DONE'
+  process: 'ggH'
 HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2017:
   location: /HToSSTo2Mu2Hadrons_MH125_MS2_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS2_ctauS100_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedKaon/231108_225458'
@@ -633,14 +1042,14 @@ HToSS_SmuonHadronFiltered_MH125_MS2_ctauS100_2018:
   process: 'ggH'
 HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2016:
   location: '/HToSSTo2Mu2Hadrons_MH125_MS2_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM'
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS2_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2_MCUL2016nonAPV_HToSS_ChargedKaon/240426_204051'
+  status: 'DONE'
+  process: 'ggH'
 HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2016_APV:
   location: '/HToSSTo2Mu2Hadrons_MH125_MS2_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM'
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS2_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1_MCUL2016APV_HToSS_ChargedKaon/240505_211543'
+  status: 'DONE'
+  process: 'ggH'
 HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2017:
   location: /HToSSTo2Mu2Hadrons_MH125_MS2_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS2_ctauS10_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedKaon/231108_223944'
@@ -653,14 +1062,14 @@ HToSS_SmuonHadronFiltered_MH125_MS2_ctauS10_2018:
   process: 'ggH'
 HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2016:
   location: '/HToSSTo2Mu2Hadrons_MH125_MS2_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM'
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS2_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2_MCUL2016nonAPV_HToSS_ChargedKaon/240426_204037'
+  status: 'DONE'
+  process: 'ggH'
 HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2016_APV:
   location: '/HToSSTo2Mu2Hadrons_MH125_MS2_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM'
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS2_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2_MCUL2016APV_HToSS_ChargedKaon/240505_211530'
+  status: 'DONE'
+  process: 'ggH'
 HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2017:
   location: /HToSSTo2Mu2Hadrons_MH125_MS2_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS2_ctauS1_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS_ChargedKaon/231108_222438'
@@ -673,14 +1082,14 @@ HToSS_SmuonHadronFiltered_MH125_MS2_ctauS1_2018:
   process: 'ggH'
 QCD_Pt-1000toInf_MuEnrichedPt5_2016:
   location: /QCD_Pt-1000_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-1000_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1_MCUL2016nonAPV_HToSS/240426_204345'
+  status: 'DONE'
+  process: 'QCD'
 QCD_Pt-1000toInf_MuEnrichedPt5_2016_APV:
-  location: /QCD_Pt-1000_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  location: /QCD_Pt-1000_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-1000_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2_MCUL2016APV_HToSS/240503_110626'
+  status: 'DONE'
+  process: 'QCD'
 QCD_Pt-1000toInf_MuEnrichedPt5_2017:
   location: /QCD_Pt-1000_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-1000_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2_MCUL2017_HToSS/231014_181211'
@@ -693,14 +1102,14 @@ QCD_Pt-1000toInf_MuEnrichedPt5_2018:
   process: 'QCD'
 QCD_Pt-120to170_MuEnrichedPt5_2016:
   location: /QCD_Pt-120To170_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-120To170_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1_MCUL2016nonAPV_HToSS/240426_204216'
+  status: 'DONE'
+  process: 'QCD'
 QCD_Pt-120to170_MuEnrichedPt5_2016_APV:
-  location: /QCD_Pt-120To170_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  location: /QCD_Pt-120To170_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-120To170_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2_MCUL2016APV_HToSS/240503_110506'
+  status: 'DONE'
+  process: 'QCD'
 QCD_Pt-120to170_MuEnrichedPt5_2017:
   location: /QCD_Pt-120To170_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-120To170_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2_MCUL2017_HToSS/231016_211328'
@@ -713,14 +1122,14 @@ QCD_Pt-120to170_MuEnrichedPt5_2018:
   process: 'QCD'
 QCD_Pt-15to20_MuEnrichedPt5_2016:
   location: /QCD_Pt-15To20_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v2/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-15To20_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v2_MCUL2016nonAPV_HToSS/240426_192446'
+  status: 'DONE'
+  process: 'QCD'
 QCD_Pt-15to20_MuEnrichedPt5_2016_APV:
-  location: ''
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  location: /QCD_Pt-15To20_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-15To20_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2_MCUL2016APV_HToSS/240503_105913'
+  status: 'DONE'
+  process: 'QCD'
 QCD_Pt-15to20_MuEnrichedPt5_2017:
   location: /QCD_Pt-15To20_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-15To20_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2_MCUL2017_HToSS/231016_200554'
@@ -733,14 +1142,14 @@ QCD_Pt-15to20_MuEnrichedPt5_2018:
   process: 'QCD'
 QCD_Pt-170to300_MuEnrichedPt5_2016:
   location: /QCD_Pt-170To300_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-170To300_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1_MCUL2016nonAPV_HToSS/240426_204232'
+  status: 'DONE'
+  process: 'QCD'
 QCD_Pt-170to300_MuEnrichedPt5_2016_APV:
   location: /QCD_Pt-170To300_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-170To300_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2_MCUL2016APV_HToSS/240503_110518'
+  status: 'DONE'
+  process: 'QCD'
 QCD_Pt-170to300_MuEnrichedPt5_2017:
   location: /QCD_Pt-170To300_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-170To300_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2_MCUL2017_HToSS/231017_075428'
@@ -753,14 +1162,14 @@ QCD_Pt-170to300_MuEnrichedPt5_2018:
   process: 'QCD'
 QCD_Pt-20to30_MuEnrichedPt5_2016:
   location: /QCD_Pt-20To30_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-20To30_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1_MCUL2016nonAPV_HToSS/240426_204121'
+  status: 'DONE'
+  process: 'QCD'
 QCD_Pt-20to30_MuEnrichedPt5_2016_APV:
-  location: /QCD_Pt-20To30_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  location: /QCD_Pt-20To30_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-20To30_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2_MCUL2016APV_HToSS/240503_110400'
+  status: 'DONE'
+  process: 'QCD'
 QCD_Pt-20to30_MuEnrichedPt5_2017:
   location: /QCD_Pt-20To30_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-20To30_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS/231016_201916'
@@ -773,14 +1182,14 @@ QCD_Pt-20to30_MuEnrichedPt5_2018:
   process: 'QCD'
 QCD_Pt-300to470_MuEnrichedPt5_2016:
   location: /QCD_Pt-300To470_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-300To470_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1_MCUL2016nonAPV_HToSS/240426_204245'
+  status: 'DONE'
+  process: 'QCD'
 QCD_Pt-300to470_MuEnrichedPt5_2016_APV:
   location: /QCD_Pt-300To470_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-300To470_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2_MCUL2016APV_HToSS/240503_110531'
+  status: 'DONE'
+  process: 'QCD'
 QCD_Pt-300to470_MuEnrichedPt5_2017:
   location: /QCD_Pt-300To470_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-300To470_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2_MCUL2017_HToSS/231017_080804'
@@ -793,14 +1202,14 @@ QCD_Pt-300to470_MuEnrichedPt5_2018:
   process: 'QCD'
 QCD_Pt-30to50_MuEnrichedPt5_2016:
   location: /QCD_Pt-30To50_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-30To50_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1_MCUL2016nonAPV_HToSS/240426_204134'
+  status: 'DONE'
+  process: 'QCD'
 QCD_Pt-30to50_MuEnrichedPt5_2016_APV:
-  location: /QCD_Pt-30To50_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  location: /QCD_Pt-30To50_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-30To50_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2_MCUL2016APV_HToSS/240503_110425'
+  status: 'DONE'
+  process: 'QCD'
 QCD_Pt-30to50_MuEnrichedPt5_2017:
   location: /QCD_Pt-30To50_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-30To50_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1_MCUL2017_HToSS/231016_203249'
@@ -813,14 +1222,14 @@ QCD_Pt-30to50_MuEnrichedPt5_2018:
   process: 'QCD'
 QCD_Pt-470to600_MuEnrichedPt5_2016:
   location: /QCD_Pt-470To600_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-470To600_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1_MCUL2016nonAPV_HToSS/240426_204259'
+  status: 'DONE'
+  process: 'QCD'
 QCD_Pt-470to600_MuEnrichedPt5_2016_APV:
   location: /QCD_Pt-470To600_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-470To600_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2_MCUL2016APV_HToSS/240503_110544'
+  status: 'DONE'
+  process: 'QCD'
 QCD_Pt-470to600_MuEnrichedPt5_2017:
   location: /QCD_Pt-470To600_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-470To600_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2_MCUL2017_HToSS/231020_084006'
@@ -833,14 +1242,14 @@ QCD_Pt-470to600_MuEnrichedPt5_2018:
   process: 'QCD'
 QCD_Pt-50to80_MuEnrichedPt5_2016:
   location: /QCD_Pt-50To80_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-50To80_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1_MCUL2016nonAPV_HToSS/240426_204148'
+  status: 'DONE'
+  process: 'QCD'
 QCD_Pt-50to80_MuEnrichedPt5_2016_APV:
   location: /QCD_Pt-50To80_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-50To80_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2_MCUL2016APV_HToSS/240503_110439'
+  status: 'DONE'
+  process: 'QCD'
 QCD_Pt-50to80_MuEnrichedPt5_2017:
   location: /QCD_Pt-50To80_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-50To80_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2_MCUL2017_HToSS/231016_204620'
@@ -853,14 +1262,14 @@ QCD_Pt-50to80_MuEnrichedPt5_2018:
   process: 'QCD'
 QCD_Pt-600to800_MuEnrichedPt5_2016:
   location: /QCD_Pt-600To800_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-600To800_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1_MCUL2016nonAPV_HToSS/240426_204314'
+  status: 'DONE'
+  process: 'QCD'
 QCD_Pt-600to800_MuEnrichedPt5_2016_APV:
-  location: /QCD_Pt-600To800_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  location: /QCD_Pt-600To800_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-600To800_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2_MCUL2016APV_HToSS/240503_110558'
+  status: 'DONE'
+  process: 'QCD'
 QCD_Pt-600to800_MuEnrichedPt5_2017:
   location: /QCD_Pt-600To800_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-600To800_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2_MCUL2017_HToSS/231017_083508'
@@ -873,14 +1282,14 @@ QCD_Pt-600to800_MuEnrichedPt5_2018:
   process: 'QCD'
 QCD_Pt-800to1000_MuEnrichedPt5_2016:
   location: /QCD_Pt-800To1000_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-800To1000_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1_MCUL2016nonAPV_HToSS/240426_204329'
+  status: 'DONE'
+  process: 'QCD'
 QCD_Pt-800to1000_MuEnrichedPt5_2016_APV:
-  location: /QCD_Pt-800To1000_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  location: /QCD_Pt-800To1000_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-800To1000_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2_MCUL2016APV_HToSS/240503_110613'
+  status: 'DONE'
+  process: 'QCD'
 QCD_Pt-800to1000_MuEnrichedPt5_2017:
   location: /QCD_Pt-800To1000_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v2/MINIAODSIM
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-800To1000_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v2_MCUL2017_HToSS/231017_084828'
@@ -893,14 +1302,14 @@ QCD_Pt-800to1000_MuEnrichedPt5_2018:
   process: 'QCD'
 QCD_Pt-80to120_MuEnrichedPt5_2016:
   location: /QCD_Pt-80To120_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-80To120_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1_MCUL2016nonAPV_HToSS/240426_204201'
+  status: 'DONE'
+  process: 'QCD'
 QCD_Pt-80to120_MuEnrichedPt5_2016_APV:
-  location: /QCD_Pt-80To120_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  location: /QCD_Pt-80To120_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-80To120_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2_MCUL2016APV_HToSS/240503_110453'
+  status: 'DONE'
+  process: 'QCD'
 QCD_Pt-80to120_MuEnrichedPt5_2017:
   location: /QCD_Pt-80To120_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/QCD_Pt-80To120_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2_MCUL2017_HToSS/231016_205942'
@@ -1523,14 +1932,14 @@ ttZ_qq_2018:
   process: ''
 ttbar_2l2nu_2016:
   location: /TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1_MCUL2016nonAPV_HToSS/240426_204426'
+  status: 'DONE'
+  process: 'ttbar'
 ttbar_2l2nu_2016_APV:
   location: /TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v1/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v1_MCUL2016APV_HToSS/240503_110705'
+  status: 'DONE'
+  process: 'ttbar'
 ttbar_2l2nu_2017:
   location: /TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v1_MCUL2017_HToSS/231014_185224'
@@ -1543,14 +1952,14 @@ ttbar_2l2nu_2018:
   process: 'ttbar'
 ttbar_hadronic_2016:
   location: /TTToHadronic_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/TTToHadronic_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1_MCUL2016nonAPV_HToSS/240426_204359'
+  status: 'DONE'
+  process: 'ttbar'
 ttbar_hadronic_2016_APV:
   location: /TTToHadronic_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v1/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/TTToHadronic_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v1_MCUL2016APV_HToSS/240503_110639'
+  status: 'DONE'
+  process: 'ttbar'
 ttbar_hadronic_2017:
   location: /TTToHadronic_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/TTToHadronic_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2_MCUL2017_HToSS/231014_182544'
@@ -1563,14 +1972,14 @@ ttbar_hadronic_2018:
   process: 'ttbar'
 ttbar_semileptonic_2016:
   location: /TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1_MCUL2016nonAPV_HToSS/240426_204413'
+  status: 'DONE'
+  process: 'ttbar'
 ttbar_semileptonic_2016_APV:
   location: /TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v1/MINIAODSIM
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v1_MCUL2016APV_HToSS/240503_110652'
+  status: 'DONE'
+  process: 'ttbar'
 ttbar_semileptonic_2017:
   location: /TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v1/MINIAODSIM
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v1_MCUL2017_HToSS/231014_183904'
@@ -1603,44 +2012,44 @@ ttgamma_2018:
   process: ''
 SingleMuon_Run2016B:
   location: /SingleMuon/Run2016B-ver2_HIPM_UL2016_MiniAODv2-v2/MINIAOD
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/SingleMuon/Run2016B-ver2_HIPM_UL2016_MiniAODv2-v2_DataUL2016B_HToSS/240503_110728'
+  status: 'DONE'
+  process: 'Data'
 SingleMuon_Run2016C:
   location: /SingleMuon/Run2016C-HIPM_UL2016_MiniAODv2-v2/MINIAOD
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/SingleMuon/Run2016C-HIPM_UL2016_MiniAODv2-v2_DataUL2016C_HToSS/240503_110740'
+  status: 'DONE'
+  process: 'Data'
 SingleMuon_Run2016D:
   location: /SingleMuon/Run2016D-HIPM_UL2016_MiniAODv2-v2/MINIAOD
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/SingleMuon/Run2016D-HIPM_UL2016_MiniAODv2-v2_DataUL2016D_HToSS/240503_110754'
+  status: 'DONE'
+  process: 'Data'
 SingleMuon_Run2016E:
   location: /SingleMuon/Run2016E-HIPM_UL2016_MiniAODv2-v2/MINIAOD
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/SingleMuon/Run2016E-HIPM_UL2016_MiniAODv2-v2_DataUL2016E_HToSS/240503_110808'
+  status: 'DONE'
+  process: 'Data'
 SingleMuon_Run2016F:
   location: /SingleMuon/Run2016F-HIPM_UL2016_MiniAODv2-v2/MINIAOD
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/SingleMuon/Run2016F-HIPM_UL2016_MiniAODv2-v2_DataUL2016F_HToSS/240503_110820'
+  status: 'DONE'
+  process: 'Data'
 SingleMuon_Run2016Flate:
   location: /SingleMuon/Run2016F-UL2016_MiniAODv2-v2/MINIAOD
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/SingleMuon/Run2016F-UL2016_MiniAODv2-v2_DataUL2016Flate_HToSS/240426_154615'
+  status: 'DONE'
+  process: 'Data'
 SingleMuon_Run2016G:
   location: /SingleMuon/Run2016G-UL2016_MiniAODv2-v2/MINIAOD
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/SingleMuon/Run2016G-UL2016_MiniAODv2-v2_DataUL2016G_HToSS/240426_204441'
+  status: 'DONE'
+  process: 'Data'
 SingleMuon_Run2016H:
   location: /SingleMuon/Run2016H-UL2016_MiniAODv2-v2/MINIAOD
-  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/'
-  status: 'NA'
-  process: ''
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/SingleMuon/Run2016H-UL2016_MiniAODv2-v2_DataUL2016H_HToSS/240426_204456'
+  status: 'DONE'
+  process: 'Data'
 SingleMuon_Run2017B:
   location: /SingleMuon/Run2017B-UL2017_MiniAODv2-v1/MINIAOD
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/SingleMuon/Run2017B-UL2017_MiniAODv2-v1_DataUL2017B_HToSS/231016_084831'

@@ -28,4 +28,5 @@ full_path="$cms_xrd$thedataset"
 #sed -ie "s/THEHADRON/$hadronType/g" testconfig.py
 
 cmsRun testconfig.py inputFiles=$full_path maxEvents=$maxEvts
+#cmsRun testreweighting.py inputFiles=$full_path maxEvents=$maxEvts
 #rm testconfig.py

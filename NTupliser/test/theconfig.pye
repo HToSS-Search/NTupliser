@@ -1,7 +1,7 @@
 TheSkim = "HToSS"
-runEra="MCUL2016nonAPV"
+runEra="MCUL2018"
 hadronType="THEHADRON"
-doCuts_=bool(True)
+doCuts_=bool(False)
 isggH_=bool(True)
     
 #Set up the pat environment
@@ -89,20 +89,6 @@ elif "DataUL2018" in runEra:
     EgammaEra="2018-UL"
 
 
-# if "Data" in runEra:
-#     process.GlobalTag.globaltag = cms.string('106X_dataRun2_v35') #Good for all UL data
-#     if "2017" in runEra:
-#         EgammaEra="2017-UL"
-#     elif "2018" in runEra:
-#         EgammaEra="2018-UL"
-#     elif "nonAPV" in runEra:
-#         EgammaEra="2016postVFP-UL"
-#     elif "APV" in runEra:
-#         EgammaEra="2016preVFP-UL"
-#     else:
-#         EgammaEra="2018-UL"
-
-
 # process.GlobalTag.globaltag = cms.string('106X_mc2017_realistic_v9')
 
 #There's a bit in here about some btau tags that the code looks for. I don't know if this is significant, however. I'm going to ignore it for now.
@@ -149,7 +135,8 @@ process.jetCorrection = cms.Sequence( process.patJetCorrFactorsUpdatedJEC * proc
 
 ## All embedded in 2017 miniAODv2, but to rerun on v1 ...
 #from EgammaUser.EgammaPostRecoTools.EgammaPostRecoTools import setupEgammaPostRecoSeq
-#setupEgammaPostRecoSeq(process,era=EgammaEra)  ### 2016preVFP-UL OR 2016postVFP-UL OR 2017-UL OR 2018-UL
+from RecoEgamma.EgammaTools.EgammaPostRecoTools import setupEgammaPostRecoSeq
+setupEgammaPostRecoSeq(process,runEnergyCorrections=True,runVID=False,era=EgammaEra)  ### 2016preVFP-UL OR 2016postVFP-UL OR 2017-UL OR 2018-UL
 #a sequence egammaPostRecoSeq has now been created and should be added to your path, eg process.p=cms.Path(process.egammaPostRecoSeq)
 
 ###############################
@@ -284,7 +271,7 @@ process.makeTopologyNtupleMiniAOD.muonPFToken = cms.InputTag("slimmedMuons")
 process.makeTopologyNtupleMiniAOD.jetPFToken = cms.InputTag("updatedPatJetsUpdatedJEC") # Originally slimmedJets, patJetsReapplyJEC is the jet collection with reapplied JECs
 process.makeTopologyNtupleMiniAOD.metPFToken = cms.InputTag("slimmedMETs")
 process.makeTopologyNtupleMiniAOD.rhoToken = cms.InputTag("fixedGridRhoFastjetAll")                                            
-#process.makeTopologyNtupleMiniAOD.conversionsToken = cms.InputTag("reducedEgamma", "reducedConversions")
+process.makeTopologyNtupleMiniAOD.conversionsToken = cms.InputTag("reducedEgamma", "reducedConversions")
 
 #private signal MC has extra gen info in a new collection
 #process.makeTopologyNtupleMiniAOD.genParticles = cms.InputTag("prunedGenParticlesPlus")
@@ -333,9 +320,8 @@ process.out.SelectEvents = cms.untracked.PSet(SelectEvents = cms.vstring('p'))
 
 #Removing pat output (coz we really don't need it now)
 #del process.out
-
-#process.egammaPostRecoSeq *
 process.p = cms.Path(
+    process.egammaPostRecoSeq *
     process.jetCorrection *
     process.ecalBadCalibReducedMINIAODFilter *
     process.makeTopologyNtupleMiniAOD

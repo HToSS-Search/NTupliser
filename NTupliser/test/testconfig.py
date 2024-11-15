@@ -1,8 +1,8 @@
 TheSkim = "HToSS"
-runEra="DataUL2016Flate"
+runEra="MCUL2017"
 hadronType="ChargedKaon"
-doCuts_=bool(True)
-isggH_=bool(False)
+doCuts_=bool(False)
+isggH_=bool(True)
     
 #Set up the pat environment
 import FWCore.ParameterSet.Config as cms

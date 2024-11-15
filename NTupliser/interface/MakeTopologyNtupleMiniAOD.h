@@ -16,9 +16,11 @@
 #include "PhysicsTools/Utilities/interface/LumiReWeighting.h"
 #include "SimDataFormats/PileupSummaryInfo/interface/PileupSummaryInfo.h"
 #include "TrackingTools/TransientTrack/interface/TransientTrack.h"
+// #include "FWCore/Framework/interface/EDAnalyzer.h"
 
 class EffectiveAreas;
 class TTree;
+// using namespace edm;
 
 class MakeTopologyNtupleMiniAOD : public edm::EDAnalyzer
 {
@@ -28,9 +30,13 @@ class MakeTopologyNtupleMiniAOD : public edm::EDAnalyzer
 
     private:
     //  virtual void beginJob(const edm::EventSetup&) ;
+    
     virtual void beginJob();
     virtual void analyze(const edm::Event&, const edm::EventSetup&);
     virtual void endJob();
+    // virtual void beginRun(const edm::Run&, const edm::EventSetup&);
+    // virtual void endRun(const edm::Run&, const edm::EventSetup&);
+
 
     // ----------member data ---------------------------
 
@@ -259,12 +265,21 @@ class MakeTopologyNtupleMiniAOD : public edm::EDAnalyzer
 
     TTree* mytree_{};
 
-    double weight_muF0p5_{};
-    double weight_muF2_{};
-    double weight_muR0p5_{};
+    // double weight_muF0p5_{};
+    // double weight_muF2_{};
+    // double weight_muR0p5_{};
+    // double weight_muR2_{};
+    // double weight_muF0p5muR0p5_{};
+    // double weight_muF2muR2_{};
+    double weight_norm_{};
     double weight_muR2_{};
-    double weight_muF0p5muR0p5_{};
+    double weight_muR0p5_{};
+    double weight_muF2_{};
     double weight_muF2muR2_{};
+    double weight_muF2muR0p5_{};
+    double weight_muF0p5_{};
+    double weight_muF0p5muR2_{};
+    double weight_muF0p5muR0p5_{};
 
     // double isrRedHi{};
     // double fsrRedHi{};

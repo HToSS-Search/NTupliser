@@ -17,7 +17,7 @@ time = datetime.now().strftime("%Y%m%d%H%M%S")
 config = config()
 
 config.General.requestName = '{}_{}'.format(dataset.process, time)
-config.General.workArea = 'crab_projects'
+config.General.workArea = 'crab_projects_August'
 
 config.JobType.pluginName = 'Analysis'
 config.JobType.psetName = 'theconfig.py'
@@ -63,8 +63,8 @@ campaigntag = dataset.dataset.split('/')[-2]
 prefix = campaigntag
 
 if "HToSS" in dataset.process:
-    config.Data.outputDatasetTag = campaigntag+"_"+"RUNERA"+"_"+"THESKIM"+"_"+"THEHADRON"
-    #config.Data.outputDatasetTag = campaigntag+"_"+"RUNERA"+"_"+"THESKIM"+"_"+"THEHADRON"+"_"+"LT"#special for lt reweighting - use above during normal ntuples
+    #config.Data.outputDatasetTag = campaigntag+"_"+"RUNERA"+"_"+"THESKIM"+"_"+"THEHADRON"
+    config.Data.outputDatasetTag = campaigntag+"_"+"RUNERA"+"_"+"THESKIM"+"_"+"THEHADRON"+"_"+"LT"#special for lt reweighting - use above during normal ntuples
 else:
     config.Data.outputDatasetTag = campaigntag+"_"+"RUNERA"+"_"+"THESKIM"
 #config.Data.outputDatasetTag = "CRAB3_MC_miniNtupilisation_{}_{}".format(dataset.process, time)

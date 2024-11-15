@@ -21,10 +21,20 @@
 #include <boost/numeric/conversion/cast.hpp>
 #include <cstdio>
 #include <memory>
+
 // user include files
+
+#include "FWCore/Framework/interface/Event.h"
+// #include "FWCore/Framework/interface/Run.h"
+#include "FWCore/Framework/interface/EventSetup.h"
+#include "FWCore/Framework/interface/EDAnalyzer.h"
+#include "FWCore/ServiceRegistry/interface/Service.h"
 #include "CommonTools/UtilAlgos/interface/TFileService.h"
-#include "DataFormats/Candidate/interface/Candidate.h"
 #include "DataFormats/Common/interface/TriggerResults.h"
+#include "FWCore/Common/interface/TriggerNames.h"
+// #include "FWCore/Common/interface/RunBase.h"
+#include "FWCore/Framework/interface/ESHandle.h"
+#include "FWCore/Framework/interface/MakerMacros.h"
 #include "DataFormats/PatCandidates/interface/PackedGenParticle.h"
 #include "DataFormats/HepMCCandidate/interface/GenParticle.h"
 #include "DataFormats/Math/interface/deltaR.h"
@@ -39,13 +49,7 @@
 #include "DataFormats/PatCandidates/interface/IsolatedTrack.h"
 #include "DataFormats/VertexReco/interface/Vertex.h"
 #include "DataFormats/Candidate/interface/VertexCompositePtrCandidate.h"
-#include "FWCore/Common/interface/TriggerNames.h"
-#include "FWCore/Framework/interface/EDAnalyzer.h"
-#include "FWCore/Framework/interface/ESHandle.h"
-#include "FWCore/Framework/interface/Event.h"
-#include "FWCore/Framework/interface/EventSetup.h"
-#include "FWCore/Framework/interface/Frameworkfwd.h"
-#include "FWCore/Framework/interface/MakerMacros.h"
+
 #include "FWCore/ParameterSet/interface/ParameterSet.h"
 #include "FWCore/ServiceRegistry/interface/Service.h"
 #include "FWCore/Utilities/interface/InputTag.h"
@@ -53,6 +57,7 @@
 #include "SimDataFormats/GeneratorProducts/interface/GenEventInfoProduct.h"
 #include "SimDataFormats/GeneratorProducts/interface/HepMCProduct.h"
 #include "SimDataFormats/GeneratorProducts/interface/LHEEventProduct.h"
+#include "SimDataFormats/GeneratorProducts/interface/LHERunInfoProduct.h"
 #include "SimDataFormats/GeneratorProducts/interface/PdfInfo.h"
 // JEC
 #include "CondFormats/JetMETObjects/interface/FactorizedJetCorrector.h"
@@ -133,6 +138,8 @@
 // using namespace reweight;
 using boost::numeric_cast;
 typedef math::XYZTLorentzVectorF LorentzVector;
+// using namespace edm;
+
 
 MakeTopologyNtupleMiniAOD::MakeTopologyNtupleMiniAOD(
     const edm::ParameterSet& iConfig)
@@ -259,7 +266,7 @@ MakeTopologyNtupleMiniAOD::MakeTopologyNtupleMiniAOD(
 
     filledBIDInfo_ = false;
     histocontainer1D_["eventcount"] = fs->make<TH1D>("eventcount", "events processed", 1, -0.5, +0.5);
-    histocontainer1D_["sumWeights"] = fs->make<TH1D>("weightHisto", "weightHisto", 14, -0.5, 13.5);
+    histocontainer1D_["sumWeights"] = fs->make<TH1D>("weightHisto", "weightHisto", 19, -0.5, 18.5);
     histocontainer1D_["eventFilterOR"] = fs->make<TH1D>("eventFilterOR", "eventFilterOR", 8, 0.5, 8.5);
     histocontainer1D_["eventFilterAND"] = fs->make<TH1D>("eventFilterAND", "eventFilterAND", 8, 0.5, 8.5);
     histocontainer1D_["eventFilterOR"]->GetXaxis()->SetBinLabel(1, "TotalEvts");
@@ -317,6 +324,29 @@ MakeTopologyNtupleMiniAOD::~MakeTopologyNtupleMiniAOD() {
 
     mytree_->FlushBaskets();
 }
+
+
+//--------------method called once each run before event loop
+//-------------
+// void MakeTopologyNtupleMiniAOD::beginRun( edm::Run const & iRun,  edm::EventSetup const & iSetup) {
+//     using namespace edm;
+//     edm::Handle<LHERunInfoProduct> run; 
+//     typedef std::vector<LHERunInfoProduct::Header>::const_iterator headers_const_iterator;
+//     int runnb = iRun.id().run();
+//     std::cout<<runnb<<std::endl;
+//     // edm::Handle<LHEEventProduct> EventHandle;
+//     iRun.getByToken(externalLHEToken_, run);
+//     // iRun.getByLabel( "externalLHEProducer", run );
+//     LHERunInfoProduct myLHERunInfoProduct = *(run.product());
+//     // 
+//     for (headers_const_iterator iter=myLHERunInfoProduct.headers_begin(); iter!=myLHERunInfoProduct.headers_end(); iter++){
+//         std::cout << iter->tag() << std::endl;
+//         std::vector<std::string> lines = iter->lines();
+//         for (unsigned int iLine = 0; iLine<lines.size(); iLine++) {
+//             std::cout << lines.at(iLine);
+//         }
+//     }
+// }
 
 //
 // member functions
@@ -1107,8 +1137,8 @@ void MakeTopologyNtupleMiniAOD::fillMCInfo(const edm::Event& iEvent, const edm::
             }
             if (it->numberOfDaughters() > 1) {
                 for (reco::GenParticleCollection::const_iterator mit = genParticles->begin(); mit != genParticles->end(); ++mit) {
-                    if(it->daughter(0) == &(*mit)) {
-                        idx_d2 = std::distance(genParticles->begin(), mit);
+                    if(it->daughter(0) == &(*mit)) { //it should daughter(1)
+                        idx_d2 = std::distance(genParticles->begin(), mit); // this is incorrect, it stores the same one as above
                         break;
                     }
                 }
@@ -2313,7 +2343,6 @@ void MakeTopologyNtupleMiniAOD::cleararrays() {
 // }
 
 void MakeTopologyNtupleMiniAOD::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
-    using namespace edm;
     if (debugMode_) {
         std::cout << iEvent.id().run() << " " << iEvent.luminosityBlock() << " "
                 << iEvent.id().event()
@@ -2391,10 +2420,19 @@ void MakeTopologyNtupleMiniAOD::analyze(const edm::Event& iEvent, const edm::Eve
             // PS weights etc need to be checked here -> some issues for sure
             // Weights must be rescaled
             // https://twiki.cern.ch/twiki/bin/viewauth/CMS/LHEReaderCMSSW
-            // auto rescale_weight = [&](const double w) {
-            //     return w * weight_ / origWeightForNorm_;
-            // };
+            auto rescale_weight = [&](const double w) {
+                return w * weight_ / origWeightForNorm_;
+            };
 
+            weight_norm_ = rescale_weight(EventHandle->weights()[0].wgt); // muF = 1 | muR = 1
+            // weight_muR2_ = rescale_weight(EventHandle->weights()[1002].wgt); // muF = 1 | muR = 2
+            // weight_muR0p5_ = rescale_weight(EventHandle->weights()[1003].wgt); // muF = 1 | muR = 0.5
+            // weight_muF2_ = rescale_weight(EventHandle->weights()[1004].wgt); // muF = 2 | muR = 1
+            // weight_muF2muR2_ = rescale_weight(EventHandle->weights()[1005].wgt); // muF = 2 | muR = 2
+            // weight_muF2muR0p5_ = rescale_weight(EventHandle->weights()[1006].wgt); // muF = 2 | muR = 0.5
+            // weight_muF0p5_ = rescale_weight(EventHandle->weights()[1007].wgt); // muF = 0.5 | muR = 1
+            // weight_muF0p5muR2_ = rescale_weight(EventHandle->weights()[1008].wgt); // muF = 0.5 | muR = 2
+            // weight_muF0p5muR0p5_ = rescale_weight(EventHandle->weights()[1009].wgt); // muF = 0.5 | muR = 0.5
             // weight_muF0p5_ = rescale_weight(EventHandle->weights()[6].wgt); // muF = 0.5 | muR = 1
             // weight_muF2_ = rescale_weight(EventHandle->weights()[3].wgt); // muF = 2 | muR = 1
             // weight_muR0p5_ = rescale_weight(EventHandle->weights()[2].wgt); // muF = 1 | muR = 0.5
@@ -2403,13 +2441,7 @@ void MakeTopologyNtupleMiniAOD::analyze(const edm::Event& iEvent, const edm::Eve
             // weight_muF2muR2_ = rescale_weight(EventHandle->weights()[4].wgt); // muF = 2 | muR = 2
         // }
         // else {
-            origWeightForNorm_ = 0.0;
-            weight_muF0p5_ = 0.0;
-            weight_muF2_ = 0.0;
-            weight_muR0p5_ = 0.0;
-            weight_muR2_ = 0.0;
-            weight_muF0p5muR0p5_ = 0.0;
-            weight_muF2muR2_ = 0.0;
+            // origWeightForNorm_ = 0.0;
             weight_pdfMax_ = 1.0;
             weight_pdfMin_ = 1.0;
             weight_alphaMax_ = 1.0;
@@ -2418,13 +2450,22 @@ void MakeTopologyNtupleMiniAOD::analyze(const edm::Event& iEvent, const edm::Eve
             if (debugMode_) std::cout << "passes weight assignment" << std::endl;
 
         }
-        weight_               >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(1, weight_)   : histocontainer1D_["sumWeights"]->Fill(2, -weight_);
-        weight_muF0p5_        >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(3, weight_muF0p5_)   : histocontainer1D_["sumWeights"]->Fill(4, -weight_muF0p5_);
-        weight_muR0p5_        >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(5, weight_muR0p5_)   : histocontainer1D_["sumWeights"]->Fill(6, -weight_muR0p5_);
-        weight_muF0p5muR0p5_  >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(7, weight_muF0p5muR0p5_)   : histocontainer1D_["sumWeights"]->Fill(8, -weight_muF0p5muR0p5_);
-        weight_muF2_          >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(9, weight_muF2_)   : histocontainer1D_["sumWeights"]->Fill(10, -weight_muF2_);
-        weight_muR2_          >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(11, weight_muR2_)  : histocontainer1D_["sumWeights"]->Fill(12, -weight_muR2_);
-        weight_muF2muR2_      >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(13, weight_muF2muR2_)  : histocontainer1D_["sumWeights"]->Fill(14, -weight_muF2muR2_);
+        weight_       >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(1, weight_) : histocontainer1D_["sumWeights"]->Fill(2, -weight_);
+        // weight_muR2_       >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(3, weight_muR2_) : histocontainer1D_["sumWeights"]->Fill(4, -weight_muR2_);
+        // weight_muR0p5_       >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(5, weight_muR0p5_) : histocontainer1D_["sumWeights"]->Fill(6, -weight_muR0p5_);
+        // weight_muF2_       >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(7, weight_muF2_) : histocontainer1D_["sumWeights"]->Fill(8, -weight_muF2_);
+        // weight_muF2muR2_       >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(9, weight_muF2muR2_) : histocontainer1D_["sumWeights"]->Fill(10, -weight_muF2muR2_);
+        // weight_muF2muR0p5_       >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(11, weight_muF2muR0p5_) : histocontainer1D_["sumWeights"]->Fill(12, -weight_muF2muR0p5_);
+        // weight_muF0p5_       >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(13, weight_muF0p5_) : histocontainer1D_["sumWeights"]->Fill(14, -weight_muF0p5_);
+        // weight_muF0p5muR2_       >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(15, weight_muF0p5muR2_) : histocontainer1D_["sumWeights"]->Fill(16, -weight_muF0p5muR2_);
+        // weight_muF0p5muR0p5_       >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(17, weight_muF0p5muR0p5_) : histocontainer1D_["sumWeights"]->Fill(18, -weight_muF0p5muR0p5_);
+        // weight_               >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(1, weight_)   : histocontainer1D_["sumWeights"]->Fill(2, -weight_);
+        // weight_muF0p5_        >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(3, weight_muF0p5_)   : histocontainer1D_["sumWeights"]->Fill(4, -weight_muF0p5_);
+        // weight_muR0p5_        >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(5, weight_muR0p5_)   : histocontainer1D_["sumWeights"]->Fill(6, -weight_muR0p5_);
+        // weight_muF0p5muR0p5_  >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(7, weight_muF0p5muR0p5_)   : histocontainer1D_["sumWeights"]->Fill(8, -weight_muF0p5muR0p5_);
+        // weight_muF2_          >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(9, weight_muF2_)   : histocontainer1D_["sumWeights"]->Fill(10, -weight_muF2_);
+        // weight_muR2_          >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(11, weight_muR2_)  : histocontainer1D_["sumWeights"]->Fill(12, -weight_muR2_);
+        // weight_muF2muR2_      >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(13, weight_muF2muR2_)  : histocontainer1D_["sumWeights"]->Fill(14, -weight_muF2muR2_);
     // }
     if (debugMode_) std::cout << "passes weight histo assignment" << std::endl;
 
@@ -2435,6 +2476,7 @@ void MakeTopologyNtupleMiniAOD::analyze(const edm::Event& iEvent, const edm::Eve
         fillMCInfo(iEvent, iSetup);
         if (debugMode_) std::cout << "Filled MCInfo" << std::endl;
     }
+    // bool passGenCuts{false};
     bool passGenCuts{false};
     if ((isggH_)) {
         // passGenCuts = false;
@@ -2543,17 +2585,23 @@ void MakeTopologyNtupleMiniAOD::analyze(const edm::Event& iEvent, const edm::Eve
                 // weight_muF2muR2_ = rescale_weight(EventHandle->weights()[4].wgt); // muF = 2 | muR = 2
             // }
             // else {
-                origWeightForNorm_ = 0.0;
-                weight_muF0p5_ = 0.0;
-                weight_muF2_ = 0.0;
-                weight_muR0p5_ = 0.0;
-                weight_muR2_ = 0.0;
-                weight_muF0p5muR0p5_ = 0.0;
-                weight_muF2muR2_ = 0.0;
-                weight_pdfMax_ = 1.0;
-                weight_pdfMin_ = 1.0;
-                weight_alphaMax_ = 1.0;
-                weight_alphaMin_ = 1.0;
+            auto rescale_weight = [&](const double w) {
+                return w * weight_ / origWeightForNorm_;
+            };
+
+            weight_norm_ = rescale_weight(EventHandle->weights()[0].wgt); // muR = 1 | muR = 1
+            weight_muF2_ = rescale_weight(EventHandle->weights()[1].wgt); // muR = 1 | muF = 2
+            weight_muF0p5_ = rescale_weight(EventHandle->weights()[2].wgt); // muR = 1 | muF = 0.5
+            weight_muR2_ = rescale_weight(EventHandle->weights()[3].wgt); // muR = 2 | muF = 1
+            weight_muF2muR2_ = rescale_weight(EventHandle->weights()[4].wgt); // muR = 2 | muF = 2
+            weight_muF0p5muR2_ = rescale_weight(EventHandle->weights()[5].wgt); // muR = 2 | muF = 0.5
+            weight_muR0p5_ = rescale_weight(EventHandle->weights()[6].wgt); // muR = 0.5 | muF = 1
+            weight_muF2muR0p5_ = rescale_weight(EventHandle->weights()[7].wgt); // muR = 0.5 | muF = 2
+            weight_muF0p5muR0p5_ = rescale_weight(EventHandle->weights()[8].wgt); // muR = 0.5 | muF = 0.5
+            weight_pdfMax_ = 1.0;
+            weight_pdfMin_ = 1.0;
+            weight_alphaMax_ = 1.0;
+            weight_alphaMin_ = 1.0;
             // }
                 // std::cout << "passes weight assignment" << std::endl;
 
@@ -2561,13 +2609,16 @@ void MakeTopologyNtupleMiniAOD::analyze(const edm::Event& iEvent, const edm::Eve
             processPtHat_ = genEventInfo->qScale();
             processId_ = genEventInfo->signalProcessID();
 
-            weight_               >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(1, weight_)   : histocontainer1D_["sumWeights"]->Fill(2, -weight_);
-            weight_muF0p5_        >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(3, weight_muF0p5_)   : histocontainer1D_["sumWeights"]->Fill(4, -weight_muF0p5_);
-            weight_muR0p5_        >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(5, weight_muR0p5_)   : histocontainer1D_["sumWeights"]->Fill(6, -weight_muR0p5_);
-            weight_muF0p5muR0p5_  >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(7, weight_muF0p5muR0p5_)   : histocontainer1D_["sumWeights"]->Fill(8, -weight_muF0p5muR0p5_);
-            weight_muF2_          >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(9, weight_muF2_)   : histocontainer1D_["sumWeights"]->Fill(10, -weight_muF2_);
-            weight_muR2_          >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(11, weight_muR2_)  : histocontainer1D_["sumWeights"]->Fill(12, -weight_muR2_);
-            weight_muF2muR2_      >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(13, weight_muF2muR2_)  : histocontainer1D_["sumWeights"]->Fill(14, -weight_muF2muR2_);
+            
+        weight_       >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(1, weight_) : histocontainer1D_["sumWeights"]->Fill(2, -weight_);
+        weight_muR2_       >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(3, weight_muR2_) : histocontainer1D_["sumWeights"]->Fill(4, -weight_muR2_);
+        weight_muR0p5_       >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(5, weight_muR0p5_) : histocontainer1D_["sumWeights"]->Fill(6, -weight_muR0p5_);
+        weight_muF2_       >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(7, weight_muF2_) : histocontainer1D_["sumWeights"]->Fill(8, -weight_muF2_);
+        weight_muF2muR2_       >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(9, weight_muF2muR2_) : histocontainer1D_["sumWeights"]->Fill(10, -weight_muF2muR2_);
+        weight_muF2muR0p5_       >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(11, weight_muF2muR0p5_) : histocontainer1D_["sumWeights"]->Fill(12, -weight_muF2muR0p5_);
+        weight_muF0p5_       >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(13, weight_muF0p5_) : histocontainer1D_["sumWeights"]->Fill(14, -weight_muF0p5_);
+        weight_muF0p5muR2_       >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(15, weight_muF0p5muR2_) : histocontainer1D_["sumWeights"]->Fill(16, -weight_muF0p5muR2_);
+        weight_muF0p5muR0p5_       >= 0.0 ? histocontainer1D_["sumWeights"]->Fill(17, weight_muF0p5muR0p5_) : histocontainer1D_["sumWeights"]->Fill(18, -weight_muF0p5muR0p5_);
         // }
         
                 // std::cout << "passes weight histo assignment" << std::endl;
@@ -2615,7 +2666,13 @@ void MakeTopologyNtupleMiniAOD::analyze(const edm::Event& iEvent, const edm::Eve
     
 
     if (!doCuts_) {
-        mytree_->Fill(); // If not doing cuts, fill up EVERYTHING
+        if (!isggH_)
+            mytree_->Fill(); // If not doing cuts, fill up EVERYTHING
+        else {
+            if (passGenCuts) {
+                mytree_->Fill(); // If not doing cuts, fill up EVERYTHING but only if the gen split is followed
+            }
+        }
     }
     else  { // If doing cuts, ensure that we have at least x leptons which meet minimum sensible criteria
         if (debugMode_) std::cout << "Entered doCuts" << std::endl;
@@ -2945,17 +3002,28 @@ void MakeTopologyNtupleMiniAOD::bookBranches() {
 
     mytree_->Branch("numVert", &numVert, "numVert/I");
 
-    mytree_->Branch("weight_muF0p5", &weight_muF0p5_, "weight_muF0p5/D");
-    mytree_->Branch("weight_muF2", &weight_muF2_, "weight_muF2/D");
-    mytree_->Branch("weight_muR0p5", &weight_muR0p5_, "weight_muR0p5/D");
-    mytree_->Branch("weight_muR2", &weight_muR2_, "weight_muR2/D");
-    mytree_->Branch("weight_muF0p5muR0p5", &weight_muF0p5muR0p5_, "weight_muF0p5muR0p5/D");
-    mytree_->Branch("weight_muF2muR2", &weight_muF2muR2_, "weight_muF2muR2/D");
-    mytree_->Branch("origWeightForNorm", &origWeightForNorm_, "origWeightForNorm/D");
-    mytree_->Branch("weight_pdfMax", &weight_pdfMax_, "weight_pdfMax/D");
-    mytree_->Branch("weight_pdfMin", &weight_pdfMin_, "weight_pdfMin/D");
-    mytree_->Branch("weight_alphaMax", &weight_alphaMax_, "weight_alphaMax/D");
-    mytree_->Branch("weight_alphaMin", &weight_alphaMin_, "weight_alphaMin/D");
+    // mytree_->Branch("weight_muF0p5", &weight_muF0p5_, "weight_muF0p5/D");
+    // mytree_->Branch("weight_muF2", &weight_muF2_, "weight_muF2/D");
+    // mytree_->Branch("weight_muR0p5", &weight_muR0p5_, "weight_muR0p5/D");
+    // mytree_->Branch("weight_muR2", &weight_muR2_, "weight_muR2/D");
+    // mytree_->Branch("weight_muF0p5muR0p5", &weight_muF0p5muR0p5_, "weight_muF0p5muR0p5/D");
+    // mytree_->Branch("weight_muF2muR2", &weight_muF2muR2_, "weight_muF2muR2/D");
+    if (isggH_) {
+        // mytree_->Branch("weight_norm_", &weight_norm_,"weight_norm/D");
+        mytree_->Branch("weight_muR2_", &weight_muR2_,"weight_muR2/D");
+        mytree_->Branch("weight_muR0p5_", &weight_muR0p5_,"weight_muR0p5/D");
+        mytree_->Branch("weight_muF2_", &weight_muF2_,"weight_muF2/D");
+        mytree_->Branch("weight_muF2muR2_", &weight_muF2muR2_,"weight_muF2muR2/D");
+        mytree_->Branch("weight_muF2muR0p5_", &weight_muF2muR0p5_,"weight_muF2muR0p5/D");
+        mytree_->Branch("weight_muF0p5_", &weight_muF0p5_,"weight_muF0p5/D");
+        mytree_->Branch("weight_muF0p5muR2_", &weight_muF0p5muR2_,"weight_muF0p5muR2/D");
+        mytree_->Branch("weight_muF0p5muR0p5_", &weight_muF0p5muR0p5_,"weight_muF0p5muR0p5/D");
+        mytree_->Branch("origWeightForNorm", &origWeightForNorm_, "origWeightForNorm/D");
+        mytree_->Branch("weight_pdfMax", &weight_pdfMax_, "weight_pdfMax/D");
+        mytree_->Branch("weight_pdfMin", &weight_pdfMin_, "weight_pdfMin/D");
+        mytree_->Branch("weight_alphaMax", &weight_alphaMax_, "weight_alphaMax/D");
+        mytree_->Branch("weight_alphaMin", &weight_alphaMin_, "weight_alphaMin/D");
+    }
     // //ERROR BELOW//
     // Dynamic trigger list done below and turned into Branches at the start of Run
     // for (auto iTrig = triggerList_.begin(); iTrig != triggerList_.end();
@@ -3608,6 +3676,15 @@ bool MakeTopologyNtupleMiniAOD::leptonScalarAncestor(const reco::Candidate* genP
     else if ( directDecay && motherId != lepId ) return false; // if looking for chained muon decays from scalar, and mother != 13 (or scalarId implicitly above), return false;
     else return leptonScalarAncestor(genPar->mother()); // if not looking for chained muon decays from scalar, check this particle's mother Id
 }
+
+
+// void MakeTopologyNtupleMiniAOD::endRun(edm::Run const & iRun, edm::EventSetup const& iSetup)
+// {
+
+//   // myfile_unprefevts.close();
+// //   delete jecUnc;
+// }
+
 
 // ------------ method called once each job just before starting event loop
 // ------------
