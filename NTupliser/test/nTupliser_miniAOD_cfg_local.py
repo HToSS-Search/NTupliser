@@ -1,8 +1,11 @@
-TheSkim = "THESKIM"
-runEra="THERUNERA"
-hadronType="THEHADRON"
-doCuts_=bool(DOCUTS)
-isggH_=bool(ISGGH)
+#TheSkim = "ZH_production"HToSS
+TheSkim = "HToSS"
+runEra="MCUL2017"
+#hadronType="ChargedKaonOnly"
+hadronType="ChargedKaon"
+doCuts_=True
+# doCuts_=False
+isggH_=True
     
 #Set up the pat environment
 import FWCore.ParameterSet.Config as cms
@@ -51,7 +54,7 @@ process.MessageLogger.categories=cms.untracked.vstring('FwkJob'
                                                        )
 
 process.MessageLogger.cerr.INFO = cms.untracked.PSet(limit = cms.untracked.int32(0))
-process.MessageLogger.cerr.FwkReport.reportEvery = cms.untracked.int32(10000)
+process.MessageLogger.cerr.FwkReport.reportEvery = cms.untracked.int32(1)
 process.options = cms.untracked.PSet(
                      wantSummary = cms.untracked.bool(True)
                      )
@@ -197,8 +200,8 @@ elif "2018" in runEra:
         #Updated Muon Triggers for 2016
         'HLT_IsoMu24_v', #2018 also
         #Updated Muon Triggers for 2018
-        'HLT_DoubleL2Mu23NoVtx_2Cha_v',
-        'HLT_DoubleL2Mu23NoVtx_2Cha_CosmicSeed_v'
+        #'HLT_DoubleL2Mu23NoVtx_2Cha_v',
+        #'HLT_DoubleL2Mu23NoVtx_2Cha_CosmicSeed_v'
         #Updated Muon Triggers for 2017
     ])
 else:
@@ -212,6 +215,7 @@ else:
     ])
 
 if doCuts_:
+    process.makeTopologyNtupleMiniAOD.debugMode=cms.bool(False) # if set to false will skip ALL cuts. Z veto still applies electron cuts.
     process.makeTopologyNtupleMiniAOD.doCuts=cms.bool(True) # if set to false will skip ALL cuts. Z veto still applies electron cuts.
     process.makeTopologyNtupleMiniAOD.Skim=cms.string(TheSkim) # if set to false will skip ALL cuts. Z veto still applies electron cuts.
 else:
@@ -236,13 +240,13 @@ if "Data" in runEra:
     process.makeTopologyNtupleMiniAOD.hadronType=cms.string("ChargedKaon") # Irrelevant for data
 
 if "ZH_production" in TheSkim:
-  process.makeTopologyNtupleMiniAOD.maxInvMuMuMass=cms.double(120.0) #typically using 5 GeV
-  process.makeTopologyNtupleMiniAOD.minInvMuMuMass=cms.double(60.0) #typically using 5 GeV
-  process.makeTopologyNtupleMiniAOD.maxInvChChMass=cms.double(5.0) #typically using 5 GeV
+	process.makeTopologyNtupleMiniAOD.maxInvMuMuMass=cms.double(110.0) #typically using 5 GeV
+	process.makeTopologyNtupleMiniAOD.minInvMuMuMass=cms.double(70.0) #typically using 5 GeV
+	process.makeTopologyNtupleMiniAOD.maxInvChChMass=cms.double(5.0) #typically using 5 GeV
 else:
-  process.makeTopologyNtupleMiniAOD.maxInvMuMuMass=cms.double(5.0) #typically using 5 GeV
-  process.makeTopologyNtupleMiniAOD.minInvMuMuMass=cms.double(0.0) #typically using 5 GeV
-  process.makeTopologyNtupleMiniAOD.maxInvChChMass=cms.double(5.0) #typically using 5 GeV
+	process.makeTopologyNtupleMiniAOD.maxInvMuMuMass=cms.double(5.0) #typically using 5 GeV
+	process.makeTopologyNtupleMiniAOD.minInvMuMuMass=cms.double(0.0) #typically using 5 GeV
+	process.makeTopologyNtupleMiniAOD.maxInvChChMass=cms.double(5.0) #typically using 5 GeV
 
 
 process.makeTopologyNtupleMiniAOD.flavorHistoryTag=cms.bool(False) # change to false at your convenience

@@ -43,7 +43,7 @@ sed -ie "s/ISGGH/$ISGGH/g" theconfig.py
 sed -ie "s/THERUNERA/$RUNERA/g" theconfig.py
 sed -ie "s/THEHADRON/$hadronType/g" theconfig.py
 
-crab submit -c crab_template_temp.py
+crab-pre submit -c crab_template_temp.py
 rm theconfig.py crab_template_temp*
 
 

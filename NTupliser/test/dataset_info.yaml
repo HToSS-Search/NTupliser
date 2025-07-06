@@ -149,6 +149,12 @@ DYJetsToLL_Pt-650ToInf_2018:
   status: 'NA'
   process: ''
 
+VBF_HToSS_SmuonHadronFiltered_MH125_MSX_ctauSX_2017:
+  location: /pnfs/iihe/cms/store/user/sdansana/HToSS/MC/MINIAODSIM/VBF_HToSSTo2Mu2Hadrons_MH125_TuneCP2_13TeV-powheg-pythia8
+  ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/VBF_HToSSTo2Mu2Hadrons_MH125_TuneCP2_13TeV-powheg-pythia8'
+  status: 'DONE'
+  process: 'VBF'
+
 HToSS_SmuonHadronFiltered_MH125_MS0p4_ctauS0_2016_APV:
   location: /HToSSTo2Mu2Hadrons_MH125_MS0p4_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM
   ntuple: '/pnfs/iihe/cms/store/user/sdansana/HToSS/MC/nTuples/HToSSTo2Mu2Hadrons_MH125_MS0p4_ctauS0_TuneCP2_13TeV-powheg-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2_MCUL2016APV_HToSS_ChargedPion_LT/240617_212653'

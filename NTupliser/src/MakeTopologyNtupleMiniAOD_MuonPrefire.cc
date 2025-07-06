@@ -96,7 +96,7 @@
 #include "DataFormats/TrackReco/interface/HitPattern.h"
 #include "Math/GenVector/PxPyPzM4D.h"
 #include "DataFormats/Math/interface/LorentzVector.h"
-#include "NTupliser/NTupliser/interface/MakeTopologyNtupleMiniAOD.h"
+#include "NTupliser/NTupliser/interface/MakeTopologyNtupleMiniAOD_MuonPrefire.h"
 #include "RecoLocalCalo/EcalRecAlgos/interface/EcalSeverityLevelAlgo.h"
 #include "RecoMET/METAlgorithms/interface/significanceAlgo.h"
 #include "TClonesArray.h"
@@ -141,7 +141,7 @@ typedef math::XYZTLorentzVectorF LorentzVector;
 // using namespace edm;
 
 
-MakeTopologyNtupleMiniAOD::MakeTopologyNtupleMiniAOD(
+MakeTopologyNtupleMiniAOD_MuonPrefire::MakeTopologyNtupleMiniAOD_MuonPrefire(
     const edm::ParameterSet& iConfig)
     : beamSpotToken_{consumes<reco::BeamSpot>(iConfig.getParameter<edm::InputTag>("beamSpotToken"))}
     , packedCandToken_{consumes<std::vector<pat::PackedCandidate>>(iConfig.getParameter<edm::InputTag>("packedCandToken"))}
@@ -247,6 +247,12 @@ MakeTopologyNtupleMiniAOD::MakeTopologyNtupleMiniAOD(
     // , fsrConLo{1.0}
 {
     // now do what ever initialization is needed
+    // Prefiring
+		
+    prefweightMuon_token = consumes< double >(edm::InputTag("prefiringweight:nonPrefiringProbMuon"));
+    prefweightupMuon_token = consumes< double >(edm::InputTag("prefiringweight:nonPrefiringProbMuonUp"));
+    prefweightdownMuon_token = consumes< double >(edm::InputTag("prefiringweight:nonPrefiringProbMuonDown"));
+
 
     //{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}
     // define some histograms using the framework tfileservice. Define the
@@ -322,7 +328,7 @@ MakeTopologyNtupleMiniAOD::MakeTopologyNtupleMiniAOD(
     // Some debugging variables
 }
 
-MakeTopologyNtupleMiniAOD::~MakeTopologyNtupleMiniAOD() {
+MakeTopologyNtupleMiniAOD_MuonPrefire::~MakeTopologyNtupleMiniAOD_MuonPrefire() {
     // do anything here that needs to be done at desctruction time
     // (e.g. close files, deallocate resources etc.)
 
@@ -332,7 +338,7 @@ MakeTopologyNtupleMiniAOD::~MakeTopologyNtupleMiniAOD() {
 
 //--------------method called once each run before event loop
 //-------------
-// void MakeTopologyNtupleMiniAOD::beginRun( edm::Run const & iRun,  edm::EventSetup const & iSetup) {
+// void MakeTopologyNtupleMiniAOD_MuonPrefire::beginRun( edm::Run const & iRun,  edm::EventSetup const & iSetup) {
 //     using namespace edm;
 //     edm::Handle<LHERunInfoProduct> run; 
 //     typedef std::vector<LHERunInfoProduct::Header>::const_iterator headers_const_iterator;
@@ -355,12 +361,12 @@ MakeTopologyNtupleMiniAOD::~MakeTopologyNtupleMiniAOD() {
 //
 // member functions
 //
-void MakeTopologyNtupleMiniAOD::fillSummaryVariables() {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::fillSummaryVariables() {
     ran_postloop_ = true;
     return;
 }
 
-void MakeTopologyNtupleMiniAOD::fillEventInfo(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::fillEventInfo(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
     if (ran_PV_) return;
     ran_PV_ = true;
 
@@ -370,7 +376,7 @@ void MakeTopologyNtupleMiniAOD::fillEventInfo(const edm::Event& iEvent, const ed
 
 }
 
-void MakeTopologyNtupleMiniAOD::fillPV(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::fillPV(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
 
     edm::Handle<reco::VertexCollection> pvHandle;
     iEvent.getByToken(pvLabel_, pvHandle);
@@ -412,7 +418,7 @@ void MakeTopologyNtupleMiniAOD::fillPV(const edm::Event& iEvent, const edm::Even
     }
 }
 
-void MakeTopologyNtupleMiniAOD::fillSV(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::fillSV(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
 
     edm::Handle<reco::VertexCompositePtrCandidateCollection> svHandle;
     iEvent.getByToken(svLabel_, svHandle);
@@ -511,7 +517,7 @@ void MakeTopologyNtupleMiniAOD::fillSV(const edm::Event& iEvent, const edm::Even
     }
 }
 
-void MakeTopologyNtupleMiniAOD::fillMissingET(const edm::Event& iEvent, const edm::EventSetup& iSetup, edm::EDGetTokenT<pat::METCollection> metIn_, const std::string& ID) {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::fillMissingET(const edm::Event& iEvent, const edm::EventSetup& iSetup, edm::EDGetTokenT<pat::METCollection> metIn_, const std::string& ID) {
 
     edm::Handle<pat::METCollection> metHandle;
     iEvent.getByToken(metIn_, metHandle);
@@ -566,7 +572,7 @@ void MakeTopologyNtupleMiniAOD::fillMissingET(const edm::Event& iEvent, const ed
     }
 }
 /////////////////////////////////////////////////////////////////////////////////////////////
-void MakeTopologyNtupleMiniAOD::fillBeamSpot(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::fillBeamSpot(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
     if (ran_BS_) return;
     ran_BS_ = true;
 
@@ -587,7 +593,31 @@ void MakeTopologyNtupleMiniAOD::fillBeamSpot(const edm::Event& iEvent, const edm
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////
-void MakeTopologyNtupleMiniAOD::fillMuons(const edm::Event& iEvent, const edm::EventSetup& iSetup, edm::EDGetTokenT<pat::MuonCollection> muIn_, const std::string& ID) {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::fillPrefiring(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
+    edm::Handle< double > theprefweightMuon;
+    iEvent.getByToken(prefweightMuon_token, theprefweightMuon ) ;
+    double _prefiringweightMuon =(*theprefweightMuon);
+    prefiringweightMuon_=_prefiringweightMuon;
+
+    edm::Handle< double > theprefweightupMuon;
+    iEvent.getByToken(prefweightupMuon_token, theprefweightupMuon ) ;
+    double _prefiringweightMuonup =(*theprefweightupMuon);
+    prefiringweightMuonup_=_prefiringweightMuonup;
+
+    edm::Handle< double > theprefweightdownMuon;
+    iEvent.getByToken(prefweightdownMuon_token, theprefweightdownMuon ) ;
+    double _prefiringweightMuondown =(*theprefweightdownMuon);
+    prefiringweightMuondown_=_prefiringweightMuondown;
+    
+    //std::cout<<"fillPrefiring:nominal,up,down-"<<_prefiringweightMuon<<","<<_prefiringweightMuonup<<","<<_prefiringweightMuondown<<std::endl;
+    //std::cout<<"fillPrefiring_test:nominal,up,down-"<<prefiringweightMuon_<<","<<prefiringweightMuonup_<<","<<prefiringweightMuondown_<<std::endl;
+    // beamSpotPoint_ = point;
+}
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+void MakeTopologyNtupleMiniAOD_MuonPrefire::fillMuons(const edm::Event& iEvent, const edm::EventSetup& iSetup, edm::EDGetTokenT<pat::MuonCollection> muIn_, const std::string& ID) {
 
     if (debugMode_) std::cout << "fillMuons" << std::endl;
 
@@ -1071,7 +1101,7 @@ void MakeTopologyNtupleMiniAOD::fillMuons(const edm::Event& iEvent, const edm::E
 
 }
 
-void MakeTopologyNtupleMiniAOD::fillMCInfo(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::fillMCInfo(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
 
     edm::Handle<reco::GenParticleCollection> genParticles;
     iEvent.getByToken(genSimParticlesToken_, genParticles);
@@ -1159,7 +1189,7 @@ void MakeTopologyNtupleMiniAOD::fillMCInfo(const edm::Event& iEvent, const edm::
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-void MakeTopologyNtupleMiniAOD::fillPackedCands(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::fillPackedCands(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
     if (ran_packedCands_) return;
     ran_packedCands_ = true;
 
@@ -1643,7 +1673,7 @@ void MakeTopologyNtupleMiniAOD::fillPackedCands(const edm::Event& iEvent, const 
 }
 
 /////////////////////////////////////
-void MakeTopologyNtupleMiniAOD::fillTriggerData(const edm::Event& iEvent)
+void MakeTopologyNtupleMiniAOD_MuonPrefire::fillTriggerData(const edm::Event& iEvent)
 {
     // std::cout << "fillTriggerData CHECK" << std::endl;
     // for (int& TriggerBit : TriggerBits)
@@ -1750,7 +1780,7 @@ void MakeTopologyNtupleMiniAOD::fillTriggerData(const edm::Event& iEvent)
 }
 /////////////////////////////////////
 
-void MakeTopologyNtupleMiniAOD::clearmuonarrays(const std::string& ID){
+void MakeTopologyNtupleMiniAOD_MuonPrefire::clearmuonarrays(const std::string& ID){
     // std::cout << "clearmuonarrays CHECK" << std::endl;
     numMuo[ID] = 0;
     muonEts.clear(); // just used for sorting
@@ -1922,7 +1952,7 @@ void MakeTopologyNtupleMiniAOD::clearmuonarrays(const std::string& ID){
     muonTkPairSortedTkVtxDcaPreFit[ID].clear();
 }
 
-void MakeTopologyNtupleMiniAOD::clearMetArrays(const std::string& ID){
+void MakeTopologyNtupleMiniAOD_MuonPrefire::clearMetArrays(const std::string& ID){
     // std::cout << "clearMetArrays CHECK" << std::endl;
     metE[ID] = -99999.0;
     metEt[ID] = -99999.0;
@@ -1958,7 +1988,7 @@ void MakeTopologyNtupleMiniAOD::clearMetArrays(const std::string& ID){
     genMetPz[ID] = -99999.0;
 }
 /////////////////////////////////////
-void MakeTopologyNtupleMiniAOD::clearMCarrays(){
+void MakeTopologyNtupleMiniAOD_MuonPrefire::clearMCarrays(){
     // // electronTruthEts.clear(); // just used for sorting
     // // std::cout << "clearMCarrays CHECK" << std::endl;
     // nT = 0;
@@ -2032,7 +2062,7 @@ void MakeTopologyNtupleMiniAOD::clearMCarrays(){
 }
 
 /////////////////////////////////////
-void MakeTopologyNtupleMiniAOD::clearPVarrays() {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::clearPVarrays() {
     // std::cout << "clearPVarrays CHECK" << std::endl;
     numPVs = 0;
 
@@ -2062,7 +2092,7 @@ void MakeTopologyNtupleMiniAOD::clearPVarrays() {
 
 /////////////////////////////////////
 
-void MakeTopologyNtupleMiniAOD::clearSVarrays() {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::clearSVarrays() {
     // std::cout << "clearSVarrays CHECK" << std::endl;
     numSVs = 0;
 
@@ -2105,7 +2135,7 @@ void MakeTopologyNtupleMiniAOD::clearSVarrays() {
 
 /////////////////////////////////////
 
-void MakeTopologyNtupleMiniAOD::clearPackedCandsArrays() {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::clearPackedCandsArrays() {
     // std::cout << "clearPackedCandsArrays CHECK" << std::endl;
     numPackedCands = 0;
 
@@ -2229,13 +2259,15 @@ void MakeTopologyNtupleMiniAOD::clearPackedCandsArrays() {
 }
 
 /////////////////////////////////////
-void MakeTopologyNtupleMiniAOD::cleararrays() {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::cleararrays() {
     // reset the bookkeeping bools;
     // std::cout << "cleararrays CHECK" << std::endl;
     // std::cout << "before FALSE: " << ran_postloop_ << std::endl;
     ran_jetloop_ = ran_eleloop_ = ran_muonloop_ = ran_PV_ = ran_BS_ = ran_tracks_ = ran_isotracks_ = ran_packedCands_ = ran_mcloop_ = ran_postloop_ = ran_photonTau_ = false;
 //     // std::cout << "psot FALSE: " << ran_postloop_ << std::endl;
-
+    prefiringweightMuon_=-99;
+    prefiringweightMuonup_=-99;
+    prefiringweightMuondown_=-99;
     clearPVarrays();
     clearSVarrays();
     // std::cout << "Cleared PV, SV arrays" << std::endl;
@@ -2331,7 +2363,7 @@ void MakeTopologyNtupleMiniAOD::cleararrays() {
 }
 
 // ------------ method called to for each event  ------------
-// void MakeTopologyNtupleMiniAOD::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
+// void MakeTopologyNtupleMiniAOD_MuonPrefire::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
 //     using namespace edm;
 //     // std::cout << iEvent.id().run() << " " << iEvent.luminosityBlock() << " "
 //     //           << iEvent.id().event()
@@ -2355,7 +2387,7 @@ void MakeTopologyNtupleMiniAOD::cleararrays() {
     
 // }
 
-void MakeTopologyNtupleMiniAOD::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
     if (debugMode_) {
         std::cout << iEvent.id().run() << " " << iEvent.luminosityBlock() << " "
                 << iEvent.id().event()
@@ -2661,6 +2693,12 @@ void MakeTopologyNtupleMiniAOD::analyze(const edm::Event& iEvent, const edm::Eve
 
     fillBeamSpot(iEvent, iSetup);
     if (debugMode_) std::cout << "Filled BS" << std::endl;
+
+
+    if (isMC_) fillPrefiring(iEvent, iSetup);
+    if (debugMode_) std::cout<<"Filled muon prefiring"<<std::endl;
+
+
 
 // //    fillGeneralTracks(iEvent, iSetup);
 // //    fillIsolatedTracks(iEvent, iSetup);
@@ -3266,7 +3304,7 @@ void MakeTopologyNtupleMiniAOD::analyze(const edm::Event& iEvent, const edm::Eve
 }
 
 
-void MakeTopologyNtupleMiniAOD::bookBranches() {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::bookBranches() {
     if (debugMode_) std::cout << "bookBranches CHECK" << std::endl;
     TTree::SetMaxTreeSize(std::numeric_limits<Long64_t>::max());
     mytree_ = new TTree("tree", "tree");
@@ -3286,7 +3324,11 @@ void MakeTopologyNtupleMiniAOD::bookBranches() {
     mytree_->Branch("beamSpotX", &beamSpotX, "beamSpotX/F");
     mytree_->Branch("beamSpotY", &beamSpotY, "beamSpotY/F");
     mytree_->Branch("beamSpotZ", &beamSpotZ, "beamSpotZ/F");
-
+    if (isMC_) {
+        mytree_->Branch("prefiringweightMuon_", &prefiringweightMuon_, "prefiringweightMuon_/D");
+        mytree_->Branch("prefiringweightMuonup_", &prefiringweightMuonup_, "prefiringweightMuonup_/D");
+        mytree_->Branch("prefiringweightMuondown_", &prefiringweightMuondown_, "prefiringweightMuondown_/D");
+    }
     bookPVbranches();
     bookSVbranches();
 
@@ -3342,7 +3384,7 @@ void MakeTopologyNtupleMiniAOD::bookBranches() {
     mytree_->Branch("eventLumiblock", &evtlumiblock, "eventLumiblock/F");
 }
 // book muon branches:
-void MakeTopologyNtupleMiniAOD::bookMuonBranches(const std::string& ID, const std::string& name) {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::bookMuonBranches(const std::string& ID, const std::string& name) {
 
     // Initialise maps to prevent root panicing.
     std::vector<float> tempVecF(NMUONSMAX);
@@ -3682,7 +3724,7 @@ void MakeTopologyNtupleMiniAOD::bookMuonBranches(const std::string& ID, const st
     mytree_->Branch((prefix2 + "TkVtxDcaPreFit").c_str(), &muonTkPairSortedTkVtxDcaPreFit[ID][0], (prefix2 + "TkVtxDcaPreFit[numMuonTrackPairs" + name + "]/F").c_str());
 }
 
-void MakeTopologyNtupleMiniAOD::bookMETBranches(const std::string& ID, const std::string& name) {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::bookMETBranches(const std::string& ID, const std::string& name) {
     if (debugMode_) std::cout << "bookMETBranches CHECK" << std::endl;
 
     metE[ID] = -1.0;
@@ -3761,7 +3803,7 @@ void MakeTopologyNtupleMiniAOD::bookMETBranches(const std::string& ID, const std
 }
 
 // book MC branches:
-void MakeTopologyNtupleMiniAOD::bookMCBranches()
+void MakeTopologyNtupleMiniAOD_MuonPrefire::bookMCBranches()
 {
 
     mytree_->Branch("nGenPar", &nGenPar, "nGenPar/I");
@@ -3785,7 +3827,7 @@ void MakeTopologyNtupleMiniAOD::bookMCBranches()
     mytree_->Branch("genParCharge", genParCharge, "genParCharge[nGenPar]/I");
 }
 
-void MakeTopologyNtupleMiniAOD::bookPackedCandsBranches() {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::bookPackedCandsBranches() {
     if (debugMode_) std::cout << "bookPackedCandsBranches CHECK" << std::endl;
     mytree_->Branch("numPackedCands", &numPackedCands, "numPackedCands/I");
 //    mytree_->Branch("packedCandsPt", &packedCandsPt, "packedCandsPt[numPackedCands]/F");
@@ -3898,7 +3940,7 @@ void MakeTopologyNtupleMiniAOD::bookPackedCandsBranches() {
     mytree_->Branch("chsTkPairTkVtxDcaPreFit", &chsTkPairTkVtxDcaPreFit, "chsTkPairTkVtxDcaPreFit[numChsTrackPairs]/F");
 }
 
-void MakeTopologyNtupleMiniAOD::bookPVbranches() {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::bookPVbranches() {
     mytree_->Branch("numPVs", &numPVs, "numPVs/I");
     mytree_->Branch("pvX", &pvX, "pvX[numPVs]/F");
     mytree_->Branch("pvY", &pvY, "pvY[numPVs]/F");
@@ -3921,7 +3963,7 @@ void MakeTopologyNtupleMiniAOD::bookPVbranches() {
     mytree_->Branch("pvTime", &pvTime, "pvTime[numPVs]/F");
     mytree_->Branch("pvTimeError", &pvTime, "pvTimeError[numPVs]/F");
 }
-void MakeTopologyNtupleMiniAOD::bookSVbranches() {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::bookSVbranches() {
     mytree_->Branch("numSVs", &numSVs, "numSVs/I");
     mytree_->Branch("svPt", &svPt, "svPt[numSVs]/F");
     mytree_->Branch("svPx", &svPx, "svPx[numSVs]/F");
@@ -3958,7 +4000,7 @@ void MakeTopologyNtupleMiniAOD::bookSVbranches() {
     mytree_->Branch("svIsKshort", &svIsKshort, "svIsKshort[numSVs]/I");
 }
 
-bool MakeTopologyNtupleMiniAOD::leptonScalarAncestor(const reco::Candidate* genPar, const bool& directDecay, const int& lepId) {
+bool MakeTopologyNtupleMiniAOD_MuonPrefire::leptonScalarAncestor(const reco::Candidate* genPar, const bool& directDecay, const int& lepId) {
     if ( genPar->numberOfMothers() == 0 ) return false; // if there aren't any more mothers to check , return false
     if ( debugMode_ && !directDecay ) std::cout << "leptonScalarAncestor - mother Id: " << std::abs(genPar->mother()->pdgId()) << std::endl;
 
@@ -3971,7 +4013,7 @@ bool MakeTopologyNtupleMiniAOD::leptonScalarAncestor(const reco::Candidate* genP
 }
 
 
-// void MakeTopologyNtupleMiniAOD::endRun(edm::Run const & iRun, edm::EventSetup const& iSetup)
+// void MakeTopologyNtupleMiniAOD_MuonPrefire::endRun(edm::Run const & iRun, edm::EventSetup const& iSetup)
 // {
 
 //   // myfile_unprefevts.close();
@@ -3981,7 +4023,7 @@ bool MakeTopologyNtupleMiniAOD::leptonScalarAncestor(const reco::Candidate* genP
 
 // ------------ method called once each job just before starting event loop
 // ------------
-void MakeTopologyNtupleMiniAOD::beginJob()
+void MakeTopologyNtupleMiniAOD_MuonPrefire::beginJob()
 {
     // if (runPDFUncertainties_)
     // {
@@ -3994,7 +4036,7 @@ void MakeTopologyNtupleMiniAOD::beginJob()
 
 // ------------ method called once each job just after ending the event loop
 // ------------
-void MakeTopologyNtupleMiniAOD::endJob()
+void MakeTopologyNtupleMiniAOD_MuonPrefire::endJob()
 {
     std::cout << "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+="
               << std::endl;
@@ -4012,7 +4054,7 @@ void MakeTopologyNtupleMiniAOD::endJob()
 /*
 
 
-bool MakeTopologyNtupleMiniAOD::jetScalarAncestor(const reco::Candidate* genJetMother) {
+bool MakeTopologyNtupleMiniAOD_MuonPrefire::jetScalarAncestor(const reco::Candidate* genJetMother) {
     if ( debugMode_ ) std::cout << "jetScalarAncestor - mother Id: " << std::abs(genJetMother->pdgId()) << std::endl;
     if ( std::abs(genJetMother->pdgId()) == scalarPid_ ) return true;
     else if ( genJetMother->numberOfMothers() == 0 ) return false;
@@ -4022,7 +4064,7 @@ bool MakeTopologyNtupleMiniAOD::jetScalarAncestor(const reco::Candidate* genJetM
 
 
 // book jet branches:
-void MakeTopologyNtupleMiniAOD::bookPFJetBranches(const std::string& ID,
+void MakeTopologyNtupleMiniAOD_MuonPrefire::bookPFJetBranches(const std::string& ID,
                                                   const std::string& name)
 {
     // std::cout << "bookPFJetBranches CHECK" << std::endl;
@@ -4116,7 +4158,7 @@ void MakeTopologyNtupleMiniAOD::bookPFJetBranches(const std::string& ID,
         (prefix + "ChargedMultiplicity[numJet" + name + "]/I").c_str());
 }
 
-void MakeTopologyNtupleMiniAOD::bookJetBranches(const std::string& ID,
+void MakeTopologyNtupleMiniAOD_MuonPrefire::bookJetBranches(const std::string& ID,
                                                 const std::string& name)
 {
     // std::cout << "bookJetBranches CHECK" << std::endl;
@@ -4328,7 +4370,7 @@ void MakeTopologyNtupleMiniAOD::bookJetBranches(const std::string& ID,
     mytree_->Branch("fixedGridRhoFastjetAll", &fixedGridRhoFastjetAll[ID], "fixedGridRhoFastjetAll]/F");
 
 }
-void MakeTopologyNtupleMiniAOD::bookGeneralTracksBranches() {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::bookGeneralTracksBranches() {
     // std::cout << "bookGeneralTracksBranches CHECK" << std::endl;
     mytree_->Branch("numGeneralTracks", &numGeneralTracks, "numGeneralTracks/I");
     mytree_->Branch("generalTracksPt", &generalTracksPt, "generalTracksPt[numGeneralTracks]/F");
@@ -4345,7 +4387,7 @@ void MakeTopologyNtupleMiniAOD::bookGeneralTracksBranches() {
     mytree_->Branch("generalTracksBeamSpotCorrectedD0", &generalTracksBeamSpotCorrectedD0, "generalTracksBeamSpotCorrectedD0[numGeneralTracks]/F");
 }
 
-void MakeTopologyNtupleMiniAOD::bookIsolatedTracksBranches() {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::bookIsolatedTracksBranches() {
     // std::cout << "bookIsolatedTrackBranches CHECK" << std::endl;
     mytree_->Branch("numIsolatedTracks", &numIsolatedTracks, "numIsolatedTracks/I");
     mytree_->Branch("isoTracksPt", &isoTracksPt, "isoTracksPt[numIsolatedTracks]/F");
@@ -4377,7 +4419,7 @@ void MakeTopologyNtupleMiniAOD::bookIsolatedTracksBranches() {
 
 
 /////////////////////////////////////
-void MakeTopologyNtupleMiniAOD::clearGeneralTracksArrays() {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::clearGeneralTracksArrays() {
     // std::cout << "clearGeneralTracksarrays CHECK" << std::endl;
     numGeneralTracks = 0;
 
@@ -4398,7 +4440,7 @@ void MakeTopologyNtupleMiniAOD::clearGeneralTracksArrays() {
 }
 
 /////////////////////////////////////
-void MakeTopologyNtupleMiniAOD::clearIsolatedTracksArrays() {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::clearIsolatedTracksArrays() {
     // std::cout << "clearIsolatedTracksarrays CHECK" << std::endl;
     numIsolatedTracks = 0;
 
@@ -4433,7 +4475,7 @@ void MakeTopologyNtupleMiniAOD::clearIsolatedTracksArrays() {
 
 
 /////////////////////////////////////
-void MakeTopologyNtupleMiniAOD::clearjetarrays(const std::string& ID){
+void MakeTopologyNtupleMiniAOD_MuonPrefire::clearjetarrays(const std::string& ID){
     // std::cout << "clearjetarrays CHECK" << std::endl;
     numJet[ID] = 0;
     correctedJetEts.clear();
@@ -4530,7 +4572,7 @@ void MakeTopologyNtupleMiniAOD::clearjetarrays(const std::string& ID){
 }
 
 
-void MakeTopologyNtupleMiniAOD::fillJets( const edm::Event& iEvent, const edm::EventSetup& iSetup, edm::EDGetTokenT<pat::JetCollection> jetIn_, const std::string& ID ) {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::fillJets( const edm::Event& iEvent, const edm::EventSetup& iSetup, edm::EDGetTokenT<pat::JetCollection> jetIn_, const std::string& ID ) {
     // if (ran_jetloop_)
     // {
     //     return;
@@ -4701,7 +4743,7 @@ void MakeTopologyNtupleMiniAOD::fillJets( const edm::Event& iEvent, const edm::E
 
 /////////////////////////////////////
 
-void MakeTopologyNtupleMiniAOD::fillGeneralTracks(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::fillGeneralTracks(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
 
     if (!hasGeneralTracks_) return;
     if (ran_tracks_) return;
@@ -4731,7 +4773,7 @@ void MakeTopologyNtupleMiniAOD::fillGeneralTracks(const edm::Event& iEvent, cons
 
 /////////////////////////////////////
 
-void MakeTopologyNtupleMiniAOD::fillIsolatedTracks(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::fillIsolatedTracks(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
     if (ran_isotracks_) return;
     ran_isotracks_ = true;
 
@@ -4774,7 +4816,7 @@ void MakeTopologyNtupleMiniAOD::fillIsolatedTracks(const edm::Event& iEvent, con
 /////////////////////////////////////
 
 
-void MakeTopologyNtupleMiniAOD::fillMCInfo(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::fillMCInfo(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
 
     if (!runMCInfo_) return;
     if (ran_mcloop_) return;
@@ -5250,14 +5292,14 @@ void MakeTopologyNtupleMiniAOD::fillMCInfo(const edm::Event& iEvent, const edm::
     }
 }
 
-void MakeTopologyNtupleMiniAOD::clearTauArrays(const std::string& ID){
+void MakeTopologyNtupleMiniAOD_MuonPrefire::clearTauArrays(const std::string& ID){
     numTaus[ID] = 0;
     tau_e[ID].clear();
     tau_phi[ID].clear();
     tau_eta[ID].clear();
     tau_pt[ID].clear();
 }
-void MakeTopologyNtupleMiniAOD::clearPhotonArrays(const std::string& ID){
+void MakeTopologyNtupleMiniAOD_MuonPrefire::clearPhotonArrays(const std::string& ID){
     numPho[ID] = 0;
 
     photonEts.clear(); // just used for sorting
@@ -5328,7 +5370,7 @@ void MakeTopologyNtupleMiniAOD::clearPhotonArrays(const std::string& ID){
     genPhotonSortedScalarAncestor[ID].clear();
     genPhotonSortedDirectScalarAncestor[ID].clear();
 }
-void MakeTopologyNtupleMiniAOD::clearelectronarrays(const std::string& ID){
+void MakeTopologyNtupleMiniAOD_MuonPrefire::clearelectronarrays(const std::string& ID){
     numEle[ID] = 0;
 
     nzcandidates[ID] = 0;
@@ -5463,7 +5505,7 @@ void MakeTopologyNtupleMiniAOD::clearelectronarrays(const std::string& ID){
 }
 
 
-void MakeTopologyNtupleMiniAOD::fillPhotons( const edm::Event& iEvent, const edm::EventSetup& iSetup, edm::EDGetTokenT<pat::PhotonCollection> phoIn_, const std::string& ID, edm::EDGetTokenT<pat::PhotonCollection> phoInOrg_) {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::fillPhotons( const edm::Event& iEvent, const edm::EventSetup& iSetup, edm::EDGetTokenT<pat::PhotonCollection> phoIn_, const std::string& ID, edm::EDGetTokenT<pat::PhotonCollection> phoInOrg_) {
   // info for 'default conversion finder
 
   edm::ESHandle<MagneticField> magneticField;
@@ -5621,7 +5663,7 @@ void MakeTopologyNtupleMiniAOD::fillPhotons( const edm::Event& iEvent, const edm
 }
 
 
-void MakeTopologyNtupleMiniAOD::fillElectrons(const edm::Event& iEvent, const edm::EventSetup& iSetup, edm::EDGetTokenT<pat::ElectronCollection> eleIn_, const std::string& ID, edm::EDGetTokenT<pat::ElectronCollection> eleInOrg_) {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::fillElectrons(const edm::Event& iEvent, const edm::EventSetup& iSetup, edm::EDGetTokenT<pat::ElectronCollection> eleIn_, const std::string& ID, edm::EDGetTokenT<pat::ElectronCollection> eleInOrg_) {
 
     // if (ran_eleloop_)
     // {
@@ -5924,7 +5966,7 @@ void MakeTopologyNtupleMiniAOD::fillElectrons(const edm::Event& iEvent, const ed
     }
 }
 //////////////////////////////////////////////////////////////////////////////////////////////
-void MakeTopologyNtupleMiniAOD::fillOtherJetInfo(const pat::Jet& jet,
+void MakeTopologyNtupleMiniAOD_MuonPrefire::fillOtherJetInfo(const pat::Jet& jet,
                                                  const size_t jetindex,
                                                  const std::string& ID,
                                                  const edm::Event& iEvent)
@@ -6122,7 +6164,7 @@ void MakeTopologyNtupleMiniAOD::fillOtherJetInfo(const pat::Jet& jet,
     // next: only fill if genJet was matched.
 }
 
-void MakeTopologyNtupleMiniAOD::fillMCJetInfo(const reco::GenJet& jet, const size_t jetindex,  const std::string& ID, bool runMC)
+void MakeTopologyNtupleMiniAOD_MuonPrefire::fillMCJetInfo(const reco::GenJet& jet, const size_t jetindex,  const std::string& ID, bool runMC)
 {
     if (runMC)
     {
@@ -6204,7 +6246,7 @@ void MakeTopologyNtupleMiniAOD::fillMCJetInfo(const reco::GenJet& jet, const siz
     }
 }
 
-void MakeTopologyNtupleMiniAOD::fillMCJetInfo(int empty,
+void MakeTopologyNtupleMiniAOD_MuonPrefire::fillMCJetInfo(int empty,
                                               const size_t jetindex,
                                               const std::string& ID,
                                               bool runMC)
@@ -6227,7 +6269,7 @@ void MakeTopologyNtupleMiniAOD::fillMCJetInfo(int empty,
     genJetSortedClosestC[ID][jetindex] = -1;
 }
 
-void MakeTopologyNtupleMiniAOD::fillBTagInfo(const pat::Jet& jet,
+void MakeTopologyNtupleMiniAOD_MuonPrefire::fillBTagInfo(const pat::Jet& jet,
                                              const size_t jetindex,
                                              const std::string& ID)
 {
@@ -6248,7 +6290,7 @@ void MakeTopologyNtupleMiniAOD::fillBTagInfo(const pat::Jet& jet,
         jetSortedSVDZ[ID][jetindex] = svTagInfo->secondaryVertex(0).zError();
     }
 }
-void MakeTopologyNtupleMiniAOD::bookTauBranches(const std::string& ID, const std::string& name){
+void MakeTopologyNtupleMiniAOD_MuonPrefire::bookTauBranches(const std::string& ID, const std::string& name){
     numTaus[ID] = 0;
 
     std::vector<float> tempVecF(NTAUSMAX);
@@ -6267,7 +6309,7 @@ void MakeTopologyNtupleMiniAOD::bookTauBranches(const std::string& ID, const std
 }
 
 // book photon branches:
-void MakeTopologyNtupleMiniAOD::bookPhotonBranches(const std::string& ID, const std::string& name) {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::bookPhotonBranches(const std::string& ID, const std::string& name) {
     // Initialise maps so ROOT wont panic
     std::vector<float> tempVecF(NPHOTONSMAX);
     std::vector<int> tempVecI(NPHOTONSMAX);
@@ -6540,7 +6582,7 @@ void MakeTopologyNtupleMiniAOD::bookPhotonBranches(const std::string& ID, const 
 }
 
 // book electron branches:
-void MakeTopologyNtupleMiniAOD::bookElectronBranches(const std::string& ID, const std::string& name) {
+void MakeTopologyNtupleMiniAOD_MuonPrefire::bookElectronBranches(const std::string& ID, const std::string& name) {
     // Initialise maps so ROOT wont panic
     std::vector<float> tempVecF(NELECTRONSMAX);
     std::vector<int> tempVecI(NELECTRONSMAX);
@@ -7020,4 +7062,4 @@ void MakeTopologyNtupleMiniAOD::bookElectronBranches(const std::string& ID, cons
 /////////////
 
 // define this as a plug-in
-DEFINE_FWK_MODULE(MakeTopologyNtupleMiniAOD);
+DEFINE_FWK_MODULE(MakeTopologyNtupleMiniAOD_MuonPrefire);

@@ -1,8 +1,8 @@
-TheSkim = "HToSS"
-runEra="MCUL2018"
+TheSkim = "ZH_production"
+runEra="MCUL2017"
 hadronType="THEHADRON"
-doCuts_=bool(False)
-isggH_=bool(True)
+doCuts_=bool(True)
+isggH_=bool(False)
     
 #Set up the pat environment
 import FWCore.ParameterSet.Config as cms
@@ -235,6 +235,14 @@ if "Data" in runEra:
     process.makeTopologyNtupleMiniAOD.isggH=cms.bool(False) # this is set to true for signal samples
     process.makeTopologyNtupleMiniAOD.hadronType=cms.string("ChargedKaon") # Irrelevant for data
 
+if "ZH_production" in TheSkim:
+  process.makeTopologyNtupleMiniAOD.maxInvMuMuMass=cms.double(120.0) #typically using 5 GeV
+  process.makeTopologyNtupleMiniAOD.minInvMuMuMass=cms.double(60.0) #typically using 5 GeV
+  process.makeTopologyNtupleMiniAOD.maxInvChChMass=cms.double(5.0) #typically using 5 GeV
+else:
+  process.makeTopologyNtupleMiniAOD.maxInvMuMuMass=cms.double(5.0) #typically using 5 GeV
+  process.makeTopologyNtupleMiniAOD.minInvMuMuMass=cms.double(0.0) #typically using 5 GeV
+  process.makeTopologyNtupleMiniAOD.maxInvChChMass=cms.double(5.0) #typically using 5 GeV
 
 
 process.makeTopologyNtupleMiniAOD.flavorHistoryTag=cms.bool(False) # change to false at your convenience
@@ -248,7 +256,6 @@ process.makeTopologyNtupleMiniAOD.bDiscCut=cms.double(-1.0)
 process.makeTopologyNtupleMiniAOD.minElePt=cms.double(9.0)
 process.makeTopologyNtupleMiniAOD.maxEleEta=cms.double(2.7)
 process.makeTopologyNtupleMiniAOD.eleRelIso=cms.double(0.50)
-process.makeTopologyNtupleMiniAOD.maxInvMuMuMass=cms.double(5.0) #typically using 5 GeV
 process.makeTopologyNtupleMiniAOD.minInvMuMuhhMass=cms.double(50)
 process.makeTopologyNtupleMiniAOD.maxMuonEta=cms.double(2.50)
 process.makeTopologyNtupleMiniAOD.minMuonPt1=cms.double(20.0) #2018 - 20, 2016/2017 - 20 according to finalized trigger

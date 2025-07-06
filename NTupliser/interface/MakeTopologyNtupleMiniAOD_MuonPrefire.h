@@ -22,11 +22,11 @@ class EffectiveAreas;
 class TTree;
 // using namespace edm;
 
-class MakeTopologyNtupleMiniAOD : public edm::EDAnalyzer
+class MakeTopologyNtupleMiniAOD_MuonPrefire : public edm::EDAnalyzer
 {
     public:
-    explicit MakeTopologyNtupleMiniAOD(const edm::ParameterSet&);
-    ~MakeTopologyNtupleMiniAOD();
+    explicit MakeTopologyNtupleMiniAOD_MuonPrefire(const edm::ParameterSet&);
+    ~MakeTopologyNtupleMiniAOD_MuonPrefire();
 
     private:
     //  virtual void beginJob(const edm::EventSetup&) ;
@@ -93,6 +93,14 @@ class MakeTopologyNtupleMiniAOD : public edm::EDAnalyzer
     edm::EDGetTokenT<std::vector<PileupSummaryInfo>> pileupToken_;
     const bool hasGeneralTracks_;
     edm::EDGetTokenT<reco::TrackCollection> generalTracksToken_;
+
+    //Prefiring
+    edm::EDGetTokenT< double > prefweightMuon_token;
+    edm::EDGetTokenT< double > prefweightupMuon_token;
+    edm::EDGetTokenT< double > prefweightdownMuon_token;
+    double prefiringweightMuon_{};
+    double prefiringweightMuonup_{};
+    double prefiringweightMuondown_{};
 
     // Debug flag
     const bool debugMode_{};
@@ -182,6 +190,8 @@ class MakeTopologyNtupleMiniAOD : public edm::EDAnalyzer
 
     // and an ntuple (filling in the methods)
     void fillBeamSpot(const edm::Event&, const edm::EventSetup&);
+    void fillPrefiring(const edm::Event&, const edm::EventSetup&);
+
     // void fillJets(const edm::Event&,
     //               const edm::EventSetup&,
     //               edm::EDGetTokenT<pat::JetCollection>,

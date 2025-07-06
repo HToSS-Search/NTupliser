@@ -1,8 +1,11 @@
-TheSkim = "THESKIM"
-runEra="THERUNERA"
-hadronType="THEHADRON"
-doCuts_=bool(DOCUTS)
-isggH_=bool(ISGGH)
+#TheSkim = "ZH_production"HToSS
+TheSkim = "HToSS"
+runEra="MCUL2017"
+#hadronType="ChargedKaonOnly"
+hadronType="ChargedKaon"
+doCuts_=True
+# doCuts_=False
+isggH_=True
     
 #Set up the pat environment
 import FWCore.ParameterSet.Config as cms
@@ -51,7 +54,7 @@ process.MessageLogger.categories=cms.untracked.vstring('FwkJob'
                                                        )
 
 process.MessageLogger.cerr.INFO = cms.untracked.PSet(limit = cms.untracked.int32(0))
-process.MessageLogger.cerr.FwkReport.reportEvery = cms.untracked.int32(10000)
+process.MessageLogger.cerr.FwkReport.reportEvery = cms.untracked.int32(1)
 process.options = cms.untracked.PSet(
                      wantSummary = cms.untracked.bool(True)
                      )
@@ -65,15 +68,24 @@ from Configuration.AlCa.GlobalTag import GlobalTag
 if "MCUL2016APV" in runEra:
     process.GlobalTag.globaltag = cms.string('106X_mcRun2_asymptotic_preVFP_v11') #Good for all UL data
     EgammaEra="2016preVFP-UL"
+    prefiring_str1="UL2016preVFP"
+    prefiring_str2="2016preVFP"
+
 elif "MCUL2016nonAPV" in runEra:
     process.GlobalTag.globaltag = cms.string('106X_mcRun2_asymptotic_v17') #Good for all UL data
     EgammaEra="2016postVFP-UL"
+    prefiring_str1="UL2016postVFP"
+    prefiring_str2="2016postVFP"
 elif "MCUL2017" in runEra:
     process.GlobalTag.globaltag = cms.string('106X_mc2017_realistic_v10') #Good for all UL data
     EgammaEra="2017-UL"
+    prefiring_str1="UL2017BtoF"
+    prefiring_str2="20172018"
 elif "MCUL2018" in runEra:
     process.GlobalTag.globaltag = cms.string('106X_upgrade2018_realistic_v16_L1v1') #Good for all UL data
     EgammaEra="2018-UL"
+    prefiring_str1="None"
+    prefiring_str2="20172018"
 
 elif "DataUL2016Flate" in runEra or "DataUL2016G" in runEra or "DataUL2016H" in runEra:
     process.GlobalTag.globaltag = cms.string('106X_dataRun2_v37') #Good for all UL data
@@ -182,11 +194,23 @@ process.ecalBadCalibReducedMINIAODFilter = cms.EDFilter(
     )
 
 
+######## Muon Prefiring #########
+from PhysicsTools.PatUtils.l1PrefiringWeightProducer_cfi import l1PrefiringWeightProducer
+process.prefiringweight = l1PrefiringWeightProducer.clone(
+TheJets = cms.InputTag("updatedPatJetsUpdatedJEC"), #this should be the slimmedJets collection with up to date JECs !
+DataEraECAL = cms.string(prefiring_str1),
+DataEraMuon = cms.string(prefiring_str2),
+UseJetEMPt = cms.bool(False),
+PrefiringRateSystematicUnctyECAL = cms.double(0.2),
+PrefiringRateSystematicUnctyMuon = cms.double(0.2)
+)
+
+
 ####
 # The N-tupliser/cutFlow
 ####
 
-process.load("NTupliser.NTupliser.MakeTopologyNtuple_miniAOD_cfi")
+process.load("NTupliser.NTupliser.MakeTopologyNtuple_miniAOD_MuonPrefire_cfi")
 ########### MODIFY TRIGGER LIST ACCORDING TO RUNERA!!!!! ###########
 if "2017" in runEra:
     process.makeTopologyNtupleMiniAOD.triggerList = cms.vstring(*[
@@ -197,8 +221,8 @@ elif "2018" in runEra:
         #Updated Muon Triggers for 2016
         'HLT_IsoMu24_v', #2018 also
         #Updated Muon Triggers for 2018
-        'HLT_DoubleL2Mu23NoVtx_2Cha_v',
-        'HLT_DoubleL2Mu23NoVtx_2Cha_CosmicSeed_v'
+        #'HLT_DoubleL2Mu23NoVtx_2Cha_v',
+        #'HLT_DoubleL2Mu23NoVtx_2Cha_CosmicSeed_v'
         #Updated Muon Triggers for 2017
     ])
 else:
@@ -212,6 +236,7 @@ else:
     ])
 
 if doCuts_:
+    process.makeTopologyNtupleMiniAOD.debugMode=cms.bool(False) # if set to false will skip ALL cuts. Z veto still applies electron cuts.
     process.makeTopologyNtupleMiniAOD.doCuts=cms.bool(True) # if set to false will skip ALL cuts. Z veto still applies electron cuts.
     process.makeTopologyNtupleMiniAOD.Skim=cms.string(TheSkim) # if set to false will skip ALL cuts. Z veto still applies electron cuts.
 else:
@@ -236,13 +261,13 @@ if "Data" in runEra:
     process.makeTopologyNtupleMiniAOD.hadronType=cms.string("ChargedKaon") # Irrelevant for data
 
 if "ZH_production" in TheSkim:
-  process.makeTopologyNtupleMiniAOD.maxInvMuMuMass=cms.double(120.0) #typically using 5 GeV
-  process.makeTopologyNtupleMiniAOD.minInvMuMuMass=cms.double(60.0) #typically using 5 GeV
-  process.makeTopologyNtupleMiniAOD.maxInvChChMass=cms.double(5.0) #typically using 5 GeV
+	process.makeTopologyNtupleMiniAOD.maxInvMuMuMass=cms.double(110.0) #typically using 5 GeV
+	process.makeTopologyNtupleMiniAOD.minInvMuMuMass=cms.double(70.0) #typically using 5 GeV
+	process.makeTopologyNtupleMiniAOD.maxInvChChMass=cms.double(5.0) #typically using 5 GeV
 else:
-  process.makeTopologyNtupleMiniAOD.maxInvMuMuMass=cms.double(5.0) #typically using 5 GeV
-  process.makeTopologyNtupleMiniAOD.minInvMuMuMass=cms.double(0.0) #typically using 5 GeV
-  process.makeTopologyNtupleMiniAOD.maxInvChChMass=cms.double(5.0) #typically using 5 GeV
+	process.makeTopologyNtupleMiniAOD.maxInvMuMuMass=cms.double(5.0) #typically using 5 GeV
+	process.makeTopologyNtupleMiniAOD.minInvMuMuMass=cms.double(0.0) #typically using 5 GeV
+	process.makeTopologyNtupleMiniAOD.maxInvChChMass=cms.double(5.0) #typically using 5 GeV
 
 
 process.makeTopologyNtupleMiniAOD.flavorHistoryTag=cms.bool(False) # change to false at your convenience
@@ -331,6 +356,7 @@ process.p = cms.Path(
     process.egammaPostRecoSeq *
     process.jetCorrection *
     process.ecalBadCalibReducedMINIAODFilter *
+    process.prefiringweight *
     process.makeTopologyNtupleMiniAOD
     )
 

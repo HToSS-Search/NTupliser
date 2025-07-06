@@ -1,6 +1,6 @@
 import FWCore.ParameterSet.Config as cms
 
-makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD',
+makeTopologyNtupleMiniAOD = cms.EDAnalyzer('MakeTopologyNtupleMiniAOD_MuonPrefire',
                                            debugMode              = cms.bool(False),
 					   is2016 = cms.bool(False),
                                            # "Calo"
